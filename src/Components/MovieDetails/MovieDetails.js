@@ -21,18 +21,6 @@ class MovieDetails extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {
-            selectedValue: '',
-        }
-    }
-
-    handleChange(e) {
-        const movie = e.target.value;
-        this.setState({
-            selectedValue: movie
-        })
-        console.log(movie);
-        console.log(this.state);
     }
 
     render() {
@@ -49,11 +37,10 @@ class MovieDetails extends React.Component {
                     />
                     <CardContent>
                         <Radio
-                            checked={this.state.selectedValue === this.props.title}
+                            checked={this.props.selected}
                             value={this.props.title}
                             name="movie-selection"
-                            onChange={e => this.handleChange(e)}
-                            inputProps={{ 'aria-label': this.props.title, 'aria-checked': this.state.selectedValue === this.props.title}}
+                            inputProps={{ 'aria-label': this.props.title, 'aria-checked': this.props.selected}}
                         />
                         <Typography gutterBottom variant="h5" component="h2">
                             {this.props.title}
