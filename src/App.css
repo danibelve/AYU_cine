@@ -21,3 +21,7 @@
   color: #09d3ac;
 }
 
+.moviedetails-card{
+  display: flex;
+  flex-wrap: wrap;
+}
