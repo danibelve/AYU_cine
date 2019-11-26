@@ -15,17 +15,14 @@ class Home extends React.Component {
           <div className="banner">
             <div className="info-container">
               <h1>¡Elegís, Dividís y Disfrutás!</h1>
-                <p class="desc">Dividí la cantidad de entradas, pagalas entre tus amigos y ¡Sale cine!</p>
-                <div>
-                <p><strong class="strong">Armar tu perfil, tus grupos y más registrandote:</strong></p>
-                </div>
-                <div>
-                  <Button variant="outlined" className="button-outlined">Acceder</Button>
-                  <Button variant="contained" className="button-contained">Registrarse</Button>
-                </div>
-                  
-            </div>    
-          </div>
+                <p className="desc">Dividí la cantidad de entradas, pagalas entre tus amigos y ¡Sale cine!</p>
+                <p><strong className="strong">Armar tu perfil, tus grupos y más registrandote:</strong></p>
+            </div>
+            <div className="button-container">
+              <Button variant="outlined" className="button-outlined">Acceder</Button>
+              <Button variant="contained" className="button-contained">Registrarse</Button>
+            </div>
+          </div> 
           <div>
             <h2>¿Qué quieren ver?</h2>
             <p>Selecciona la peli que eligieron con tus amigos</p>

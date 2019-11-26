@@ -5,6 +5,7 @@ import { faFacebookF } from '@fortawesome/free-brands-svg-icons';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faTwitter} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import logoFooter from '../../Assets/logo_footer.svg'
 import './Footer.css';
 import '../../Styles/Commons.css'
 
@@ -15,7 +16,7 @@ class Footer extends React.Component {
         return (
             <footer id="footer">
                 <div>
-                    <img alt="logo"></img>
+                    <img alt="logo" src={logoFooter} className="footer-logo"/>
                 </div>
                 <div>
                     <ul className="lista">

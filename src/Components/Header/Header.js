@@ -1,6 +1,7 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import SkipLinks from 'skip-links'
+import SkipLinks from 'skip-links';
+import logoHeader from '../../Assets/logo_header.svg';
 import './Header.css';
 import '../../Styles/Commons.css';
 
@@ -16,7 +17,7 @@ class Header extends React.Component {
                <SkipLinks links={links}/>
                 <header className="header">
                     <div>
-                        <img alt="logo"></img>
+                        <img alt="logo" className="header-logo" src={logoHeader}></img>
                     </div>
                     <div>
                         <ul>

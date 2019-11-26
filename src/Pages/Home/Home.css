@@ -1,8 +1,10 @@
 .banner{
-    background-image: url("../../Assets/banner.jpg");
+    background-image: url("../../Assets/banner.png");
     width: 100%;
     color: white;
     padding: 60px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 h1{
@@ -25,7 +27,7 @@ h1{
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 60px;
+  padding: 60px 60px 20px 60px;
 }
 
 .flex{
@@ -40,4 +42,9 @@ ul{
 
 ul li {
   list-style: none;
+}
+
+.button-container{
+  display: flex;
+  justify-content: center;
 }

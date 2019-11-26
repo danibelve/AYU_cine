@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="216.198" height="73.513" viewBox="0 0 216.198 73.513">
+  <g id="Group_182" data-name="Group 182" transform="translate(-403.735 -217.761)">
+    <text id="Sale_Cine" data-name="Sale Cine" transform="translate(494.933 263.563)" fill="#fff" font-size="29" font-family="Nunito-Bold, Nunito" font-weight="700"><tspan x="0" y="0">Sale Cine</tspan></text>
+    <g id="Group_181" data-name="Group 181" transform="translate(403.735 217.761)">
+      <path id="Path_12" data-name="Path 12" d="M458.45,262.32a19.6,19.6,0,0,1-17.96,11.745v7.107s-18.381-6.384-19.546-25.277c-.033-.474-.057-.951-.057-1.433a19.6,19.6,0,0,1,37.607-7.762,3,3,0,0,0,2.74,1.846h11.849a2.957,2.957,0,0,0,2.867-3.712,36.756,36.756,0,1,0,0,19.383,2.964,2.964,0,0,0-2.865-3.729h-11.9A3,3,0,0,0,458.45,262.32Z" transform="translate(-403.735 -217.761)" fill="#fff"/>
+      <circle id="Ellipse_6" data-name="Ellipse 6" cx="2.519" cy="2.519" r="2.519" transform="translate(26.728 34.948)" fill="#fff"/>
+      <circle id="Ellipse_7" data-name="Ellipse 7" cx="2.519" cy="2.519" r="2.519" transform="translate(34.588 34.948)" fill="#fff"/>
+      <circle id="Ellipse_8" data-name="Ellipse 8" cx="2.519" cy="2.519" r="2.519" transform="translate(42.447 34.948)" fill="#fff"/>
+    </g>
+  </g>
+</svg>
