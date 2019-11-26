@@ -1,0 +1,43 @@
+.banner{
+    background-image: url("../../Assets/banner.jpg");
+    width: 100%;
+    color: white;
+    padding: 60px 0;
+}
+
+h1{
+  font-size: 66px;
+  text-align: left;
+}
+
+.desc{
+  font-size: 24px;
+  margin-bottom: 60px;
+  
+}
+
+.strong {
+  margin-bottom: 24px;
+}
+
+.info-container{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 60px;
+}
+
+.flex{
+  display: inline-flex;
+}
+
+ul{
+  display: inline-flex;
+  align-content: center;
+  justify-content: space-around;
+}
+
+ul li {
+  list-style: none;
+}

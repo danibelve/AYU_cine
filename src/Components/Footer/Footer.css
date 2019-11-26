@@ -1,0 +1,19 @@
+.lista{
+    display: inline-flex;
+    align-content: flex-end;
+}
+
+.lista li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+}
+
+.icons ul li {
+    width: 20px;
+}

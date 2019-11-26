@@ -1,0 +1,22 @@
+.card-header{
+    font-size: 18px !important;
+}
+
+.card-bajada{
+    font-size: 14px !important;
+}
+
+.flex{
+    display: flex !important;
+    justify-content: flex-end !important;
+    margin: 0 !important;
+    padding: 0  10px 0 0 !important;
+}
+
+.cardContent{
+    padding: 16px 22px 0 22px !important;
+}
+
+.movie-img{
+    height: 150px !important;
+}

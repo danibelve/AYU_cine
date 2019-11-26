@@ -52,14 +52,20 @@
     background-color: #eee;
   }
   
+  .bajada{
+    font-size: 16px;
+  }
+  
   /* On mouse-over, add a grey background color */
   .container:hover input ~ .checkmark {
     background-color: #ccc;
+    border-radius: 100%;
   }
   
   /* When the checkbox is checked, add a blue background */
   .container input:checked ~ .checkmark {
     background-color:  #D700A9;
+    border-radius: 100%;
   }
   
   /* Create the checkmark/indicator (hidden when not checked) */

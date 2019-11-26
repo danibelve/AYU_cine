@@ -1,5 +1,5 @@
 * {
-    margin: 0;
+    margin: 0 ;
     padding: 0;
 }
 .sr-only {
@@ -32,6 +32,27 @@ i {
     font-style: normal
 }
 
-.button{
-    background-color: #D700A9 !important;
+.button-verde{
+    color: #2BB2AC !important;
+}
+
+.button-contained{
+	background-color: #2BB2AC !important;
+	color: white !important;
+}
+
+.button-outlined{
+	background-color: transparent !important;
+	color: white !important;
+	border: 1px solid #2BB2AC !important;
+}
+
+.button-verde--align-right{
+	color: #2BB2AC !important;
+	justify-content: flex-end !important;
+}
+
+.flex-column{
+	display: flex;
+	flex-direction: column;
 }

@@ -2,61 +2,52 @@ import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
+import CardActions from '@material-ui/core/CardActions';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
-import Radio from '@material-ui/core/Radio';
 import Typography from '@material-ui/core/Typography';
+import { Route } from "react-router-dom";
+import './MovieDetails.css';
+import '../../Styles/Commons.css'
 
 const styles = theme => ({
     card: {
-        maxWidth: 250,
-        width: 250,
+        width: 200,
+        maxWidth: 200,
+        height: 250,
         margin: 10,
     },
 });
 
 class MovieDetails extends React.Component {
-    constructor(props) {
-        super(props);
-
-    }
+    
 
     render() {
         const { classes } = this.props;
         return (
             <Card className={classes.card} >
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        alt=""
-                        height="200"
-                        image={this.props.image}
-                        title={this.props.title}
-                    />
-                    <CardContent>
-                        <Radio
-                            checked={this.props.selected}
-                            value={this.props.title}
-                            name="movie-selection"
-                            inputProps={{ 'aria-label': this.props.title, 'aria-checked': this.props.selected}}
+                <Route render={({ history}) => (
+                <CardActionArea  onClick={() => { history.push('/filter') } }>
+                        <CardMedia
+                            component="img"
+                            alt=""
+                            className="movie-img"
+                            image={this.props.image}
+                            title={this.props.title}
                         />
-                        <Typography gutterBottom variant="h5" component="h2">
-                            {this.props.title}
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary" component="p">
-                            {this.props.description}
-
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-                <CardActions>
-                    <Button size="small" color="primary">
-                        Ver Trailer
-                    </Button>
-                    <Button size="small" color="primary">
-                        Más info
+                        <CardContent className="flex-column cardContent">
+                            <Typography gutterBottom component="h3" className="card-header">
+                                {this.props.title}
+                            </Typography>
+                            <Typography color="textSecondary" component="p" className="card-bajada">
+                                122 min <i role="presentation">|</i> P16 <i role="presentation">|</i> Drama
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>)}/>
+                <CardActions className="flex">
+                    <Button size="small" className="button-verde--align-right">
+                        Ver más
                     </Button>
                 </CardActions>
             </Card>

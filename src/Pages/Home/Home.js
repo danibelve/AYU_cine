@@ -1,0 +1,41 @@
+import React from 'react';
+import Button from '@material-ui/core/Button';
+import './Home.css';
+import '../../Styles/Commons.css';
+import MovieCard from '../../Components/MovieCard/MovieCard';
+import Header from '../../Components/Header/Header';
+import Footer from '../../Components/Footer/Footer';
+
+class Home extends React.Component {
+  render() {
+    return (
+      <React.Fragment>
+        <Header></Header>
+        <main id="mainContent" className="flex">
+          <div className="banner">
+            <div className="info-container">
+              <h1>¡Elegís, Dividís y Disfrutás!</h1>
+                <p class="desc">Dividí la cantidad de entradas, pagalas entre tus amigos y ¡Sale cine!</p>
+                <div>
+                <p><strong class="strong">Armar tu perfil, tus grupos y más registrandote:</strong></p>
+                </div>
+                <div>
+                  <Button variant="outlined" className="button-outlined">Acceder</Button>
+                  <Button variant="contained" className="button-contained">Registrarse</Button>
+                </div>
+                  
+            </div>    
+          </div>
+          <div>
+            <h2>¿Qué quieren ver?</h2>
+            <p>Selecciona la peli que eligieron con tus amigos</p>
+            <MovieCard></MovieCard>
+          </div>
+        </main>
+        <Footer></Footer>
+      </React.Fragment>   
+    );
+  }
+}
+
+export default Home;

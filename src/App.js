@@ -1,15 +1,16 @@
 import React from 'react';
-import './App.css';
-import MovieCard from './Components/MovieCard/MovieCard';
+import Home from './Pages/Home/Home'
+import Filter from './Pages/Filter/Filter'
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends React.Component {
-  handleFormSubmit(e){
-    e.preventDefault();
-    console.log('You have selected:', this.state.selectedOption);
-  }
+
   render() {
     return (
-        <MovieCard></MovieCard>  
+        <Router>
+          <Route path="/" exact component={Home}/>
+          <Route path="/filter" exact component={Filter}/>
+        </Router>
     );
   }
 }
