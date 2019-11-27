@@ -52,7 +52,7 @@ class Aside extends React.Component {
                     <Button
                     variant="outlined"
                     className="button-outlined-black"
-                    onClick={() => { history.push('/filter');}>Anterior</Button>
+                    onClick={() => { history.push('/filter')}}>Anterior</Button>
                 )}/>
                 <Route render={({ history}) => (
                     <Button

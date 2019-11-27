@@ -7,6 +7,9 @@ import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 
 class Home extends React.Component {
+  componentDidMount(){
+    document.title = "Sale Cine: Elegí, dividí y paga"
+  }
   render() {
     return (
       <React.Fragment>

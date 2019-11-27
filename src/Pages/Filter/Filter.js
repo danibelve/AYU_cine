@@ -46,6 +46,9 @@ class Filter extends React.Component {
             }
         ]   
     }
+    componentDidMount(){
+        document.title = "Elijan sus preferencias y Sale Cine"
+    }
     render() {
         return (
             <React.Fragment>

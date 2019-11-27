@@ -59,6 +59,10 @@ class Filter2 extends React.Component {
           }
     }
 
+    componentDidMount(){
+        document.title = "Elijan cuál cine, sale cine"
+    }
+
     handleChange = name => event => {
         this.setState({
           ...this.state,
