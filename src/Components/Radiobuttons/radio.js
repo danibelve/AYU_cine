@@ -54,12 +54,11 @@ class MyRadio extends React.Component {
                         value={this.state.value}
                     >
                         {this.props.options.map((option, key) => {
-                                return <div className="butones-1"> 
+                                return <div className="butones-1" key={key}> 
                                     <FormControlLabel
                                         value={option.value}
                                         control={<Radio onClick={(e) => this.handleClick(e)} />}
                                         label={option.label}
-                                        key={key}
                                         labelPlacement="start"
                                         className="strong"
                                     />

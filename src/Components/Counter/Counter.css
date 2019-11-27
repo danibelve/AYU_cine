@@ -1,0 +1,57 @@
+#Adultos, #Niños, #Jubilados{
+    width: 25px !important;
+    text-align: center !important;
+}
+
+.MuiInput-underline:after {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: initial !important;
+    transform: none !important;
+    transition: initial !important;
+    border-bottom: 0 !important;
+    pointer-events: none;
+}
+
+.MuiInput-underline:before {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    position: initial !important;
+    transform: none !important;
+    transition: initial !important;
+    border-bottom: 0 !important;
+    pointer-events: none;
+}
+
+.label-contador{
+    color: #5F6D74;
+    font-size: 16px;
+    font-weight: bold;
+    padding-right: 9px;
+}
+
+.butones-2{
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.counter-container{
+    margin: 24px;
+    background-color: white;
+    padding: 10px 10px 0px 10px;
+    border-radius: 8px;
+    height: 74px;
+    display: inline-flex;
+    width: 200px;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    width: 175px;
+}
+
+.counterBajada{
+    margin-top: -15px;
+}

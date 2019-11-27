@@ -5,6 +5,7 @@ import '../../Styles/Commons.css';
 import Header from '../../Components/Header/Header';
 import Footer from '../../Components/Footer/Footer';
 import Radio from '../../Components/Radiobuttons/radio';
+import Counter from '../../Components/Counter/Counter';
 
 
 class Filter extends React.Component {
@@ -59,6 +60,9 @@ class Filter extends React.Component {
                             name="dia"
                         ></Radio>
                     <h2>¿Cuántos van a ser?</h2>
+                    <Counter label1="Restar un adulto" label2="Sumar un adulto" id="Adultos"></Counter>
+                    <Counter label1="Restar un niño" label2="Sumar un niño" id="Niños" bajada="De 2 a 10 años"></Counter>
+                    <Counter label1="Restar un jubilado" label2="Sumar un jubilado" id="Jubilados" bajada="Mayores de 60 años"></Counter>
                     <h2>¿A qué hora quieren ir?</h2>
                     <Radio
                             options={this.horario}

@@ -1,15 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i,700,700i,800,900,900i&display=swap');
+
 * {
     margin: 0 ;
     padding: 0;
 }
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i,700,700i,800,900,900i&display=swap');
 
-
-p, span, i, h1, h2, h3, h4, h5, h6, a {
+p, span, i, h1, h2, h3, h4, h5, h6, a, input {
 	font-family: 'Montserrat', sans-serif !important;
 }
 
-font-family: 'Montserrat', sans-serif;
 .sr-only {
 	border: 0 !important;
 	clip: rect(1px, 1px, 1px, 1px) !important; 
@@ -78,4 +77,16 @@ i {
 	font-size: 20px;
 	margin-bottom: 44px;
     margin-top: 15px;
+}
+
+.buton-peque{
+	/*.MuiFab-extended {*/
+		width: 21px !important;
+		height: 22px !important;
+		min-width: 22px !important;
+		min-height: 21px !important;
+		border-radius: 100% !important;
+		padding: 0 !important;
+		background-color: white !important;
+		color: #5F6D74!important;
 }
