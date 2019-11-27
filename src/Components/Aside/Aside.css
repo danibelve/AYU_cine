@@ -1,0 +1,26 @@
+.aside{
+   /* display: inline-block;
+    width: 35%;*/
+    flex-grow: 2;
+    padding: 40px;
+}
+
+.aside-wrapper{
+    padding: 0 20px;
+    
+}
+
+.heading-aside{
+    background: #F8F8F8 0% 0% no-repeat padding-box;
+    height: 48px;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.flex-arround{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}

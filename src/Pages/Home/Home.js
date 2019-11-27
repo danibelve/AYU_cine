@@ -11,6 +11,7 @@ class Home extends React.Component {
     return (
       <React.Fragment>
         <Header></Header>
+        <div className="box-shadow"></div>
         <main id="mainContent" className="flex">
           <div className="banner">
             <div className="info-container">

@@ -4,7 +4,6 @@ import './Counter.css';
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 import Fab from '@material-ui/core/Fab';
-import Button from '@material-ui/core/Button';
 
 
 class Counter extends React.Component {

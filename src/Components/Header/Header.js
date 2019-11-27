@@ -16,10 +16,10 @@ class Header extends React.Component {
             <React.Fragment>
                <SkipLinks links={links}/>
                 <header className="header">
-                    <div>
+                    <div className="vertical-align">
                         <img alt="logo" className="header-logo" src={logoHeader}></img>
                     </div>
-                    <div>
+                    <div  className="vertical-align">
                         <ul>
                             <li><Button className="button-verde">Ya tengo cuenta</Button></li>
                             <li><Button variant="contained" className="button-contained">Registrarse</Button></li>
