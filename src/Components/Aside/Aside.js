@@ -24,12 +24,6 @@ class Aside extends React.Component {
         }));
     }
 
-    handleBack(){
-        if (history.location.pathname === "/filter2"){
-           return history.push('/filter');
-        }
-    }
-
     render() {
         return (
             <aside className="aside">
@@ -58,7 +52,7 @@ class Aside extends React.Component {
                     <Button
                     variant="outlined"
                     className="button-outlined-black"
-                    onClick={() => { this.handleBack()}}>Anterior</Button>
+                    onClick={() => { history.push('/filter');}>Anterior</Button>
                 )}/>
                 <Route render={({ history}) => (
                     <Button
