@@ -30,7 +30,7 @@ class Counter extends React.Component {
         }));
 
         this.state = {
-            inputValue: ""
+            inputValue: 0
         }
     }
 
@@ -44,7 +44,7 @@ class Counter extends React.Component {
             })
         }
     }
-    handleClick(e) {
+    handleClickSumar(e) {
         const value = this.state.inputValue;
         if (this.state.inputValue === "") {
             this.setState({ inputValue: 1 })
@@ -63,14 +63,16 @@ class Counter extends React.Component {
                     <TextField
                         id={this.props.id}
                         type="text"
-                        placeholder="0"
+                        
                         value={this.state.inputValue}
                         onChange={this.updateInputValue}
-
+                        aria-live="polite"
+                        aria-label={this.state.inputValue + ' ' +this.props.id}
+                        //aria-describedby={'label_' +this.props.id}
                     />
-                    <Fab variant="round" className="buton-peque" aria-label={this.props.label2} onClick={(e) => this.handleClick(e)}>+</Fab>
+                    <Fab variant="round" className="buton-peque" aria-label={this.props.label2} onClick={(e) => this.handleClickSumar(e)}>+</Fab>
                 </div>
-                <span className="label-contador">{this.props.id}</span>
+                <span className="label-contador" id={'label_' +this.props.id}>{this.props.id}</span>
                 <p className="counterBajada">{this.props.bajada}</p>
             </div>
         );

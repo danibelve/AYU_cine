@@ -23,8 +23,8 @@ class Home extends React.Component {
                 <p><strong className="strong">Armar tu perfil, tus grupos y más registrandote:</strong></p>
             </div>
             <div className="button-container">
-              <Button variant="outlined" className="button-outlined">Acceder</Button>
-              <Button variant="contained" className="button-contained">Registrarse</Button>
+              <Button variant="outlined" className="button-outlined">Ingresá</Button>
+              <Button variant="contained" className="button-contained">Registrate</Button>
             </div>
           </div> 
           <div>

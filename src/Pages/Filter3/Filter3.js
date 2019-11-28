@@ -1,5 +1,5 @@
 import React from 'react';
-import './Filter2.css';
+import './Filter3.css';
 import '../../Styles/Commons.css';
 import FormControl from '@material-ui/core/FormControl';
 import NativeSelect from '@material-ui/core/NativeSelect';
@@ -164,7 +164,7 @@ class Filter2 extends React.Component {
                     <Button
                     variant="outlined"
                     className="button-outlined-black"
-                    onClick={() => { history.push('/filter')}}>Anterior</Button>
+                    onClick={() => { history.push('/filter2')}}>Anterior</Button>
                 )}/>
                 <Route render={({ history}) => (
                     <Button

@@ -6,8 +6,8 @@ import './Header.css';
 import '../../Styles/Commons.css';
 
 const links = [
-    {title: 'Ir al contenido principal', to: 'mainContent', style: { backgroundColor: '#2BB2AC' }},
-    {title: 'Ir al footer', to: 'footer', style: { backgroundColor: '#2BB2AC' }}
+    {title: 'Ir al contenido principal', to: 'mainContent', style: { backgroundColor: '#5e50b5' }},
+    {title: 'Ir al footer', to: 'footer', style: { backgroundColor: '#5e50b5' }}
   ];
 
 class Header extends React.Component {
@@ -21,8 +21,8 @@ class Header extends React.Component {
                     </div>
                     <div  className="vertical-align">
                         <ul>
-                            <li><Button className="button-verde">Ya tengo cuenta</Button></li>
-                            <li><Button variant="contained" className="button-contained">Registrarse</Button></li>
+                            <li><Button className="button-verde">Ingresá</Button></li>
+                            <li><Button variant="contained" className="button-contained">Registrate</Button></li>
                         </ul>
                     </div>
                 </header>

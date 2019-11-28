@@ -40,30 +40,30 @@ i {
 }
 
 .button-verde{
-    color: #2BB2AC !important;
+    color: #5e50b5 !important;
 }
 
 .button-contained{
-	background-color: #2BB2AC !important;
+	background-color: #5e50b5 !important;
 	color: white !important;
 }
 
 .button-outlined{
 	background-color: transparent !important;
 	color: white !important;
-	border: 1px solid #2BB2AC !important;
+	border: 1px solid #5e50b5 !important;
 	margin-right: 20px !important;
 }
 
 .button-outlined-black{
 	background-color: transparent !important;
 	color: #5F6D74 !important;
-	border: 1px solid #2BB2AC !important;
+	border: 1px solid #5e50b5 !important;
 	margin-right: 20px !important;
 }
 
 .button-verde--align-right{
-	color: #2BB2AC !important;
+	color: #5e50b5 !important;
 	justify-content: flex-end !important;
 }
 
