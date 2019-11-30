@@ -15,7 +15,7 @@ import TextField from "@material-ui/core/TextField";
 import Fab from "@material-ui/core/Fab";
 import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
-import { Route } from "react-router-dom";
+import { Route , Link} from "react-router-dom";
 
 class Filter extends React.Component {
   constructor(props) {
@@ -413,7 +413,9 @@ armarFecha(){
           <aside className="aside">
             <div className="aside-wrapper">
               <h3 className="heading-aside">
-                <span className="vertical-align">Tu selección</span>
+              <span className="vertical-align">
+                Tu selección para {this.props.location.state.peli}
+              </span>
               </h3>
               <div className="flex-arround">
                 <p>Fecha</p>
@@ -447,19 +449,22 @@ armarFecha(){
                   </Button>
                 )}
               />
-              <Route
-                render={({ history }) => (
-                  <Button
+              <Link to={{
+                pathname: '/filter2',
+                state: {
+                  hora: this.state.hora,
+                  cuando: this.state.cuando,
+                  cantidadDePersonas: this.armarCantidadDePersonas()
+                }
+              }}>
+              <Button
                     variant="outlined"
                     className="button-contained"
-                    onClick={() => {
-                      history.push("/filter2");
-                    }}
+                    type= "submit"
                   >
                     Siguiente
                   </Button>
-                )}
-              />
+              </Link>
             </div>
           </aside>
         </div>

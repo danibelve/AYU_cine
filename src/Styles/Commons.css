@@ -46,6 +46,40 @@ i {
 .button-contained{
 	background-color: #5e50b5 !important;
 	color: white !important;
+	
+}
+
+.button-contained:link {
+	text-decoration: none !important;
+  }
+  
+.button-contained:visited {
+	text-decoration: none !important;
+  }
+  
+.button-contained:hover {
+	text-decoration: none !important;
+  }
+  
+.button-contained:active {
+	text-decoration: none !important;
+  }
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }
 
 .button-outlined{

@@ -68,6 +68,7 @@ class Filter2 extends React.Component {
 
     componentDidMount(){
         document.title = "Elijan cuál cine, sale cine"
+        console.log(this.props.location.state);
     }
 
     handleChange = name => event => {
@@ -143,15 +144,15 @@ class Filter2 extends React.Component {
                     <h3 className="heading-aside"><span className="vertical-align">Tu selección</span></h3>
                     <div className="flex-arround">
                         <p>Fecha</p>
-                        <p> Sin decidir</p>
+                        <p>{this.props.location.state.cuando}</p>
                     </div>
                     <div className="flex-arround">
                         <p>Cantidad de personas </p>
-                        <p> Sin decidir</p>
+                        <p>{this.props.location.state.cantidadDePersonas}</p>
                     </div>
                     <div className="flex-arround">
                         <p>Horario </p>
-                        <p> Sin decidir</p>
+                        <p>{this.props.location.state.hora}</p>
                     </div>
                     <div className="flex-arround">
                         <p>Butacas </p>

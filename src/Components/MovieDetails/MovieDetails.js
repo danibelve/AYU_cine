@@ -7,7 +7,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import { Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import './MovieDetails.css';
 import '../../Styles/Commons.css'
 
@@ -27,8 +27,13 @@ class MovieDetails extends React.Component {
         const { classes } = this.props;
         return (
             <Card className={classes.card} >
-                <Route render={({ history}) => (
-                <CardActionArea  onClick={() => { history.push('/filter') } }>
+                <Link to={{
+                pathname: '/filter',
+                state: {
+                  peli: this.props.title
+                }
+              }}>
+                <CardActionArea>
                         <CardMedia
                             component="img"
                             alt=""
@@ -44,7 +49,8 @@ class MovieDetails extends React.Component {
                                 122 min <i role="presentation">|</i> P16 <i role="presentation">|</i> Drama
                             </Typography>
                         </CardContent>
-                    </CardActionArea>)}/>
+                    </CardActionArea>
+                </Link>
                 <CardActions className="flex">
                     <Button size="small" className="button-verde--align-right">
                         Ver más

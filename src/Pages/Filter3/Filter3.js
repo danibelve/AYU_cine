@@ -81,62 +81,8 @@ class Filter2 extends React.Component {
         return (
             <React.Fragment>
                 <Header></Header>
-                <div className="box-shadow"></div>
-                <div className="divide">
-                    <main id="mainContent" className="filter">
-                        <h1 className="h1-filter">¿A qué cine quieren ir?</h1>
-                        <p className="bajada">Seleccioná el cine que les quede más cómodo</p>
-                        <FormControl className={this.classes.formControl}>
-                            <NativeSelect
-                                value={this.state.age}
-                                onChange={this.handleChange('age')}
-                                name="age"
-                                className={this.classes.selectEmpty}
-                                inputProps={{ 'aria-label': 'age' }}
-                            >
-                                <option value="">None</option>
-                                <option value={10}>Ten</option>
-                                <option value={20}>Twenty</option>
-                                <option value={30}>Thirty</option>
-                            </NativeSelect>
-                        </FormControl>
-                        <FormControl className={this.classes.formControl}>
-                            <NativeSelect
-                                value={this.state.age}
-                                onChange={this.handleChange('age')}
-                                name="age"
-                                className={this.classes.selectEmpty}
-                                inputProps={{ 'aria-label': 'age' }}
-                            >
-                                <option value="">None</option>
-                                <option value={10}>Ten</option>
-                                <option value={20}>Twenty</option>
-                                <option value={30}>Thirty</option>
-                            </NativeSelect>
-                        </FormControl>
-                        <FormControl className={this.classes.formControl}>
-                            <NativeSelect
-                                value={this.state.age}
-                                onChange={this.handleChange('age')}
-                                name="age"
-                                className={this.classes.selectEmpty}
-                                inputProps={{ 'aria-label': 'age' }}
-                            >
-                                <option value="">None</option>
-                                <option value={10}>Ten</option>
-                                <option value={20}>Twenty</option>
-                                <option value={30}>Thirty</option>
-                            </NativeSelect>
-                        </FormControl>
-                        <div className="moviedetails-card">
-                            {this.Movies.map((movie, key) => {
-                            return <MovieDetails
-                                image={movie.img}
-                                title={movie.title}
-                                description={movie.description}
-                                key={key}/>
-                            })}
-                        </div>
+                <main> <h1>HOLO</h1>
+                
                     </main>
                     <aside className="aside">
                 <div className="aside-wrapper">
@@ -174,7 +120,6 @@ class Filter2 extends React.Component {
                 )}/>
                 </div>
             </aside>
-                </div>
                 <Footer></Footer>
             </React.Fragment>
         );
