@@ -14,7 +14,7 @@ import FormLabel from "@material-ui/core/FormLabel";
 import TextField from "@material-ui/core/TextField";
 import Fab from "@material-ui/core/Fab";
 import "../../Components/Counter/Counter.css";
-import Button from '@material-ui/core/Button';
+import Button from "@material-ui/core/Button";
 import { Route } from "react-router-dom";
 
 class Filter extends React.Component {
@@ -44,14 +44,16 @@ class Filter extends React.Component {
       },
       extendedIcon: {
         marginRight: theme.spacing(1)
-      },
+      }
     }));
 
     this.state = {
       cuando: "",
       hora: "",
       //value: "",
-      inputValue: 0,
+      inputValueAdulto: 0,
+      inputValueNiño: 0,
+      inputValueJubilado: 0
     };
     this.cuando = [
       {
@@ -92,46 +94,141 @@ class Filter extends React.Component {
   componentDidMount() {
     document.title = "Elijan sus preferencias y Sale Cine";
   }
-  handleClickRestar(e) {
-    const value = this.state.inputValue;
-    if (this.state.inputValue === "" || this.state.inputValue === 0) {
-      this.setState({ inputValue: 0 });
+
+  armarCantidadDePersonas(){
+
+    let cantidadDePersonas="";
+    const nino = this.state.inputValueNiño;
+    const jubilado = this.state.inputValueJubilado;
+    const adulto = this.state.inputValueAdulto;
+      if (this.state.inputValueNiño === 0 
+        && this.state.inputValueAdulto === 0 
+        && this.state.inputValueJubilado === 0 )
+        {
+            cantidadDePersonas = 'Sin definir' 
+        }else {
+            if (this.state.inputValueAdulto > 0){
+                cantidadDePersonas += 'Adultos: ' + adulto + '. ';
+          }
+          if (this.state.inputValueNiño > 0){
+            cantidadDePersonas += 'Niño: ' + nino + '. ';
+          }
+    
+          if (this.state.inputValueJubilado > 0){
+            cantidadDePersonas += 'Jubilado: ' + jubilado + '. ';
+          }
+
+        }
+        return cantidadDePersonas;
+  }
+
+  handleClickRestarAdulto(e) {
+    const value = this.state.inputValueAdulto;
+    if (
+      this.state.inputValueAdulto === "" ||
+      this.state.inputValueAdulto === 0
+    ) {
+      this.setState({ inputValueAdulto: 0 });
     } else {
       this.setState({
-        inputValue: parseInt(value) - 1
+        inputValueAdulto: parseInt(value) - 1
       });
     }
   }
-  handleClickSumar(e) {
-    const value = this.state.inputValue;
-    if (this.state.inputValue === "") {
-      this.setState({ inputValue: 1 });
+  handleClickSumarAdulto(e) {
+    const value = this.state.inputValueAdulto;
+    if (this.state.inputValueAdulto === "") {
+      this.setState({ inputValueAdulto: 1 });
     } else {
       this.setState({
-        inputValue: parseInt(value) + 1
+        inputValueAdulto: parseInt(value) + 1
+      });
+    }
+  }
+  handleClickRestarNiño(e) {
+    const value = this.state.inputValueNiño;
+    if (this.state.inputValueNiño === "" || this.state.inputValueNiño === 0) {
+      this.setState({ inputValueNiño: 0 });
+    } else {
+      this.setState({
+        inputValueNiño: parseInt(value) - 1
+      });
+    }
+  }
+  handleClickSumarNiño(e) {
+    const value = this.state.inputValueNiño;
+    if (this.state.inputValueNiño === "") {
+      this.setState({ inputValueNiño: 1 });
+    } else {
+      this.setState({
+        inputValueNiño: parseInt(value) + 1
+      });
+    }
+  }
+  handleClickRestarJubilado(e) {
+    const value = this.state.inputValueJubilado;
+    if (
+      this.state.inputValueJubilado === "" ||
+      this.state.inputValueJubilado === 0
+    ) {
+      this.setState({ inputValueJubilado: 0 });
+    } else {
+      this.setState({
+        inputValueJubilado: parseInt(value) - 1
+      });
+    }
+  }
+  handleClickSumarJubilado(e) {
+    const value = this.state.inputValueJubilado;
+    if (this.state.inputValueJubilado === "") {
+      this.setState({ inputValueJubilado: 1 });
+    } else {
+      this.setState({
+        inputValueJubilado: parseInt(value) + 1
       });
     }
   }
   handleClick(event) {
-    console.log(event.target);
     const newValue = event.target.value;
-    const name = event.target.name
+    const name = event.target.name;
 
     if (newValue === [name]) {
-        window.setTimeout(
-      function() {
-        this.setState({[name]: ""});
-      }.bind(this),
-      0)
+      window.setTimeout(
+        function() {
+          this.setState({ [name]: "" });
+        }.bind(this),
+        0
+      );
     } else {
-        window.setTimeout(
-            function() {
-            this.setState({[name]: newValue});
-            }.bind(this),
-            0)
+      window.setTimeout(
+        function() {
+          this.setState({ [name]: newValue });
+        }.bind(this),
+        0
+      );
     }
-    console.log(this.state);
   }
+
+armarHora(){
+    let hora = "";
+    const horaValue = this.state.hora;
+    if (this.state.hora === ''){
+        hora = "Sin definir";
+    }else{
+        hora = horaValue
+    }
+    return hora;
+}
+armarFecha(){
+    let cuando = "";
+    const cuandoValue = this.state.cuando;
+    if (this.state.cuando === ''){
+        cuando = "Sin definir";
+    }else{
+        cuando = cuandoValue
+    }
+    return cuando;
+}
   render() {
     return (
       <React.Fragment>
@@ -163,7 +260,9 @@ class Filter extends React.Component {
                       <div className="butones-1" key={key}>
                         <FormControlLabel
                           value={option.label}
-                          control={<Radio onMouseUp={e => this.handleClick(e)} />}
+                          control={
+                            <Radio onMouseUp={e => this.handleClick(e)} />
+                          }
                           label={option.label}
                           labelPlacement="start"
                           className="strong"
@@ -182,24 +281,24 @@ class Filter extends React.Component {
                   variant="round"
                   className="buton-peque"
                   aria-label="Restar un adulto"
-                  onClick={e => this.handleClickRestar(e)}
+                  onClick={e => this.handleClickRestarAdulto(e)}
                 >
                   -
                 </Fab>
                 <TextField
                   id="Adultos"
                   type="text"
-                  value={this.state.inputValue}
+                  value={this.state.inputValueAdulto}
                   onChange={this.updateInputValue}
                   aria-live="polite"
-                  aria-label={this.state.inputValue + " Adultos"}
+                  aria-label={this.state.inputValueAdulto + " Adultos"}
                   //aria-describedby={'label_' +this.props.id}
                 />
                 <Fab
                   variant="round"
                   className="buton-peque"
                   aria-label="Sumar un adulto"
-                  onClick={e => this.handleClickSumar(e)}
+                  onClick={e => this.handleClickSumarAdulto(e)}
                 >
                   +
                 </Fab>
@@ -215,24 +314,24 @@ class Filter extends React.Component {
                   variant="round"
                   className="buton-peque"
                   aria-label="Restar un niño"
-                  onClick={e => this.handleClickRestar(e)}
+                  onClick={e => this.handleClickRestarNiño(e)}
                 >
                   -
                 </Fab>
                 <TextField
                   id="Niños"
                   type="text"
-                  value={this.state.inputValue}
+                  value={this.state.inputValueNiño}
                   onChange={this.updateInputValue}
                   aria-live="polite"
-                  aria-label={this.state.inputValue + " Niños"}
+                  aria-label={this.state.inputValueNiño + " Niños"}
                   //aria-describedby={'label_' +this.props.id}
                 />
                 <Fab
                   variant="round"
                   className="buton-peque"
                   aria-label="Sumar un niño"
-                  onClick={e => this.handleClickSumar(e)}
+                  onClick={e => this.handleClickSumarNiño(e)}
                 >
                   +
                 </Fab>
@@ -248,24 +347,24 @@ class Filter extends React.Component {
                   variant="round"
                   className="buton-peque"
                   aria-label="Restar un Jubilado"
-                  onClick={e => this.handleClickRestar(e)}
+                  onClick={e => this.handleClickRestarJubilado(e)}
                 >
                   -
                 </Fab>
                 <TextField
                   id="Jubilados"
                   type="text"
-                  value={this.state.inputValue}
+                  value={this.state.inputValueJubilado}
                   onChange={this.updateInputValue}
                   aria-live="polite"
-                  aria-label={this.state.inputValue + " Jubilados"}
+                  aria-label={this.state.inputValueJubilado + " Jubilados"}
                   //aria-describedby={'label_' +this.props.id}
                 />
                 <Fab
                   variant="round"
                   className="buton-peque"
                   aria-label="Sumar un Jubilado"
-                  onClick={e => this.handleClickSumar(e)}
+                  onClick={e => this.handleClickSumarJubilado(e)}
                 >
                   +
                 </Fab>
@@ -295,7 +394,9 @@ class Filter extends React.Component {
                       <div className="butones-1" key={key}>
                         <FormControlLabel
                           value={option.label}
-                          control={<Radio onMouseUp={e => this.handleClick(e)} />}
+                          control={
+                            <Radio onMouseUp={e => this.handleClick(e)} />
+                          }
                           label={option.label}
                           labelPlacement="start"
                           className="strong"
@@ -310,41 +411,57 @@ class Filter extends React.Component {
             </div>
           </main>
           <aside className="aside">
-                <div className="aside-wrapper">
-                    <h3 className="heading-aside"><span className="vertical-align">Tu selección</span></h3>
-                    <div className="flex-arround">
-                        <p>Fecha</p>
-                        <p>{this.state.cuando}</p>
-                    </div>
-                    <div className="flex-arround">
-                        <p>Cantidad de personas </p>
-                        <p> Sin decidir</p>
-                    </div>
-                    <div className="flex-arround">
-                        <p>Horario </p>
-                        <p> {this.state.hora}</p>
-                    </div>
-                    <div className="flex-arround">
-                        <p>Butacas </p>
-                        <p> Sin decidir</p>
-                    </div>
-
-                </div>
-                <div className="button-container">
-                <Route render={({ history}) => (
-                    <Button
+            <div className="aside-wrapper">
+              <h3 className="heading-aside">
+                <span className="vertical-align">Tu selección</span>
+              </h3>
+              <div className="flex-arround">
+                <p>Fecha</p>
+                <p>{this.armarFecha()}</p>
+              </div>
+              <div className="flex-arround">
+                <p>Cantidad de personas </p>
+                <p> {this.armarCantidadDePersonas()}</p>
+      
+              </div>
+              <div className="flex-arround">
+                <p>Horario </p>
+                <p> {this.armarHora()}</p>
+              </div>
+              <div className="flex-arround">
+                <p>Butacas </p>
+                <p> Sin decidir</p>
+              </div>
+            </div>
+            <div className="button-container">
+              <Route
+                render={({ history }) => (
+                  <Button
                     variant="outlined"
                     className="button-outlined-black"
-                    onClick={() => { history.push('/')}}>Anterior</Button>
-                )}/>
-                <Route render={({ history}) => (
-                    <Button
+                    onClick={() => {
+                      history.push("/");
+                    }}
+                  >
+                    Anterior
+                  </Button>
+                )}
+              />
+              <Route
+                render={({ history }) => (
+                  <Button
                     variant="outlined"
                     className="button-contained"
-                    onClick={() => { history.push('/filter2')}} >Siguiente</Button>
-                )}/>
-                </div>
-            </aside>
+                    onClick={() => {
+                      history.push("/filter2");
+                    }}
+                  >
+                    Siguiente
+                  </Button>
+                )}
+              />
+            </div>
+          </aside>
         </div>
         <Footer></Footer>
       </React.Fragment>
