@@ -29,10 +29,6 @@
   justify-content: space-around;
 }
 
-input[type="checkbox"] {
-  margin: 5px 12px;
-}
-
 input[type="checkbox"]:hover {
   cursor: pointer;
 }
@@ -72,10 +68,12 @@ fieldset:disabled{
 
 .nuestras-sugerencias{
     display: inline;
+    cursor: pointer;
+    border: none;
 }
 
-.nuestras-sugerencias:focus{
-    outline: 3px solid #008080;
+.nuestras-sugerencias:focus, .nuestras-sugerencias:hover{
+    outline: 2px solid #008080;
 }
 
 .referencias{
@@ -89,9 +87,13 @@ fieldset:disabled{
     text-align: center;
 }
 
+.padding-bottom{
+    padding-bottom: 5px;
+}
+
 /* The container */
 .container {
-  display: inline;
+  display: inline-block;
   position: relative;
   padding-left: 26px;
   margin-bottom: 12px;
@@ -338,6 +340,11 @@ fieldset:disabled{
 .container-disponible input:checked ~ .checkmark {
   background-color: #008080;
 }
+
+/* When the radio button is checked, add a white background */
+.container-disponible input:focus ~ .checkmark {
+    outline: 1px solid gray;
+  }
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {

@@ -15,6 +15,7 @@ import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
 import Pantalla from "../../Assets/pantalla.svg";
 import { Route, Link } from "react-router-dom";
+import { Checkbox } from "@material-ui/core";
 
 class Filter4 extends React.Component {
   constructor(props) {
@@ -81,24 +82,22 @@ class Filter4 extends React.Component {
   }
 
   handleClick(event) {
-    const newValue = event.target.value;
-    const name = event.target.name;
-
-    if (newValue === [name]) {
-      window.setTimeout(
-        function() {
-          this.setState({ [name]: "" });
-        }.bind(this),
-        0
-      );
-    } else {
-      window.setTimeout(
-        function() {
-          this.setState({ [name]: newValue });
-        }.bind(this),
-        0
-      );
+    const name = event.target.value;
+    let butacaValue = "";
+    if (name === "Opción 01"){
+      butacaValue= "0"
     }
+    if (name === "Opción 02"){
+      butacaValue= "1"
+    }
+    if (name === "Opción 03"){
+      butacaValue= "2"
+    }
+    this.setState({butaca: butacaValue})
+  }
+
+  handleOptionClick(event){
+    this.setState({butaca: event.target.name})
   }
 
   render() {
@@ -140,6 +139,7 @@ class Filter4 extends React.Component {
                               label={option.label}
                               labelPlacement="start"
                               className="strong"
+                              checked={this.state.butaca === option.value}
                             />
                             <span>{option.bajada}</span>
                           </div>
@@ -164,54 +164,54 @@ class Filter4 extends React.Component {
                   <legend className="legend">Primeras filas</legend>
                   <div className="wrapperopciones">
                     <div className="izquierda">
-                      <div>
+                      <div className="padding-bottom">
                         <div className="anchom">A</div>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="A1" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="A2" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="A3" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
-                      <div>
+                      <div className="padding-bottom">
                       <div className="anchom">B</div>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="B1" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="B2" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="B3" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
-                      <div>
+                      <div className="padding-bottom">
                       <div className="anchom">C</div>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C1" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C2" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C3" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
-                      <div>
+                      <div className="padding-bottom">
                       <div className="anchom">D</div>
-                        <span class="container-escondido">
+                        <span className="container-escondido">
                           <input
                             type="checkbox"
                             name="butacaD1"
@@ -219,59 +219,59 @@ class Filter4 extends React.Component {
                             checked
                             disabled
                           />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="D2" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="D3" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
                     </div>
                     <div className="centro">
-                      <div>
-                        <span class="container-disponible">
+                      <div className="padding-bottom">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="A4" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="A5" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="A6" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="A7" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="A8" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="A8" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="A10" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="A10" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
-                      <div>
-                      <span class="container-disponible">
+                      <div  className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="B4" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-escondido">
+                        <span className="container-escondido">
                           <input
                             type="checkbox"
                             name="butacaB5"
@@ -279,63 +279,63 @@ class Filter4 extends React.Component {
                             checked
                             disabled
                           />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="B6" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="B7" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="B8" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="B9" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="B10" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="B11" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
-                      <div>
-                      <span class="container-disponible">
+                      <div  className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C4" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C5" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C6" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C7" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C8" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C9" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C10" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-escondido">
+                        <span className="container-escondido">
                           <input
                             type="checkbox"
                             name="butacaC11"
@@ -343,51 +343,51 @@ class Filter4 extends React.Component {
                             checked
                             disabled
                           />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
-                      <div>
-                      <span class="container-disponible">
+                      <div  className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="D4" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="D5" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="D6" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="D7" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="D8" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="D9" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="D10" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="D11" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
                     </div>
                     <div className="derecha">
-                      <div>
-                      <span class="container-disponible">
+                      <div className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="A12" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-escondido">
+                        <span className="container-escondido">
                           <input
                             type="checkbox"
                             name="butacaA13"
@@ -395,20 +395,20 @@ class Filter4 extends React.Component {
                             checked
                             disabled
                           />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="A14" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                         <div className="anchom">A</div>
                       </div>
-                      <div>
-                      <span class="container-disponible">
+                      <div  className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="B12" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-escondido">
+                        <span className="container-escondido">
                           <input
                             type="checkbox"
                             name="butacaB13"
@@ -416,41 +416,41 @@ class Filter4 extends React.Component {
                             checked
                             disabled
                           />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="B15" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                         <div className="anchom">B</div>
                       </div>
-                      <div>
-                      <span class="container-disponible">
+                      <div className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C12" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C13" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C14" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                         <div className="anchom">C</div>
                       </div>
                       <div>
-                      <span class="container-disponible">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C12" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C13" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="C14" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                         <div className="anchom">D</div>
                       </div>
@@ -461,190 +461,198 @@ class Filter4 extends React.Component {
                   <legend className="legend">Centro</legend>
                   <div className="wrapperopciones">
                     <div className="izquierda">
-                      <div>
+                      <div className="padding-bottom">
                       <div className="anchom">E</div>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="E1" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="E2" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="E3" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
-                      <div>
+                      <div className="padding-bottom">
                       <div className="anchom">F</div>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="F1" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="F2" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="F3" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
-                      <div>
+                      <div className="padding-bottom">
                       <div className="anchom">G</div>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="G1" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="G2" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="G3" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
-                      <div>
+                      <div className="padding-bottom">
                       <div className="anchom">H</div>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="H1" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="H2" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="H3" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
                     </div>
                     <div className="centro">
-                      <div>
-                        <div
+                      <div  className="padding-bottom">
+                        <button
+                          onClick={e => this.handleOptionClick(e)}
                           className="nuestras-sugerencias"
+                          title="Opción 1"
+                          name="0"
                           tabIndex="0"
                           aria-label="Nuestra sugerencia. E4,E5,E6,E7"
                         >
-                          <span class="container-sugerencia">
+                          <span className="container-sugerencia">
                             <input
                               type="checkbox"
                               name="butaca"
                               value="E4"
+                              tabIndex="-1"
                               checked
+                              disabled
                             />
-                            <span class="checkmark"></span>
+                            <span className="checkmark" tabIndex="-1"></span>
                           </span>
-                          <span class="container-sugerencia">
+                          <span className="container-sugerencia">
                             <input
                               type="checkbox"
                               name="butaca"
                               value="E5"
                               checked
                             />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                           </span>
-                          <span class="container-sugerencia">
+                          <span className="container-sugerencia">
                             <input
                               type="checkbox"
                               name="butaca"
                               value="E6"
                               checked
                             />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                           </span>
-                          <span class="container-sugerencia">
+                          <span className="container-sugerencia">
                             <input
                               type="checkbox"
                               name="butaca"
                               value="E7"
                               checked
                             />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                           </span>
-                        </div>
-                        <span class="container-disponible">
+                        </button>
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="E8" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="E9" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="E10" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="E11" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
-                      <div>
-                      <span class="container-disponible">
+                      <div  className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="F4" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="F5" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="F6" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <div
+                        <button
+                          onClick={e => this.handleOptionClick(e)}
                           className="nuestras-sugerencias"
                           tabIndex="0"
+                          title="Opción 2"
+                          name="1"
                           aria-label="Nuestra sugerencia. F7,F8,F9,F10"
                         >
-                          <span class="container-sugerencia">
+                          <span className="container-sugerencia">
                             <input
                               type="checkbox"
                               name="butaca"
                               value="F7"
                               checked
                             />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                           </span>
-                          <span class="container-sugerencia">
+                          <span className="container-sugerencia">
                             <input
                               type="checkbox"
                               name="butaca"
                               value="F8"
                               checked
                             />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                           </span>
-                          <span class="container-sugerencia">
+                          <span className="container-sugerencia">
                             <input
                               type="checkbox"
                               name="butaca"
                               value="F9"
                               checked
                             />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                           </span>
-                          <span class="container-sugerencia">
+                          <span className="container-sugerencia">
                             <input
                               type="checkbox"
                               name="butaca"
                               value="F10"
                               checked
                             />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                           </span>
-                        </div>
-                        <span class="container-disponible">
+                        </button>
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="F11" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
-                      <div>
-                        <span class="container-escondido">
+                      <div className="padding-bottom">
+                        <span className="container-escondido">
                           <input
                             type="checkbox"
                             name="butacaD1"
@@ -652,9 +660,9 @@ class Filter4 extends React.Component {
                             checked
                             disabled
                           />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-escondido">
+                        <span className="container-escondido">
                           <input
                             type="checkbox"
                             name="butacaD1"
@@ -662,9 +670,9 @@ class Filter4 extends React.Component {
                             checked
                             disabled
                           />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-escondido">
+                        <span className="container-escondido">
                           <input
                             type="checkbox"
                             name="butacaD1"
@@ -672,17 +680,17 @@ class Filter4 extends React.Component {
                             checked
                             disabled
                           />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="G7" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="G8" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-escondido">
+                        <span className="container-escondido">
                           <input
                             type="checkbox"
                             name="butacaD1"
@@ -690,9 +698,9 @@ class Filter4 extends React.Component {
                             checked
                             disabled
                           />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-escondido">
+                        <span className="container-escondido">
                           <input
                             type="checkbox"
                             name="butacaD1"
@@ -700,132 +708,135 @@ class Filter4 extends React.Component {
                             checked
                             disabled
                           />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
-                          <input type="checkbox" name="butaca" value="CG11" />
-                          <span class="checkmark"></span>
+                        <span className="container-disponible">
+                          <input type="checkbox" name="butaca" value="G11" />
+                          <span className="checkmark"></span>
                         </span>
                       </div>
-                      <div>
-                      <span class="container-disponible">
+                      <div  className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="H4" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="H5" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <div
+                        <button
+                          onClick={e => this.handleOptionClick(e)}
                           className="nuestras-sugerencias"
                           tabIndex="0"
+                          name="2"
+                          title="Opción 3"
                           aria-label="Nuestra sugerencia. H6,H7,H8,H9"
                         >
-                          <span class="container-sugerencia">
+                          <span className="container-sugerencia">
                             <input
                               type="checkbox"
                               name="butaca"
                               value="H6"
                               checked
                             />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                           </span>
-                          <span class="container-sugerencia">
+                          <span className="container-sugerencia">
                             <input
                               type="checkbox"
                               name="butaca"
                               value="H7"
                               checked
                             />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                           </span>
-                          <span class="container-sugerencia">
+                          <span className="container-sugerencia">
                             <input
                               type="checkbox"
                               name="butaca"
                               value="H8"
                               checked
                             />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                           </span>
-                          <span class="container-sugerencia">
+                          <span className="container-sugerencia">
                             <input
                               type="checkbox"
                               name="butaca"
                               value="H9"
                               checked
                             />
-                            <span class="checkmark"></span>
+                            <span className="checkmark"></span>
                           </span>
-                        </div>
-                        <span class="container-disponible">
+                        </button>
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="H10" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="H11" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
                     </div>
                     <div className="derecha">
-                      <div>
-                      <span class="container-disponible">
+                      <div  className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="E12" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="E13" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="E14" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                         <div className="anchom">E</div>
                       </div>
-                      <div>
-                      <span class="container-disponible">
+                      <div  className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="F12" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="F13" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="F14" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                         <div className="anchom">F</div>
                       </div>
-                      <div>
-                      <span class="container-disponible">
+                      <div  className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="G12" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="G13"/>
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="G14" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                         <div className="anchom">G</div>
                       </div>
-                      <div>
-                      <span class="container-disponible">
+                      <div  className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="H12" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="H13" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="H14" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                         <div className="anchom">H</div>
                       </div>
@@ -836,135 +847,135 @@ class Filter4 extends React.Component {
                   <legend className="legend">ÚLTIMAS FILAS</legend>
                   <div className="wrapperopciones">
                     <div className="izquierda">
-                      <div>
+                      <div  className="padding-bottom">
                       <div className="anchom">I</div>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I1" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I2" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I3" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
                       <div>
                       <div className="anchom">J</div>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J1" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J2" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J3" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
                     </div>
                     <div className="centro">
-                      <div>
-                      <span class="container-disponible">
+                      <div  className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I4" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I5" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I6" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I7" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I8" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I9" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I10" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I11" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
-                      <div>
-                      <span class="container-disponible">
+                      <div className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J4" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J5" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J6" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J7" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J8" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J9" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J10" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J11" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                       </div>
                     </div>
                     <div className="derecha">
-                      <div>
-                      <span class="container-disponible">
+                      <div className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I12" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I13" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="I14" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                         <div className="anchom">I</div>
                       </div>
-                      <div>
-                      <span class="container-disponible">
+                      <div className="padding-bottom">
+                      <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J12" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J13" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
-                        <span class="container-disponible">
+                        <span className="container-disponible">
                           <input type="checkbox" name="butaca" value="J14" />
-                          <span class="checkmark"></span>
+                          <span className="checkmark"></span>
                         </span>
                         <div className="anchom">J</div>
                       </div>
@@ -982,9 +993,9 @@ class Filter4 extends React.Component {
                       checked
                     />
                     Ocupado
-                    <span class="checkmark"></span>
+                    <span className="checkmark"></span>
                   </div>
-                  <span class="container-sugerencia">
+                  <span className="container-sugerencia">
                     <input
                       type="checkbox"
                       name="butacaref"
@@ -992,11 +1003,11 @@ class Filter4 extends React.Component {
                       checked
                     />
                     Nuestras sugerencias
-                    <span class="checkmark"></span>
+                    <span className="checkmark"></span>
                   </span>
-                  <span class="container-disponible">
+                  <span className="container-disponible">
                     <input type="checkbox" name="butacarefe" value="ref" />
-                    <span class="checkmark"></span>
+                    <span className="checkmark"></span>
                     Disponible
                   </span>
                 </div>
