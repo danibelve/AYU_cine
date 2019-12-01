@@ -23,6 +23,7 @@
 
 .wrapper-butacas {
   display: flex;
+  flex-wrap: nowrap;
 }
 
 .wrapperopciones {
