@@ -40,17 +40,17 @@ class Footer extends React.Component {
                 <div className="icons">
                         <ul>
                             <li>
-                                <Link href="#" onClick={(e) => preventDefault()} aria-label="Ir a Facebook">
+                                <Link href="#" title="Facebook" onClick={(e) => preventDefault()} aria-label="Ir a Facebook">
                                     <FontAwesomeIcon icon={['fab', 'facebook-f']} />
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" onClick={(e) => preventDefault()} aria-label="Ir a Instagram">
+                                <Link href="#" title="Instagram" onClick={(e) => preventDefault()} aria-label="Ir a Instagram">
                                     <FontAwesomeIcon icon={['fab', 'instagram']} />
                                 </Link>
                             </li>
                             <li>
-                                <Link href="#" onClick={(e) => preventDefault()} aria-label="Ir a Twitter">
+                                <Link href="#" title="Twitter" onClick={(e) => preventDefault()} aria-label="Ir a Twitter">
                                     <FontAwesomeIcon icon={['fab', 'twitter']} />
                                 </Link>
                             </li>

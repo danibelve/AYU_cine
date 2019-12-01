@@ -15,3 +15,7 @@
 .MuiNativeSelect-icon{
     color: #5e50b5 !important;
 }
+
+.noOpcion{
+    padding: 24px 0;
+}

@@ -454,7 +454,8 @@ armarFecha(){
                 state: {
                   hora: this.state.hora,
                   cuando: this.state.cuando,
-                  cantidadDePersonas: this.armarCantidadDePersonas()
+                  cantidadDePersonas: this.armarCantidadDePersonas(),
+                  peli: this.props.location.state.peli
                 }
               }}>
               <Button

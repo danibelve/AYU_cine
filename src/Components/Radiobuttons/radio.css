@@ -14,6 +14,10 @@
     flex-direction: row !important;
 }
 
+.myRadioGroup-block{
+    display: block !important;
+}
+
 .MuiFormControlLabel-labelPlacementStart {
     margin: 0 !important;
 }
