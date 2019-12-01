@@ -180,7 +180,7 @@ class Filter2 extends React.Component {
           <aside className="aside">
             <div className="aside-wrapper">
               <h3 className="heading-aside">
-                <span className="vertical-align">
+                <span className="heading3-padding">
                   Tu selección para {this.props.location.state.peli}
                 </span>
               </h3>

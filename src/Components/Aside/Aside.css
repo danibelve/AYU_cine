@@ -11,12 +11,14 @@
 }
 
 .heading-aside{
-    background: #F8F8F8 0% 0% no-repeat padding-box;
-    height: 48px;
-    font-size: 24px;
+    background: #F8F8F8;
+    font-size: 20px;
     display: flex;
-    justify-content: center;
+    text-align: center;
+}
 
+.heading3-padding{
+    padding: 5px !important;
 }
 
 .flex-arround{

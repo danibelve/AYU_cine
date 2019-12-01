@@ -28,7 +28,7 @@ class Aside extends React.Component {
         return (
             <aside className="aside">
                 <div className="aside-wrapper">
-                    <h3 className="heading-aside"><span className="vertical-align">Tu selección</span></h3>
+                    <h3 className="heading-aside"><span className="heading3-padding">Tu vieja</span></h3>
                     <div className="flex-arround">
                         <p>Fecha</p>
                         <p> Sin decidir</p>
