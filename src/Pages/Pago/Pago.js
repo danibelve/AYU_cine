@@ -109,13 +109,13 @@ class Pago extends React.Component {
                 </FormLabel>
                 <RadioGroup
                   aria-label="Medios de pago"
-                  className=""
+                  className="miRadioButtonClass"
                   name="pago"
                   value={this.state.pago}
                 >
                   {this.opciones.map((option, key) => {
                     return (
-                      <div id={key}>
+                      <div id={key} className="radiowrapper">
                         <FormControlLabel
                           value={option.value}
                           control={<Radio onClick={e => this.handleClick(e)} />}
@@ -124,17 +124,17 @@ class Pago extends React.Component {
                           className="strong"
                           checked={this.state.pago === option.value}
                         />
-                        <span>{option.bajada}</span>
+                        <p>{option.bajada}</p>
                         <div
                           className={option.recomendado ? "clase1" : "clase2"}
                         >
                           {option.bajada2}
                         </div>
                         <div>Beneficios</div>
-                        <ul>
-                          <li>{option.beneficio1}</li>
-                          <li>{option.beneficio2}</li>
-                          <li>{option.beneficio3}</li>
+                        <ul className="beneficios">
+                          <li className="beneficios-li">{option.beneficio1}</li>
+                          <li className="beneficios-li">{option.beneficio2}</li>
+                          <li className="beneficios-li">{option.beneficio3}</li>
                         </ul>
                       </div>
                     );
