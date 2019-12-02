@@ -43,7 +43,7 @@ class MovieDetails extends React.Component {
                         />
                         <CardContent className="flex-column cardContent">
                             <Typography gutterBottom component="h3" className="card-header">
-                                {this.props.title}
+                                <span lang={this.props.lang}>{this.props.title}</span>
                             </Typography>
                             <Typography color="textSecondary" component="p" className="card-bajada">
                                 122 min <i role="presentation">|</i> P16 <i role="presentation">|</i> Drama
