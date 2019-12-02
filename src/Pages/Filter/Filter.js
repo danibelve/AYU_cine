@@ -15,7 +15,9 @@ import TextField from "@material-ui/core/TextField";
 import Fab from "@material-ui/core/Fab";
 import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
-import { Route , Link} from "react-router-dom";
+import { Route, Link, withRouter } from "react-router-dom";
+import {Helmet} from "react-helmet";
+
 
 class Filter extends React.Component {
   constructor(props) {
@@ -53,7 +55,8 @@ class Filter extends React.Component {
       //value: "",
       inputValueAdulto: 0,
       inputValueNiño: 0,
-      inputValueJubilado: 0
+      inputValueJubilado: 0,
+      peli: ""
     };
     this.cuando = [
       {
@@ -93,33 +96,35 @@ class Filter extends React.Component {
   }
   componentDidMount() {
     document.title = "Elijan sus preferencias y Sale Cine";
+    this.setState({
+      peli: this.props.location.state.peli
+    });
   }
 
-  armarCantidadDePersonas(){
-
-    let cantidadDePersonas="";
+  armarCantidadDePersonas() {
+    let cantidadDePersonas = "";
     const nino = this.state.inputValueNiño;
     const jubilado = this.state.inputValueJubilado;
     const adulto = this.state.inputValueAdulto;
-      if (this.state.inputValueNiño === 0 
-        && this.state.inputValueAdulto === 0 
-        && this.state.inputValueJubilado === 0 )
-        {
-            cantidadDePersonas = 'Sin definir' 
-        }else {
-            if (this.state.inputValueAdulto > 0){
-                cantidadDePersonas += 'Adultos: ' + adulto + '. ';
-          }
-          if (this.state.inputValueNiño > 0){
-            cantidadDePersonas += 'Niño: ' + nino + '. ';
-          }
-    
-          if (this.state.inputValueJubilado > 0){
-            cantidadDePersonas += 'Jubilado: ' + jubilado + '. ';
-          }
+    if (
+      this.state.inputValueNiño === 0 &&
+      this.state.inputValueAdulto === 0 &&
+      this.state.inputValueJubilado === 0
+    ) {
+      cantidadDePersonas = "Sin definir";
+    } else {
+      if (this.state.inputValueAdulto > 0) {
+        cantidadDePersonas += "Adultos: " + adulto + ". ";
+      }
+      if (this.state.inputValueNiño > 0) {
+        cantidadDePersonas += "Niño: " + nino + ". ";
+      }
 
-        }
-        return cantidadDePersonas;
+      if (this.state.inputValueJubilado > 0) {
+        cantidadDePersonas += "Jubilado: " + jubilado + ". ";
+      }
+    }
+    return cantidadDePersonas;
   }
 
   handleClickRestarAdulto(e) {
@@ -209,29 +214,36 @@ class Filter extends React.Component {
     }
   }
 
-armarHora(){
+  armarHora() {
     let hora = "";
     const horaValue = this.state.hora;
-    if (this.state.hora === ''){
-        hora = "Sin definir";
-    }else{
-        hora = horaValue
+    if (this.state.hora === "") {
+      hora = "Sin definir";
+    } else {
+      hora = horaValue;
     }
     return hora;
-}
-armarFecha(){
+  }
+  armarFecha() {
     let cuando = "";
     const cuandoValue = this.state.cuando;
-    if (this.state.cuando === ''){
-        cuando = "Sin definir";
-    }else{
-        cuando = cuandoValue
+    if (this.state.cuando === "") {
+      cuando = "Sin definir";
+    } else {
+      cuando = cuandoValue;
     }
     return cuando;
-}
+  }
+
+  handleClickMain(){
+    this.mainContent.focus()
+  }
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <html lang="es-AR" />
+        </Helmet>    
         <Header></Header>
         <div className="box-shadow"></div>
         <div className="divide">
@@ -260,13 +272,11 @@ armarFecha(){
                       <div className="butones-1" key={key}>
                         <FormControlLabel
                           value={option.label}
-                          control={
-                            <Radio onMouseUp={e => this.handleClick(e)} />
-                          }
+                          control={<Radio onClick={e => this.handleClick(e)} />}
                           label={option.label}
                           labelPlacement="start"
                           className="strong"
-                        />
+                          ref={(thisMainContent) => {this.mainContent = thisMainContent}}/>
                         <span>{option.bajada}</span>
                       </div>
                     );
@@ -413,9 +423,9 @@ armarFecha(){
           <aside className="aside">
             <div className="aside-wrapper">
               <h3 className="heading-aside">
-              <span className="heading3-padding">
-                Tu selección para {this.props.location.state.peli}
-              </span>
+                <span className="heading3-padding">
+                  Tu selección para {this.state.peli}
+                </span>
               </h3>
               <div className="flex-arround">
                 <p>Fecha</p>
@@ -424,7 +434,6 @@ armarFecha(){
               <div className="flex-arround">
                 <p>Cantidad de personas </p>
                 <p> {this.armarCantidadDePersonas()}</p>
-      
               </div>
               <div className="flex-arround">
                 <p>Horario </p>
@@ -449,22 +458,24 @@ armarFecha(){
                   </Button>
                 )}
               />
-              <Link to={{
-                pathname: '/filter2',
-                state: {
-                  hora: this.state.hora,
-                  cuando: this.state.cuando,
-                  cantidadDePersonas: this.armarCantidadDePersonas(),
-                  peli: this.props.location.state.peli
-                }
-              }}>
-              <Button
-                    variant="outlined"
-                    className="button-contained"
-                    type= "submit"
-                  >
-                    Siguiente
-                  </Button>
+              <Link
+                to={{
+                  pathname: "/filter2",
+                  state: {
+                    hora: this.state.hora,
+                    cuando: this.state.cuando,
+                    cantidadDePersonas: this.armarCantidadDePersonas(),
+                    peli: this.props.location.state.peli
+                  }
+                }}
+              >
+                <Button
+                  variant="outlined"
+                  className="button-contained"
+                  type="submit"
+                >
+                  Siguiente
+                </Button>
               </Link>
             </div>
           </aside>
@@ -475,4 +486,4 @@ armarFecha(){
   }
 }
 
-export default Filter;
+export default withRouter(Filter);

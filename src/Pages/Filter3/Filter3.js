@@ -173,11 +173,12 @@ class Filter2 extends React.Component {
                         <FormControlLabel
                           value={option.label}
                           control={
-                            <Radio onMouseUp={e => this.handleClick(e)} />
+                            <Radio onClick={e => this.handleClick(e)} />
                           }
                           label={option.label}
                           labelPlacement="start"
                           className="strong"
+                          aria-label = { "opción para función subtituladas en 2D" + option.label}
                         />
                         <span>{option.bajada}</span>
                       </div>
@@ -207,9 +208,10 @@ class Filter2 extends React.Component {
                         <FormControlLabel
                           value={option.label}
                           control={
-                            <Radio onMouseUp={e => this.handleClick(e)} />
+                            <Radio onClick={e => this.handleClick(e)} />
                           }
                           label={option.label}
+                          aria-label = { "opción para función subtitulada en 3D" + option.label}
                           labelPlacement="start"
                           className="strong"
                         />
@@ -252,9 +254,10 @@ class Filter2 extends React.Component {
                         <FormControlLabel
                           value={option.label}
                           control={
-                            <Radio onMouseUp={e => this.handleClick(e)} />
+                            <Radio onClick={e => this.handleClick(e)} />
                           }
                           label={option.label}
+                          aria-label = { "opción para función doblada en 3D" + option.label}
                           labelPlacement="start"
                           className="strong"
                         />
@@ -309,7 +312,7 @@ class Filter2 extends React.Component {
                 state: {
                   hora: this.state.hora,
                   cuando: this.props.location.state.cuando,
-                  cantidadDePersonas: this.props.location.state.cantidadDePersona,
+                  cantidadDePersonas: this.props.location.state.cantidadDePersonas,
                   peli: this.props.location.state.peli
                 }
               }}>

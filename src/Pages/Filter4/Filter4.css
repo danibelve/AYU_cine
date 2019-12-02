@@ -78,6 +78,10 @@ fieldset:disabled{
     outline: 2px solid #008080;
 }
 
+.nuestras-sugerencias--outline{
+  outline: 2px solid #008080;
+}
+
 .referencias{
     display: flex;
     justify-content: space-evenly;

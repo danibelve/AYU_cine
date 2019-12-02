@@ -15,7 +15,6 @@ import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
 import Pantalla from "../../Assets/pantalla.svg";
 import { Route, Link } from "react-router-dom";
-import { Checkbox } from "@material-ui/core";
 
 class Filter4 extends React.Component {
   constructor(props) {
@@ -48,23 +47,23 @@ class Filter4 extends React.Component {
     }));
 
     this.state = {
-      butaca: ""
+      butaca: "",
     };
 
     this.opciones = [
       {
         label: "Opción 01",
-        bajada: "Butacas C3, C5, C7, C9",
+        bajada: "Butacas E4, E5, E6, E7",
         value: "0"
       },
       {
         label: "Opción 02",
-        bajada: "Butacas C3, C5, C7, C9",
+        bajada: "Butacas F7, F8, F9, F10",
         value: "1"
       },
       {
         label: "Opción 03",
-        bajada: "Butacas C3, C5, C7, C9",
+        bajada: "Butacas H6, H7, H8, H9",
         value: "2"
       },
       {
@@ -80,6 +79,24 @@ class Filter4 extends React.Component {
   componentDidMount() {
     document.title = "Mira las opciones que te encontramos en Sale Cine";
   }
+  armarButacas(){
+    const butacaValue = this.state.butaca;
+    let opcionSeleccionada = "Sin definir";
+  
+      if (butacaValue === "0") {
+        opcionSeleccionada = "Opción 01. E4, E5, E6, E7";
+      }
+      if (butacaValue === "1") {
+        opcionSeleccionada = "Opción 02. F7, F8, F9, F10";
+      }
+      if (butacaValue === "2") {
+        opcionSeleccionada = "Opción 03. H6, H7, H8, H90";
+      }
+      if (butacaValue=== "3") {
+        opcionSeleccionada = "Personalizado";
+      }
+    return opcionSeleccionada;
+  }
 
   handleClick(event) {
     const name = event.target.value;
@@ -93,7 +110,12 @@ class Filter4 extends React.Component {
     if (name === "Opción 03"){
       butacaValue= "2"
     }
-    this.setState({butaca: butacaValue})
+    if (name === "Donde quieran"){
+      butacaValue= "3"
+    }
+    this.setState({butaca: butacaValue});
+    console.log(this.state);
+
   }
 
   handleOptionClick(event){
@@ -134,7 +156,7 @@ class Filter4 extends React.Component {
                             <FormControlLabel
                               value={option.label}
                               control={
-                                <Radio onMouseUp={e => this.handleClick(e)} />
+                                <Radio onClick={e => this.handleClick(e)} />
                               }
                               label={option.label}
                               labelPlacement="start"
@@ -160,7 +182,7 @@ class Filter4 extends React.Component {
                   alt=""
                   role="presentation"
                 />
-                <fieldset className="fieldset" disabled>
+                <fieldset className="fieldset" disabled= {this.state.butaca !== "3"}>
                   <legend className="legend">Primeras filas</legend>
                   <div className="wrapperopciones">
                     <div className="izquierda">
@@ -526,11 +548,11 @@ class Filter4 extends React.Component {
                       <div  className="padding-bottom">
                         <button
                           onClick={e => this.handleOptionClick(e)}
-                          className="nuestras-sugerencias"
+                          className={ this.state.butaca === 0 ? "nuestras-sugerencias--outline" : "nuestras-sugerencias"  }
                           title="Opción 1"
                           name="0"
                           tabIndex="0"
-                          aria-label="Nuestra sugerencia. E4,E5,E6,E7"
+                          aria-label="Nuestra sugerencia. E4, E5, E6, E7"
                         >
                           <span className="container-sugerencia">
                             <input
@@ -607,7 +629,7 @@ class Filter4 extends React.Component {
                           tabIndex="0"
                           title="Opción 2"
                           name="1"
-                          aria-label="Nuestra sugerencia. F7,F8,F9,F10"
+                          aria-label="Nuestra sugerencia. F7, F8, F9, F10"
                         >
                           <span className="container-sugerencia">
                             <input
@@ -730,7 +752,7 @@ class Filter4 extends React.Component {
                           tabIndex="0"
                           name="2"
                           title="Opción 3"
-                          aria-label="Nuestra sugerencia. H6,H7,H8,H9"
+                          aria-label="Nuestra sugerencia. H6, H7, H8, H9"
                         >
                           <span className="container-sugerencia">
                             <input
@@ -843,7 +865,7 @@ class Filter4 extends React.Component {
                     </div>
                   </div>
                 </fieldset>
-                <fieldset className="fieldset" disabled>
+                <fieldset className="fieldset" disabled= {this.state.butaca !== "3"}>
                   <legend className="legend">ÚLTIMAS FILAS</legend>
                   <div className="wrapperopciones">
                     <div className="izquierda">
@@ -1033,9 +1055,9 @@ class Filter4 extends React.Component {
                 <p>Horario </p>
                 <p>{this.props.location.state.hora}</p>
               </div>
-              <div className="flex-arround">
+              <div className="flex-arround" aria-live="polite">
                 <p>Butacas </p>
-                <p> Sin decidir</p>
+                <p> {this.armarButacas()}</p>
               </div>
             </div>
             <div className="button-container">
@@ -1054,13 +1076,13 @@ class Filter4 extends React.Component {
               />
               <Link
                 to={{
-                  pathname: "/filter4",
+                  pathname: "/pago",
                   state: {
-                    hora: this.state.hora,
+                    hora: this.props.location.state.hora,
                     cuando: this.props.location.state.cuando,
-                    cantidadDePersonas: this.props.location.state
-                      .cantidadDePersona,
-                    peli: this.props.location.state.peli
+                    cantidadDePersonas: this.props.location.state.cantidadDePersona,
+                    peli: this.props.location.state.peli,
+                    butacas: this.armarButacas()
                   }
                 }}
               >

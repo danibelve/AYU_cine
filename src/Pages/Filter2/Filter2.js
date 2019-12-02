@@ -218,8 +218,8 @@ class Filter2 extends React.Component {
               <Link to={{
                 pathname: '/filter3',
                 state: {
-                  hora: this.state.hora,
-                  cuando: this.state.cuando,
+                  hora: this.props.location.state.hora,
+                  cuando: this.props.location.state.cuando,
                   cantidadDePersonas: this.props.location.state.cantidadDePersonas,
                   peli: this.props.location.state.peli
                 }

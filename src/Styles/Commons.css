@@ -139,3 +139,8 @@ a:active {
 		background-color: white !important;
 		color: #5F6D74!important;
 }
+
+#mainContent{
+    padding-left: 20px;
+}
+
