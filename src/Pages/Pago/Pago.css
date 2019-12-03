@@ -1,0 +1,32 @@
+.miRadioButtonClass {
+  display: flex !important;
+  flex-flow: nowrap !important;
+  flex-direction: row !important;
+  justify-content: space-between;
+}
+
+.radiowrapper {
+  width: 350px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.beneficios {
+    display: block;
+}
+
+.beneficios li {
+    padding: 5px 0;
+    margin-left: 15px;
+
+}
+
+.beneficios li:before {
+  content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #2bb2ac; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}

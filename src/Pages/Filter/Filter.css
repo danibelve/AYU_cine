@@ -1,0 +1,13 @@
+.filter{
+    background-color: #FAFCFC;
+    color: #5F6D74;
+    width:75%;
+}
+
+.divide{
+    display: flex;
+}
+
+#mainContent:focus{
+    outline: 3px solid red;
+}

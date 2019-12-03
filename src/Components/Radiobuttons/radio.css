@@ -1,0 +1,23 @@
+.butones-1{
+    display: flex;
+    flex-direction: column;
+    margin: 24px;
+    background-color: white;
+    padding: 10px 10px 0px 10px;
+    border-radius: 8px;
+    height: 74px;
+    width: 175px;
+}
+
+.myRadioGroup{
+    display:inline-flex !important;
+    flex-direction: row !important;
+}
+
+.myRadioGroup-block{
+    display: block !important;
+}
+
+.MuiFormControlLabel-labelPlacementStart {
+    margin: 0 !important;
+}

@@ -1,0 +1,26 @@
+.lista{
+    display: inline-flex;
+    align-content: flex-end;
+}
+
+.lista li{
+    list-style: none;
+    padding: 0 20px;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #FAFCFC; 
+}
+
+.icons ul li {
+    width: 20px;
+}
+
+.footer-logo{
+    width: 100px;
+    height: 50px;
+}

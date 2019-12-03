@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,500i,600,600i,700,700i,800,900,900i&display=swap');
+
+* {
+    margin: 0 ;
+    padding: 0;
+}
+
+p, span, i, h1, h2, h3, h4, h5, h6, a, input, label, legend {
+	font-family: 'Montserrat', sans-serif !important;
+}
+
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; 
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important; 
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important;           
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+	clip: auto !important;
+	-webkit-clip-path: none !important;
+		clip-path: none !important;
+	height: auto !important;
+	margin: auto !important;
+	overflow: visible !important;
+	width: auto !important;
+	white-space: normal !important;
+}
+
+i {
+    font-style: normal
+}
+
+.button-verde{
+    color: #5e50b5 !important;
+}
+
+.button-contained{
+	background-color: #5e50b5 !important;
+	color: white !important;
+	
+}
+
+.button-contained:link {
+	text-decoration: none !important;
+  }
+  
+.button-contained:visited {
+	text-decoration: none !important;
+  }
+  
+.button-contained:hover {
+	text-decoration: none !important;
+  }
+  
+.button-contained:active {
+	text-decoration: none !important;
+  }
+
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.button-outlined{
+	background-color: transparent !important;
+	color: white !important;
+	border: 1px solid #5e50b5 !important;
+	margin-right: 20px !important;
+}
+
+.button-outlined-black{
+	background-color: transparent !important;
+	color: #5F6D74 !important;
+	border: 1px solid #5e50b5 !important;
+	margin-right: 20px !important;
+}
+
+.button-verde--align-right{
+	color: #5e50b5 !important;
+	justify-content: flex-end !important;
+}
+
+.flex-column{
+	display: flex;
+	flex-direction: column;
+}
+
+.vertical-align{
+    margin:auto 0;
+}
+
+.box-shadow{
+	box-shadow:
+	1px -3px 4px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(0,0,0,0.14), 0px 1px 1px 0px rgba(0,0,0,0.12)
+}
+.MuiFormControlLabel-label{
+	font-weight: bold !important;
+}
+
+.h1-filter{
+	font-size: 40px;
+}
+
+.bajada{
+	font-size: 20px;
+	margin-bottom: 44px;
+    margin-top: 15px;
+}
+
+.buton-peque{
+	/*.MuiFab-extended {*/
+		width: 21px !important;
+		height: 22px !important;
+		min-width: 22px !important;
+		min-height: 21px !important;
+		border-radius: 100% !important;
+		padding: 0 !important;
+		background-color: white !important;
+		color: #5F6D74!important;
+}
+
+#mainContent{
+    padding-left: 20px;
+}
+

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="576.974" height="50.594" viewBox="0 0 576.974 50.594">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #008080;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 6px;
+      }
+
+      .cls-2 {
+        filter: url(#Oval);
+      }
+    </style>
+    <filter id="Oval" x="0" y="0" width="576.974" height="50.594" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur"/>
+      <feFlood flood-color="#008080" flood-opacity="0.22"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <path id="Oval-2" data-name="Oval" class="cls-1" d="M537.288,11.247C496.724,6.2,390.641,0,267.263,0,144.869,0,41.26,6.145,0,11.127" transform="translate(19.84 15.5)"/>
+  </g>
+</svg>

@@ -1,0 +1,28 @@
+.aside{
+   /* display: inline-block;
+    width: 35%;*/
+    flex-grow: 2;
+    padding: 40px;
+}
+
+.aside-wrapper{
+    padding: 0 20px;
+    
+}
+
+.heading-aside{
+    background: #F8F8F8;
+    font-size: 20px;
+    display: flex;
+    text-align: center;
+}
+
+.heading3-padding{
+    padding: 5px !important;
+}
+
+.flex-arround{
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 0;
+}

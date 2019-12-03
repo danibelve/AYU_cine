@@ -1,0 +1,22 @@
+.filter{
+    background-color: #FAFCFC;
+    color: #5F6D74;
+    width:75%;
+}
+
+.divide{
+    display: flex;
+}
+
+.MuiInputBase-inputSelect{
+    background-color: white !important;
+    border-radius: 8px !important;
+}
+
+.MuiNativeSelect-icon{
+    color: #5e50b5 !important;
+}
+
+.noOpcion{
+    padding: 24px 0;
+}
