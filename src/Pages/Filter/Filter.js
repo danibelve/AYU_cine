@@ -275,9 +275,9 @@ class Filter extends React.Component {
                           control={<Radio onClick={e => this.handleClick(e)} />}
                           label={option.label}
                           labelPlacement="start"
-                          className="strong"
+                          className="dias"
                           ref={(thisMainContent) => {this.mainContent = thisMainContent}}/>
-                        <span>{option.bajada}</span>
+                        <span className="bajadas">{option.bajada}</span>
                       </div>
                     );
                   })}
@@ -349,7 +349,7 @@ class Filter extends React.Component {
               <span className="label-contador" id={"label_Niños"}>
                 Niños
               </span>
-              <p className="counterBajada">De 2 a 10 años</p>
+              <p className="counterBajada bajadas">De 2 a 10 años</p>
             </div>
             <div className="counter-container">
               <div className="butones-2">
@@ -382,7 +382,7 @@ class Filter extends React.Component {
               <span className="label-contador" id={"label_Jubilados"}>
                 Jubilados
               </span>
-              <p className="counterBajada">Mayores de 60 años</p>
+              <p className="counterBajada bajadas">Mayores de 60 años</p>
             </div>
             <h2>¿A qué hora quieren ir?</h2>
             <div className={this.classes.root}>
@@ -390,7 +390,7 @@ class Filter extends React.Component {
                 component="fieldset"
                 className={this.classes.formControl}
               >
-                <FormLabel component="legend">
+                <FormLabel component="legend" className="dia">
                   <i className="sr-only">"Eleguí una opción de horario"</i>
                 </FormLabel>
                 <RadioGroup
@@ -412,7 +412,7 @@ class Filter extends React.Component {
                           className="strong"
                           name="hora"
                         />
-                        <span>{option.bajada}</span>
+                        <span className="bajadas">{option.bajada}</span>
                       </div>
                     );
                   })}

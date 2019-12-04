@@ -43,5 +43,6 @@ ul li {
 }
 
 
-
-
+.MuiButton-text {
+    padding: 6px 20px!important;
+}

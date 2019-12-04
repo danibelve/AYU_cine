@@ -43,6 +43,9 @@ input[type="checkbox"]:hover {
 
 .legend {
   text-align: center;
+  padding: 0px 20px 5px 20px;
+  background: white;
+  border-radius: 15px;
 }
 
 .fieldset {
@@ -372,4 +375,8 @@ fieldset:disabled{
     border-color: #008080;
 }
 
+
+.nuestras-sugerencias:hover{
+  padding: 2px 0 4px 0;
+}
 
