@@ -29,9 +29,10 @@
 
 .label-contador{
     color: #5F6D74;
-    font-size: 16px;
+    font-size: 19px;
     font-weight: bold;
     padding-right: 9px;
+    margin-right: 20px;
 }
 
 .butones-2{
@@ -49,7 +50,9 @@
     width: 200px;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    width: 175px;
+    width: 200px;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, .1);
+    justify-content: space-between;
 }
 
 .counterBajada{

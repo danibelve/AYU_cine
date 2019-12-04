@@ -11,3 +11,11 @@
 #mainContent:focus{
     outline: 3px solid red;
 }
+
+.bajadas{
+    font-size:14px;
+}
+
+.dias .MuiFormControlLabel-label{
+    font-size: 19px;
+}

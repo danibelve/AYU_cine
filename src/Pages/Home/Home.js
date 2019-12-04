@@ -42,7 +42,7 @@ class Home extends React.Component {
               </Button>
             </div>
           </div>
-          <div>
+          <div className="peliculas">
             <h2>¿Qué quieren ver?</h2>
             <p>Selecciona la peli que eligieron con tus amigos</p>
             <MovieCard></MovieCard>

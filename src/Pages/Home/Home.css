@@ -46,3 +46,12 @@ ul li {
   display: flex;
   justify-content: center;
 }
+
+.peliculas{
+  margin-left: 20px!important;
+}
+
+.filter {
+  padding: 20px 50px;
+}
+
