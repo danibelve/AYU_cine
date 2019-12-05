@@ -209,6 +209,7 @@ class Checkout extends React.Component {
                 </div>
               </div>
             </div>
+            <div></div>
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
@@ -271,31 +272,19 @@ class Checkout extends React.Component {
                     >
                       <span aria-hidden="true">X</span>
                     </button>
-                    ¡Hola! Para continuar tenés que registrarte en Sale Cine
+                    ¡Ya enviaste todos los links de pagos a tus contactos!
                   </div>
                 </DialogTitle>
                 <DialogContent>
-                  <TextField
-                    autoFocus
-                    margin="dense"
-                    id="name"
-                    label="Email"
-                    type="mail"
-                    variant="outlined"
-                    fullWidth
-                  />
-                  <TextField
-                    margin="dense"
-                    id="name"
-                    label="Contraseña"
-                    type="password"
-                    variant="outlined"
-                    fullWidth
-                  />
+                  <p className="texto-dialogo">
+                    Podes hacer tu compra ahora o dejar las entradas reservadas
+                    a tu nombre. Recordá que tenes hasta 40 minutos antes de la
+                    función para comprarlas.
+                  </p>
                 </DialogContent>
                 <DialogActions className="button-columns">
                   <Button onClick={e => this.handleClose(e)} color="primary">
-                    Ya tengo cuenta
+                    Reservar mis entradas
                   </Button>
                   <Link
                     to={{
@@ -307,7 +296,7 @@ class Checkout extends React.Component {
                       className="button-contained"
                       type="submit"
                     >
-                      Registrarse
+                      Comprar mis entradas
                     </Button>
                   </Link>
                 </DialogActions>

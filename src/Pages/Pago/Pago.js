@@ -165,24 +165,24 @@ class Pago extends React.Component {
             <div className="aside-wrapper">
               <h3 className="heading-aside">
                 <span className="heading3-padding">
-                  Tu selección para {this.props.location.state.peli}
+                  Tu selección para <i lang="en">The Joker</i>
                 </span>
               </h3>
               <div className="flex-arround">
                 <p>Fecha</p>
-                <p>{this.props.location.state.cuando}</p>
+                <p>30 de enero</p>
               </div>
               <div className="flex-arround">
                 <p>Cantidad de personas </p>
-                <p>{this.props.location.state.cantidadDePersonas}</p>
+                <p>4 adultos.</p>
               </div>
               <div className="flex-arround">
                 <p>Horario </p>
-                <p>{this.props.location.state.hora}</p>
+                <p>21:30</p>
               </div>
               <div className="flex-arround" aria-live="polite">
                 <p>Butacas </p>
-                <p> {this.props.location.state.butacas}}</p>
+                <p> Opcion 1: H1, H2, H3, H4</p>
               </div>
             </div>
             <div className="button-container">
@@ -251,14 +251,6 @@ class Pago extends React.Component {
                   <Link
                     to={{
                       pathname: "/checkout",
-                      state: {
-                        hora: this.props.location.state.hora,
-                        cuando: this.props.location.state.cuando,
-                        cantidadDePersonas: this.props.location.state
-                          .cantidadDePersona,
-                        peli: this.props.location.state.peli,
-                        butacas: this.props.location.state.butaca
-                      }
                     }}
                   >
                     <Button
