@@ -56,7 +56,7 @@ class Pago extends React.Component {
         bajada:
           "Con esta opción van a poder dividir con tus amigos el total de las entradas.",
         recomendado: true,
-        bajada2: "Recomendado",
+        bajada2: "RECOMENDADO",
         beneficio1: "Dividí gastos con tus amigos",
         beneficio2: "Todos pagan lo mismo",
         beneficio3:
@@ -67,7 +67,7 @@ class Pago extends React.Component {
         label: "¡Pago yo!",
         bajada: "Con esta opción vas a pagar vos el total de las entradas.",
         recomendado: false,
-        bajada2: "Método clásico",
+        bajada2: "MÉTODO CLÁSICO",
         beneficio1: "Pagas todo vos solo",
         beneficio2: "No tener que esperar a nadie.",
         beneficio3:
@@ -116,7 +116,7 @@ class Pago extends React.Component {
             <p className="bajada">
               ¡Mirá todas las opciones que encontramos para vos y tus amigos!
             </p>
-            <h2>Opciones sugeridas</h2>
+            <h2>¡Elegí cómo queres pagarlo y con quién!</h2>
             <div className={this.classes.root}>
               <FormControl
                 component="fieldset"
@@ -142,13 +142,13 @@ class Pago extends React.Component {
                           className="strong"
                           checked={this.state.pago === option.value}
                         />
-                        <p>{option.bajada}</p>
+                        <p className="bajada-op-pago">{option.bajada}</p>
                         <div
                           className={option.recomendado ? "clase1" : "clase2"}
                         >
                           {option.bajada2}
                         </div>
-                        <div>Beneficios</div>
+                        <div className="beneficios-pago">Beneficios</div>
                         <ul className="beneficios">
                           <li className="beneficios-li">{option.beneficio1}</li>
                           <li className="beneficios-li">{option.beneficio2}</li>
@@ -168,21 +168,23 @@ class Pago extends React.Component {
                   Tu selección para <i lang="en">The Joker</i>
                 </span>
               </h3>
-              <div className="flex-arround">
-                <p>Fecha</p>
-                <p>30 de enero</p>
-              </div>
-              <div className="flex-arround">
-                <p>Cantidad de personas </p>
-                <p>4 adultos.</p>
-              </div>
-              <div className="flex-arround">
-                <p>Horario </p>
-                <p>21:30</p>
-              </div>
-              <div className="flex-arround" aria-live="polite">
-                <p>Butacas </p>
-                <p> Opcion 1: H1, H2, H3, H4</p>
+              <div className="datos-aside">
+                <div className="flex-arround">
+                  <p className="p-aside">Fecha</p>
+                  <p className="violeta">30 de enero</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Cantidad de personas </p>
+                  <p className="violeta">4 adultos.</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Horario </p>
+                  <p className="violeta">21:30</p>
+                </div>
+                <div className="flex-arround" aria-live="polite">
+                  <p className="p-aside">Butacas </p>
+                  <p className="violeta"> Opcion 1: H1, H2, H3, H4</p>
+                </div>
               </div>
             </div>
             <div className="button-container">
