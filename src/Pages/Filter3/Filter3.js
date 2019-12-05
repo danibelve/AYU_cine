@@ -70,17 +70,17 @@ class Filter2 extends React.Component {
       {
         label: "18:30",
         bajada: "Disponibilidad total",
-        value: "0"
+        value: "3"
       },
       {
         label: "21:30",
         bajada: "Quedan 10 butacas",
-        value: "1"
+        value: "5"
       },
       {
         label: "00:00",
         bajada: "Quedan 15 butacas",
-        value: "2"
+        value: "6"
       }
     ];
 
@@ -88,17 +88,17 @@ class Filter2 extends React.Component {
         {
           label: "18:35",
           bajada: "Disponibilidad total",
-          value: "0"
+          value: "7"
         },
         {
           label: "21:40",
           bajada: "Quedan 10 butacas",
-          value: "1"
+          value: "8"
         },
         {
           label: "23:15",
           bajada: "Quedan 15 butacas",
-          value: "2"
+          value: "9"
         }
       ];
     this.handleCheck = this.handleClick.bind(this);
@@ -152,7 +152,7 @@ class Filter2 extends React.Component {
             <p className="bajada">
              ¡Mirá todas las opciones que encontramos para vos y tus amigos!
             </p>
-            <h2>Subtituladas 2D</h2>
+            <h2>Subtituladas 2D <i className="italic">- Precio: $300</i></h2>
             <div className={this.classes.root}>
               <FormControl
                 component="fieldset"
@@ -180,14 +180,14 @@ class Filter2 extends React.Component {
                           className="strong"
                           aria-label = { "opción para función subtituladas en 2D" + option.label}
                         />
-                        <span>{option.bajada}</span>
+                        <span className="bajadas">{option.bajada}</span>
                       </div>
                     );
                   })}
                 </RadioGroup>
               </FormControl>
             </div>
-            <h2>Subtituladas 3D</h2>
+            <h2>Subtituladas 3D <i className="italic">- Precio: $400</i></h2>
             <div className={this.classes.root}>
               <FormControl
                 component="fieldset"
@@ -215,14 +215,14 @@ class Filter2 extends React.Component {
                           labelPlacement="start"
                           className="strong"
                         />
-                        <span>{option.bajada}</span>
+                        <span className="bajadas">{option.bajada}</span>
                       </div>
                     );
                   })}
                 </RadioGroup>
               </FormControl>
             </div>
-            <h2>Dobladas 2D</h2>
+            <h2>Dobladas 2D <i className="italic">- Precio: $300</i></h2>
             <p className="noOpcion"> No encontramos funciones que se ajusten a sus necesidades.
             <strong><Link to={{
                 pathname: '/filter',
@@ -233,7 +233,7 @@ class Filter2 extends React.Component {
                   peli: ""
                 }
               }}> Seguir buscando</Link></strong></p>
-            <h2>Dobladas 3D</h2>
+            <h2>Dobladas 3D <i className="italic">- Precio: $400</i></h2>
             <div className={this.classes.root}>
               <FormControl
                 component="fieldset"
@@ -261,7 +261,7 @@ class Filter2 extends React.Component {
                           labelPlacement="start"
                           className="strong"
                         />
-                        <span>{option.bajada}</span>
+                        <span className="bajadas">{option.bajada}</span>
                       </div>
                     );
                   })}
@@ -276,21 +276,23 @@ class Filter2 extends React.Component {
                   Tu selección para {this.props.location.state.peli}
                 </span>
               </h3>
-              <div className="flex-arround">
-                <p className="p-aside">Fecha</p>
-                <p className="violeta">{this.props.location.state.cuando}</p>
-              </div>
-              <div className="flex-arround">
-                <p className="p-aside">Cantidad de personas </p>
-                <p className="violeta">{this.props.location.state.cantidadDePersonas}</p>
-              </div>
-              <div className="flex-arround">
-                <p className="p-aside">Horario </p>
-                <p className="violeta">{this.armarHora()}</p>
-              </div>
-              <div className="flex-arround">
-                <p className="p-aside">Butacas </p>
-                <p className="gris"> Sin decidir</p>
+              <div class="datos-aside">
+                <div className="flex-arround">
+                  <p className="p-aside">Fecha</p>
+                  <p className="violeta">Viernes 29</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Cant. de personas </p>
+                  <p className="violeta">Adultos: 4.</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Horario </p>
+                  <p className={this.armarHora() === "Sin definir" ? "gris" : "violeta"}>{this.armarHora()}</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Butacas </p>
+                  <p className="gris"> Sin definir</p>
+                </div>
               </div>
             </div>
             <div className="button-container">
