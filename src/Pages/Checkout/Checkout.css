@@ -1,0 +1,39 @@
+.fondo-violeta{
+    /*background-color: #5E50B5;*/
+}
+
+.editar-perfil{
+    color: #5F6D74 !important;
+}
+
+.wrapper-contacto{
+    background-color: white;
+    box-shadow: 2px 4px 6px rgba(0, 0, 0, .1);
+    border-radius: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    padding: 50px;
+    margin: 25px;
+}
+
+.MuiAvatar-colorDefault{
+margin: 0 auto;
+}
+.margin0auto{
+    margin: 0 auto;
+}
+
+.input-width{
+    width: 20px;
+}
+
+.displayflex-contacto{
+    display: inline-flex;
+}
+
+.counter-center{
+    display: flex;
+    justify-content: center;
+}

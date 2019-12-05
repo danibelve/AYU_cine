@@ -1,7 +1,6 @@
 import React from "react";
-import "./Pago.css";
+import "./Checkout.css";
 import "../../Styles/Commons.css";
-import "../../Components/Radiobuttons/radio.css";
 import "../../Components/Aside/Aside.css";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
@@ -11,6 +10,7 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
+import Avatar from "@material-ui/core/Avatar";
 import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
 import { Route, Link } from "react-router-dom";
@@ -19,37 +19,11 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import TextField from "@material-ui/core/TextField";
+import Fab from "@material-ui/core/Fab";
 
-class Pago extends React.Component {
+class Checkout extends React.Component {
   constructor(props) {
     super(props);
-    this.classes = makeStyles(theme => ({
-      root: {
-        display: "flex",
-        "& > *": {
-          margin: theme.spacing(1)
-        }
-      },
-      formControl: {
-        margin: theme.spacing(3)
-      },
-      group: {
-        margin: theme.spacing(1, 0)
-      },
-      container: {
-        display: "flex",
-        flexWrap: "wrap"
-      },
-      textField: {
-        marginLeft: theme.spacing(1),
-        marginRight: theme.spacing(1),
-        width: 200
-      },
-      extendedIcon: {
-        marginRight: theme.spacing(1)
-      }
-    }));
-
     this.opciones = [
       {
         label: "Pago compartido",
@@ -77,15 +51,39 @@ class Pago extends React.Component {
     ];
 
     this.state = {
-      pago: "",
-      open: false
+      open: false,
+      inputValuePersona1: 0
     };
 
     this.handleCheck = this.handleClick.bind(this);
   }
 
+  handleClickRestarPersona1(e) {
+    const value = this.state.inputValuePersona1;
+    if (
+      this.state.inputValuePersona1 === "" ||
+      this.state.inputValuePersona1 === 0
+    ) {
+      this.setState({ inputValuePersona1: 0 });
+    } else {
+      this.setState({
+        inputValuePersona1: parseInt(value) - 1
+      });
+    }
+  }
+  handleClickSumarPersona1(e) {
+    const value = this.state.inputValuePersona1;
+    if (this.state.inputValuePersona1 === "") {
+      this.setState({ inputValuePersona1: 1 });
+    } else {
+      this.setState({
+        inputValuePersona1: parseInt(value) + 1
+      });
+    }
+  }
+
   componentDidMount() {
-    document.title = "Elegí cómo van a pagar en SaleCine";
+    document.title = "¿Quienés pagan esta salida? En Sale Cine";
   }
 
   handleClick(event) {
@@ -112,77 +110,128 @@ class Pago extends React.Component {
         <div className="box-shadow"></div>
         <div className="divide">
           <main id="mainContent" className="filter">
-            <h1 className="h1-filter">Estas son las opciones finales</h1>
+            <h1 className="h1-filter">¿Quiénes pagan esta salida?</h1>
             <p className="bajada">
-              ¡Mirá todas las opciones que encontramos para vos y tus amigos!
+              Agregar a tus amigos que vayan a pagar. ¡Podes ver los grupos en
+              tu perfil!
             </p>
-            <h2>Opciones sugeridas</h2>
-            <div className={this.classes.root}>
-              <FormControl
-                component="fieldset"
-                className={this.classes.formControl}
-              >
-                <FormLabel component="legend">
-                  <i className="sr-only">Opciones para pagar </i>
-                </FormLabel>
-                <RadioGroup
-                  aria-label="Medios de pago"
-                  className="miRadioButtonClass"
-                  name="pago"
-                  value={this.state.pago}
-                >
-                  {this.opciones.map((option, key) => {
-                    return (
-                      <div id={key} className="radiowrapper">
-                        <FormControlLabel
-                          value={option.value}
-                          control={<Radio onClick={e => this.handleClick(e)} />}
-                          label={option.label}
-                          labelPlacement="start"
-                          className="strong"
-                          checked={this.state.pago === option.value}
-                        />
-                        <p>{option.bajada}</p>
-                        <div
-                          className={option.recomendado ? "clase1" : "clase2"}
-                        >
-                          {option.bajada2}
-                        </div>
-                        <div>Beneficios</div>
-                        <ul className="beneficios">
-                          <li className="beneficios-li">{option.beneficio1}</li>
-                          <li className="beneficios-li">{option.beneficio2}</li>
-                          <li className="beneficios-li">{option.beneficio3}</li>
-                        </ul>
-                      </div>
-                    );
-                  })}
-                </RadioGroup>
-              </FormControl>
+            <h2>
+              Este es el grupo de Joker, elegí cuantas entradas paga cada
+              integrantes
+            </h2>
+            <div className="displayflex-contacto">
+              <div className="wrapper-contacto">
+                <Avatar>OP</Avatar>
+                <p className="margin0auto">Tu contacto</p>
+                <p className="margin0auto">+54 1156439494</p>
+                <div className="persona1">
+                  <div className="counter-center">
+                    <div className="persona-card">
+                      <Fab
+                        variant="round"
+                        className="buton-peque"
+                        aria-label="Restar una entrada"
+                        onClick={e => this.handleClickRestarPersona1(e)}
+                      >
+                        -
+                      </Fab>
+                      <TextField
+                        id="persona1"
+                        type="text"
+                        value={this.state.inputValuePersona1}
+                        onChange={this.updateInputValuePersona1}
+                        className="input-width"
+                        aria-live="polite"
+                        aria-label={this.state.inputValuePersona1 + " entradas"}
+                        //aria-describedby={'label_' +this.props.id}
+                      />
+                      <Fab
+                        variant="round"
+                        className="buton-peque"
+                        aria-label="Sumar una entrada"
+                        onClick={e => this.handleClickSumarPersona1(e)}
+                      >
+                        +
+                      </Fab>
+                    </div>
+                  </div>
+                  <label className="margin0auto" for="persona1">
+                    Entradas a pagar
+                  </label>
+                </div>
+                <div className="fondo-violeta">
+                  <Button className="editar-perfil">Editar Perfil</Button>
+                </div>
+              </div>
+            </div>
+            <div className="displayflex-contacto">
+              <div className="wrapper-contacto">
+                <Avatar>OP</Avatar>
+                <p className="margin0auto">Tu contacto</p>
+                <p className="margin0auto">+54 1156439494</p>
+                <div className="persona1">
+                  <div className="counter-center">
+                    <div className="persona-card">
+                      <Fab
+                        variant="round"
+                        className="buton-peque"
+                        aria-label="Restar una entrada"
+                        onClick={e => this.handleClickRestarPersona1(e)}
+                      >
+                        -
+                      </Fab>
+                      <TextField
+                        id="persona2"
+                        type="text"
+                        value={this.state.inputValuePersona2}
+                        onChange={this.updateInputValuePersona2}
+                        className="input-width"
+                        aria-live="polite"
+                        aria-label={this.state.inputValuePersona2 + " entradas"}
+                        //aria-describedby={'label_' +this.props.id}
+                      />
+                      <Fab
+                        variant="round"
+                        className="buton-peque"
+                        aria-label="Sumar una entrada"
+                        onClick={e => this.handleClickSumarPersona2(e)}
+                      >
+                        +
+                      </Fab>
+                    </div>
+                  </div>
+                  <label className="margin0auto" for="persona1">
+                    Entradas a pagar
+                  </label>
+                </div>
+                <div className="fondo-violeta">
+                  <Button className="editar-perfil">Editar Perfil</Button>
+                </div>
+              </div>
             </div>
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
               <h3 className="heading-aside">
                 <span className="heading3-padding">
-                  Tu selección para {this.props.location.state.peli}
+                  Tu selección para <span lang="en">The Joker</span>
                 </span>
               </h3>
               <div className="flex-arround">
                 <p>Fecha</p>
-                <p>{this.props.location.state.cuando}</p>
+                <p></p>
               </div>
               <div className="flex-arround">
                 <p>Cantidad de personas </p>
-                <p>{this.props.location.state.cantidadDePersonas}</p>
+                <p></p>
               </div>
               <div className="flex-arround">
                 <p>Horario </p>
-                <p>{this.props.location.state.hora}</p>
+                <p></p>
               </div>
-              <div className="flex-arround" aria-live="polite">
+              <div className="flex-arround">
                 <p>Butacas </p>
-                <p> {this.props.location.state.butacas}}</p>
+                <p></p>
               </div>
             </div>
             <div className="button-container">
@@ -250,15 +299,7 @@ class Pago extends React.Component {
                   </Button>
                   <Link
                     to={{
-                      pathname: "/checkout",
-                      state: {
-                        hora: this.props.location.state.hora,
-                        cuando: this.props.location.state.cuando,
-                        cantidadDePersonas: this.props.location.state
-                          .cantidadDePersona,
-                        peli: this.props.location.state.peli,
-                        butacas: this.props.location.state.butaca
-                      }
+                      pathname: "/checkout2"
                     }}
                   >
                     <Button
@@ -280,4 +321,4 @@ class Pago extends React.Component {
   }
 }
 
-export default Pago;
+export default Checkout;

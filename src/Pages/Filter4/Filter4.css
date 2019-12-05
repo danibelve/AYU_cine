@@ -75,11 +75,12 @@ fieldset:disabled{
     display: inline;
     cursor: pointer;
     border: none;
+    padding: 2px 0 4px 0;
     background-color: transparent;
 }
 
 .nuestras-sugerencias:focus, .nuestras-sugerencias:hover{
-    outline: 2px solid #008080;
+    outline: 2px solid #008080 !important;
 }
 
 .nuestras-sugerencias--outline{
@@ -375,8 +376,4 @@ fieldset:disabled{
     border-color: #008080;
 }
 
-
-.nuestras-sugerencias:hover{
-  padding: 2px 0 4px 0;
-}
 

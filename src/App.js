@@ -5,6 +5,7 @@ import Filter2 from './Pages/Filter2/Filter2';
 import Filter3 from './Pages/Filter3/Filter3';
 import Filter4 from './Pages/Filter4/Filter4';
 import Pago from './Pages/Pago/Pago';
+import Checkout from './Pages/Checkout/Checkout';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -18,6 +19,7 @@ class App extends React.Component {
           <Route path="/filter3"  component={Filter3}/>
           <Route path="/filter4" component={Filter4}/>
           <Route path="/pago" component={Pago}/>
+          <Route path="/checkout" component={Checkout}/>
         </Router>
     );
   }

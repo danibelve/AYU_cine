@@ -30,3 +30,17 @@
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
+
+.flex-reverse{
+  display: inline-flex !important;
+    flex-direction: row-reverse !important;
+}
+
+.close-button{
+  width: 20px;
+  height: 20px;
+}
+
+.button-columns{
+  flex-direction: column !important;
+}
