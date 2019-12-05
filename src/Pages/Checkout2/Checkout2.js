@@ -5,6 +5,7 @@ import "../../Components/Aside/Aside.css";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "../../Components/Counter/Counter.css";
+import Logos from "../../Assets/tarjetas.svg"
 import Button from "@material-ui/core/Button";
 import { Route, Link } from "react-router-dom";
 import Dialog from "@material-ui/core/Dialog";
@@ -81,6 +82,7 @@ class Checkout2 extends React.Component {
         <div className="divide">
           <main id="mainContent" className="filter">
             <h1 className="h1-filter">¿Quiénes pagan esta salida?</h1>
+            <h2>Tu información personal</h2>
             <form className={this.classes.root} noValidate autoComplete="off">
               <TextField
                 id="standard-basic"
@@ -118,6 +120,54 @@ class Checkout2 extends React.Component {
                   <MenuItem value={30}>Chile</MenuItem>
                 </Select>
               </FormControl>
+              <TextField
+                id="standard-basic"
+                variant="outlined"
+                label="Ciudad"
+              />
+              <TextField
+                id="standard-basic"
+                variant="outlined"
+                label="Código Postal"
+              />
+              <TextField
+                id="standard-basic"
+                variant="outlined"
+                label="Teléfono"
+              />
+              <h2>información de pago</h2>
+              <div className="white-card">
+              <h3>Tarjeta de Crédito/Débito</h3>
+              <p>Compras online protegidas. 
+                Este sitio hace que tus transacciones online sean tan seguras, rápidas y convenientes.</p>
+                <img className="tarjetas-credito" src={Logos} alt="Tarjetas permitidas: mastercard, visa y american express"/>
+                
+                <TextField
+                id="standard-basic"
+                variant="outlined"
+                label="Numero de tarjeta"
+              />
+              <TextField
+                id="standard-basic"
+                variant="outlined"
+                label="Nombre en la tarjeta"
+              />
+              <TextField
+                id="standard-basic"
+                variant="outlined"
+                label="Nombre"
+              />
+              <TextField
+                id="standard-basic"
+                variant="outlined"
+                label="Vencimiento"
+                placeholder="MM/YY"
+              />
+              </div>
+              <div className="white-card">
+                <h3>Mercado Pago</h3>
+                
+              </div>
             </form>
           </main>
           <aside className="aside">
