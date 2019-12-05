@@ -75,12 +75,12 @@ class Filter2 extends React.Component {
       {
         label: "21:30",
         bajada: "Quedan 10 butacas",
-        value: "5"
+        value: "4"
       },
       {
         label: "00:00",
         bajada: "Quedan 15 butacas",
-        value: "6"
+        value: "5"
       }
     ];
 
@@ -88,17 +88,17 @@ class Filter2 extends React.Component {
         {
           label: "18:35",
           bajada: "Disponibilidad total",
-          value: "7"
+          value: "6"
         },
         {
           label: "21:40",
           bajada: "Quedan 10 butacas",
-          value: "8"
+          value: "7"
         },
         {
           label: "23:15",
           bajada: "Quedan 15 butacas",
-          value: "9"
+          value: "8"
         }
       ];
     this.handleCheck = this.handleClick.bind(this);
@@ -107,10 +107,38 @@ class Filter2 extends React.Component {
   armarHora(){
     let hora = "";
     const horaValue = this.state.hora;
+    console.log(horaValue)
     if (this.state.hora === ''){
         hora = "Sin definir";
     }else{
-        hora = horaValue
+      if( horaValue === "19:00"){
+        hora = horaValue + "h, Subt. 2D"
+      }
+      if( horaValue === "20:30"){
+        hora = horaValue + "h, Subt. 2D"
+      }
+      if( horaValue === "23:00"){
+        hora = horaValue + "h, Subt. 2D"
+      }
+      if( horaValue === "18:30"){
+        hora = horaValue + "h, Subt. 3D"
+      }
+      if( horaValue === "21:30"){
+        hora = horaValue + "h, Subt. 3D"
+      }
+      if( horaValue === "00:00"){
+        hora = horaValue + "h, Subt. 3D"
+      }
+      if( horaValue === "18:35"){
+        hora = horaValue + "h, Dob. 3D"
+      }
+      if( horaValue === "21:40"){
+        hora = horaValue + "h, Dob. 3D"
+      }
+      if( horaValue === "23:15"){
+        hora = horaValue + "h, Dob. 3D"
+      }
+    
     }
     return hora;
 
