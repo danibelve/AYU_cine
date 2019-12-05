@@ -1043,23 +1043,25 @@ class Filter4 extends React.Component {
                   Tu selección para {this.props.location.state.peli}
                 </span>
               </h3>
-              <div className="flex-arround">
-                <p>Fecha</p>
-                <p>{this.props.location.state.cuando}</p>
+              <div className="datos-aside">
+                <div className="flex-arround">
+                  <p className="p-aside">Fecha</p>
+                  <p className="violeta">Viernes 29</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Cantidad de personas </p>
+                  <p className="violeta">Adultos 4.</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Horario </p>
+                  <p className={this.props.location.state.hora() === "Sin definir" ? "gris" : "violeta"}>{this.props.location.state.hora}</p>
+                </div>
+                <div className="flex-arround" aria-live="polite">
+                  <p className="p-aside">Butacas </p>
+                  <p className={this.armarButacas() === "Sin definir" ? "gris" : "violeta"}>{this.armarButacas()}</p>
+                </div>
               </div>
-              <div className="flex-arround">
-                <p>Cantidad de personas </p>
-                <p>{this.props.location.state.cantidadDePersonas}</p>
               </div>
-              <div className="flex-arround">
-                <p>Horario </p>
-                <p>{this.props.location.state.hora}</p>
-              </div>
-              <div className="flex-arround" aria-live="polite">
-                <p>Butacas </p>
-                <p> {this.armarButacas()}</p>
-              </div>
-            </div>
             <div className="button-container">
               <Route
                 render={({ history }) => (

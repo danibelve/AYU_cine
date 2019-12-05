@@ -191,15 +191,15 @@ class Filter2 extends React.Component {
                 </div>
                 <div className="flex-arround">
                   <p className="p-aside">Cant. de personas </p>
-                  <p className="violeta">Adultos:4.</p>
+                  <p className="violeta">Adultos: 4.</p>
                 </div>
                 <div className="flex-arround">
                   <p className="p-aside">Horario </p>
-                  <p className="violeta">Noche</p>
+                  <p className="gris">Sin definir</p>
                 </div>
                 <div className="flex-arround">
                   <p className="p-aside">Butacas </p>
-                  <p  className="gris"> Sin decidir</p>
+                  <p  className="gris"> Sin definir</p>
                 </div>
               </div>
             </div>

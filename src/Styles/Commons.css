@@ -40,7 +40,13 @@ p, span, i, h1, h2, h3, h4, h5, h6, a, input, label, legend {
 }
 
 i {
-    font-style: normal
+    font-style: normal;
+}
+
+.italic{
+	font-weight: 200;
+	font-style: italic;
+	font-size:20px!important;
 }
 
 .button-verde{
@@ -50,6 +56,7 @@ i {
 .button-contained{
 	background-color: #5e50b5 !important;
 	color: white !important;
+	border:2px solid #5e50b5 !important;
 	
 }
 
@@ -92,6 +99,10 @@ a:active {
 	color: white !important;
 	border: 2px solid #5e50b5 !important;
 	margin-right: 20px !important;
+}
+
+.MuiButton-outlined:hover{
+	border: 2px solid #8F50B5!important;
 }
 
 
