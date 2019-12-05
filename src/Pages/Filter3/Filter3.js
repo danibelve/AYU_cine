@@ -277,20 +277,20 @@ class Filter2 extends React.Component {
                 </span>
               </h3>
               <div className="flex-arround">
-                <p>Fecha</p>
-                <p>{this.props.location.state.cuando}</p>
+                <p className="p-aside">Fecha</p>
+                <p className="violeta">{this.props.location.state.cuando}</p>
               </div>
               <div className="flex-arround">
-                <p>Cantidad de personas </p>
-                <p>{this.props.location.state.cantidadDePersonas}</p>
+                <p className="p-aside">Cantidad de personas </p>
+                <p className="violeta">{this.props.location.state.cantidadDePersonas}</p>
               </div>
               <div className="flex-arround">
-                <p>Horario </p>
-                <p>{this.armarHora()}</p>
+                <p className="p-aside">Horario </p>
+                <p className="violeta">{this.armarHora()}</p>
               </div>
               <div className="flex-arround">
-                <p>Butacas </p>
-                <p> Sin decidir</p>
+                <p className="p-aside">Butacas </p>
+                <p className="gris"> Sin decidir</p>
               </div>
             </div>
             <div className="button-container">

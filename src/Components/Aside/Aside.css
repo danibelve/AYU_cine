@@ -2,12 +2,13 @@
    /* display: inline-block;
     width: 35%;*/
     flex-grow: 2;
-    padding: 40px;
+    padding: 40px 10px;
+    background: #f0f3f8;
+    width: 37%;
 }
 
 .aside-wrapper{
-    padding: 0 20px;
-    
+    padding: 0 40px;  
 }
 
 .heading-aside{
@@ -15,14 +16,30 @@
     font-size: 20px;
     display: flex;
     text-align: center;
+    padding: 10px 25px;
+    background: white;
+    margin-bottom: 5px;
 }
 
 .heading3-padding{
-    padding: 5px !important;
+    padding:0 !important;
+    color:#5f6d74;
 }
 
 .flex-arround{
     display: flex;
     justify-content: space-between;
     padding: 24px 0;
+    font-size:16px;
+}
+
+.violeta{
+    color:#5e50b5;
+    font-weight: 700;
+}
+
+.datos-aside{
+    background:white;
+    padding:0px 30px;
+    margin-bottom: 30px;
 }

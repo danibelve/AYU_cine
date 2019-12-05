@@ -1,5 +1,5 @@
 .card-header{
-    font-size: 18px !important;
+    font-size: 17px !important;
 }
 
 .card-bajada{
@@ -19,4 +19,8 @@
 
 .movie-img{
     height: 150px !important;
+}
+
+.MuiButton-textSizeSmall {
+    font-size: 0.7rem!important;
 }

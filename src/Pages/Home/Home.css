@@ -49,7 +49,19 @@ ul li {
 
 .peliculas{
   margin-left: 20px!important;
+  color: #5f6d74!important;
 }
+
+.peliculas h2{
+line-height: 1.8;
+}
+
+.p-peli{
+  margin-bottom:30px;
+  }
+
+
+  
 
 .filter {
   padding: 20px 50px;

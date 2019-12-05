@@ -184,21 +184,23 @@ class Filter2 extends React.Component {
                   Tu selección para {this.props.location.state.peli}
                 </span>
               </h3>
-              <div className="flex-arround">
-                <p>Fecha</p>
-                <p>{this.props.location.state.cuando}</p>
-              </div>
-              <div className="flex-arround">
-                <p>Cantidad de personas </p>
-                <p>{this.props.location.state.cantidadDePersonas}</p>
-              </div>
-              <div className="flex-arround">
-                <p>Horario </p>
-                <p>{this.props.location.state.hora}</p>
-              </div>
-              <div className="flex-arround">
-                <p>Butacas </p>
-                <p> Sin decidir</p>
+              <div className="datos-aside">
+                <div className="flex-arround">
+                  <p className="p-aside">Fecha</p>
+                  <p className="violeta">Viernes 29</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Cant. de personas </p>
+                  <p className="violeta">Adultos:4.</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Horario </p>
+                  <p className="violeta">Noche</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Butacas </p>
+                  <p  className="gris"> Sin decidir</p>
+                </div>
               </div>
             </div>
             <div className="button-container">

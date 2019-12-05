@@ -1,6 +1,8 @@
 #Adultos, #Niños, #Jubilados{
     width: 25px !important;
     text-align: center !important;
+    margin-top: -5px;
+    margin-left: -5px;
 }
 
 .MuiInput-underline:after {

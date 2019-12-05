@@ -427,21 +427,23 @@ class Filter extends React.Component {
                   Tu selección para {this.state.peli}
                 </span>
               </h3>
-              <div className="flex-arround">
-                <p>Fecha</p>
-                <p>{this.armarFecha()}</p>
-              </div>
-              <div className="flex-arround">
-                <p>Cantidad de personas </p>
-                <p> {this.armarCantidadDePersonas()}</p>
-              </div>
-              <div className="flex-arround">
-                <p>Horario </p>
-                <p> {this.armarHora()}</p>
-              </div>
-              <div className="flex-arround">
-                <p>Butacas </p>
-                <p> Sin decidir</p>
+              <div className="datos-aside">
+                <div className="flex-arround">
+                  <p className="p-aside">Fecha</p>
+                  <p className={this.armarFecha() === "Sin definir" ? "gris" : "violeta"}>{this.armarFecha()}</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Cant. de personas </p>
+                  <p className={this.armarCantidadDePersonas() === "Sin definir" ? "gris" : "violeta"}> {this.armarCantidadDePersonas()}</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Horario </p>
+                  <p className={this.armarHora() === "Sin definir" ? "gris" : "violeta"}> {this.armarHora()}</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Butacas </p>
+                  <p className="gris"> Sin decidir</p>
+                </div>
               </div>
             </div>
             <div className="button-container">
