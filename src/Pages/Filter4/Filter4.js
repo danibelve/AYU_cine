@@ -90,7 +90,7 @@ class Filter4 extends React.Component {
         opcionSeleccionada = "Opción 02. F7, F8, F9, F10";
       }
       if (butacaValue === "2") {
-        opcionSeleccionada = "Opción 03. H6, H7, H8, H90";
+        opcionSeleccionada = "Opción 03. H6, H7, H8, H9";
       }
       if (butacaValue=== "3") {
         opcionSeleccionada = "Personalizado";

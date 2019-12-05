@@ -5,7 +5,7 @@ import "../../Components/Aside/Aside.css";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "../../Components/Counter/Counter.css";
-import Logos from "../../Assets/tarjetas.svg"
+import Logos from "../../Assets/tarjetas.svg";
 import Button from "@material-ui/core/Button";
 import { Route, Link } from "react-router-dom";
 import Dialog from "@material-ui/core/Dialog";
@@ -15,11 +15,10 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
 import FormControl from "@material-ui/core/FormControl";
-import InputLabel from '@material-ui/core/InputLabel';
-import MenuItem from '@material-ui/core/MenuItem';
-import FormHelperText from '@material-ui/core/FormHelperText';
-import Select from '@material-ui/core/Select';
-
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import FormHelperText from "@material-ui/core/FormHelperText";
+import Select from "@material-ui/core/Select";
 
 class Checkout2 extends React.Component {
   constructor(props) {
@@ -33,11 +32,11 @@ class Checkout2 extends React.Component {
       },
       formControl: {
         margin: theme.spacing(1),
-        minWidth: 120,
+        minWidth: 120
       },
       selectEmpty: {
-        marginTop: theme.spacing(2),
-      },
+        marginTop: theme.spacing(2)
+      }
     }));
 
     this.state = {
@@ -46,12 +45,12 @@ class Checkout2 extends React.Component {
     };
   }
 
-  handleClickSelect = (e) => {
-    const selectValue = e.target.value
+  handleClickSelect = e => {
+    const selectValue = e.target.value;
     this.setState({
       select: selectValue
-    })
-  }
+    });
+  };
 
   componentDidMount() {
     document.title = "¿Quienés pagan esta salida? En Sale Cine";
@@ -99,18 +98,18 @@ class Checkout2 extends React.Component {
                 variant="outlined"
                 label="Dirección"
               />
-              <FormControl variant="outlined" className={this.classes.formControl}>
-                <InputLabel
-                  ref="pais"
-                  id="demo-simple-select-outlined-label"
-                >
+              <FormControl
+                variant="outlined"
+                className={this.classes.formControl}
+              >
+                <InputLabel ref="pais" id="demo-simple-select-outlined-label">
                   País
                 </InputLabel>
                 <Select
                   labelId="demo-simple-select-outlined-label"
                   id="demo-simple-select-outlined"
                   value={this.state.select}
-                  onChange={(e) => this.handleClickSelect(e)}
+                  onChange={e => this.handleClickSelect(e)}
                 >
                   <MenuItem value="">
                     <em>None</em>
@@ -137,41 +136,65 @@ class Checkout2 extends React.Component {
               />
               <h2>información de pago</h2>
               <div className="white-card">
-              <h3>Tarjeta de Crédito/Débito</h3>
-              <p>Compras online protegidas. 
-                Este sitio hace que tus transacciones online sean tan seguras, rápidas y convenientes.</p>
-                <img className="tarjetas-credito" src={Logos} alt="Tarjetas permitidas: mastercard, visa y american express"/>
-                
+                <h3>Tarjeta de Crédito/Débito</h3>
+                <p>
+                  Compras online protegidas. Este sitio hace que tus
+                  transacciones online sean tan seguras, rápidas y convenientes.
+                </p>
+                <img
+                  className="tarjetas-credito"
+                  src={Logos}
+                  alt="Tarjetas permitidas: mastercard, visa y american express"
+                />
+
                 <TextField
-                id="standard-basic"
-                variant="outlined"
-                label="Numero de tarjeta"
-              />
-              <TextField
-                id="standard-basic"
-                variant="outlined"
-                label="Nombre en la tarjeta"
-              />
-              <TextField
-                id="standard-basic"
-                variant="outlined"
-                label="Nombre"
-              />
-              <TextField
-                id="standard-basic"
-                variant="outlined"
-                label="Vencimiento"
-                placeholder="MM/YY"
-              />
+                  id="standard-basic"
+                  variant="outlined"
+                  label="Numero de tarjeta"
+                />
+                <TextField
+                  id="standard-basic"
+                  variant="outlined"
+                  label="Nombre en la tarjeta"
+                />
+                <TextField
+                  id="standard-basic"
+                  variant="outlined"
+                  label="Nombre"
+                />
+                <TextField
+                  id="standard-basic"
+                  variant="outlined"
+                  label="Vencimiento"
+                  placeholder="MM/YY"
+                />
               </div>
               <div className="white-card">
                 <h3>Mercado Pago</h3>
-                
               </div>
             </form>
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
+              <div class="progress">
+                <div class="progress-track"></div>
+
+                <div id="step1" class="progress-step">
+                  Función
+                </div>
+
+                <div id="step2" class="progress-step">
+                  Butacas
+                </div>
+
+                <div id="step3" class="progress-step">
+                  Pago
+                </div>
+
+                <div id="step4" class="progress-step">
+                  Entradas
+                </div>
+              </div>
               <h3 className="heading-aside">
                 <span className="heading3-padding">
                   Tu selección para <span lang="en">The Joker</span>
