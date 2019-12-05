@@ -199,7 +199,7 @@ class Filter2 extends React.Component {
                 </div>
                 <div className="flex-arround">
                   <p className="p-aside">Butacas </p>
-                  <p  className="gris"> Sin definir</p>
+                  <p className="gris"> Sin definir</p>
                 </div>
               </div>
             </div>

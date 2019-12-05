@@ -67,7 +67,7 @@ class Filter4 extends React.Component {
         value: "2"
       },
       {
-        label: "Donde quieran",
+        label: "Personalizado",
         bajada: "Elegi las butacas vos",
         value: "3"
       }
@@ -110,7 +110,7 @@ class Filter4 extends React.Component {
     if (name === "Opción 03"){
       butacaValue= "2"
     }
-    if (name === "Donde quieran"){
+    if (name === "Personalizado"){
       butacaValue= "3"
     }
     this.setState({butaca: butacaValue});
@@ -163,7 +163,7 @@ class Filter4 extends React.Component {
                               className="strong"
                               checked={this.state.butaca === option.value}
                             />
-                            <span>{option.bajada}</span>
+                            <span className="bajadas">{option.bajada}</span>
                           </div>
                         );
                       })}
@@ -866,7 +866,7 @@ class Filter4 extends React.Component {
                   </div>
                 </fieldset>
                 <fieldset className="fieldset" disabled= {this.state.butaca !== "3"}>
-                  <legend className="legend">ÚLTIMAS FILAS</legend>
+                  <legend className="legend">Últimas filas</legend>
                   <div className="wrapperopciones">
                     <div className="izquierda">
                       <div  className="padding-bottom">
@@ -1054,7 +1054,7 @@ class Filter4 extends React.Component {
                 </div>
                 <div className="flex-arround">
                   <p className="p-aside">Horario </p>
-                  <p className={this.props.location.state.hora() === "Sin definir" ? "gris" : "violeta"}>{this.props.location.state.hora}</p>
+                  <p className="violeta">23:00h, Subt. 2D</p>
                 </div>
                 <div className="flex-arround" aria-live="polite">
                   <p className="p-aside">Butacas </p>

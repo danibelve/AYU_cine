@@ -276,7 +276,7 @@ class Filter2 extends React.Component {
                   Tu selección para {this.props.location.state.peli}
                 </span>
               </h3>
-              <div class="datos-aside">
+              <div className="datos-aside">
                 <div className="flex-arround">
                   <p className="p-aside">Fecha</p>
                   <p className="violeta">Viernes 29</p>
