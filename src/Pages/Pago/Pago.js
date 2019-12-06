@@ -197,8 +197,8 @@ class Pago extends React.Component {
                 </div>
                 <div className="subtotal-resumen">
                   <div className="flex-arround">
-                      <p className="p-aside aside-subtotal-off">Subtotal </p>
-                      <p className="gris aside-subtotal-off-1">El precio se actualizará al elegir la funcion</p>
+                    <p className="p-aside">Subtotal </p>
+                    <p className="violeta">$1200</p>
                   </div>
                 </div>
               </div>

@@ -328,3 +328,18 @@ a:active {
 	border: 1px solid #5F6D74;
 	color: transparent!important;
 }
+
+.descuento-resumen, .total-resumen{
+	border-top:none!important;
+	margin-top: -20px;
+}
+
+.descuento-pesos{
+	color:#5cb85c!important;
+	font-style: italic!important;
+	font-weight: 600!important;
+}
+
+.total, .total-pesos{
+	font-size:1.5em!important;
+}
