@@ -21,3 +21,13 @@
     font-weight: 600;
     color:#5F6D74!important;
 }
+
+.aside-subtotal-off{
+    color:#a5b0b5!important;
+}
+
+.aside-subtotal-off-1{
+    text-align: right!important;
+    width: 195px!important;
+    color:#a5b0b5!important;
+}

@@ -14,7 +14,8 @@ p, span, i, h1, h2, h3, h4, h5, h6, a, input, label, legend, li, div {
 }
 
 h2{
-	font-size: 1.3em;
+    font-size: 1.2em;
+    font-weight: 700;
 }
 
 h1 {
@@ -204,7 +205,7 @@ a:active {
 
 .MuiDialog-paperWidthXs {
 	max-width: 560px!important;
-  }
+}
 
   .MuiDialogContent-root {
     padding: 8px 54px!important;
@@ -213,11 +214,11 @@ a:active {
 .MuiFormControl-marginDense {
 	margin-top: 10px!important;
 	margin-bottom: 10px!important;
-  }
+}
 
-  .MuiInputLabel-marginDense{
-    font-size: 0.8em!important;
-    line-height: 1.3em!important;
+.MuiInputLabel-marginDense{
+	font-size: 0.8em!important;
+	line-height: 1.3em!important;
 }
 
 .container-steps{
@@ -225,73 +226,105 @@ a:active {
 	z-index: 1;
 	text-align:center;
 	margin-bottom:30px;
-  }
+}
 
-  .progressbar li{
-    float: left;
-    width: 20%;
-    position: relative;
+.progressbar li{
+	float: left;
+	width: 20%;
+	position: relative;
 	text-align: center;
 	font-size: 1em!important;
 	margin: 0px 20px!important;
-  }
+}
 
-  .progressbar li:before{
-    content: "\2219";
-    width: 30px;
-    height: 30px;
-  }
+.progressbar li:before{
+	content: "\2219";
+	width: 30px;
+	height: 30px;
+}
 
-  .progressbar li:before{
-		content: "\2022";
-		width: 20px;
-		height: 20px;
-		border: 2px solid #5E50B5;
-		display: block;
-		margin: 0px 26px 6px 10px;
-		border-radius: 50%;
-		line-height: 0.5em;
-		background: white;
-		color: white;
-		text-align: center;
-		font-weight: bold;
-		font-size: 1.5em!important;
-		background-color: #5E50B5;
-		box-shadow: 2px 3px 6px rgba(0,0,0,0.3);
-  }
+.progressbar li:before{
+	content: "\2022";
+	width: 20px;
+	height: 20px;
+	border: 2px solid #5E50B5;
+	display: block;
+	margin: 0px 26px 6px 10px;
+	border-radius: 50%;
+	line-height: 0.5em;
+	background: white;
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.5em!important;
+	background-color: #5E50B5;
+}
 
-  .progressbar li:after{
-    content: '';
-    position: absolute;
-    width: 300%;
-    top: 12px;
-    left: -50%;
-    z-index: 0;
-    border: 1px dashed #5E50B5;
-  }
+.progressbar li:after{
+	content: '';
+	position: absolute;
+	width: 300%;
+	top: 12px;
+	left: -50%;
+	z-index: 0;
+	border: 1px dashed #5F6D74;
+}
 
-  .progressbar li:first-child:after{
-    content: none;
-    }
+.progressbar li:first-child:after{
+	content: none;
+}
 
-	
-	.progressbar li p{
-		font-size: 0.7em!important;
-	}
 
-	.progressbar .butacas::after {
-		width: 115% !important;
-    margin-left: -32px;
-	}
+.progressbar li p{
+	font-size: 0.7em!important;
+}
 
-	.progressbar .pago::after {
-		width: 115% !important;
-    margin-left: -32px;
-		z-index: 1;
-	}
-	
-	.progressbar .entradas::after {
-		width: 115% !important;
-    margin-left: -32px;
-		z-index: 1;
-	}
+.progressbar .butacas::after {
+	width: 115% !important;
+    margin-left: -38px;
+}
+
+.progressbar .pago::after {
+	width: 136% !important;
+	margin-left: -43px;
+	z-index: 1;
+}
+
+.progressbar .entradas::after {
+	width: 115% !important;
+	margin-left: -32px;
+	z-index: 1;
+}
+
+.entradas p{
+	margin-left: -14px!important;
+}
+
+.aside-subtotal-off{
+    color:#a5b0b5!important;
+}
+
+.aside-subtotal-off-1{
+    text-align: right!important;
+    width: 195px!important;
+    color:#a5b0b5!important;
+}
+
+.subtotal-resumen{
+	border-top: 1px solid #A5B0B5;
+	margin-top: 15px;
+}
+
+.div-vinculo-ingresa{
+	font-size: 0.65em!important;
+	text-align: center;
+	color:#5E50B5!important;
+	margin-bottom: 20px;
+	margin-top:-10px;
+}
+
+.progressbar .inactivo:before{
+	background:transparent!important;
+	border: 1px solid #5F6D74;
+	color: transparent!important;
+}

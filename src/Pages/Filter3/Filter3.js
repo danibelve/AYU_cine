@@ -299,13 +299,13 @@ class Filter2 extends React.Component {
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
-            <div class="steps">
-                <div class="container-steps">
-                  <ul class="progressbar">
-                    <li className="funcion linea"><p>Función</p></li>
-                    <li className="butacas-after butacas linea"><p>Butacas</p></li>
-                    <li className="pago-after pago linea"><p>Pago</p></li>
-                    <li className="entradas linea"><p>Entradas</p></li>
+              <div className="steps">
+                <div className="container-steps">
+                  <ul className="progressbar">
+                    <li className="funcion linea"><p>FUNCIÓN</p></li>
+                    <li className="butacas-after butacas linea inactivo"><p>BUTACAS</p></li>
+                    <li className="pago-after pago linea inactivo"><p>PAGO</p></li>
+                    <li className="entradas linea inactivo"><p>ENTRADAS</p></li>
                   </ul>
                 </div>
               </div>

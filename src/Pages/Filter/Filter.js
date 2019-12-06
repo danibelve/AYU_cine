@@ -422,13 +422,13 @@ class Filter extends React.Component {
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
-            <div class="steps">
-                <div class="container-steps">
-                  <ul class="progressbar">
-                    <li className="funcion linea"><p>Función</p></li>
-                    <li className="butacas-after butacas linea"><p>Butacas</p></li>
-                    <li className="pago-after pago linea"><p>Pago</p></li>
-                    <li className="entradas linea"><p>Entradas</p></li>
+              <div className="steps">
+                <div className="container-steps">
+                  <ul className="progressbar">
+                    <li className="funcion linea"><p>FUNCIÓN</p></li>
+                    <li className="butacas-after butacas linea inactivo"><p>BUTACAS</p></li>
+                    <li className="pago-after pago linea inactivo"><p>PAGO</p></li>
+                    <li className="entradas linea inactivo"><p>ENTRADAS</p></li>
                   </ul>
                 </div>
               </div>
@@ -454,6 +454,15 @@ class Filter extends React.Component {
                   <p className="p-aside">Butacas </p>
                   <p className="gris"> Sin definir</p>
                 </div>
+                <div className="subtotal-resumen">
+                <div className="flex-arround">
+                    <p className="p-aside aside-subtotal-off">Subtotal </p>
+                    <p className="gris aside-subtotal-off-1">El precio se actualizará al elegir la funcion</p>
+                  </div>
+                </div>
+              </div>
+              <div className="div-vinculo-ingresa">
+                <a href="" className="vinculo-ingresa">Ingresá a tu cuenta para guardar los datos de tu compra</a>
               </div>
             </div>
             <div className="button-container">
