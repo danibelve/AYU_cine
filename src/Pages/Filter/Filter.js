@@ -425,10 +425,10 @@ class Filter extends React.Component {
             <div class="steps">
                 <div class="container-steps">
                   <ul class="progressbar">
-                    <li className="funcion"><p>Función</p></li>
-                    <li className="butacas-after butacas"><p>Butacas</p></li>
-                    <li className="pago-after pago"><p>Pago</p></li>
-                    <li className="entradas"><p>Entradas</p></li>
+                    <li className="funcion linea"><p>Función</p></li>
+                    <li className="butacas-after butacas linea"><p>Butacas</p></li>
+                    <li className="pago-after pago linea"><p>Pago</p></li>
+                    <li className="entradas linea"><p>Entradas</p></li>
                   </ul>
                 </div>
               </div>
