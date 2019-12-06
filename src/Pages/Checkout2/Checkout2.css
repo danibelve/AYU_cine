@@ -74,10 +74,3 @@
 .container {
   margin: 50px 100px;
 }
-
-button {
-  position: absolute;
-  right: 50px;
-  bottom: 20px;
-  cursor: pointer;
-}
