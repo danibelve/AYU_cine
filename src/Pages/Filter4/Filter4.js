@@ -1042,7 +1042,7 @@ class Filter4 extends React.Component {
                   <div className="container-steps">
                     <ul className="progressbar">
                       <li className="funcion linea"><p>FUNCIÓN</p></li>
-                      <li className="butacas-after butacas linea inactivo"><p>BUTACAS</p></li>
+                      <li className="butacas-after butacas linea"><p>BUTACAS</p></li>
                       <li className="pago-after pago linea inactivo"><p>PAGO</p></li>
                       <li className="entradas linea inactivo"><p>ENTRADAS</p></li>
                     </ul>
@@ -1070,7 +1070,16 @@ class Filter4 extends React.Component {
                   <p className="p-aside">Butacas </p>
                   <p className={this.armarButacas() === "Sin definir" ? "gris" : "violeta"}>{this.armarButacas()}</p>
                 </div>
+                <div className="subtotal-resumen">
+                  <div className="flex-arround">
+                      <p className="p-aside aside-subtotal-off">Subtotal </p>
+                      <p className="gris aside-subtotal-off-1">El precio se actualizará al elegir la funcion</p>
+                  </div>
+                </div>
               </div>
+                <div className="div-vinculo-ingresa">
+                  <a href="" className="vinculo-ingresa">Ingresá a tu cuenta para guardar los datos de tu compra</a>
+                </div>
               </div>
             <div className="button-container">
               <Route

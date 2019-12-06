@@ -177,15 +177,15 @@ class Checkout2 extends React.Component {
           <aside className="aside">
             <div className="aside-wrapper">
               <div className="steps">
-                  <div className="container-steps">
-                    <ul className="progressbar">
-                      <li className="funcion linea"><p>FUNCIÓN</p></li>
-                      <li className="butacas-after butacas linea inactivo"><p>BUTACAS</p></li>
-                      <li className="pago-after pago linea inactivo"><p>PAGO</p></li>
-                      <li className="entradas linea inactivo"><p>ENTRADAS</p></li>
-                    </ul>
-                  </div>
-              </div>
+                <div className="container-steps">
+                  <ul className="progressbar">
+                    <li className="funcion linea"><p>FUNCIÓN</p></li>
+                    <li className="butacas-after butacas linea"><p>BUTACAS</p></li>
+                    <li className="pago-after pago linea"><p>PAGO</p></li>
+                    <li className="entradas linea inactivo"><p>ENTRADAS</p></li>
+                  </ul>
+                </div>
+              </div>  
               <h3 className="heading-aside">
                 <span className="heading3-padding">
                   Tu selección para <span lang="en">The Joker</span>
@@ -207,6 +207,12 @@ class Checkout2 extends React.Component {
                 <div className="flex-arround" aria-live="polite">
                   <p className="p-aside">Butacas </p>
                   <p className="violeta">Opción 01. H1, H2, H3, H4</p>
+                </div>
+                <div className="subtotal-resumen">
+                  <div className="flex-arround">
+                      <p className="p-aside aside-subtotal-off">Subtotal </p>
+                      <p className="gris aside-subtotal-off-1">El precio se actualizará al elegir la funcion</p>
+                  </div>
                 </div>
               </div>
             </div>
