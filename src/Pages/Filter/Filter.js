@@ -422,6 +422,16 @@ class Filter extends React.Component {
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
+            <div class="steps">
+                <div class="container-steps">
+                  <ul class="progressbar">
+                    <li className="funcion"><p>Función</p></li>
+                    <li className="butacas-after butacas"><p>Butacas</p></li>
+                    <li className="pago-after pago"><p>Pago</p></li>
+                    <li className="entradas"><p>Entradas</p></li>
+                  </ul>
+                </div>
+              </div>
               <h3 className="heading-aside">
                 <span className="heading3-padding">
                   Tu selección para {this.state.peli}

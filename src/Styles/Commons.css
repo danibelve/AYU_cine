@@ -219,3 +219,72 @@ a:active {
     font-size: 0.8em!important;
     line-height: 1.3em!important;
 }
+
+.container-steps{
+    width: 100%;
+    z-index: 1;
+  }
+  .progressbar li{
+    float: left;
+    width: 20%;
+    position: relative;
+	text-align: center;
+	font-size: 1em!important;
+  }
+
+  .progressbar li:before{
+    content: "\2219";
+    width: 30px;
+    height: 30px;
+  }
+
+  .progressbar li:before{
+		content: "\2022";
+		width: 20px;
+		height: 20px;
+		border: 2px solid #5E50B5;
+		display: block;
+		margin: 0px 26px 6px 10px;
+		border-radius: 50%;
+		line-height: 0.5em;
+		background: white;
+		color: white;
+		text-align: center;
+		font-weight: bold;
+		font-size: 1.5em!important;
+		background-color: #5E50B5;
+		box-shadow: 2px 3px 6px rgba(0,0,0,0.3);
+  }
+
+  .progressbar li:after{
+    content: '';
+    position: absolute;
+    width: 300%;
+    top: 12px;
+    left: -50%;
+    z-index: 0;
+    border: 1px dashed #5E50B5;
+  }
+
+  .progressbar li:first-child:after{
+    content: none;
+    }
+
+	
+	.progressbar li p{
+		font-size: 0.7em!important;
+	}
+
+	.progressbar .butacas::after {
+		width: 63% !important;
+	}
+
+	.progressbar .pago::after {
+		width: 63% !important;
+		z-index: 1;
+	}
+	
+	.progressbar .entradas::after {
+		width: 63% !important;
+		z-index: 1;
+	}

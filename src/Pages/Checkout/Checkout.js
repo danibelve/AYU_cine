@@ -218,6 +218,16 @@ class Checkout extends React.Component {
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
+            <div class="steps">
+                <div class="container-steps">
+                  <ul class="progressbar">
+                    <li>Función</li>
+                    <li className="butacas-after">Butacas</li>
+                    <li className="pago-after">Pago</li>
+                    <li >Entradas</li>
+                  </ul>
+                </div>
+              </div>
               <h3 className="heading-aside">
                 <span className="heading3-padding">
                   Tu selección para The Joker

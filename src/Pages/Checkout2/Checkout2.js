@@ -176,8 +176,8 @@ class Checkout2 extends React.Component {
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
-              <div class="root">
-                <div class="container">
+              <div class="steps">
+                <div class="container-steps">
                   <ul class="progressbar">
                     <li>Función</li>
                     <li className="butacas-after">Butacas</li>
