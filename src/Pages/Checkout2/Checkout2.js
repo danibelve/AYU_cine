@@ -176,23 +176,14 @@ class Checkout2 extends React.Component {
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
-              <div class="progress">
-                <div class="progress-track"></div>
-
-                <div id="step1" class="progress-step">
-                  Función
-                </div>
-
-                <div id="step2" class="progress-step">
-                  Butacas
-                </div>
-
-                <div id="step3" class="progress-step">
-                  Pago
-                </div>
-
-                <div id="step4" class="progress-step">
-                  Entradas
+              <div class="root">
+                <div class="container">
+                  <ul class="progressbar">
+                    <li>Función</li>
+                    <li className="butacas-after">Butacas</li>
+                    <li className="pago-after">Pago</li>
+                    <li >Entradas</li>
+                  </ul>
                 </div>
               </div>
               <h3 className="heading-aside">
