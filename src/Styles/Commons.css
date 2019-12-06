@@ -9,9 +9,27 @@ a:focus{
 	outline: 2px solid #5e50b5 !important;
 }
 
-p, span, i, h1, h2, h3, h4, h5, h6, a, input, label, legend {
+p, span, i, h1, h2, h3, h4, h5, h6, a, input, label, legend, li, div {
 	font-family: 'Montserrat', sans-serif !important;
 }
+
+h2{
+	font-size: 1.3em;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+.desc {
+    font-size: 1.1em;
+    margin-bottom: 60px;
+}
+
+.card-header {
+    font-size: 1.1em !important;
+}
+
 
 .sr-only {
 	border: 0 !important;
@@ -136,11 +154,11 @@ a:active {
 }
 
 .h1-filter{
-	font-size: 40px;
+	font-size: 2em;
 }
 
 .bajada{
-	font-size: 20px;
+	font-size: 1em;
 	margin-bottom: 44px;
     margin-top: 15px;
 }
