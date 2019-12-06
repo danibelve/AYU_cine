@@ -214,32 +214,34 @@ class Checkout extends React.Component {
                 </div>
               </div>
             </div>
-            <div></div>
+            <div><p className="aclaracion-contactos">A cada contacto se le enviará un link de pago para efectuar la compra.</p></div>
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
               <h3 className="heading-aside">
                 <span className="heading3-padding">
-                  Tu selección para <span lang="en">The Joker</span>
+                  Tu selección para The Joker
                 </span>
               </h3>
-              <div className="flex-arround">
-                <p>Fecha</p>
-                <p></p>
+              <div className="datos-aside">
+                <div className="flex-arround">
+                  <p className="p-aside">Fecha</p>
+                  <p className="violeta">Viernes 29</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Cantidad de personas </p>
+                  <p className="violeta">Adultos 4.</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Horario </p>
+                  <p className="violeta">23:00h, Subt. 2D</p>
+                </div>
+                <div className="flex-arround" aria-live="polite">
+                  <p className="p-aside">Butacas </p>
+                  <p className="violeta">Opción 02. F7, F8, F9, F10</p>
+                </div>
               </div>
-              <div className="flex-arround">
-                <p>Cantidad de personas </p>
-                <p></p>
               </div>
-              <div className="flex-arround">
-                <p>Horario </p>
-                <p></p>
-              </div>
-              <div className="flex-arround">
-                <p>Butacas </p>
-                <p></p>
-              </div>
-            </div>
             <div className="button-container">
               <Route
                 render={({ history }) => (
@@ -254,58 +256,19 @@ class Checkout extends React.Component {
                   </Button>
                 )}
               />
-              <Button
-                variant="outlined"
-                className="button-contained"
-                type="submit"
-                onClick={this.handleClickOpen}
+              <Link
+                to={{
+                  pathname: "/checkout2",
+                }}
               >
-                Siguiente
-              </Button>
-              <Dialog
-                open={this.state.open}
-                onClose={e => this.handleClose(e)}
-                aria-labelledby="form-dialog-title"
-                maxWidth="xs"
-              >
-                <DialogTitle id="form-dialog-title" className="heading-modal">
-                  <div className="flex-reverse">
-                    <button
-                      aria-label="Cerrar modal de registro"
-                      className="close-button"
-                      onClick={e => this.handleClose(e)}
-                    >
-                      <span aria-hidden="true">X</span>
-                    </button>
-                    ¡Ya enviaste todos los links de pagos a tus contactos!
-                  </div>
-                </DialogTitle>
-                <DialogContent>
-                  <p className="texto-dialogo">
-                    Podes hacer tu compra ahora o dejar las entradas reservadas
-                    a tu nombre. Recordá que tenes hasta 40 minutos antes de la
-                    función para comprarlas.
-                  </p>
-                </DialogContent>
-                <DialogActions className="button-columns">
-                  <Button onClick={e => this.handleClose(e)} color="primary">
-                    Reservar mis entradas
-                  </Button>
-                  <Link
-                    to={{
-                      pathname: "/checkout2"
-                    }}
-                  >
-                    <Button
-                      variant="outlined"
-                      className="button-contained"
-                      type="submit"
-                    >
-                      Comprar mis entradas
-                    </Button>
-                  </Link>
-                </DialogActions>
-              </Dialog>
+                <Button
+                  variant="outlined"
+                  className="button-contained"
+                  type="submit"
+                >
+                  Siguiente
+                </Button>
+              </Link>
             </div>
           </aside>
         </div>
