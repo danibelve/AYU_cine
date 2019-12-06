@@ -1,5 +1,6 @@
 .fondo-violeta{
     /*background-color: #5E50B5;*/
+    margin-top: 30px;
 }
 
 .editar-perfil{
@@ -14,13 +15,19 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    padding: 50px;
+    padding:15px 50px;
     margin: 25px;
 }
 
 .MuiAvatar-colorDefault{
 margin: 0 auto;
+padding: 20px;
+background-color: transparent !important;
+color: #5F6D74 !important;
+border: 2px solid #5e50b5 !important;
+margin-top: 10px;
 }
+
 .margin0auto{
     margin: 0 auto;
 }
@@ -36,4 +43,55 @@ margin: 0 auto;
 .counter-center{
     display: flex;
     justify-content: center;
+}
+
+.h2-quienes-pagan{
+    font-size:1em!important;
+}
+
+.tu-contacto{
+    font-weight: 800!important;
+    font-size: 1em!important;
+    color:#5e50b5 !important;
+    margin-top:15px;
+    line-height:1.5em;
+}
+
+.tu-contacto-tel{
+    font-size:0.9em;
+    margin-bottom:15px;
+}
+
+.checkout-cant-entradas{
+    font-size: 0.5em;
+    font-weight: 700;
+    margin-bottom: 7px;
+}
+
+.persona1{
+    text-align: center!important;
+    margin: auto!important;
+}
+.displayflex-contacto-add{
+    vertical-align: top!important;
+}
+
+.wrapper-contacto-add{
+    width: 169px;
+    height: 306px;
+    border:1px dashed #9B99AA;
+    box-shadow: none!important;
+}
+
+.add-contacto{
+    font-size: 3em;
+    color:#2BB2AC;
+    text-align:center;
+    padding-top: 80px;
+}
+
+.add-contacto-strong{
+    font-size: 0.9rem!important;
+    color:grey!important;
+    display:block;
 }

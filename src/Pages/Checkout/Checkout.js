@@ -115,16 +115,19 @@ class Checkout extends React.Component {
               Agregar a tus amigos que vayan a pagar. ¡Podes ver los grupos en
               tu perfil!
             </p>
-            <h2>
+            <h2 className="h2-quienes-pagan">
               Este es el grupo de Joker, elegí cuantas entradas paga cada
               integrantes
             </h2>
             <div className="displayflex-contacto">
               <div className="wrapper-contacto">
                 <Avatar>OP</Avatar>
-                <p className="margin0auto">Tu contacto</p>
-                <p className="margin0auto">+54 1156439494</p>
+                <p className="margin0auto tu-contacto">Exequiel</p>
+                <p className="margin0auto tu-contacto-tel">+54 1156439494</p>
                 <div className="persona1">
+                <label className="margin0auto checkout-cant-entradas" for="persona1">
+                    CANTIDAD DE ENTRADAS:
+                  </label>
                   <div className="counter-center">
                     <div className="persona-card">
                       <Fab
@@ -155,21 +158,26 @@ class Checkout extends React.Component {
                       </Fab>
                     </div>
                   </div>
-                  <label className="margin0auto" for="persona1">
-                    Entradas a pagar
-                  </label>
                 </div>
                 <div className="fondo-violeta">
                   <Button className="editar-perfil">Editar Perfil</Button>
                 </div>
               </div>
             </div>
+            <div className="displayflex-contacto displayflex-contacto-add">
+              <div className="wrapper-contacto wrapper-contacto-add">
+                <p className="add-contacto">+ <strong className="add-contacto-strong">Agregar contacto</strong></p>
+              </div>
+            </div>
             <div className="displayflex-contacto">
               <div className="wrapper-contacto">
                 <Avatar>OP</Avatar>
-                <p className="margin0auto">Tu contacto</p>
-                <p className="margin0auto">+54 1156439494</p>
+                <p className="margin0auto tu-contacto">Exequiel</p>
+                <p className="margin0auto tu-contacto-tel">+54 1156439494</p>
                 <div className="persona1">
+                <label className="margin0auto checkout-cant-entradas" for="persona1">
+                    CANTIDAD DE ENTRADAS:
+                  </label>
                   <div className="counter-center">
                     <div className="persona-card">
                       <Fab
@@ -181,28 +189,25 @@ class Checkout extends React.Component {
                         -
                       </Fab>
                       <TextField
-                        id="persona2"
+                        id="persona1"
                         type="text"
-                        value={this.state.inputValuePersona2}
-                        onChange={this.updateInputValuePersona2}
+                        value={this.state.inputValuePersona1}
+                        onChange={this.updateInputValuePersona1}
                         className="input-width"
                         aria-live="polite"
-                        aria-label={this.state.inputValuePersona2 + " entradas"}
+                        aria-label={this.state.inputValuePersona1 + " entradas"}
                         //aria-describedby={'label_' +this.props.id}
                       />
                       <Fab
                         variant="round"
                         className="buton-peque"
                         aria-label="Sumar una entrada"
-                        onClick={e => this.handleClickSumarPersona2(e)}
+                        onClick={e => this.handleClickSumarPersona1(e)}
                       >
                         +
                       </Fab>
                     </div>
                   </div>
-                  <label className="margin0auto" for="persona1">
-                    Entradas a pagar
-                  </label>
                 </div>
                 <div className="fondo-violeta">
                   <Button className="editar-perfil">Editar Perfil</Button>
