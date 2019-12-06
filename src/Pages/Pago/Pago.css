@@ -6,7 +6,7 @@
 }
 
 .radiowrapper {
-  width: 350px;
+  width: 300px;
   padding: 30px;
   background-color: white;
   border-radius: 8px;
@@ -78,7 +78,7 @@
   padding: 7px;
   max-width: 105px;
   border-radius: 3px;
-  margin-bottom: 60px;
+  margin-bottom: 45px;
   margin-top: 20px;
 }
 
@@ -90,7 +90,7 @@
   max-width: 115px;
   border-radius: 3px;
   margin-bottom: 60px;
-  margin-top: 20px;
+  margin-top: 39px;
 }
 
 .beneficios-pago {
