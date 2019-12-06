@@ -2,7 +2,8 @@ import React from "react";
 import "./Checkout2.css";
 import "../../Styles/Commons.css";
 import "../../Components/Aside/Aside.css";
-import Header from "../../Components/Header/Header";
+import HeaderUser from "../../Components/Header/HeaderUser";
+import Avatar from "@material-ui/core/Avatar";
 import Footer from "../../Components/Footer/Footer";
 import "../../Components/Counter/Counter.css";
 import Logos from "../../Assets/tarjetas.svg";
@@ -76,7 +77,7 @@ class Checkout2 extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Header></Header>
+        <HeaderUser></HeaderUser>
         <div className="box-shadow"></div>
         <div className="divide">
           <main id="mainContent" className="filter">
