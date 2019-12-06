@@ -216,22 +216,31 @@ class Pago extends React.Component {
                 maxWidth="xs"
               >
                 <DialogTitle id="form-dialog-title" className="heading-modal">
-                  <div className="flex-reverse">
-                    <button
+                <button
                       aria-label="Cerrar modal de registro"
                       className="close-button"
                       onClick={e => this.handleClose(e)}
                     >
                       <span aria-hidden="true">X</span>
                     </button>
+                  <div className="flex-reverse">
                     ¡Hola! Para continuar tenés que registrarte en Sale Cine
                   </div>
                 </DialogTitle>
                 <DialogContent>
-                  <TextField
+                <TextField
                     autoFocus
                     margin="dense"
                     id="name"
+                    label="Nombre"
+                    type="text"
+                    variant="outlined"
+                    fullWidth
+                  />
+                  <TextField
+                    autoFocus
+                    margin="dense"
+                    id="email"
                     label="Email"
                     type="mail"
                     variant="outlined"
@@ -239,15 +248,31 @@ class Pago extends React.Component {
                   />
                   <TextField
                     margin="dense"
-                    id="name"
+                    id="telefono"
+                    label="Teléfono"
+                    type="text"
+                    variant="outlined"
+                    fullWidth
+                  />
+                  <TextField
+                    margin="dense"
+                    id="password"
                     label="Contraseña"
+                    type="password"
+                    variant="outlined"
+                    fullWidth
+                  />
+                  <TextField
+                    margin="dense"
+                    id="password2"
+                    label="Repetir Contraseña"
                     type="password"
                     variant="outlined"
                     fullWidth
                   />
                 </DialogContent>
                 <DialogActions className="button-columns">
-                  <Button onClick={e => this.handleClose(e)} color="primary">
+                  <Button className="ya-tengo-cuenta" onClick={e => this.handleClose(e)} color="primary">
                     Ya tengo cuenta
                   </Button>
                   <Link

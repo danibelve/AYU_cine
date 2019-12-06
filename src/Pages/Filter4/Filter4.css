@@ -19,6 +19,11 @@
 
 .noOpcion {
   padding: 24px 0;
+  font-size:0.8em;
+}
+
+.noOpcion strong{
+  font-weight: 500;
 }
 
 .wrapper-butacas {

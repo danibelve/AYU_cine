@@ -21,9 +21,9 @@ h1 {
     font-size: 3em;
 }
 
+
 .desc {
     font-size: 1.1em;
-    margin-bottom: 60px;
 }
 
 .card-header {
@@ -89,10 +89,15 @@ i {
 .button-contained:hover {
 	text-decoration: none !important;
 	background-color:#8F50B5!important;
+	border: 1px solid #8F50B5!important;
   }
   
 .button-contained:active {
 	text-decoration: none !important;
+  }
+
+  .MuiButton-contained:hover{
+	border: 1px solid #8F50B5!important;
   }
 
 
@@ -154,13 +159,13 @@ a:active {
 }
 
 .h1-filter{
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
 .bajada{
-	font-size: 1em;
+	font-size: 1em!important;
 	margin-bottom: 44px;
-    margin-top: 15px;
+	margin-top: 5px;
 }
 
 .buton-peque{
@@ -184,4 +189,33 @@ a:active {
     margin-right: -11px;
     flex-direction: row-reverse;
     justify-content: space-between;
+}
+
+.MuiButton-root{
+	font-size:0.8em!important;
+}
+
+.MuiTypography-h6{
+    color: #5e50b5 !important;
+    font-weight: 700!important;
+    line-height: 1.2em!important;
+    text-align: center;
+}
+
+.MuiDialog-paperWidthXs {
+	max-width: 560px!important;
+  }
+
+  .MuiDialogContent-root {
+    padding: 8px 54px!important;
+}
+
+.MuiFormControl-marginDense {
+	margin-top: 10px!important;
+	margin-bottom: 10px!important;
+  }
+
+  .MuiInputLabel-marginDense{
+    font-size: 0.8em!important;
+    line-height: 1.3em!important;
 }
