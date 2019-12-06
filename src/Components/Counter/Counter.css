@@ -31,7 +31,7 @@
 
 .label-contador{
     color: #5F6D74;
-    font-size: 19px;
+    font-size: 1em;
     font-weight: bold;
     padding-right: 9px;
     margin-right: 20px;
@@ -49,7 +49,7 @@
     border-radius: 8px;
     height: 74px;
     display: inline-flex;
-    width: 200px;
+    width: 180px !important;
     flex-wrap: wrap;
     flex-direction: row-reverse;
     width: 200px;
