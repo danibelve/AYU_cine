@@ -147,16 +147,15 @@ class Checkout2 extends React.Component {
                   <h2>Información de pago</h2>
                   <div className="white-card">
                     <h3 className="h3-tc">Tarjeta de Crédito/Débito</h3>
-                    <p>
-                      Compras online protegidas. Este sitio hace que tus
-                      transacciones online sean tan seguras, rápidas y convenientes.
-                    </p>
                     <img
                       className="tarjetas-credito"
                       src={Logos}
                       alt="Tarjetas permitidas: mastercard, visa y american express"
                     />
-
+                    <p>
+                      Compras online protegidas. Este sitio hace que tus
+                      transacciones online sean tan seguras, rápidas y convenientes.
+                    </p>
                     <TextField
                       id="standard-basic"
                       variant="outlined"

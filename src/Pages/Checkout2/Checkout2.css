@@ -1,6 +1,10 @@
 .tarjetas-credito {
   width: 106px;
   height: 22px;
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
 }
 
 .form-nom-ape .MuiTextField-root{
@@ -46,9 +50,11 @@
   font-size: 1.1em;
   font-weight: 600;
   margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
 }
 
 .white-card p{
   font-size: 1em;
-  max-width: 400px;
+  max-width: 634px;
 }
