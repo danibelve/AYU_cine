@@ -36,7 +36,7 @@ class MovieDetails extends React.Component {
                             alt=""
                             className="movie-img"
                             image={this.props.image}
-                            title={this.props.title}
+                            title=""
                         />
                         <CardContent className="flex-column cardContent">
                             <Typography gutterBottom component="h3" className="card-header">
