@@ -55,6 +55,7 @@ class Filter extends React.Component {
     this.state = {
       cuando: "",
       hora: "",
+      donde: "",
       //value: "",
       inputValueAdulto: 0,
       inputValueNiño: 0,
@@ -95,6 +96,26 @@ class Filter extends React.Component {
         value: "2"
       }
     ];
+
+    this.donde = [
+      {
+        label: "Primeras Filas",
+        bajada: "De  fila A a fila D",
+        value: "0"
+      },
+      {
+        label: "Centro",
+        bajada: "De  fila E a fila H",
+        value: "1"
+      },
+      {
+        label: "Últimas filas",
+        bajada: "De fila I a fila J",
+        value: "2"
+      }
+    ];
+
+
     this.handleCheck = this.handleClick.bind(this);
   }
   componentDidMount() {
@@ -289,7 +310,7 @@ class Filter extends React.Component {
                 <IconButton className="botonfecha" aria-label="delete">
                   <CalendarTodayIcon />
                 </IconButton>
-            </div>
+                </div>
               </FormControl>
             </div>
             <h2 className="h2-filter1">¿Cuántos van a ser?</h2>
@@ -427,6 +448,43 @@ class Filter extends React.Component {
                 </RadioGroup>
               </FormControl>
             </div>
+            <h2>¿Qué zona de butacas prefieres? <a>Ver referencia</a></h2>
+            <div className={this.classes.root}>
+              <FormControl
+                component="fieldset"
+                className={this.classes.formControl}
+              >
+                <div className="dias-1">
+                <FormLabel component="legend">
+                  <i className="sr-only">Elegi una opción de día</i>
+                </FormLabel>
+                <RadioGroup
+                  aria-label="donde"
+                  name="donde"
+                  className="myRadioGroup"
+                  value={this.state.donde}
+                >
+                  {this.donde.map((option, key) => {
+                    return (
+                      <div className="butones-1" key={key}>
+                        <FormControlLabel
+                          value={option.label}
+                          control={<Radio onClick={e => this.handleClick(e)} />}
+                          label={option.label}
+                          labelPlacement="start"
+                          className="zona"
+                          id={option.label}
+                          />
+                        <span className="bajadas">{option.bajada}</span>
+                      </div>
+
+                    );
+                  })}
+                </RadioGroup>
+                </div>
+              </FormControl>
+            </div>
+          
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
