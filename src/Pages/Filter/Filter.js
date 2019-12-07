@@ -99,7 +99,7 @@ class Filter extends React.Component {
   }
   componentDidMount() {
     document.title = "Elijan sus preferencias y Sale Cine";
-    document.getElementById("root").focus();
+    document.getElementById("Jueves 28").focus();
   }
 
   armarCantidadDePersonas() {
@@ -278,6 +278,7 @@ class Filter extends React.Component {
                           label={option.label}
                           labelPlacement="start"
                           className="dias"
+                          id={option.label}
                           ref={(thisMainContent) => {this.mainContent = thisMainContent}}/>
                         <span className="bajadas">{option.bajada}</span>
                       </div>
