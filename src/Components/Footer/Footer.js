@@ -16,7 +16,7 @@ class Footer extends React.Component {
         return (
             <footer id="footer">
                 <div>
-                    <img alt="logo" src={logoFooter} className="footer-logo"/>
+                    <img alt="" src={logoFooter} className="footer-logo"/>
                 </div>
                 <div>
                     <ul className="lista">
