@@ -41,6 +41,7 @@ class Filter2 extends React.Component {
       provincia: "",
       ciudad: "",
       name: "hai",
+      filterOptionLength: "5",
       somethingChange: false,
       movies: [
         {
@@ -125,7 +126,8 @@ class Filter2 extends React.Component {
       ...this.state,
       [name]: event.target.value,
       somethingChange: true,
-      filterOption: filterDropdown
+      filterOption: filterDropdown,
+      filterOptionLength: filterDropdown.length
     });
   };
 
@@ -182,7 +184,7 @@ class Filter2 extends React.Component {
                 <option value="Barrio de Rosario">Barrio de Rosario</option>
               </NativeSelect>
             </FormControl>
-
+  <span className="sr-only" aria-live="polite">Opciones disponibles: {this.state.filterOptionLength}</span>
             {this.state.somethingChange ? (
               <div className="moviedetails-card">
                 <RadioGroup
