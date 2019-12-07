@@ -7,9 +7,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import "../../Components/MovieCard/MovieCard.css";
-import Cinema from "../../Assets/village.png"
-import MovieDetails from "../../Components/MovieDetails/MovieDetails";
+import Cinema from "../../Assets/village.png";
+import RadioGroup from "@material-ui/core/RadioGroup";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Button from "@material-ui/core/Button";
+import Radio from "@material-ui/core/Radio";
 import { Route, Link } from "react-router-dom";
 
 class Filter2 extends React.Component {
@@ -33,25 +35,28 @@ class Filter2 extends React.Component {
     }));
 
     this.state = {
+      cine: "Sin definir",
       barrio: "",
       provincia: "",
       ciudad: "",
       name: "hai",
       somethingChange: false,
-      movies:[
+      movies: [
         {
           title: "Cinépolis Caballito",
           img: Cinema,
           provincia: "Buenos Aires",
           ciudad: "Capital Federal",
-          barrio: "Caballito"
+          barrio: "Caballito",
+          description: "Av. Rivadavia 1921"
         },
         {
           title: "Cinépolis Flores",
           img: Cinema,
           provincia: "Buenos Aires",
           ciudad: "Capital Federal",
-          barrio: "Flores"
+          barrio: "Flores",
+          description: "Av. Rivadavia 1921"
         },
         {
           title: "Cinépolis Recoleta",
@@ -59,35 +64,62 @@ class Filter2 extends React.Component {
           provincia: "Buenos Aires",
           ciudad: "Capital Federal",
           barrio: "Recoleta",
+          description: "Av. Rivadavia 1921"
         },
         {
           title: "Cinépolis Rosario",
           img: Cinema,
           ciudad: "Rosario",
           provincia: "Santa fé",
-          barrio: "Barrio de Rosario"
+          barrio: "Barrio de Rosario",
+          description: "Av. Rivadavia 1921"
         },
         {
           title: "Cinépolis Nueva Córdoba",
           img: Cinema,
           ciudad: "Córdoba",
           provincia: "Córdoba Capital",
-          barrio: "Nueva Córdoba"
+          barrio: "Nueva Córdoba",
+          description: "Av. Rivadavia 1921"
         }
       ]
     };
+    this.handleCheck = this.handleClick.bind(this);
+    
   }
 
   componentDidMount() {
     document.title = "Elijan cuál cine, sale cine";
   }
 
+  handleClick(event) {
+    const newValue = event.target.value;
+    const name = event.target.name;
+
+    if (newValue === [name]) {
+      window.setTimeout(
+        function() {
+          this.setState({ [name]: "" });
+        }.bind(this),
+        0
+      );
+    } else {
+      window.setTimeout(
+        function() {
+          this.setState({ [name]: newValue });
+        }.bind(this),
+        0
+      );
+    }
+  }
+
   handleChange = name => event => {
     const filterDropdown = this.state.movies.filter(item => {
       return Object.keys(item).some(key =>
-        item[key].includes(event.target.value) 
+        item[key].includes(event.target.value)
       );
     });
+
     this.setState({
       ...this.state,
       [name]: event.target.value,
@@ -97,11 +129,6 @@ class Filter2 extends React.Component {
   };
 
   render() {
-    let filterDropdown = this.state.movies.filter(item => {
-        return Object.keys(item).some(key =>
-          item[key].includes(this.state.provincia) 
-        );
-      });
     return (
       <React.Fragment>
         <Header></Header>
@@ -156,30 +183,64 @@ class Filter2 extends React.Component {
             </FormControl>
 
             {this.state.somethingChange ? (
-                <div className="moviedetails-card">
-                {(this.state.filterOption.map((movie,key )=> {
-                    return (
-                      <MovieDetails
-                        image={movie.img}
-                        title={movie.title}
-                        description={movie.description}
-                        id={key}
-                      />
-                    );
-                  }))}
-                </div>
-            ) : (
-                <div className="moviedetails-card">
-                {this.state.movies.map((movie, key) => {
+              <div className="moviedetails-card">
+                <RadioGroup
+                  aria-label="Cine"
+                  name="cine"
+                  className="myRadioGroup"
+                  value={this.state.cine}
+                >
+                {this.state.filterOption.map((movie, key) => {
                   return (
-                    <MovieDetails
-                      image={movie.img}
-                      title={movie.title}
-                      description={movie.description}
-                      key={key}
-                    />
+                    <div className="radioimages">
+                      <img src={movie.img} alt="" className="img-radio"/>
+                      <div key={key} className="img-butones">
+                        <FormControlLabel
+                          value={movie.title}
+                          control={
+                            <Radio onMouseUp={e => this.handleClick(e)} />
+                          }
+                          label={movie.title}
+                          labelPlacement="start"
+                          className="strong"
+                          name="cine"
+                        />
+                        <span className="bajadas">{movie.description}</span>
+                      </div>
+                    </div>
                   );
                 })}
+                </RadioGroup>
+              </div>
+            ) : (
+              <div className="moviedetails-card">
+                <RadioGroup
+                  aria-label="Cine"
+                  name="cine"
+                  className="myRadioGroup"
+                  value={this.state.cine}
+                >
+                {this.state.movies.map((movie, key) => {
+                  return (
+                    <div className="radioimages">
+                      <img src={movie.img} alt="" className="img-radio"/>
+                      <div key={key} className="img-butones">
+                        <FormControlLabel
+                          value={movie.title}
+                          control={
+                            <Radio onMouseUp={e => this.handleClick(e)} />
+                          }
+                          label={movie.title}
+                          labelPlacement="start"
+                          className="strong"
+                          name="cine"
+                        />
+                        <span className="bajadas">{movie.description}</span>
+                      </div>
+                    </div>
+                  );
+                })}
+                </RadioGroup>
               </div>
             )}
           </main>
@@ -188,10 +249,18 @@ class Filter2 extends React.Component {
               <div className="steps">
                 <div className="container-steps">
                   <ul className="progressbar">
-                    <li className="funcion linea"><p>FUNCIÓN</p></li>
-                    <li className="butacas-after butacas linea inactivo"><p>BUTACAS</p></li>
-                    <li className="pago-after pago linea inactivo"><p>PAGO</p></li>
-                    <li className="entradas linea inactivo"><p>ENTRADAS</p></li>
+                    <li className="funcion linea">
+                      <p>FUNCIÓN</p>
+                    </li>
+                    <li className="butacas-after butacas linea inactivo">
+                      <p>BUTACAS</p>
+                    </li>
+                    <li className="pago-after pago linea inactivo">
+                      <p>PAGO</p>
+                    </li>
+                    <li className="entradas linea inactivo">
+                      <p>ENTRADAS</p>
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -210,6 +279,10 @@ class Filter2 extends React.Component {
                   <p className="violeta">Adultos: 4.</p>
                 </div>
                 <div className="flex-arround">
+                  <p className="p-aside">Cine </p>
+                  <p className={this.state.cine === "Sin definir" ? "gris" : "violeta"}> {this.state.cine}</p>
+                </div>
+                <div className="flex-arround">
                   <p className="p-aside">Horario </p>
                   <p className="gris">Sin definir</p>
                 </div>
@@ -219,14 +292,18 @@ class Filter2 extends React.Component {
                 </div>
                 <div className="subtotal-resumen">
                   <div className="flex-arround">
-                      <p className="p-aside aside-subtotal-off">Subtotal </p>
-                      <p className="gris aside-subtotal-off-1">El precio se actualizará al elegir la funcion</p>
+                    <p className="p-aside aside-subtotal-off">Subtotal </p>
+                    <p className="gris aside-subtotal-off-1">
+                      El precio se actualizará al elegir la funcion
+                    </p>
                   </div>
                 </div>
               </div>
-                <div className="div-vinculo-ingresa">
-                  <a href="salecine.com/signin" className="vinculo-ingresa">Ingresá a tu cuenta para guardar los datos de tu compra</a>
-                </div>
+              <div className="div-vinculo-ingresa">
+                <a href="salecine.com/signin" className="vinculo-ingresa">
+                  Ingresá a tu cuenta para guardar los datos de tu compra
+                </a>
+              </div>
             </div>
             <div className="button-container">
               <Route
@@ -242,22 +319,25 @@ class Filter2 extends React.Component {
                   </Button>
                 )}
               />
-              <Link to={{
-                pathname: '/filter3',
-                state: {
-                  hora: this.props.location.state.hora,
-                  cuando: this.props.location.state.cuando,
-                  cantidadDePersonas: this.props.location.state.cantidadDePersonas,
-                  peli: this.props.location.state.peli
-                }
-              }}>
-              <Button
-                    variant="outlined"
-                    className="button-contained"
-                    type= "submit"
-                  >
-                    Siguiente
-                  </Button>
+              <Link
+                to={{
+                  pathname: "/filter3",
+                  state: {
+                    hora: this.props.location.state.hora,
+                    cuando: this.props.location.state.cuando,
+                    cantidadDePersonas: this.props.location.state
+                      .cantidadDePersonas,
+                    peli: this.props.location.state.peli
+                  }
+                }}
+              >
+                <Button
+                  variant="outlined"
+                  className="button-contained"
+                  type="submit"
+                >
+                  Siguiente
+                </Button>
               </Link>
             </div>
           </aside>
