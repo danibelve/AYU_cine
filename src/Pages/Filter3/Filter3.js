@@ -311,7 +311,7 @@ class Filter2 extends React.Component {
               </div>
               <h3 className="heading-aside">
                 <span className="heading3-padding">
-                  Tu selección para {this.props.location.state.peli}
+                  Tu selección para <i lang="en">The Joker</i>
                 </span>
               </h3>
               <div className="datos-aside">
@@ -322,6 +322,10 @@ class Filter2 extends React.Component {
                 <div className="flex-arround">
                   <p className="p-aside">Cant. de personas </p>
                   <p className="violeta">Adultos: 4.</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Cine </p>
+                  <p className="violeta">Cinépolis Caballito</p>
                 </div>
                 <div className="flex-arround">
                   <p className="p-aside">Horario </p>
@@ -357,13 +361,7 @@ class Filter2 extends React.Component {
                 )}
               />
               <Link to={{
-                pathname: '/filter4',
-                state: {
-                  hora: this.state.hora,
-                  cuando: this.props.location.state.cuando,
-                  cantidadDePersonas: this.props.location.state.cantidadDePersonas,
-                  peli: this.props.location.state.peli
-                }
+                pathname: '/filter4'
               }}>
               <Button
                     variant="outlined"

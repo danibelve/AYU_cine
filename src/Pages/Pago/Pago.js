@@ -188,6 +188,10 @@ class Pago extends React.Component {
                   <p className="violeta">4 adultos.</p>
                 </div>
                 <div className="flex-arround">
+                  <p className="p-aside">Cine </p>
+                  <p className="violeta">Cinépolis Caballito</p>
+                </div>
+                <div className="flex-arround">
                   <p className="p-aside">Horario </p>
                   <p className="violeta">21:30</p>
                 </div>

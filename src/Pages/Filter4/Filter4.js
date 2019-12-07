@@ -1050,7 +1050,7 @@ class Filter4 extends React.Component {
                 </div>
               <h3 className="heading-aside">
                 <span className="heading3-padding">
-                  Tu selección para {this.props.location.state.peli}
+                  Tu selección para <i lang="en">The Joker</i>
                 </span>
               </h3>
               <div className="datos-aside">
@@ -1097,14 +1097,7 @@ class Filter4 extends React.Component {
               />
               <Link
                 to={{
-                  pathname: "/pago",
-                  state: {
-                    hora: this.props.location.state.hora,
-                    cuando: this.props.location.state.cuando,
-                    cantidadDePersonas: this.props.location.state.cantidadDePersona,
-                    peli: this.props.location.state.peli,
-                    butacas: this.armarButacas()
-                  }
+                  pathname: "/pago"
                 }}
               >
                 <Button

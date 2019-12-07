@@ -96,9 +96,6 @@ class Filter extends React.Component {
   }
   componentDidMount() {
     document.title = "Elijan sus preferencias y Sale Cine";
-    this.setState({
-      peli: this.props.location.state.peli
-    });
   }
 
   armarCantidadDePersonas() {
@@ -434,7 +431,7 @@ class Filter extends React.Component {
               </div>
               <h3 className="heading-aside">
                 <span className="heading3-padding">
-                  Tu selección para {this.state.peli}
+                  Tu selección para <i lang="en">The Joker</i>
                 </span>
               </h3>
               <div className="datos-aside">
@@ -445,6 +442,10 @@ class Filter extends React.Component {
                 <div className="flex-arround">
                   <p className="p-aside">Cant. de personas </p>
                   <p className={this.armarCantidadDePersonas() === "Sin definir" ? "gris" : "violeta"}> {this.armarCantidadDePersonas()}</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Cine </p>
+                  <p className="gris">Sin definir</p>
                 </div>
                 <div className="flex-arround">
                   <p className="p-aside">Horario </p>
@@ -481,13 +482,7 @@ class Filter extends React.Component {
               />
               <Link
                 to={{
-                  pathname: "/filter2",
-                  state: {
-                    hora: this.state.hora,
-                    cuando: this.state.cuando,
-                    cantidadDePersonas: this.armarCantidadDePersonas(),
-                    peli: this.props.location.state.peli
-                  }
+                  pathname: "/filter2"
                 }}
               >
                 <Button

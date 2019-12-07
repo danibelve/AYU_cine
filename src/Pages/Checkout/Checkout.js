@@ -230,7 +230,7 @@ class Checkout extends React.Component {
                   </div>  
               <h3 className="heading-aside">
                 <span className="heading3-padding">
-                  Tu selección para The Joker
+                  Tu selección para <i lang="en">The Joker</i>
                 </span>
               </h3>
               <div className="datos-aside">
@@ -241,6 +241,10 @@ class Checkout extends React.Component {
                 <div className="flex-arround">
                   <p className="p-aside">Cantidad de personas </p>
                   <p className="violeta">Adultos 4.</p>
+                </div>
+                <div className="flex-arround">
+                  <p className="p-aside">Cine </p>
+                  <p className="violeta">Cinépolis Caballito</p>
                 </div>
                 <div className="flex-arround">
                   <p className="p-aside">Horario </p>

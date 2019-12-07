@@ -266,7 +266,7 @@ class Filter2 extends React.Component {
               </div>
               <h3 className="heading-aside">
                 <span className="heading3-padding">
-                  Tu selección para {this.props.location.state.peli}
+                  Tu selección para <i lang="en">The Joker</i>
                 </span>
               </h3>
               <div className="datos-aside">
@@ -312,7 +312,7 @@ class Filter2 extends React.Component {
                     variant="outlined"
                     className="button-outlined-black"
                     onClick={() => {
-                      history.push("/filter");
+                      history.push("/filter2");
                     }}
                   >
                     Anterior
@@ -321,14 +321,7 @@ class Filter2 extends React.Component {
               />
               <Link
                 to={{
-                  pathname: "/filter3",
-                  state: {
-                    hora: this.props.location.state.hora,
-                    cuando: this.props.location.state.cuando,
-                    cantidadDePersonas: this.props.location.state
-                      .cantidadDePersonas,
-                    peli: this.props.location.state.peli
-                  }
+                  pathname: "/filter3"
                 }}
               >
                 <Button
