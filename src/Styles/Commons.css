@@ -376,3 +376,7 @@ abbr {
 .MuiButton-textPrimary{
 	font-size:0.7em!important;
 }
+
+.MuiRadio-colorSecondary.Mui-checked {
+  color: #5e50b5!important;
+}

@@ -21,6 +21,7 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import TextField from "@material-ui/core/TextField";
 import Fab from "@material-ui/core/Fab";
 import Progressbar from "../../Assets/Estados/Pago.svg"
+import ButtonGroup from '@material-ui/core/ButtonGroup';
 
 class Checkout extends React.Component {
   constructor(props) {
@@ -302,22 +303,15 @@ class Checkout extends React.Component {
                   </p>
                 </DialogContent>
                 <DialogActions className="button-columns">
-                  <Button onClick={e => this.handleClose(e)} color="primary">
-                    Reservar mis entradas
-                  </Button>
-                  <Link
-                    to={{
-                      pathname: "/checkout2"
-                    }}
-                  >
-                    <Button
-                      variant="outlined"
-                      className="button-contained"
-                      type="submit"
-                    >
-                      Comprar mis entradas
-                    </Button>
-                  </Link>
+                <ButtonGroup
+              variant="text"
+              color="secondary"
+              size="large"
+              aria-label="large contained secondary button group"
+            >
+              <Button className="button-contained button-contained-modal-1">Reservar entradas</Button>
+              <Button className="button-contained button-contained-modal-2">Pagar ahora</Button>
+            </ButtonGroup>
                 </DialogActions>
               </Dialog>
 
