@@ -38,6 +38,7 @@ margin-top: 10px;
 
 .displayflex-contacto{
     display: inline-flex;
+    margin-left: -22px;
 }
 
 .counter-center{

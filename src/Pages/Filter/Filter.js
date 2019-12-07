@@ -258,7 +258,7 @@ class Filter extends React.Component {
                 className={this.classes.formControl}
               >
                 <FormLabel component="legend">
-                  <i className="sr-only">Eleguí una opción de día</i>
+                  <i className="sr-only">Elegi una opción de día</i>
                 </FormLabel>
                 <RadioGroup
                   aria-label="cuando"
@@ -283,8 +283,8 @@ class Filter extends React.Component {
                 </RadioGroup>
               </FormControl>
             </div>
-            <h2>¿Cuántos van a ser?</h2>
-            <div className="counter-container">
+            <h2 className="h2-filter1">¿Cuántos van a ser?</h2>
+            <div className="counter-container cuantos-adultos">
               <div className="butones-2">
                 <Fab
                   variant="round"
@@ -348,7 +348,7 @@ class Filter extends React.Component {
               <span className="label-contador" id={"label_Niños"}>
                 Niños
               </span>
-              <p className="counterBajada bajadas">De 2 a 10 años</p>
+              <p className="counterBajada bajadas bajada-ninos">De 2 a 10 años</p>
             </div>
             <div className="counter-container">
               <div className="butones-2">
@@ -378,19 +378,19 @@ class Filter extends React.Component {
                   +
                 </Fab>
               </div>
-              <span className="label-contador" id={"label_Jubilados"}>
+              <span className="label-contador label-contador-jubilados" id={"label_Jubilados"}>
                 Jubilados
               </span>
-              <p className="counterBajada bajadas">Mayores de 60 años</p>
+              <p className="counterBajada bajadas bajada-jubilados">Mayores de 60 años</p>
             </div>
-            <h2>¿A qué hora quieren ir?</h2>
+            <h2 className="h2-filter1">¿A qué hora quieren ir?</h2>
             <div className={this.classes.root}>
               <FormControl
                 component="fieldset"
                 className={this.classes.formControl}
               >
                 <FormLabel component="legend" className="dia">
-                  <i className="sr-only">"Eleguí una opción de horario"</i>
+                  <i className="sr-only">"Elegi una opción de horario"</i>
                 </FormLabel>
                 <RadioGroup
                   aria-label="hora"

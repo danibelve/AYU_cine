@@ -5,8 +5,8 @@
     background-color: white;
     padding: 10px 10px 0px 10px;
     border-radius: 8px;
-    height: 74px;
-    width: 180px;
+    height: 80px;
+    width: 220px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, .1);
 }
 
@@ -14,6 +14,7 @@
 .myRadioGroup{
     display:inline-flex !important;
     flex-direction: row !important;
+    margin-left: -25px;
 }
 
 .myRadioGroup-block{

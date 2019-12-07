@@ -216,7 +216,7 @@ class Filter2 extends React.Component {
                 </RadioGroup>
               </FormControl>
             </div>
-            <h2>Subtituladas 3D <i className="italic">- Precio: $400</i></h2>
+            <h2 className="h2-filter1">Subtituladas 3D <i className="italic">- Precio: $400</i></h2>
             <div className={this.classes.root}>
               <FormControl
                 component="fieldset"
@@ -251,12 +251,12 @@ class Filter2 extends React.Component {
                 </RadioGroup>
               </FormControl>
             </div>
-            <h2>Dobladas 2D <i className="italic">- Precio: $300</i></h2>
+            <h2 className="h2-filter1">Dobladas 2D <i className="italic">- Precio: $300</i></h2>
             <p className="noOpcion"> No encontramos funciones que se ajusten a sus necesidades.
             <strong><Link to={{
                 pathname: '/filter'
               }}> Seguir buscando</Link></strong></p>
-            <h2>Dobladas 3D <i className="italic">- Precio: $400</i></h2>
+            <h2 className="h2-filter1">Dobladas 3D <i className="italic">- Precio: $400</i></h2>
             <div className={this.classes.root}>
               <FormControl
                 component="fieldset"

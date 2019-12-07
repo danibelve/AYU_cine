@@ -34,7 +34,27 @@
     font-size: 1em;
     font-weight: bold;
     padding-right: 9px;
-    margin-right: 20px;
+    margin-right: 52px;
+}
+
+.label-contador-jubilados{
+    margin-right: 0px!important;
+}
+
+.bajada-ninos{
+    margin-right: 120px;
+}
+
+.bajada-jubilados{
+    margin-right: 80px;
+}
+
+.cuantos-adultos{
+    margin-left:0!important;
+}
+
+.h2-filter1{
+    margin-top:35px;
 }
 
 .butones-2{
@@ -45,14 +65,13 @@
 .counter-container{
     margin: 24px;
     background-color: white;
-    padding: 10px 10px 0px 10px;
+    padding: 20px 10px 0px 10px;
     border-radius: 8px;
-    height: 74px;
+    height: 70px;
     display: inline-flex;
-    width: 180px !important;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    width: 200px;
+    width: 220px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, .1);
     justify-content: space-between;
 }

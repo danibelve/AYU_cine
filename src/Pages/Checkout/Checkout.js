@@ -117,7 +117,7 @@ class Checkout extends React.Component {
               tu perfil!
             </p>
             <h2 className="h2-quienes-pagan">
-              Este es el grupo de Joker, elegí cuantas entradas paga cada
+              Este es el grupo de The Joker, elegí cuantas entradas paga cada
               integrantes
             </h2>
             <div className="displayflex-contacto">

@@ -77,7 +77,7 @@ class Filter2 extends React.Component {
           description: "Av. Rivadavia 1921"
         },
         {
-          title: "Cinépolis Nueva Córdoba",
+          title: "Cinépolis Córdoba",
           img: Cinema,
           ciudad: "Córdoba",
           provincia: "Córdoba Capital",
