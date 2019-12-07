@@ -440,7 +440,7 @@ class Filter extends React.Component {
                   <p className={this.armarFecha() === "Sin definir" ? "gris" : "violeta"}>{this.armarFecha()}</p>
                 </div>
                 <div className="flex-arround">
-                  <p className="p-aside">Cant. de personas </p>
+                  <p className="p-aside"><abbr title="cantidad">Cant.</abbr> de personas </p>
                   <p className={this.armarCantidadDePersonas() === "Sin definir" ? "gris" : "violeta"}> {this.armarCantidadDePersonas()}</p>
                 </div>
                 <div className="flex-arround">

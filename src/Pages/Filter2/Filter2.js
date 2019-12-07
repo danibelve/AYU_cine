@@ -275,7 +275,7 @@ class Filter2 extends React.Component {
                   <p className="violeta">Viernes 29</p>
                 </div>
                 <div className="flex-arround">
-                  <p className="p-aside">Cant. de personas </p>
+                  <p className="p-aside"><abbr title="cantidad">Cant.</abbr> de personas </p>
                   <p className="violeta">Adultos: 4.</p>
                 </div>
                 <div className="flex-arround">

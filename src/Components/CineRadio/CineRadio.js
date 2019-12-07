@@ -28,10 +28,7 @@ class MovieDetails extends React.Component {
         return (
             <Card className={classes.card} >
                 <Link to={{
-                pathname: '/filter',
-                state: {
-                  peli: this.props.title
-                }
+                pathname: '/filter'
               }}>
                 <CardActionArea>
                         <CardMedia

@@ -34,7 +34,7 @@ class Aside extends React.Component {
                         <p> Sin decidir</p>
                     </div>
                     <div className="flex-arround">
-                        <p>Cantidad de personas </p>
+                        <p><abbr title="cantidad">Cant.</abbr> de personas </p>
                         <p> Sin decidir</p>
                     </div>
                     <div className="flex-arround">

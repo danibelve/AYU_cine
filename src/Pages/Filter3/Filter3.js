@@ -253,13 +253,7 @@ class Filter2 extends React.Component {
             <h2>Dobladas 2D <i className="italic">- Precio: $300</i></h2>
             <p className="noOpcion"> No encontramos funciones que se ajusten a sus necesidades.
             <strong><Link to={{
-                pathname: '/filter',
-                state: {
-                  hora: "",
-                  cuando: "",
-                  cantidadDePersonas: "",
-                  peli: ""
-                }
+                pathname: '/filter'
               }}> Seguir buscando</Link></strong></p>
             <h2>Dobladas 3D <i className="italic">- Precio: $400</i></h2>
             <div className={this.classes.root}>
@@ -320,7 +314,7 @@ class Filter2 extends React.Component {
                   <p className="violeta">Viernes 29</p>
                 </div>
                 <div className="flex-arround">
-                  <p className="p-aside">Cant. de personas </p>
+                  <p className="p-aside"><abbr title="cantidad">Cant.</abbr> de personas </p>
                   <p className="violeta">Adultos: 4.</p>
                 </div>
                 <div className="flex-arround">

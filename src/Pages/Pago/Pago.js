@@ -184,7 +184,7 @@ class Pago extends React.Component {
                   <p className="violeta">30 de enero</p>
                 </div>
                 <div className="flex-arround">
-                  <p className="p-aside">Cantidad de personas </p>
+                  <p className="p-aside"><abbr title="cantidad">Cant.</abbr> de personas </p>
                   <p className="violeta">4 adultos.</p>
                 </div>
                 <div className="flex-arround">
