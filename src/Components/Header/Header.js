@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '@material-ui/core/Button';
-import SkipLinks from 'skip-links';
+import SkipLinks from '../../Components/SkipLinks/SkipLinks';
 import logoHeader from '../../Assets/logo_header.svg';
 import './Header.css';
 import '../../Styles/Commons.css';
@@ -14,7 +14,7 @@ class Header extends React.Component {
     render() {
         return (
             <React.Fragment>
-               <SkipLinks links={links}/>
+               <SkipLinks links={links} />
                 <header className="header">
                     <div className="vertical-align">
                         <img alt="logo" className="header-logo" src={logoHeader}></img>

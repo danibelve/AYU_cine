@@ -1,0 +1,32 @@
+.c-links {
+    position: relative;
+  }
+  
+  .c-links ul {
+    list-style-type: none;
+  }
+  
+  .c-links__item {
+    position: fixed;
+    top: -3em;
+    padding: 0.5em;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    z-index: 100;
+  }
+  
+  .c-links__item:focus {
+    top: 1em;
+  }
+  
+  .u-vs-hidden {
+    position: absolute;
+    width: 0.01em;
+    height: 0.01em;
+    padding: 0;
+    clip: rect(0, 0, 0, 0);
+    border: none;
+    overflow: hidden;
+    white-space: nowrap;
+  }
