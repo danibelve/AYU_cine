@@ -32,7 +32,7 @@ class Footer extends React.Component {
                         </li>
                         <li>
                             <Link href="#" onClick={preventDefault}>
-                                Políticas de privacidad
+                                Accesibilidad
                                 </Link>
                         </li>
                     </ul>

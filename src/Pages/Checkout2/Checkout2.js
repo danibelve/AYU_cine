@@ -20,7 +20,7 @@ import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
-import Progressbar from "../../Assets/Estados/Pago.svg"
+import Progressbar from "../../Assets/Estados/Pago.svg";
 
 class Checkout2 extends React.Component {
   constructor(props) {
@@ -102,7 +102,7 @@ class Checkout2 extends React.Component {
                   id="standard-basic"
                   variant="outlined"
                   label="Dirección"
-                />                
+                />
               </div>
               <div className="form-pais-ciudad">
                 <FormControl
@@ -145,70 +145,75 @@ class Checkout2 extends React.Component {
                 />
               </div>
               <div className="info-de-pago">
-                  <h2>Información de pago</h2>
-                  <div className="white-card">
-                    <h3 className="h3-tc">Tarjeta de Crédito/Débito</h3>
-                    <img
-                      className="tarjetas-credito"
-                      src={Logos}
-                      alt="Tarjetas permitidas: mastercard, visa y american express"
+                <h2>Información de pago</h2>
+                <div className="white-card">
+                  <h3 className="h3-tc">Tarjeta de Crédito/Débito</h3>
+                  <img
+                    className="tarjetas-credito"
+                    src={Logos}
+                    alt="Tarjetas permitidas: mastercard, visa y american express"
+                  />
+                  <p>
+                    Compras online protegidas. Este sitio hace que tus
+                    transacciones online sean tan seguras, rápidas y
+                    convenientes.
+                  </p>
+                  <div className="numero-tc">
+                    <TextField
+                      id="standard-basic"
+                      variant="outlined"
+                      label="Número de tarjeta"
                     />
-                    <p>
-                      Compras online protegidas. Este sitio hace que tus
-                      transacciones online sean tan seguras, rápidas y convenientes.
-                    </p>
-                    <div className="numero-tc">
+                  </div>
+                  <div className="otros-campos-tc">
+                    <div className="nombre-tc otros">
                       <TextField
                         id="standard-basic"
                         variant="outlined"
-                        label="Número de tarjeta"
+                        label="Nombre en la tarjeta"
                       />
                     </div>
-                    <div className="otros-campos-tc">
-                      <div className="nombre-tc otros">
-                        <TextField
-                          id="standard-basic"
-                          variant="outlined"
-                          label="Nombre en la tarjeta"
-                        />
-                      </div>
-                      <div className="venc-tc otros">
-                        <TextField
-                          id="standard-basic"
-                          variant="outlined"
-                          label="Venc."
-                          placeholder="MM/YY"
-                        />
-                      </div>
-                      <div className="cvv-tc otros">
-                        <TextField
-                          id="standard-basic"
-                          variant="outlined"
-                          label="CVV"
-                          placeholder="Código de seguridad"
-                        />
-                      </div>
+                    <div className="venc-tc otros">
+                      <TextField
+                        id="standard-basic"
+                        variant="outlined"
+                        label="Venc."
+                        placeholder="MM/YY"
+                      />
+                    </div>
+                    <div className="cvv-tc otros">
+                      <TextField
+                        id="standard-basic"
+                        variant="outlined"
+                        label="CVV"
+                        placeholder="Código de seguridad"
+                      />
                     </div>
                   </div>
-                  <div className="white-card white-card-mp">
-                    <h3 className="h3-tc">Mercado Pago</h3>
-                    <img
-                      className="tarjetas-credito logo-mp"
-                      src={LogosMP}
-                      alt="Tarjetas permitidas: mastercard, visa y american express"
-                    />
-                    <p>
-                    Serás redirigido hacia el sitio de Mercado Pago para 
+                </div>
+                <div className="white-card white-card-mp">
+                  <h3 className="h3-tc">Mercado Pago</h3>
+                  <img
+                    className="tarjetas-credito logo-mp"
+                    src={LogosMP}
+                    alt="Tarjetas permitidas: mastercard, visa y american express"
+                  />
+                  <p>
+                    Serás redirigido hacia el sitio de Mercado Pago para
                     completar la compra de las entradas de manera segura.
-                    </p>
-                  </div>
-                  </div>
-                </form>
-              </main>
+                  </p>
+                </div>
+              </div>
+            </form>
+          </main>
 
           <aside className="aside">
             <div className="aside-wrapper">
-            <img src={Progressbar} className="progress-bar" alt="Paso actual, selección de método de pago"/>
+              <img
+                src={Progressbar}
+                className="progress-bar"
+                alt="Paso actual, selección de método de pago"
+              />
               <h3 className="heading-aside">
                 <span className="heading3-padding">
                   Tu selección para <span lang="en">The Joker</span>
@@ -220,7 +225,9 @@ class Checkout2 extends React.Component {
                   <p className="violeta">Viernes 29</p>
                 </div>
                 <div className="flex-arround">
-                  <p className="p-aside"><abbr title="cantidad">Cant.</abbr> de personas </p>
+                  <p className="p-aside">
+                    <abbr title="cantidad">Cant.</abbr> de personas{" "}
+                  </p>
                   <p className="violeta">Adultos 4.</p>
                 </div>
                 <div className="flex-arround">
@@ -238,17 +245,20 @@ class Checkout2 extends React.Component {
                 <div className="subtotal-resumen">
                   <div className="flex-arround">
                     <p className="p-aside">Subtotal </p>
-                    <p className="violeta">$600</p></div>
+                    <p className="violeta">$600</p>
+                  </div>
                 </div>
                 <div className="subtotal-resumen descuento-resumen">
                   <div className="flex-arround">
                     <p className="p-aside descuento">Descuento</p>
-                    <p className="violeta descuento-pesos">-$300</p></div>
+                    <p className="violeta descuento-pesos">-$300</p>
+                  </div>
                 </div>
                 <div className="subtotal-resumen total-resumen">
                   <div className="flex-arround">
                     <p className="p-aside total">Total</p>
-                    <p className="violeta total-pesos">$300</p></div>
+                    <p className="violeta total-pesos">$300</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -259,21 +269,26 @@ class Checkout2 extends React.Component {
                     variant="outlined"
                     className="button-outlined-black"
                     onClick={() => {
-                      history.push("/filter");
+                      history.push("/checkout");
                     }}
                   >
                     Anterior
                   </Button>
                 )}
               />
-              <Button
-                variant="outlined"
-                className="button-contained"
-                type="submit"
-                onClick={this.handleClickOpen}
+              <Link
+                to={{
+                  pathname: "/congrats"
+                }}
               >
-                Siguiente
-              </Button>
+                <Button
+                  variant="outlined"
+                  className="button-contained"
+                  type="submit"
+                >
+                  Siguiente
+                </Button>
+              </Link>
             </div>
           </aside>
         </div>
