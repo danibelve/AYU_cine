@@ -34,7 +34,11 @@
     font-size: 1em;
     font-weight: bold;
     padding-right: 9px;
-    margin-right: 52px;
+    margin-right: 0;
+}
+
+.cuantos-adultos .label-contador{
+    margin-right: 46px!important;
 }
 
 .label-contador-jubilados{
@@ -42,11 +46,11 @@
 }
 
 .bajada-ninos{
-    margin-right: 120px;
+    margin-right: 111px;
 }
 
 .bajada-jubilados{
-    margin-right: 80px;
+    margin-right: 71px;
 }
 
 .cuantos-adultos{
@@ -71,7 +75,7 @@
     display: inline-flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
-    width: 220px;
+    width: 210px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, .1);
     justify-content: space-between;
 }
