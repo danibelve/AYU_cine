@@ -101,3 +101,17 @@ margin-top: 10px;
 .aclaracion-contactos{
     font-size: 0.8em;
 }
+
+.MuiButton-sizeLarge{
+    width: 250px!important;
+}
+
+.MuiDialogActions-spacing{
+    margin:auto!important;
+}
+
+.button-contained-modal-1{
+    background: transparent!important;
+    border: transparent!important;
+    color:#5e50b5!important;
+}
