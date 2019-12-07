@@ -25,7 +25,6 @@ import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 class Filter extends React.Component {
   constructor(props) {
     super(props);
-    this.handleDateChange = this.handleDateChange.bind(this);
     this.classes = makeStyles(theme => ({
       root: {
         display: "flex",
