@@ -17,12 +17,23 @@ import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
 import { Route, Link, withRouter } from "react-router-dom";
 import {Helmet} from "react-helmet";
-import Progressbar from "../../Assets/Estados/Funcion.svg"
+import IconButton from '@material-ui/core/IconButton';
+import Progressbar from "../../Assets/Estados/Funcion.svg";
+import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+import 'date-fns';
+import Grid from '@material-ui/core/Grid';
+import DateFnsUtils from '@date-io/date-fns';
+import {
+  MuiPickersUtilsProvider,
+  KeyboardTimePicker,
+  KeyboardDatePicker,
+} from '@material-ui/pickers';
 
 
 class Filter extends React.Component {
   constructor(props) {
     super(props);
+    this.handleDateChange = this.handleDateChange.bind(this);
     this.classes = makeStyles(theme => ({
       root: {
         display: "flex",
@@ -57,7 +68,8 @@ class Filter extends React.Component {
       inputValueAdulto: 0,
       inputValueNiño: 0,
       inputValueJubilado: 0,
-      peli: ""
+      peli: "",
+      selectedDate: new Date('2014-08-18T21:11:54'),
     };
     this.cuando = [
       {
@@ -233,6 +245,13 @@ class Filter extends React.Component {
     }
     return cuando;
   }
+  
+  handleDateChange(e) {
+console.log(e.target);
+/*this.setState({
+      selectedDate: date
+    })*/
+  }
 
   handleClickMain(){
     this.mainContent.focus()
@@ -257,6 +276,7 @@ class Filter extends React.Component {
                 component="fieldset"
                 className={this.classes.formControl}
               >
+                <div className="dias-1">
                 <FormLabel component="legend">
                   <i className="sr-only">Elegi una opción de día</i>
                 </FormLabel>
@@ -278,9 +298,14 @@ class Filter extends React.Component {
                           ref={(thisMainContent) => {this.mainContent = thisMainContent}}/>
                         <span className="bajadas">{option.bajada}</span>
                       </div>
+
                     );
                   })}
                 </RadioGroup>
+                <IconButton className="botonfecha" aria-label="delete">
+                  <CalendarTodayIcon />
+                </IconButton>
+            </div>
               </FormControl>
             </div>
             <h2 className="h2-filter1">¿Cuántos van a ser?</h2>
