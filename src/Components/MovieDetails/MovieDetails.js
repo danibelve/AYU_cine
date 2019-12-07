@@ -50,7 +50,7 @@ class MovieDetails extends React.Component {
                 </Link>
                 <CardActions className="flex">
                     <Button size="small" className="button-verde--align-right">
-                        Ver más <i className="sr-only">sobre {this.props.title}</i>
+                        Ver más <i className="sr-only">info sobre {this.props.title}</i>
                     </Button>
                 </CardActions>
             </Card>
