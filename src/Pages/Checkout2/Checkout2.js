@@ -18,8 +18,8 @@ import { makeStyles } from "@material-ui/core/styles";
 import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
-import FormHelperText from "@material-ui/core/FormHelperText";
 import Select from "@material-ui/core/Select";
+import Progressbar from "../../Assets/Estados/Pago.svg"
 
 class Checkout2 extends React.Component {
   constructor(props) {
@@ -187,16 +187,7 @@ class Checkout2 extends React.Component {
 
           <aside className="aside">
             <div className="aside-wrapper">
-              <div className="steps">
-                <div className="container-steps">
-                  <ul className="progressbar">
-                    <li className="funcion linea"><p>FUNCIÓN</p></li>
-                    <li className="butacas-after butacas linea"><p>BUTACAS</p></li>
-                    <li className="pago-after pago linea"><p>PAGO</p></li>
-                    <li className="entradas linea inactivo"><p>ENTRADAS</p></li>
-                  </ul>
-                </div>
-              </div>  
+            <img src={Progressbar} className="progress-bar" alt="Paso actual, selección de método de pago"/>
               <h3 className="heading-aside">
                 <span className="heading3-padding">
                   Tu selección para <span lang="en">The Joker</span>
@@ -262,50 +253,6 @@ class Checkout2 extends React.Component {
               >
                 Siguiente
               </Button>
-              <Dialog
-                open={this.state.open}
-                onClose={e => this.handleClose(e)}
-                aria-labelledby="form-dialog-title"
-                maxWidth="xs"
-              >
-                <DialogTitle id="form-dialog-title" className="heading-modal">
-                  <div className="flex-reverse">
-                    <button
-                      aria-label="Cerrar modal de registro"
-                      className="close-button"
-                      onClick={e => this.handleClose(e)}
-                    >
-                      <span aria-hidden="true">X</span>
-                    </button>
-                    ¡Ya enviaste todos los links de pagos a tus contactos!
-                  </div>
-                </DialogTitle>
-                <DialogContent>
-                  <p className="texto-dialogo">
-                    Podes hacer tu compra ahora o dejar las entradas reservadas
-                    a tu nombre. Recordá que tenes hasta 40 minutos antes de la
-                    función para comprarlas.
-                  </p>
-                </DialogContent>
-                <DialogActions className="button-columns">
-                  <Button onClick={e => this.handleClose(e)} color="primary">
-                    Reservar mis entradas
-                  </Button>
-                  <Link
-                    to={{
-                      pathname: "/checkout2"
-                    }}
-                  >
-                    <Button
-                      variant="outlined"
-                      className="button-contained"
-                      type="submit"
-                    >
-                      Comprar mis entradas
-                    </Button>
-                  </Link>
-                </DialogActions>
-              </Dialog>
             </div>
           </aside>
         </div>

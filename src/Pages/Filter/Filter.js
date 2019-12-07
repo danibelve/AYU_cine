@@ -17,6 +17,7 @@ import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
 import { Route, Link, withRouter } from "react-router-dom";
 import {Helmet} from "react-helmet";
+import Progressbar from "../../Assets/Estados/Funcion.svg"
 
 
 class Filter extends React.Component {
@@ -420,16 +421,7 @@ class Filter extends React.Component {
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
-              <div className="steps">
-                <div className="container-steps">
-                  <ul className="progressbar">
-                    <li className="funcion linea"><p>FUNCIÓN</p></li>
-                    <li className="butacas-after butacas linea inactivo"><p>BUTACAS</p></li>
-                    <li className="pago-after pago linea inactivo"><p>PAGO</p></li>
-                    <li className="entradas linea inactivo"><p>ENTRADAS</p></li>
-                  </ul>
-                </div>
-              </div>
+            <img src={Progressbar} className="progress-bar" alt="Paso actual, selección de función"/>
               <h3 className="heading-aside">
                 <span className="heading3-padding">
                   Tu selección para <i lang="en">The Joker</i>

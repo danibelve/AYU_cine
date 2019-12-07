@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="514" height="76.5" viewBox="0 0 514 76.5">
+  <defs>
+    <filter id="Elipse_19" x="38" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#5e50b5" flood-opacity="0.596"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <path id="Trazado_55" data-name="Trazado 55" d="M6.058,12.117A6.058,6.058,0,1,0,0,6.058,6.058,6.058,0,0,0,6.058,12.117Z" fill="none" clip-rule="evenodd"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <path id="Trazado_54" data-name="Trazado 54" d="M0,50.891H50.891V0H0Z" fill="none"/>
+    </clipPath>
+    <filter id="Elipse_21" x="166" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-color="#5e50b5" flood-opacity="0.596"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Elipse_22" x="295" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-color="#5e50b5" flood-opacity="0.596"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Elipse_26" x="426" y="0.5" width="50" height="50" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-color="#5e50b5" flood-opacity="0.596"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Entradas" transform="translate(-1320 -206.5)">
+    <g id="Grupo_287" data-name="Grupo 287" transform="translate(9)">
+      <path id="Trazado_31" data-name="Trazado 31" d="M0,50.891H50.891V0H0Z" transform="translate(1348.5 257.391) rotate(-90)" fill="none"/>
+      <g id="Grupo_274" data-name="Grupo 274" transform="translate(1389.698 231.946) rotate(-90)">
+        <path id="Trazado_42" data-name="Trazado 42" d="M0,0V96.935" transform="translate(0)" fill="none" stroke="#5f6d74" stroke-width="1" stroke-dasharray="2 2"/>
+      </g>
+      <g id="Grupo_275" data-name="Grupo 275" transform="translate(1518.137 231.946) rotate(-90)">
+        <path id="Trazado_43" data-name="Trazado 43" d="M0,0V96.935" transform="translate(0)" fill="none" stroke="#5f6d74" stroke-width="1" stroke-dasharray="2 2"/>
+      </g>
+      <g id="Grupo_279" data-name="Grupo 279" transform="translate(1649.137 231.946) rotate(-90)">
+        <path id="Trazado_43-2" data-name="Trazado 43" d="M0,0V96.935" transform="translate(0)" fill="none" stroke="#5f6d74" stroke-width="1" stroke-dasharray="2 2"/>
+      </g>
+      <g id="Función">
+        <g transform="matrix(1, 0, 0, 1, 1311, 206.5)" filter="url(#Elipse_19)">
+          <circle id="Elipse_19-2" data-name="Elipse 19" cx="16" cy="16" r="16" transform="translate(47 9.5)" fill="#5e50b5"/>
+        </g>
+        <g id="Grupo_286" data-name="Grupo 286" transform="translate(1367.887 238.004) rotate(-90)" clip-path="url(#clip-path)">
+          <g id="Grupo_285" data-name="Grupo 285" transform="translate(-19.387 -19.387)" clip-path="url(#clip-path-2)">
+            <path id="Trazado_53" data-name="Trazado 53" d="M0,0H36.351V36.351H0Z" transform="translate(7.27 7.27)" fill="#fff"/>
+          </g>
+        </g>
+        <text id="FUNCIÓN-2" data-name="FUNCIÓN" transform="translate(1311 262)" fill="#707070" font-size="14" font-family="Montserrat-Medium, Montserrat" font-weight="500" letter-spacing="0.2em"><tspan x="20.139" y="14">FUNCIÓN</tspan></text>
+      </g>
+      <g id="Butacas">
+        <text id="BUTACAS-2" data-name="BUTACAS" transform="translate(1439 262)" fill="#707070" font-size="14" font-family="Montserrat-Medium, Montserrat" font-weight="500" letter-spacing="0.2em"><tspan x="20.524" y="14">BUTACAS</tspan></text>
+        <g transform="matrix(1, 0, 0, 1, 1311, 206.5)" filter="url(#Elipse_21)">
+          <circle id="Elipse_21-2" data-name="Elipse 21" cx="16" cy="16" r="16" transform="translate(175 9.5)" fill="#5e50b5"/>
+        </g>
+        <g id="Grupo_301" data-name="Grupo 301" transform="translate(1495.887 238.004) rotate(-90)" clip-path="url(#clip-path)">
+          <g id="Grupo_300" data-name="Grupo 300" transform="translate(-19.387 -19.387)" clip-path="url(#clip-path-2)">
+            <path id="Trazado_63" data-name="Trazado 63" d="M0,0H36.351V36.351H0Z" transform="translate(7.27 7.27)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+      <g id="Pago">
+        <text id="PAGO-2" data-name="PAGO" transform="translate(1568 262)" fill="#707070" font-size="14" font-family="Montserrat-Medium, Montserrat" font-weight="500" letter-spacing="0.2em"><tspan x="37.723" y="14">PAGO</tspan></text>
+        <g transform="matrix(1, 0, 0, 1, 1311, 206.5)" filter="url(#Elipse_22)">
+          <circle id="Elipse_22-2" data-name="Elipse 22" cx="16" cy="16" r="16" transform="translate(304 9.5)" fill="#5e50b5"/>
+        </g>
+        <g id="Grupo_376" data-name="Grupo 376" transform="translate(1624.887 238.004) rotate(-90)" clip-path="url(#clip-path)">
+          <g id="Grupo_375" data-name="Grupo 375" transform="translate(-19.387 -19.387)" clip-path="url(#clip-path-2)">
+            <path id="Trazado_67" data-name="Trazado 67" d="M0,0H36.351V36.351H0Z" transform="translate(7.27 7.27)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+      <g id="Entradas-2" data-name="Entradas">
+        <text id="ENTRADAS-3" data-name="ENTRADAS" transform="translate(1699 262)" fill="#707070" font-size="14" font-family="Montserrat-Bold, Montserrat" font-weight="700" letter-spacing="0.2em"><tspan x="12.474" y="14">ENTRADAS</tspan></text>
+        <g transform="matrix(1, 0, 0, 1, 1311, 206.5)" filter="url(#Elipse_26)">
+          <circle id="Elipse_26-2" data-name="Elipse 26" cx="16" cy="16" r="16" transform="translate(435 9.5)" fill="#5e50b5"/>
+        </g>
+        <g id="Grupo_400" data-name="Grupo 400" transform="translate(1755.887 238.004) rotate(-90)" clip-path="url(#clip-path)">
+          <g id="Grupo_399" data-name="Grupo 399" transform="translate(-19.387 -19.387)" clip-path="url(#clip-path-2)">
+            <path id="Trazado_76" data-name="Trazado 76" d="M0,0H36.351V36.351H0Z" transform="translate(7.27 7.27)" fill="#fff"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

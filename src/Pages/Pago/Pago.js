@@ -19,6 +19,7 @@ import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import TextField from "@material-ui/core/TextField";
+import Progressbar from "../../Assets/Estados/Pago.svg"
 
 class Pago extends React.Component {
   constructor(props) {
@@ -163,16 +164,7 @@ class Pago extends React.Component {
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
-              <div className="steps">
-                  <div className="container-steps">
-                    <ul className="progressbar">
-                      <li className="funcion linea"><p>FUNCIÓN</p></li>
-                      <li className="butacas-after butacas linea"><p>BUTACAS</p></li>
-                      <li className="pago-after pago linea"><p>PAGO</p></li>
-                      <li className="entradas linea inactivo"><p>ENTRADAS</p></li>
-                    </ul>
-                  </div>
-                </div>
+            <img src={Progressbar} className="progress-bar" alt="Paso actual, selección de método de pago"/>
               <h3 className="heading-aside">
                 <span className="heading3-padding">
                   Tu selección para <i lang="en">The Joker</i>
