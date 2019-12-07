@@ -96,6 +96,7 @@ class Filter extends React.Component {
   }
   componentDidMount() {
     document.title = "Elijan sus preferencias y Sale Cine";
+    document.getElementById("root").focus();
   }
 
   armarCantidadDePersonas() {
