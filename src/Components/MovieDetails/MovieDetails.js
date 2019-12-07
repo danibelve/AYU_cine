@@ -28,11 +28,8 @@ class MovieDetails extends React.Component {
         return (
             <Card className={classes.card} >
                 <Link to={{
-                pathname: '/filter',
-                state: {
-                  peli: this.props.title
-                }
-              }}>
+                pathname: '/filter'
+              }} tabIndex="-1">
                 <CardActionArea>
                         <CardMedia
                             component="img"
@@ -53,7 +50,7 @@ class MovieDetails extends React.Component {
                 </Link>
                 <CardActions className="flex">
                     <Button size="small" className="button-verde--align-right">
-                        Ver más
+                        Ver más <i className="sr-only">sobre {this.props.title}</i>
                     </Button>
                 </CardActions>
             </Card>
