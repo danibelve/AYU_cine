@@ -1,0 +1,578 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="690" height="503.71" viewBox="0 0 690 503.71">
+  <defs>
+    <style>
+      .cls-1, .cls-6 {
+        fill: #5e50b5;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: rgba(94,80,181,0.08);
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        opacity: 0.026;
+      }
+
+      .cls-2 {
+        fill: #2bb2ac;
+      }
+
+      .cls-3 {
+        fill: #5f6d74;
+      }
+
+      .cls-13, .cls-4, .cls-8 {
+        fill: none;
+      }
+
+      .cls-5 {
+        fill: #fafcfc;
+      }
+
+      .cls-6 {
+        font-size: 12px;
+        font-family: Montserrat-SemiBold, Montserrat;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+      }
+
+      .cls-7, .cls-9 {
+        fill: #1b2125;
+        font-family: Montserrat-Regular, Montserrat;
+        opacity: 0.585;
+      }
+
+      .cls-7 {
+        font-size: 11px;
+      }
+
+      .cls-8 {
+        stroke: #2bb2ac;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 6px;
+      }
+
+      .cls-11, .cls-8 {
+        stroke-miterlimit: 10;
+      }
+
+      .cls-9 {
+        font-size: 15px;
+        letter-spacing: 0.333em;
+      }
+
+      .cls-10 {
+        opacity: 0.383;
+      }
+
+      .cls-11 {
+        fill: rgba(94,80,181,0.22);
+        stroke: #5e50b5;
+        stroke-width: 2px;
+        opacity: 0.3;
+      }
+
+      .cls-12 {
+        stroke: none;
+      }
+
+      .cls-14 {
+        filter: url(#Oval);
+      }
+    </style>
+    <filter id="Oval" x="56.398" y="21.748" width="576.974" height="50.594" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="5.5" result="blur"/>
+      <feFlood flood-color="#2bb2ac" flood-opacity="0.22"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_426" data-name="Group 426" transform="translate(-10917 -2126)">
+    <g id="Rectangle_430" data-name="Rectangle 430" class="cls-1" transform="translate(10917 2218.71)">
+      <rect class="cls-12" width="690" height="137" rx="10"/>
+      <rect class="cls-13" x="0.5" y="0.5" width="689" height="136" rx="9.5"/>
+    </g>
+    <g id="Rectangle_437" data-name="Rectangle 437" class="cls-2" transform="translate(10917 2383.71)">
+      <rect class="cls-12" width="690" height="137" rx="10"/>
+      <rect class="cls-13" x="0.5" y="0.5" width="689" height="136" rx="9.5"/>
+    </g>
+    <g id="Rectangle_438" data-name="Rectangle 438" class="cls-3" transform="translate(10917 2546.71)">
+      <rect class="cls-12" width="690" height="83" rx="10"/>
+      <rect class="cls-13" x="0.5" y="0.5" width="689" height="82" rx="9.5"/>
+    </g>
+    <g id="Rectangle_432" data-name="Rectangle 432" class="cls-4" transform="translate(10917 2545.71)">
+      <rect class="cls-12" width="690" height="84" rx="10"/>
+      <rect class="cls-13" x="0.5" y="0.5" width="689" height="83" rx="9.5"/>
+    </g>
+    <rect id="Rectangle_433" data-name="Rectangle 433" class="cls-5" width="143" height="16" transform="translate(11191 2538.71)"/>
+    <text id="SCREEN" class="cls-6" transform="translate(11262 2550.71)"><tspan x="-61.146" y="0">ÚLTIMAS FILAS</tspan></text>
+    <text id="A" class="cls-7" transform="translate(11571 2575.71)"><tspan x="0" y="0">I</tspan></text>
+    <text id="B" class="cls-7" transform="translate(11571 2605.71)"><tspan x="0" y="0">J</tspan></text>
+    <text id="A-2" data-name="A" class="cls-7" transform="translate(10944 2575.71)"><tspan x="0" y="0">I</tspan></text>
+    <text id="B-2" data-name="B" class="cls-7" transform="translate(10944 2605.71)"><tspan x="0" y="0">J</tspan></text>
+    <g class="cls-14" transform="matrix(1, 0, 0, 1, 10917, 2126)">
+      <path id="Oval-2" data-name="Oval" class="cls-8" d="M537.288,11.247C496.724,6.2,390.641,0,267.263,0,144.869,0,41.26,6.145,0,11.127" transform="translate(76.24 37.25)"/>
+    </g>
+    <text id="SCREEN-2" data-name="SCREEN" class="cls-9" transform="translate(11254.532 2141)"><tspan x="-57.67" y="0">PANTALLA</tspan></text>
+    <g id="Group_423" data-name="Group 423" class="cls-10" transform="translate(-1 -2.29)">
+      <g id="Selected" transform="translate(11405.197 2302.055)">
+        <ellipse id="Oval_4_Copy" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied" transform="translate(11500.703 2242.728)">
+        <ellipse id="Oval_4_Copy-2" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-2" data-name="Occupied" transform="translate(11500.703 2272.4)">
+        <ellipse id="Oval_4_Copy-3" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty" transform="translate(11011.763 2242.382)">
+        <ellipse id="Oval_4_Copy-4" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-2" data-name="Emoty" transform="translate(11041.535 2242.382)">
+        <ellipse id="Oval_4_Copy-5" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-3" data-name="Occupied" transform="translate(10982.09 2242.382)">
+        <ellipse id="Oval_4_Copy-6" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-4" data-name="Occupied" transform="translate(10982.09 2301.728)">
+        <ellipse id="Oval_4_Copy-7" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-5" data-name="Occupied" transform="translate(10982.09 2331.728)">
+        <ellipse id="Oval_4_Copy-8" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-3" data-name="Emoty" transform="translate(11011.763 2301.728)">
+        <ellipse id="Oval_4_Copy-9" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-4" data-name="Emoty" transform="translate(11041.535 2301.728)">
+        <ellipse id="Oval_4_Copy-10" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-6" data-name="Occupied" transform="translate(10982.09 2272.055)">
+        <ellipse id="Oval_4_Copy-11" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-5" data-name="Emoty" transform="translate(11011.763 2272.055)">
+        <ellipse id="Oval_4_Copy-12" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-6" data-name="Emoty" transform="translate(11041.535 2272.055)">
+        <ellipse id="Oval_4_Copy-13" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-7" data-name="Emoty" transform="translate(11011.763 2331.4)">
+        <ellipse id="Oval_4_Copy-14" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-8" data-name="Emoty" transform="translate(11041.535 2331.4)">
+        <ellipse id="Oval_4_Copy-15" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-9" data-name="Emoty" transform="translate(11530.377 2242.382)">
+        <ellipse id="Oval_4_Copy-16" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-10" data-name="Emoty" transform="translate(11470.831 2242.382)">
+        <ellipse id="Oval_4_Copy-17" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-7" data-name="Occupied" transform="translate(11500.703 2301.728)">
+        <ellipse id="Oval_4_Copy-18" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-11" data-name="Emoty" transform="translate(11530.377 2301.728)">
+        <ellipse id="Oval_4_Copy-19" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-12" data-name="Emoty" transform="translate(11470.831 2301.728)">
+        <ellipse id="Oval_4_Copy-20" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-13" data-name="Emoty" transform="translate(11530.377 2272.055)">
+        <ellipse id="Oval_4_Copy-21" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-14" data-name="Emoty" transform="translate(11470.831 2272.055)">
+        <ellipse id="Oval_4_Copy-22" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-8" data-name="Occupied" transform="translate(11500.703 2331.4)">
+        <ellipse id="Oval_4_Copy-23" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-15" data-name="Emoty" transform="translate(11530.377 2331.4)">
+        <ellipse id="Oval_4_Copy-24" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-16" data-name="Emoty" transform="translate(11470.831 2331.4)">
+        <ellipse id="Oval_4_Copy-25" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-2" data-name="Selected" transform="translate(11107.017 2242.382)">
+        <ellipse id="Oval_4_Copy-26" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-3" data-name="Selected" transform="translate(11149.613 2242.382)">
+        <ellipse id="Oval_4_Copy-27" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-4" data-name="Selected" transform="translate(11149.613 2272.382)">
+        <ellipse id="Oval_4_Copy-28" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-5" data-name="Selected" transform="translate(11192.211 2242.382)">
+        <ellipse id="Oval_4_Copy-29" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-6" data-name="Selected" transform="translate(11234.809 2242.382)">
+        <ellipse id="Oval_4_Copy-30" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-7" data-name="Selected" transform="translate(11277.405 2242.382)">
+        <ellipse id="Oval_4_Copy-31" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-8" data-name="Selected" transform="translate(11320.003 2242.382)">
+        <ellipse id="Oval_4_Copy-32" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-9" data-name="Selected" transform="translate(11362.6 2242.382)">
+        <ellipse id="Oval_4_Copy-33" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-10" data-name="Selected" transform="translate(11405.197 2242.382)">
+        <ellipse id="Oval_4_Copy-34" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-11" data-name="Selected" transform="translate(11107.017 2301.728)">
+        <ellipse id="Oval_4_Copy-35" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-12" data-name="Selected" transform="translate(11149.613 2301.728)">
+        <ellipse id="Oval_4_Copy-36" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-13" data-name="Selected" transform="translate(11149.613 2331.728)">
+        <ellipse id="Oval_4_Copy-37" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-14" data-name="Selected" transform="translate(11192.211 2301.728)">
+        <ellipse id="Oval_4_Copy-38" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-15" data-name="Selected" transform="translate(11192.211 2331.728)">
+        <ellipse id="Oval_4_Copy-39" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-16" data-name="Selected" transform="translate(11234.809 2301.728)">
+        <ellipse id="Oval_4_Copy-40" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-17" data-name="Selected" transform="translate(11234.809 2331.728)">
+        <ellipse id="Oval_4_Copy-41" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-18" data-name="Selected" transform="translate(11277.405 2301.728)">
+        <ellipse id="Oval_4_Copy-42" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-19" data-name="Selected" transform="translate(11320.003 2301.728)">
+        <ellipse id="Oval_4_Copy-43" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-20" data-name="Selected" transform="translate(11362.6 2301.728)">
+        <ellipse id="Oval_4_Copy-44" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-21" data-name="Selected" transform="translate(11107.017 2272.055)">
+        <ellipse id="Oval_4_Copy-45" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-22" data-name="Selected" transform="translate(11192.211 2272.055)">
+        <ellipse id="Oval_4_Copy-46" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-23" data-name="Selected" transform="translate(11234.809 2272.055)">
+        <ellipse id="Oval_4_Copy-47" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-24" data-name="Selected" transform="translate(11277.405 2272.055)">
+        <ellipse id="Oval_4_Copy-48" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-25" data-name="Selected" transform="translate(11320.003 2272.055)">
+        <ellipse id="Oval_4_Copy-49" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-26" data-name="Selected" transform="translate(11362.6 2272.055)">
+        <ellipse id="Oval_4_Copy-50" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-27" data-name="Selected" transform="translate(11405.197 2272.055)">
+        <ellipse id="Oval_4_Copy-51" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-28" data-name="Selected" transform="translate(11107.017 2331.4)">
+        <ellipse id="Oval_4_Copy-52" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-29" data-name="Selected" transform="translate(11277.405 2331.4)">
+        <ellipse id="Oval_4_Copy-53" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-30" data-name="Selected" transform="translate(11320.003 2331.4)">
+        <ellipse id="Oval_4_Copy-54" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-31" data-name="Selected" transform="translate(11362.6 2331.4)">
+        <ellipse id="Oval_4_Copy-55" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-32" data-name="Selected" transform="translate(11405.197 2331.4)">
+        <ellipse id="Oval_4_Copy-56" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+    </g>
+    <g id="Group_419" data-name="Group 419" transform="translate(11570.94 2236.226)">
+      <text id="A-3" data-name="A" class="cls-7" transform="translate(0.059 11.484)"><tspan x="0" y="0">A</tspan></text>
+      <text id="C" class="cls-7" transform="translate(0.059 71.484)"><tspan x="0" y="0">C</tspan></text>
+      <text id="B-3" data-name="B" class="cls-7" transform="translate(0.059 41.484)"><tspan x="0" y="0">B</tspan></text>
+      <text id="D" class="cls-7" transform="translate(0.059 101.484)"><tspan x="0" y="0">D</tspan></text>
+    </g>
+    <g id="Group_420" data-name="Group 420" transform="translate(10944.288 2236.226)">
+      <text id="A-4" data-name="A" class="cls-7" transform="translate(-0.288 11.484)"><tspan x="0" y="0">A</tspan></text>
+      <text id="C-2" data-name="C" class="cls-7" transform="translate(-0.288 71.484)"><tspan x="0" y="0">C</tspan></text>
+      <text id="B-4" data-name="B" class="cls-7" transform="translate(-0.288 41.484)"><tspan x="0" y="0">B</tspan></text>
+      <text id="D-2" data-name="D" class="cls-7" transform="translate(-0.288 101.484)"><tspan x="0" y="0">D</tspan></text>
+    </g>
+    <rect id="Rectangle_431" data-name="Rectangle 431" class="cls-5" width="143" height="17" transform="translate(11191 2210.71)"/>
+    <text id="SCREEN-3" data-name="SCREEN" class="cls-6" transform="translate(11262 2223.71)"><tspan x="-67.884" y="0">PRIMERAS FILAS</tspan></text>
+    <g id="Rectangle_434" data-name="Rectangle 434" class="cls-4" transform="translate(10917 2382.71)">
+      <rect class="cls-12" width="690" height="137" rx="10"/>
+      <rect class="cls-13" x="0.5" y="0.5" width="689" height="136" rx="9.5"/>
+    </g>
+    <rect id="Rectangle_435" data-name="Rectangle 435" class="cls-5" width="83" height="17" transform="translate(11221 2374.71)"/>
+    <text id="SCREEN-4" data-name="SCREEN" class="cls-6" transform="translate(11262 2387.71)"><tspan x="-32.292" y="0">CENTRO</tspan></text>
+    <g id="Group_421" data-name="Group 421" transform="translate(11570.94 2400.082)">
+      <text id="A-5" data-name="A" class="cls-7" transform="translate(0.059 10.628)"><tspan x="0" y="0">E</tspan></text>
+      <text id="C-3" data-name="C" class="cls-7" transform="translate(0.059 71.628)"><tspan x="0" y="0">G</tspan></text>
+      <text id="B-5" data-name="B" class="cls-7" transform="translate(0.059 41.628)"><tspan x="0" y="0">F</tspan></text>
+      <text id="D-3" data-name="D" class="cls-7" transform="translate(0.059 101.628)"><tspan x="0" y="0">H</tspan></text>
+    </g>
+    <g id="Group_422" data-name="Group 422" transform="translate(10944.288 2400.082)">
+      <text id="A-6" data-name="A" class="cls-7" transform="translate(-0.288 10.628)"><tspan x="0" y="0">E</tspan></text>
+      <text id="C-4" data-name="C" class="cls-7" transform="translate(-0.288 71.628)"><tspan x="0" y="0">G</tspan></text>
+      <text id="B-6" data-name="B" class="cls-7" transform="translate(-0.288 41.628)"><tspan x="0" y="0">F</tspan></text>
+      <text id="D-4" data-name="D" class="cls-7" transform="translate(-0.288 101.628)"><tspan x="0" y="0">H</tspan></text>
+    </g>
+    <g id="Group_424" data-name="Group 424" class="cls-10" transform="translate(-1 -2.29)">
+      <g id="Occupied-9" data-name="Occupied" transform="translate(10982.09 2465.516)">
+        <ellipse id="Oval_4_Copy-57" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-10" data-name="Occupied" transform="translate(10982.09 2495.516)">
+        <ellipse id="Oval_4_Copy-58" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-17" data-name="Emoty" transform="translate(11011.763 2465.516)">
+        <ellipse id="Oval_4_Copy-59" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-18" data-name="Emoty" transform="translate(11041.535 2465.516)">
+        <ellipse id="Oval_4_Copy-60" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-11" data-name="Occupied" transform="translate(10982.09 2435.843)">
+        <ellipse id="Oval_4_Copy-61" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-19" data-name="Emoty" transform="translate(11011.763 2435.843)">
+        <ellipse id="Oval_4_Copy-62" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-20" data-name="Emoty" transform="translate(11041.535 2435.843)">
+        <ellipse id="Oval_4_Copy-63" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-21" data-name="Emoty" transform="translate(11011.763 2495.188)">
+        <ellipse id="Oval_4_Copy-64" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-22" data-name="Emoty" transform="translate(11041.535 2495.188)">
+        <ellipse id="Oval_4_Copy-65" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-12" data-name="Occupied" transform="translate(11500.703 2465.516)">
+        <ellipse id="Oval_4_Copy-66" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-23" data-name="Emoty" transform="translate(11530.377 2465.516)">
+        <ellipse id="Oval_4_Copy-67" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-24" data-name="Emoty" transform="translate(11470.831 2465.516)">
+        <ellipse id="Oval_4_Copy-68" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-25" data-name="Emoty" transform="translate(11530.377 2435.843)">
+        <ellipse id="Oval_4_Copy-69" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-26" data-name="Emoty" transform="translate(11470.831 2435.843)">
+        <ellipse id="Oval_4_Copy-70" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-13" data-name="Occupied" transform="translate(11500.703 2495.188)">
+        <ellipse id="Oval_4_Copy-71" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-27" data-name="Emoty" transform="translate(11530.377 2495.188)">
+        <ellipse id="Oval_4_Copy-72" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-28" data-name="Emoty" transform="translate(11470.831 2495.188)">
+        <ellipse id="Oval_4_Copy-73" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-33" data-name="Selected" transform="translate(11107.017 2465.516)">
+        <ellipse id="Oval_4_Copy-74" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-34" data-name="Selected" transform="translate(11149.613 2465.516)">
+        <ellipse id="Oval_4_Copy-75" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-35" data-name="Selected" transform="translate(11149.613 2495.516)">
+        <ellipse id="Oval_4_Copy-76" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-36" data-name="Selected" transform="translate(11192.211 2465.516)">
+        <ellipse id="Oval_4_Copy-77" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-37" data-name="Selected" transform="translate(11192.211 2495.516)">
+        <ellipse id="Oval_4_Copy-78" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-38" data-name="Selected" transform="translate(11234.809 2465.516)">
+        <ellipse id="Oval_4_Copy-79" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-39" data-name="Selected" transform="translate(11234.809 2495.516)">
+        <ellipse id="Oval_4_Copy-80" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-40" data-name="Selected" transform="translate(11277.405 2465.516)">
+        <ellipse id="Oval_4_Copy-81" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-41" data-name="Selected" transform="translate(11320.003 2465.516)">
+        <ellipse id="Oval_4_Copy-82" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-42" data-name="Selected" transform="translate(11362.6 2465.516)">
+        <ellipse id="Oval_4_Copy-83" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-43" data-name="Selected" transform="translate(11107.017 2435.843)">
+        <ellipse id="Oval_4_Copy-84" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-44" data-name="Selected" transform="translate(11192.211 2435.843)">
+        <ellipse id="Oval_4_Copy-85" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-45" data-name="Selected" transform="translate(11234.809 2435.843)">
+        <ellipse id="Oval_4_Copy-86" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-46" data-name="Selected" transform="translate(11277.405 2435.843)">
+        <ellipse id="Oval_4_Copy-87" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-47" data-name="Selected" transform="translate(11320.003 2435.843)">
+        <ellipse id="Oval_4_Copy-88" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-48" data-name="Selected" transform="translate(11362.6 2435.843)">
+        <ellipse id="Oval_4_Copy-89" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-49" data-name="Selected" transform="translate(11405.197 2435.843)">
+        <ellipse id="Oval_4_Copy-90" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-50" data-name="Selected" transform="translate(11405.197 2465.843)">
+        <ellipse id="Oval_4_Copy-91" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-51" data-name="Selected" transform="translate(11107.017 2495.188)">
+        <ellipse id="Oval_4_Copy-92" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-52" data-name="Selected" transform="translate(11277.405 2495.188)">
+        <ellipse id="Oval_4_Copy-93" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-53" data-name="Selected" transform="translate(11320.003 2495.188)">
+        <ellipse id="Oval_4_Copy-94" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-54" data-name="Selected" transform="translate(11362.6 2495.188)">
+        <ellipse id="Oval_4_Copy-95" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-55" data-name="Selected" transform="translate(11405.197 2495.188)">
+        <ellipse id="Oval_4_Copy-96" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-29" data-name="Emoty" transform="translate(11011.763 2406.17)">
+        <ellipse id="Oval_4_Copy-97" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-30" data-name="Emoty" transform="translate(11041.535 2406.17)">
+        <ellipse id="Oval_4_Copy-98" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-14" data-name="Occupied" transform="translate(10982.09 2406.17)">
+        <ellipse id="Oval_4_Copy-99" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-31" data-name="Emoty" transform="translate(11530.377 2406.17)">
+        <ellipse id="Oval_4_Copy-100" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-32" data-name="Emoty" transform="translate(11470.831 2406.17)">
+        <ellipse id="Oval_4_Copy-101" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-56" data-name="Selected" transform="translate(11107.017 2406.17)">
+        <ellipse id="Oval_4_Copy-102" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-57" data-name="Selected" transform="translate(11149.613 2406.17)">
+        <ellipse id="Oval_4_Copy-103" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-58" data-name="Selected" transform="translate(11149.613 2436.17)">
+        <ellipse id="Oval_4_Copy-104" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-59" data-name="Selected" transform="translate(11192.211 2406.17)">
+        <ellipse id="Oval_4_Copy-105" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-60" data-name="Selected" transform="translate(11234.809 2406.17)">
+        <ellipse id="Oval_4_Copy-106" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-61" data-name="Selected" transform="translate(11277.405 2406.17)">
+        <ellipse id="Oval_4_Copy-107" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-62" data-name="Selected" transform="translate(11320.003 2406.17)">
+        <ellipse id="Oval_4_Copy-108" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-63" data-name="Selected" transform="translate(11362.6 2406.17)">
+        <ellipse id="Oval_4_Copy-109" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-64" data-name="Selected" transform="translate(11405.197 2406.17)">
+        <ellipse id="Oval_4_Copy-110" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-15" data-name="Occupied" transform="translate(11500.703 2406.516)">
+        <ellipse id="Oval_4_Copy-111" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-16" data-name="Occupied" transform="translate(11500.703 2436.188)">
+        <ellipse id="Oval_4_Copy-112" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+    </g>
+    <g id="Group_425" data-name="Group 425" class="cls-10" transform="translate(-1 -2.29)">
+      <g id="Emoty-33" data-name="Emoty" transform="translate(11011.763 2570.958)">
+        <ellipse id="Oval_4_Copy-113" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-34" data-name="Emoty" transform="translate(11041.535 2570.958)">
+        <ellipse id="Oval_4_Copy-114" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-17" data-name="Occupied" transform="translate(10982.09 2570.958)">
+        <ellipse id="Oval_4_Copy-115" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Occupied-18" data-name="Occupied" transform="translate(10982.09 2600.63)">
+        <ellipse id="Oval_4_Copy-116" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-35" data-name="Emoty" transform="translate(11011.763 2600.63)">
+        <ellipse id="Oval_4_Copy-117" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-36" data-name="Emoty" transform="translate(11041.535 2600.63)">
+        <ellipse id="Oval_4_Copy-118" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-37" data-name="Emoty" transform="translate(11530.377 2570.958)">
+        <ellipse id="Oval_4_Copy-119" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-38" data-name="Emoty" transform="translate(11470.831 2570.958)">
+        <ellipse id="Oval_4_Copy-120" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-39" data-name="Emoty" transform="translate(11530.377 2600.63)">
+        <ellipse id="Oval_4_Copy-121" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-40" data-name="Emoty" transform="translate(11470.831 2600.63)">
+        <ellipse id="Oval_4_Copy-122" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-65" data-name="Selected" transform="translate(11107.017 2570.958)">
+        <ellipse id="Oval_4_Copy-123" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-66" data-name="Selected" transform="translate(11149.613 2570.958)">
+        <ellipse id="Oval_4_Copy-124" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-67" data-name="Selected" transform="translate(11192.211 2570.958)">
+        <ellipse id="Oval_4_Copy-125" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-68" data-name="Selected" transform="translate(11234.809 2570.958)">
+        <ellipse id="Oval_4_Copy-126" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-69" data-name="Selected" transform="translate(11277.405 2570.958)">
+        <ellipse id="Oval_4_Copy-127" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-70" data-name="Selected" transform="translate(11320.003 2570.958)">
+        <ellipse id="Oval_4_Copy-128" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-71" data-name="Selected" transform="translate(11362.6 2570.958)">
+        <ellipse id="Oval_4_Copy-129" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-72" data-name="Selected" transform="translate(11405.197 2570.958)">
+        <ellipse id="Oval_4_Copy-130" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-73" data-name="Selected" transform="translate(11107.017 2600.63)">
+        <ellipse id="Oval_4_Copy-131" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-74" data-name="Selected" transform="translate(11192.211 2600.63)">
+        <ellipse id="Oval_4_Copy-132" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-75" data-name="Selected" transform="translate(11234.809 2600.63)">
+        <ellipse id="Oval_4_Copy-133" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-76" data-name="Selected" transform="translate(11277.405 2600.63)">
+        <ellipse id="Oval_4_Copy-134" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-77" data-name="Selected" transform="translate(11320.003 2600.63)">
+        <ellipse id="Oval_4_Copy-135" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-78" data-name="Selected" transform="translate(11362.6 2600.63)">
+        <ellipse id="Oval_4_Copy-136" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-79" data-name="Selected" transform="translate(11405.197 2600.63)">
+        <ellipse id="Oval_4_Copy-137" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Selected-80" data-name="Selected" transform="translate(11149.613 2600.958)">
+        <ellipse id="Oval_4_Copy-138" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-41" data-name="Emoty" transform="translate(11500.831 2570.958)">
+        <ellipse id="Oval_4_Copy-139" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+      <g id="Emoty-42" data-name="Emoty" transform="translate(11500.831 2600.63)">
+        <ellipse id="Oval_4_Copy-140" data-name="Oval 4 Copy" class="cls-11" cx="6.358" cy="6.358" rx="6.358" ry="6.358"/>
+      </g>
+    </g>
+  </g>
+</svg>
