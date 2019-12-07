@@ -20,20 +20,11 @@ import {Helmet} from "react-helmet";
 import IconButton from '@material-ui/core/IconButton';
 import Progressbar from "../../Assets/Estados/Funcion.svg";
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
-import 'date-fns';
-import Grid from '@material-ui/core/Grid';
-import DateFnsUtils from '@date-io/date-fns';
-import {
-  MuiPickersUtilsProvider,
-  KeyboardTimePicker,
-  KeyboardDatePicker,
-} from '@material-ui/pickers';
 
 
 class Filter extends React.Component {
   constructor(props) {
     super(props);
-    this.handleDateChange = this.handleDateChange.bind(this);
     this.classes = makeStyles(theme => ({
       root: {
         display: "flex",
@@ -69,7 +60,6 @@ class Filter extends React.Component {
       inputValueNiño: 0,
       inputValueJubilado: 0,
       peli: "",
-      selectedDate: new Date('2014-08-18T21:11:54'),
     };
     this.cuando = [
       {
@@ -109,7 +99,7 @@ class Filter extends React.Component {
   }
   componentDidMount() {
     document.title = "Elijan sus preferencias y Sale Cine";
-    document.getElementById("root").focus();
+    document.getElementById("Jueves 28").focus();
   }
 
   armarCantidadDePersonas() {
@@ -245,13 +235,6 @@ class Filter extends React.Component {
     }
     return cuando;
   }
-  
-  handleDateChange(e) {
-console.log(e.target);
-/*this.setState({
-      selectedDate: date
-    })*/
-  }
 
   handleClickMain(){
     this.mainContent.focus()
@@ -295,6 +278,7 @@ console.log(e.target);
                           label={option.label}
                           labelPlacement="start"
                           className="dias"
+                          id={option.label}
                           ref={(thisMainContent) => {this.mainContent = thisMainContent}}/>
                         <span className="bajadas">{option.bajada}</span>
                       </div>

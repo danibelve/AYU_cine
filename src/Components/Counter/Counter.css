@@ -67,7 +67,7 @@
 }
 
 .counter-container{
-    margin: 24px;
+    margin: 24px 10px 24px 24px;
     background-color: white;
     padding: 20px 10px 0px 10px;
     border-radius: 8px;
