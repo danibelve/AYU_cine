@@ -83,17 +83,23 @@ class Filter2 extends React.Component {
   }
 
   handleChange = name => event => {
+    const filterDropdown = this.state.movies.filter(item => {
+      return Object.keys(item).some(key =>
+        item[key].includes(event.target.value) 
+      );
+    });
     this.setState({
       ...this.state,
       [name]: event.target.value,
-      somethingChange: true
+      somethingChange: true,
+      filterOption: filterDropdown
     });
   };
 
   render() {
-    const filterDropdown = this.state.movies.filter(item => {
+    let filterDropdown = this.state.movies.filter(item => {
         return Object.keys(item).some(key =>
-          item[key].includes(this.state.provincia)
+          item[key].includes(this.state.provincia) 
         );
       });
     return (
@@ -151,7 +157,7 @@ class Filter2 extends React.Component {
 
             {this.state.somethingChange ? (
                 <div className="moviedetails-card">
-                {(filterDropdown.map((movie,key )=> {
+                {(this.state.filterOption.map((movie,key )=> {
                     return (
                       <MovieDetails
                         image={movie.img}
@@ -219,7 +225,7 @@ class Filter2 extends React.Component {
                 </div>
               </div>
                 <div className="div-vinculo-ingresa">
-                  <a href="" className="vinculo-ingresa">Ingresá a tu cuenta para guardar los datos de tu compra</a>
+                  <a href="salecine.com/signin" className="vinculo-ingresa">Ingresá a tu cuenta para guardar los datos de tu compra</a>
                 </div>
             </div>
             <div className="button-container">
