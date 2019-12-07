@@ -40,10 +40,11 @@
 
 .white-card{
   width: 786px;
-  height: 367px;
+  height: 270px;
   padding:40px;
   border:1px solid #DDE3E8;
   border-radius: 8px;
+  margin-bottom:30px;
 }
 
 .h3-tc{
@@ -57,4 +58,36 @@
 .white-card p{
   font-size: 1em;
   max-width: 634px;
+}
+
+.otros{
+  display: inline-block;
+  margin-left:20px;
+}
+
+.numero-tc .MuiTextField-root{
+  width: 680px;
+}
+
+.nombre-tc .MuiTextField-root{
+  width: 360px;
+  margin-left:0!important;
+}
+
+.nombre-tc{
+  margin-left:0!important;
+}
+
+.venc-tc .MuiTextField-root, .cvv-tc .MuiTextField-root{
+  width: 140px;
+}
+
+.numero-tc{
+  margin-bottom:20px;
+  margin-top:20px;
+}
+
+.logo-mp{
+  width: 20%;
+  height: auto;
 }

@@ -7,6 +7,7 @@ import Avatar from "@material-ui/core/Avatar";
 import Footer from "../../Components/Footer/Footer";
 import "../../Components/Counter/Counter.css";
 import Logos from "../../Assets/tarjetas.svg";
+import LogosMP from "../../Assets/logoMP.jpg";
 import Button from "@material-ui/core/Button";
 import { Route, Link } from "react-router-dom";
 import Dialog from "@material-ui/core/Dialog";
@@ -156,30 +157,50 @@ class Checkout2 extends React.Component {
                       Compras online protegidas. Este sitio hace que tus
                       transacciones online sean tan seguras, rápidas y convenientes.
                     </p>
-                    <TextField
-                      id="standard-basic"
-                      variant="outlined"
-                      label="Numero de tarjeta"
-                    />
-                    <TextField
-                      id="standard-basic"
-                      variant="outlined"
-                      label="Nombre en la tarjeta"
-                    />
-                    <TextField
-                      id="standard-basic"
-                      variant="outlined"
-                      label="Nombre"
-                    />
-                    <TextField
-                      id="standard-basic"
-                      variant="outlined"
-                      label="Vencimiento"
-                      placeholder="MM/YY"
-                    />
+                    <div className="numero-tc">
+                      <TextField
+                        id="standard-basic"
+                        variant="outlined"
+                        label="Número de tarjeta"
+                      />
+                    </div>
+                    <div className="otros-campos-tc">
+                      <div className="nombre-tc otros">
+                        <TextField
+                          id="standard-basic"
+                          variant="outlined"
+                          label="Nombre en la tarjeta"
+                        />
+                      </div>
+                      <div className="venc-tc otros">
+                        <TextField
+                          id="standard-basic"
+                          variant="outlined"
+                          label="Venc."
+                          placeholder="MM/YY"
+                        />
+                      </div>
+                      <div className="cvv-tc otros">
+                        <TextField
+                          id="standard-basic"
+                          variant="outlined"
+                          label="CVV"
+                          placeholder="Código de seguridad"
+                        />
+                      </div>
+                    </div>
                   </div>
-                  <div className="white-card">
-                    <h3>Mercado Pago</h3>
+                  <div className="white-card white-card-mp">
+                    <h3 className="h3-tc">Mercado Pago</h3>
+                    <img
+                      className="tarjetas-credito logo-mp"
+                      src={LogosMP}
+                      alt="Tarjetas permitidas: mastercard, visa y american express"
+                    />
+                    <p>
+                    Serás redirigido hacia el sitio de Mercado Pago para 
+                    completar la compra de las entradas de manera segura.
+                    </p>
                   </div>
                   </div>
                 </form>
