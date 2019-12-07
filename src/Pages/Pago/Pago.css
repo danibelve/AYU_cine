@@ -108,6 +108,7 @@
 
 .MuiPaper-rounded {
   border-radius: 8px!important;
+  scrollbar-width: none !important;
 }
 
 .ya-tengo-cuenta{
