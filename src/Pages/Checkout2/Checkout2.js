@@ -48,24 +48,31 @@ class Checkout2 extends React.Component {
     this.promo = [
       {
         label: "Promo 2x1",
-        bajada: "Cinépolis ofrece un 2x1 a todas las personas por motivo de apertura. ¡No te lo pierdas!",
+        bajada:
+          "Cinépolis ofrece un 2x1 a todas las personas por motivo de apertura. ¡No te lo pierdas!",
         value: "0"
       },
       {
         label: "Promo 365",
-        bajada: "Con la tarjeta 365 de Clarín obtene un 2x1 en peliculas 2D todos los días.",
+        bajada:
+          "Con la tarjeta 365 de Clarín obtene un 2x1 en peliculas 2D todos los días.",
         value: "1"
       },
       {
         label: "CLub Claro",
         bajada: "Quienes tengan Claro Club pueden acceder a un 25% en entradas",
         value: "2"
-      },
+      }
     ];
 
     this.state = {
       open: false,
-      select: ""
+      select: "",
+      invalidNombre: false,
+      invalidApellido: false,
+      invalidTelefono: false,
+      invalidMail: false,
+      invalidDireccion:false,
     };
   }
 
@@ -75,6 +82,61 @@ class Checkout2 extends React.Component {
       select: selectValue
     });
   };
+  validateNombre(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 3) {
+      this.setState({ invalidNombre: true });
+    } else {
+      this.setState({ invalidNombre: false });
+    }
+  }
+
+  validateApellido(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 3) {
+      this.setState({ invalidApellido: true });
+    } else {
+      this.setState({ invalidApellido: false });
+    }
+  }
+  validateTelefono(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 3) {
+      this.setState({ invalidTelefono: true });
+    } else {
+      this.setState({ invalidTelefono: false });
+    }
+  }
+
+  validateMail(e) {
+    const inputValue = e.target.value;
+    if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(inputValue)) {
+      this.setState({ invalidMail: false });
+    } else {
+      this.setState({ invalidMail: true });
+    }
+  }
+
+  validateDireccion(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 3) {
+      this.setState({ invalidDireccion: true });
+    } else {
+      this.setState({ invalidDireccion: false });
+    }
+  }
+
+  handleSubmit() {
+    if (
+      !this.state.invalidNombre &&
+      !this.state.invalidMail &&
+      !this.state.invalidTelefono &&
+      !this.state.invalidPass &&
+      !this.state.invalidPass2
+    ) {
+      this.props.history.push("/checkout");
+    }
+  }
 
   componentDidMount() {
     document.title = "¿Quienés pagan esta salida? En Sale Cine";
@@ -108,23 +170,52 @@ class Checkout2 extends React.Component {
             <h2 className="h2-filter1">Tu información personal</h2>
             <form className={this.classes.root} noValidate autoComplete="off">
               <div className="form-nom-ape">
-                <TextField
-                  id="standard-basic"
-                  variant="outlined"
-                  label="Nombre"
-                />
-                <TextField
-                  id="standard-basic"
-                  variant="outlined"
-                  label="Apellido"
-                />
+                <div className="inputs" aria-live="polite">
+                  <label for="nombre">
+                    Nombre <i role="presentation">*</i>
+                  </label>
+                  <input
+                    autoFocus
+                    required
+                    placeholder="Exequiel"
+                    id="nombre"
+                    type="text"
+                    ref={this.textInput}
+                    aria-invalid={this.state.invalidNombre}
+                    onBlur={e => this.validateNombre(e)}
+                  />
+                  {this.state.invalidNombre && <p>Ingrese un nombre</p>}
+                </div>
+                <div className="inputs" aria-live="polite">
+                  <label for="apellido">
+                    Apellido <i role="presentation">*</i>
+                  </label>
+                  <input
+                    required
+                    placeholder="Mendoza"
+                    id="apellido"
+                    type="text"
+                    ref={this.textInput}
+                    aria-invalid={this.state.invalidApellido}
+                    onBlur={e => this.validateApellido(e)}
+                  />
+                  {this.state.invalidApellido && <p>Ingrese un apellido</p>}
+                </div>
               </div>
               <div className="form-direccion">
-                <TextField
-                  id="standard-basic"
-                  variant="outlined"
-                  label="Dirección"
-                />
+              <label for="direccion">
+                    Dirección <i role="presentation">*</i>
+                  </label>
+                  <input
+                    required
+                    placeholder="Av. Rivadavia 2343"
+                    id="direccion"
+                    type="text"
+                    ref={this.textInput}
+                    aria-invalid={this.state.invalidDireccion}
+                    onBlur={e => this.validateDireccion(e)}
+                  />
+                  {this.state.invalidDireccion && <p>Ingrese una dirección</p>}
               </div>
               <div className="form-pais-ciudad">
                 <FormControl
@@ -160,11 +251,22 @@ class Checkout2 extends React.Component {
                   variant="outlined"
                   label="Código Postal"
                 />
-                <TextField
-                  id="standard-basic"
-                  variant="outlined"
-                  label="Teléfono"
-                />
+                <div className="inputs" aria-live="polite">
+                  <label for="telefono">
+                    Teléfono <i role="presentation">*</i>
+                  </label>
+                  <input
+                    required
+                    type="text"
+                    placeholder="1158604322"
+                    id="telefono"
+                    aria-invalid={this.state.invalidTelefono}
+                    onBlur={e => this.validateTelefono(e)}
+                  />
+                  {this.state.invalidTelefono && (
+                    <p>Ingrese un teléfono valido</p>
+                  )}
+                </div>
               </div>
               <div className="info-de-pago">
                 <h2>Información de pago</h2>
@@ -225,44 +327,44 @@ class Checkout2 extends React.Component {
                     completar la compra de las entradas de manera segura.
                   </p>
                 </div>
-        
-                  <h3 className="h3-tc">Promociones</h3>
-                  <div className={this.classes.root}>
-              <FormControl
-                component="fieldset"
-                className={this.classes.formControl}
-              >
-                <div className="dias-1">
-                <FormLabel component="legend">
-                  <i className="sr-only">Elegi una opción de día</i>
-                </FormLabel>
-                <RadioGroup
-                  aria-label="promociones"
-                  name="promo"
-                  className="myRadioGroup"
-                  value={this.state.promo}
-                >
-                  {this.promo.map((option, key) => {
-                    return (
-                      <div className="butones-1 butones-promos" key={key}>
-                        <FormControlLabel
-                          value={option.label}
-                          control={<Radio onClick={e => this.handleClick(e)} />}
-                          label={option.label}
-                          labelPlacement="start"
-                          className="promo"
-                          id={option.label}
-                          />
-                        <span className="bajadas">{option.bajada}</span>
-                      </div>
 
-                    );
-                  })}
-                </RadioGroup>
+                <h3 className="h3-tc">Promociones</h3>
+                <div className={this.classes.root}>
+                  <FormControl
+                    component="fieldset"
+                    className={this.classes.formControl}
+                  >
+                    <div className="dias-1">
+                      <FormLabel component="legend">
+                        <i className="sr-only">Elegi una opción de día</i>
+                      </FormLabel>
+                      <RadioGroup
+                        aria-label="promociones"
+                        name="promo"
+                        className="myRadioGroup"
+                        value={this.state.promo}
+                      >
+                        {this.promo.map((option, key) => {
+                          return (
+                            <div className="butones-1 butones-promos" key={key}>
+                              <FormControlLabel
+                                value={option.label}
+                                control={
+                                  <Radio onClick={e => this.handleClick(e)} />
+                                }
+                                label={option.label}
+                                labelPlacement="start"
+                                className="promo"
+                                id={option.label}
+                              />
+                              <span className="bajadas">{option.bajada}</span>
+                            </div>
+                          );
+                        })}
+                      </RadioGroup>
+                    </div>
+                  </FormControl>
                 </div>
-              </FormControl>
-            </div>
-
               </div>
             </form>
           </main>
