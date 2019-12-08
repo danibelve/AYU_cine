@@ -115,3 +115,19 @@ margin-top: 10px;
     border: transparent!important;
     color:#5e50b5!important;
 }
+
+.wrapper-hide-add{
+    display: none;
+}
+
+.persona2-form .MuiTextField-root{
+    display: block !important;
+}
+
+.form-contacto{
+    display: none !important;
+}
+
+.form-contacto-visible{
+    display: inline-flex !important;
+}
