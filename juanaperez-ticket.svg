@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="349.243" height="449.104" viewBox="0 0 349.243 449.104">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #5e50b5;
+        font-size: 22px;
+        font-family: Montserrat-SemiBold, Montserrat;
+        font-weight: 600;
+      }
+
+      .cls-3, .cls-4 {
+        fill: #5f6d74;
+      }
+
+      .cls-3 {
+        font-size: 15px;
+      }
+
+      .cls-3, .cls-6, .cls-8 {
+        font-family: Montserrat-Regular, Montserrat;
+      }
+
+      .cls-4 {
+        font-size: 20px;
+        font-family: Montserrat-Bold, Montserrat;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+
+      .cls-5 {
+        fill: #f1f1f1;
+      }
+
+      .cls-6 {
+        font-size: 12px;
+        letter-spacing: 0.3em;
+      }
+
+      .cls-11, .cls-7 {
+        fill: none;
+      }
+
+      .cls-7 {
+        stroke: #5e50b5;
+        stroke-width: 2px;
+      }
+
+      .cls-8 {
+        fill: #1b2125;
+        font-size: 30px;
+      }
+
+      .cls-9 {
+        fill: #f5f5f5;
+        stroke: #a5b0b5;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-10 {
+        stroke: none;
+      }
+
+      .cls-12 {
+        filter: url(#Oval_3_Copy);
+      }
+
+      .cls-13 {
+        filter: url(#Subtraction_3);
+      }
+    </style>
+    <filter id="Subtraction_3" x="0" y="0" width="349.243" height="449.104" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="7.5" result="blur"/>
+      <feFlood flood-color="#a5b0b5" flood-opacity="0.29"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Oval_3_Copy" x="278.347" y="38" width="29" height="29" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="1" result="blur-2"/>
+      <feFlood flood-opacity="0.153"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_542" data-name="Group 542" transform="translate(-440.5 -386.5)">
+    <g class="cls-13" transform="matrix(1, 0, 0, 1, 440.5, 386.5)">
+      <path id="Subtraction_3-2" data-name="Subtraction 3" class="cls-1" d="M510.243-11152.9H222a8.009,8.009,0,0,1-8-8v-139.16a9.275,9.275,0,0,0,1,.056,9.01,9.01,0,0,0,9-9,9.01,9.01,0,0,0-9-9,9.264,9.264,0,0,0-1,.055V-11549a8.009,8.009,0,0,1,8-8H510.243a8.008,8.008,0,0,1,8,8v231c-.072,0-.151,0-.241,0a9.01,9.01,0,0,0-9,9,9.01,9.01,0,0,0,9,9c.1,0,.175,0,.241,0v139.108A8.008,8.008,0,0,1,510.243-11152.9Z" transform="translate(-191.5 11576.5)"/>
+    </g>
+    <text id="Juana_Perez" data-name="Juana Perez" class="cls-2" transform="translate(463 554)"><tspan x="82.942" y="21">Juana Perez</tspan></text>
+    <text id="_54_011_1151184790" data-name="+54 011 1151184790" class="cls-3" transform="translate(464 593)"><tspan x="85.298" y="15">+54 011 1151184790</tspan></text>
+    <text id="_2_entradas" data-name="2 entradas" class="cls-4" transform="translate(463 691)"><tspan x="76.09" y="19">2 ENTRADAS</tspan></text>
+    <g id="div" transform="translate(517 651)">
+      <circle id="Oval_2" data-name="Oval 2" class="cls-5" cx="3" cy="3" r="3"/>
+      <circle id="Oval_2_Copy_3" data-name="Oval 2 Copy 3" class="cls-5" cx="3" cy="3" r="3" transform="translate(31)"/>
+      <circle id="Oval_2_Copy_2" data-name="Oval 2 Copy 2" class="cls-5" cx="3" cy="3" r="3" transform="translate(16)"/>
+      <circle id="Oval_2_Copy_4" data-name="Oval 2 Copy 4" class="cls-5" cx="3" cy="3" r="3" transform="translate(47)"/>
+      <circle id="Oval_2_Copy_5" data-name="Oval 2 Copy 5" class="cls-5" cx="3" cy="3" r="3" transform="translate(63)"/>
+      <circle id="Oval_2_Copy_6" data-name="Oval 2 Copy 6" class="cls-5" cx="3" cy="3" r="3" transform="translate(96)"/>
+      <circle id="Oval_2_Copy_7" data-name="Oval 2 Copy 7" class="cls-5" cx="3" cy="3" r="3" transform="translate(80)"/>
+      <circle id="Oval_2_Copy_8" data-name="Oval 2 Copy 8" class="cls-5" cx="3" cy="3" r="3" transform="translate(112)"/>
+      <circle id="Oval_2-2" data-name="Oval 2" class="cls-5" cx="3" cy="3" r="3" transform="translate(127)"/>
+      <ellipse id="Oval_2_Copy_3-2" data-name="Oval 2 Copy 3" class="cls-5" cx="2.5" cy="3" rx="2.5" ry="3" transform="translate(160)"/>
+      <circle id="Oval_2_Copy_2-2" data-name="Oval 2 Copy 2" class="cls-5" cx="3" cy="3" r="3" transform="translate(143)"/>
+      <circle id="Oval_2_Copy_4-2" data-name="Oval 2 Copy 4" class="cls-5" cx="3" cy="3" r="3" transform="translate(175)"/>
+      <circle id="Oval_2_Copy_5-2" data-name="Oval 2 Copy 5" class="cls-5" cx="3" cy="3" r="3" transform="translate(191)"/>
+    </g>
+    <text id="PVR_4930_AYUSH_6721" data-name="PVR 4930 AYUSH 6721" class="cls-6" transform="translate(517 788)"><tspan x="0" y="0">PVR 4930 AYUSH 6721</tspan></text>
+    <g id="barcode" transform="translate(483 734)">
+      <rect id="Rectangle_4" data-name="Rectangle 4" width="3" height="39"/>
+      <rect id="Rectangle_4_Copy_18" data-name="Rectangle 4 Copy 18" width="2" height="39" transform="translate(73)"/>
+      <rect id="Rectangle_4_Copy_4" data-name="Rectangle 4 Copy 4" width="3" height="39" transform="translate(14)"/>
+      <rect id="Rectangle_4_Copy_19" data-name="Rectangle 4 Copy 19" width="3" height="39" transform="translate(87)"/>
+      <rect id="Rectangle_4_Copy_7" data-name="Rectangle 4 Copy 7" width="3" height="39" transform="translate(27)"/>
+      <rect id="Rectangle_4_Copy_20" data-name="Rectangle 4 Copy 20" width="2" height="39" transform="translate(100)"/>
+      <rect id="Rectangle_4_Copy_8" data-name="Rectangle 4 Copy 8" width="2" height="39" transform="translate(35)"/>
+      <rect id="Rectangle_4_Copy_21" data-name="Rectangle 4 Copy 21" width="3" height="39" transform="translate(107)"/>
+      <rect id="Rectangle_4_Copy_10" data-name="Rectangle 4 Copy 10" width="3" height="39" transform="translate(42)"/>
+      <rect id="Rectangle_4_Copy_22" data-name="Rectangle 4 Copy 22" width="2" height="39" transform="translate(115)"/>
+      <rect id="Rectangle_4_Copy_17" data-name="Rectangle 4 Copy 17" width="2" height="39" transform="translate(67)"/>
+      <rect id="Rectangle_4_Copy_23" data-name="Rectangle 4 Copy 23" width="3" height="39" transform="translate(139)"/>
+      <rect id="Rectangle_4_Copy" data-name="Rectangle 4 Copy" width="2" height="39" transform="translate(4)"/>
+      <rect id="Rectangle_4_Copy_24" data-name="Rectangle 4 Copy 24" width="2" height="39" transform="translate(77)"/>
+      <rect id="Rectangle_4_Copy_2" data-name="Rectangle 4 Copy 2" width="1" height="39" transform="translate(8)"/>
+      <rect id="Rectangle_4_Copy_25" data-name="Rectangle 4 Copy 25" width="2" height="39" transform="translate(80)"/>
+      <rect id="Rectangle_4_Copy_26" data-name="Rectangle 4 Copy 26" width="1" height="39" transform="translate(84)"/>
+      <rect id="Rectangle_4_Copy_5" data-name="Rectangle 4 Copy 5" width="1" height="39" transform="translate(19)"/>
+      <rect id="Rectangle_4_Copy_27" data-name="Rectangle 4 Copy 27" width="2" height="39" transform="translate(91)"/>
+      <rect id="Rectangle_4_Copy_6" data-name="Rectangle 4 Copy 6" width="1" height="39" transform="translate(24)"/>
+      <rect id="Rectangle_4_Copy_28" data-name="Rectangle 4 Copy 28" width="2" height="39" transform="translate(96)"/>
+      <rect id="Rectangle_4_Copy_9" data-name="Rectangle 4 Copy 9" width="2" height="39" transform="translate(31)"/>
+      <rect id="Rectangle_4_Copy_29" data-name="Rectangle 4 Copy 29" width="2" height="39" transform="translate(104)"/>
+      <rect id="Rectangle_4_Copy_11" data-name="Rectangle 4 Copy 11" width="2" height="39" transform="translate(39)"/>
+      <rect id="Rectangle_4_Copy_30" data-name="Rectangle 4 Copy 30" width="1" height="39" transform="translate(112)"/>
+      <rect id="Rectangle_4_Copy_12" data-name="Rectangle 4 Copy 12" width="2" height="39" transform="translate(46)"/>
+      <rect id="Rectangle_4_Copy_31" data-name="Rectangle 4 Copy 31" width="2" height="39" transform="translate(119)"/>
+      <rect id="Rectangle_4_Copy_16" data-name="Rectangle 4 Copy 16" width="2" height="39" transform="translate(63)"/>
+      <rect id="Rectangle_4_Copy_32" data-name="Rectangle 4 Copy 32" width="2" height="39" transform="translate(136)"/>
+      <rect id="Rectangle_4_Copy_13" data-name="Rectangle 4 Copy 13" width="1" height="39" transform="translate(52)"/>
+      <rect id="Rectangle_4_Copy_33" data-name="Rectangle 4 Copy 33" width="2" height="39" transform="translate(124)"/>
+      <rect id="Rectangle_4_Copy_14" data-name="Rectangle 4 Copy 14" width="2" height="39" transform="translate(55)"/>
+      <rect id="Rectangle_4_Copy_34" data-name="Rectangle 4 Copy 34" width="1" height="39" transform="translate(128)"/>
+      <rect id="Rectangle_4_Copy_15" data-name="Rectangle 4 Copy 15" width="2" height="39" transform="translate(60)"/>
+      <rect id="Rectangle_4_Copy_35" data-name="Rectangle 4 Copy 35" width="1" height="39" transform="translate(133)"/>
+      <rect id="Rectangle_4-2" data-name="Rectangle 4" width="2" height="39" transform="translate(144)"/>
+      <rect id="Rectangle_4_Copy_18-2" data-name="Rectangle 4 Copy 18" width="3" height="39" transform="translate(216)"/>
+      <rect id="Rectangle_4_Copy_4-2" data-name="Rectangle 4 Copy 4" width="3" height="39" transform="translate(158)"/>
+      <rect id="Rectangle_4_Copy_19-2" data-name="Rectangle 4 Copy 19" width="2" height="39" transform="translate(231)"/>
+      <rect id="Rectangle_4_Copy_7-2" data-name="Rectangle 4 Copy 7" width="2" height="39" transform="translate(171)"/>
+      <rect id="Rectangle_4_Copy_20-2" data-name="Rectangle 4 Copy 20" width="3" height="39" transform="translate(243)"/>
+      <rect id="Rectangle_4_Copy_8-2" data-name="Rectangle 4 Copy 8" width="3" height="39" transform="translate(178)"/>
+      <rect id="Rectangle_4_Copy_21-2" data-name="Rectangle 4 Copy 21" width="2" height="39" transform="translate(251)"/>
+      <rect id="Rectangle_4_Copy_10-2" data-name="Rectangle 4 Copy 10" width="2" height="39" transform="translate(186)"/>
+      <rect id="Rectangle_4_Copy_22-2" data-name="Rectangle 4 Copy 22" width="2" height="39" transform="translate(259)"/>
+      <rect id="Rectangle_4_Copy_17-2" data-name="Rectangle 4 Copy 17" width="3" height="39" transform="translate(210)"/>
+      <rect id="Rectangle_4_Copy-2" data-name="Rectangle 4 Copy" width="2" height="39" transform="translate(148)"/>
+      <rect id="Rectangle_4_Copy_24-2" data-name="Rectangle 4 Copy 24" width="2" height="39" transform="translate(220)"/>
+      <rect id="Rectangle_4_Copy_2-2" data-name="Rectangle 4 Copy 2" width="2" height="39" transform="translate(151)"/>
+      <rect id="Rectangle_4_Copy_25-2" data-name="Rectangle 4 Copy 25" width="1" height="39" transform="translate(224)"/>
+      <rect id="Rectangle_4_Copy_3" data-name="Rectangle 4 Copy 3" width="1" height="39" transform="translate(155)"/>
+      <rect id="Rectangle_4_Copy_26-2" data-name="Rectangle 4 Copy 26" width="2" height="39" transform="translate(227)"/>
+      <rect id="Rectangle_4_Copy_5-2" data-name="Rectangle 4 Copy 5" width="2" height="39" transform="translate(162)"/>
+      <rect id="Rectangle_4_Copy_27-2" data-name="Rectangle 4 Copy 27" width="2" height="39" transform="translate(235)"/>
+      <rect id="Rectangle_4_Copy_6-2" data-name="Rectangle 4 Copy 6" width="2" height="39" transform="translate(167)"/>
+      <rect id="Rectangle_4_Copy_28-2" data-name="Rectangle 4 Copy 28" width="2" height="39" transform="translate(240)"/>
+      <rect id="Rectangle_4_Copy_9-2" data-name="Rectangle 4 Copy 9" width="2" height="39" transform="translate(175)"/>
+      <rect id="Rectangle_4_Copy_29-2" data-name="Rectangle 4 Copy 29" width="1" height="39" transform="translate(248)"/>
+      <rect id="Rectangle_4_Copy_11-2" data-name="Rectangle 4 Copy 11" width="2" height="39" transform="translate(182)"/>
+      <rect id="Rectangle_4_Copy_30-2" data-name="Rectangle 4 Copy 30" width="2" height="39" transform="translate(255)"/>
+      <rect id="Rectangle_4_Copy_12-2" data-name="Rectangle 4 Copy 12" width="2" height="39" transform="translate(190)"/>
+      <rect id="Rectangle_4_Copy_31-2" data-name="Rectangle 4 Copy 31" width="1" height="39" transform="translate(263)"/>
+      <rect id="Rectangle_4_Copy_16-2" data-name="Rectangle 4 Copy 16" width="2" height="39" transform="translate(207)"/>
+      <rect id="Rectangle_4_Copy_13-2" data-name="Rectangle 4 Copy 13" width="2" height="39" transform="translate(195)"/>
+      <rect id="Rectangle_4_Copy_14-2" data-name="Rectangle 4 Copy 14" width="1" height="39" transform="translate(199)"/>
+      <rect id="Rectangle_4_Copy_15-2" data-name="Rectangle 4 Copy 15" width="1" height="39" transform="translate(204)"/>
+    </g>
+    <g id="Group_407" data-name="Group 407" transform="translate(323 6)">
+      <g id="Ellipse_17" data-name="Ellipse 17" class="cls-7" transform="translate(250 439)">
+        <ellipse class="cls-10" cx="42.5" cy="43" rx="42.5" ry="43"/>
+        <ellipse class="cls-11" cx="42.5" cy="43" rx="41.5" ry="42"/>
+      </g>
+      <text id="JP" class="cls-8" transform="translate(250 465)"><tspan x="24.215" y="29">JP</tspan></text>
+    </g>
+    <g class="cls-12" transform="matrix(1, 0, 0, 1, 440.5, 386.5)">
+      <circle id="Oval_3_Copy-2" data-name="Oval 3 Copy" class="cls-9" cx="11" cy="11" r="11" transform="translate(281.85 41.5)"/>
+    </g>
+  </g>
+</svg>
