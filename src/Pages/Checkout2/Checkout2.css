@@ -7,22 +7,26 @@
   float: right;
 }
 
+.form-nom-ape, .form-direccion, .form-pais-ciudad, .form-cp-tel, .info-de-pago{
+  width: 100%;
+}
+
 .form-nom-ape .MuiTextField-root{
-  width: 415px;
+  width: 45%;
   margin-right: 30px;
 }
 
 .form-direccion .MuiTextField-root{
-  width: 860px!important;
+  width: 93%!important;
 }
 
 .form-pais-ciudad .MuiFormControl-root{
-  width: 415px;
+  width: 45%;
   margin-right: 30px;
 }
 
 .form-cp-tel .MuiFormControl-root{
-  width: 415px;
+  width: 45%;
   margin-right: 30px;
 }
 
@@ -39,7 +43,7 @@
 }
 
 .white-card{
-  width: 786px;
+  width: 85%!important;
   height: 270px;
   padding:40px;
   border:1px solid #DDE3E8;

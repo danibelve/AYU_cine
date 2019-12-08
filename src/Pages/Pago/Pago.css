@@ -116,3 +116,7 @@
 .ya-tengo-cuenta{
   font-size:0.7em!important;
 }
+
+.MuiDialogActions-root{
+  padding:0!important;
+}
