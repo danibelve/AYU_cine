@@ -26,7 +26,11 @@
 }
 
 .MuiFab-root{
-    box-shadow:0px 6px 10px 0px rgba(0,0,0,0.14)!important;
+    box-shadow:none!important;
+    width: 1.2em;
+    height: 1.2em;
+    z-index: 1;
+    font-size: 1rem;
 }
 
 .MuiFab-label{
@@ -54,4 +58,19 @@
 
 .MuiFormControl-marginNormal{
     margin-top: 60px;
+}
+
+.zona-butacas{
+    display: flex!important;
+    margin-top:35px;
+}
+
+.h2-zonas{
+    margin-right:20px!important;
+}
+
+.p-referencia{
+    font-size: 0.9em!important;
+    font-weight: 500!important;
+    line-height: 1.7!important;
 }

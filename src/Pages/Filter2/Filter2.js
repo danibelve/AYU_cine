@@ -45,7 +45,7 @@ class Filter2 extends React.Component {
       somethingChange: false,
       movies: [
         {
-          title: "Cinépolis Caballito",
+          title: "Hoyts Caballito",
           img: Cinema,
           provincia: "Buenos Aires",
           ciudad: "Capital Federal",
@@ -61,7 +61,7 @@ class Filter2 extends React.Component {
           description: "Av. Rivadavia 1921"
         },
         {
-          title: "Cinépolis Recoleta",
+          title: "Hoyts Recoleta",
           img: Cinema,
           provincia: "Buenos Aires",
           ciudad: "Capital Federal",
@@ -77,7 +77,7 @@ class Filter2 extends React.Component {
           description: "Av. Rivadavia 1921"
         },
         {
-          title: "Cinépolis Córdoba",
+          title: "Hoyts Córdoba",
           img: Cinema,
           ciudad: "Córdoba",
           provincia: "Córdoba Capital",
