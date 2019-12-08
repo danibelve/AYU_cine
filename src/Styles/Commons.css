@@ -218,6 +218,7 @@ a:active {
 
 .MuiDialogContent-root {
   padding: 8px 54px !important;
+  scrollbar-width: none!important;
 }
 
 .MuiFormControl-marginDense {
