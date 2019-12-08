@@ -110,3 +110,53 @@
   height: 120px!important;
   padding: 20px 20px!important;
 }
+
+.form-nom-ape #nombre, .form-nom-ape #apellido{
+  width: 450px!important;
+  margin-right: 20px;
+  min-height: 25px!important;
+  border-radius:5px!important;
+  border:1px solid rgba(0, 0, 0, 0.2)!important;
+  padding: 10px!important;
+}
+
+.form-nom-ape label{
+  font-size: 0.9em;
+}
+
+.form-nom-ape p{
+  font-size:0.7em;
+  color:#D7003A;
+}
+
+.form-nom-ape .inputs{
+  height: 79px!important;
+  margin-bottom:10px;
+  vertical-align: top!important;
+  display: inline-flex;
+}
+
+.form-direccion #direccion{
+  width: 942px!important;
+  margin-right: 20px;
+  min-height: 25px!important;
+  border-radius:5px!important;
+  border:1px solid rgba(0, 0, 0, 0.2)!important;
+  padding: 10px!important;
+}
+
+.form-direccion label{
+  font-size: 0.9em;
+}
+
+.form-direccion p{
+  font-size:0.7em;
+  color:#D7003A;
+}
+
+.form-direccion .inputs{
+  height: 79px!important;
+  margin-bottom:10px;
+  vertical-align: top!important;
+  display: inline-flex!important;
+}

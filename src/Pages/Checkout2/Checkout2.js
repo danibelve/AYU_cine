@@ -196,7 +196,7 @@ class Checkout2 extends React.Component {
           <main id="mainContent" className="filter">
             <h1 className="h1-filter">¿Quiénes pagan esta salida?</h1>
             <h2 className="h2-filter1">Tu información personal</h2>
-            <form className={this.classes.root} noValidate autoComplete="off">
+            <form className={this.classes.root} noValidate autoComplete="off" clasName="form-checkout">
               <div className="form-nom-ape">
                 <div className="inputs" aria-live="polite">
                   <label for="nombre">
