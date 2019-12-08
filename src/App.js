@@ -8,6 +8,7 @@ import Pago from './Pages/Pago/Pago';
 import Checkout from './Pages/Checkout/Checkout';
 import Checkout2 from './Pages/Checkout2/Checkout2';
 import Congrats from './Pages/Congrats/Congrats';
+import DeclaracionAcc from './Pages/Declaracion/DeclaracionAcc';
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 class App extends React.Component {
@@ -24,6 +25,7 @@ class App extends React.Component {
           <Route path="/checkout" component={Checkout}/>
           <Route path="/checkout2" component={Checkout2}/>
           <Route path="/congrats" component={Congrats}/>
+          <Route path="/declaracionacc" component={DeclaracionAcc}/>
         </Router>
     );
   }
