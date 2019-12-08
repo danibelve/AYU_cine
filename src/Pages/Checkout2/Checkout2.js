@@ -330,19 +330,21 @@ class Checkout2 extends React.Component {
                 </div>
               </div>
               <div className="form-cp-tel">
-                <label for="cp">
-                  Código postal <i role="presentation">*</i>
-                </label>
-                <input
-                  required
-                  placeholder="1407"
-                  id="cp"
-                  type="text"
-                  ref={this.textInput}
-                  aria-invalid={this.state.invalidCP}
-                  onBlur={e => this.validateCP(e)}
-                />
-                {this.state.invalidCP && <p>Ingrese un código postal.</p>}
+                <div className="inputs" aria-live="polite">
+                  <label for="cp">
+                    Código postal <i role="presentation">*</i>
+                  </label>
+                  <input
+                    required
+                    placeholder="1407"
+                    id="cp"
+                    type="text"
+                    ref={this.textInput}
+                    aria-invalid={this.state.invalidCP}
+                    onBlur={e => this.validateCP(e)}
+                  />
+                  {this.state.invalidCP && <p>Ingrese un código postal.</p>}
+                </div>
 
                 <div className="inputs" aria-live="polite">
                   <label for="telefono">
@@ -392,20 +394,22 @@ class Checkout2 extends React.Component {
                     )}
                   </div>
                   <div className="otros-campos-tc">
-                    <label for="nombretc">
-                      Nombre en la tarjeta <i role="presentation">*</i>
-                    </label>
-                    <input
-                      required
-                      placeholder="Exequiel Mendoza"
-                      id="nombretc"
-                      type="text"
-                      aria-invalid={this.state.invalidnombreTC}
-                      onBlur={e => this.validateNombreTC(e)}
-                    />
-                    {this.state.invalidnombreTC && (
-                      <p>Ingresa el nombre tal cual la tarjeta</p>
-                    )}
+                    <div className="venc-tc">
+                      <label for="nombretc">
+                        Nombre en la tarjeta <i role="presentation">*</i>
+                      </label>
+                      <input
+                        required
+                        placeholder="Exequiel Mendoza"
+                        id="nombretc"
+                        type="text"
+                        aria-invalid={this.state.invalidnombreTC}
+                        onBlur={e => this.validateNombreTC(e)}
+                      />
+                      {this.state.invalidnombreTC && (
+                        <p>Ingresa el nombre tal cual la tarjeta</p>
+                      )}
+                    </div>
                     <div className="venc-tc otros">
                     <label for="vencimiento">
                       <abbr title="vencimiento">Venc.</abbr><i role="presentation">*</i>
@@ -423,18 +427,18 @@ class Checkout2 extends React.Component {
                     )}
                     </div>
                     <div className="cvv-tc otros">
-                    <label for="CVV">
+                    <label for="cvv">
                       <abbr title="código de seguridad">CVV</abbr><i role="presentation">*</i>
                     </label>
                     <input
                       required
                       placeholder="123"
-                      id="CVV"
+                      id="cvv"
                       type="text"
                       aria-invalid={this.state.invalidCVV}
-                      onBlur={e => this.validateCVV(e)}
+                      onBlur={e => this.validatecvv(e)}
                     />
-                    {this.state.invalidCVV && (
+                    {this.state.invalidcvv && (
                       <p>Ingrese vencimiento de la tarjeta</p>
                     )}
                     </div>

@@ -7,7 +7,7 @@
   float: right;
 }
 
-.form-nom-ape, .form-direccion, .form-pais-ciudad, .form-cp-tel, .info-de-pago{
+.form-nom-ape, .form-direccion, .form-pais-ciudad, .form-cp-tel, .info-de-pago, .form-cp-tel{
   width: 100%;
 }
 
@@ -30,15 +30,15 @@
   margin-right: 30px;
 }
 
-.form-nom-ape{
+.form-nom-ape, .form-cp-tel{
   margin-top:20px!important;
 }
 
-.form-direccion, .form-pais-ciudad,.form-cp-tel{
+.form-direccion, .form-pais-ciudad, .form-cp-tel{
   margin-top:10px!important;
 }
 
-.info-de-pago {
+.info-de-pago{
   margin-top: 80px;
 }
 
@@ -111,11 +111,13 @@
 }
 
 .butones-promos{
-  height: 120px!important;
+  height: 80px!important;
   padding: 20px 20px!important;
 }
 
-.form-nom-ape #nombre, .form-nom-ape #apellido, .form-pais-ciudad #pais, .form-pais-ciudad #ciudad{
+.form-nom-ape #nombre, .form-nom-ape #apellido, .form-pais-ciudad #pais, 
+.form-pais-ciudad #ciudad, .form-cp-tel #cp, .form-cp-tel #telefono, .otros-campos-tc #nombretc,
+.otros-campos-tc #vencimiento, .otros-campos-tc #cvv{
   min-height: 25px!important;
   border-radius:5px!important;
   border:1px solid rgba(0, 0, 0, 0.2)!important;
@@ -123,17 +125,18 @@
   background:white!important;
 }
 
-.form-nom-ape label, .form-direccion label, .form-pais-ciudad label{
+.form-nom-ape label, .form-direccion label, .form-pais-ciudad label, 
+.form-cp-tel label, .numero-tc label, .otros-campos-tc label{
   font-size: 0.9em;
 }
 
-.form-nom-ape p, .form-direccion p, .form-pais-ciudad p{
+.form-nom-ape p, .form-direccion p, .form-pais-ciudad p, .form-cp-tel p, .numero-tc p, .otros-campos-tc p{
   font-size:0.7em;
   color:#D7003A;
 }
 
 
-.form-nom-ape .inputs, .form-pais-ciudad .inputs{
+.form-nom-ape .inputs, .form-pais-ciudad .inputs,  .form-cp-tel .inputs{
   height: 79px!important;
   margin-bottom:10px;
   vertical-align: top!important;
@@ -142,12 +145,21 @@
   margin-right: 24px!important;
 }
 
-.form-direccion{
+ .otros-campos-tc .inputs{
+  height: 79px!important;
+  margin-bottom:10px;
+  vertical-align: top!important;
+  display: inline-flex;
+  width: 20%!important;
+  margin-right: 24px!important;
+}
+
+.form-direccion, .numero-tc{
   width: 100%;
   height: 95px!important;
   }
 
-.form-direccion #direccion{
+.form-direccion #direccion, .numero-tc #numerotc{
   width: 90%!important;
   margin-right: 20px;
   min-height: 25px!important;
@@ -156,11 +168,15 @@
   padding: 10px!important;
 }
 
-.form-direccion label{
+.numero-tc #numerotc{
+  width: 93%!important;
+}
+
+.form-direccion label, .numero-tc label{
   font-size: 0.9em;
 }
 
-.form-direccion p{
+.form-direccion p, .numero-tc p{
   font-size:0.7em;
   color:#D7003A;
 }
@@ -173,4 +189,25 @@
 #pais{
   font-family: "Montserrat", sans-serif !important;
   height: 46px!important;
+}
+
+.otros-campos-tc{
+  display: flex;
+  margin-top: -25px;
+}
+
+#nombretc {
+  width: 92%;
+}
+
+#vencimiento{
+  width: 69%;
+}
+
+.cvv-tc {
+  margin-left: -20px;
+}
+
+#cvv{
+  width: 72%;
 }
