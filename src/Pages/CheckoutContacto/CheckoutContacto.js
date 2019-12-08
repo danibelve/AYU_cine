@@ -1,5 +1,5 @@
 import React from "react";
-import "./Checkout.css";
+import "./CheckoutContacto.css";
 import "../../Styles/Commons.css";
 import "../../Components/Aside/Aside.css";
 import Header from "../../Components/Header/Header";
@@ -13,7 +13,7 @@ import FormLabel from "@material-ui/core/FormLabel";
 import Avatar from "@material-ui/core/Avatar";
 import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
-import { Route, withRouter } from "react-router-dom";
+import { Route, Link } from "react-router-dom";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
@@ -23,7 +23,7 @@ import Fab from "@material-ui/core/Fab";
 import Progressbar from "../../Assets/Estados/Pago.svg";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
 
-class Checkout extends React.Component {
+class CheckoutContacto extends React.Component {
   constructor(props) {
     super(props);
     this.opciones = [
@@ -55,10 +55,7 @@ class Checkout extends React.Component {
     this.state = {
       open: false,
       inputValuePersona1: 0,
-      hideAdd: false,
-      invalidNombre: false,
-      invalidTelefono: false,
-      invalidMail: false,
+      inputValuePersona2: 0
     };
   }
 
@@ -82,6 +79,30 @@ class Checkout extends React.Component {
     } else {
       this.setState({
         inputValuePersona1: parseInt(value) + 1
+      });
+    }
+  }
+
+  handleClickRestarPersona2(e) {
+    const value = this.state.inputValuePersona2;
+    if (
+      this.state.inputValuePersona2 === "" ||
+      this.state.inputValuePersona2 === 0
+    ) {
+      this.setState({ inputValuePersona2: 0 });
+    } else {
+      this.setState({
+        inputValuePersona2: parseInt(value) - 1
+      });
+    }
+  }
+  handleClickSumarPersona2(e) {
+    const value = this.state.inputValuePersona2;
+    if (this.state.inputValuePersona2 === "") {
+      this.setState({ inputValuePersona2: 1 });
+    } else {
+      this.setState({
+        inputValuePersona2: parseInt(value) + 1
       });
     }
   }
@@ -141,8 +162,12 @@ class Checkout extends React.Component {
   }
 
   handleSubmit() {
-    if (!this.state.invalidNombre && !this.state.invalidMail && !this.state.invalidTelefono){
-      this.props.history.push('/checkout-contacto');
+    if (
+      !this.state.invalidNombre &&
+      !this.state.invalidMail &&
+      !this.state.invalidTelefono
+    ) {
+      this.props.history.push("/checkout-contacto");
     }
   }
 
@@ -210,74 +235,52 @@ class Checkout extends React.Component {
                 </div>
               </div>
             </div>
-            <div
-              className={
-                this.state.hideAdd
-                  ? "displayflex-contacto form-contacto-visible"
-                  : "displayflex-contacto form-contacto"
-              }
-            >
+            <div className="displayflex-contacto">
               <div className="wrapper-contacto">
-                <form>
-                  <div className="persona2-form">
-                    <div className="inputs" aria-live="polite">
-                      <label for="nombre">
-                        Nombre <i role="presentation">*</i>
-                      </label>
-                      <input
-                        autoFocus={this.state.hideAdd ? "autoFocus" : ""}
-                        required
-                        placeholder="Juan Perez"
-                        id="nombre"
+                <Avatar>JP</Avatar>
+                <p className="margin0auto tu-contacto">Juan Perez</p>
+                <p className="margin0auto tu-contacto-tel">+54 1156439494</p>
+                <div className="persona1">
+                  <label
+                    className="margin0auto checkout-cant-entradas"
+                    for="persona2"
+                  >
+                    CANTIDAD DE ENTRADAS:
+                  </label>
+                  <div className="counter-center">
+                    <div className="persona-card">
+                      <Fab
+                        variant="round"
+                        className="buton-peque"
+                        aria-label="Restar una entrada"
+                        onClick={e => this.handleClickRestarPersona2(e)}
+                      >
+                        -
+                      </Fab>
+                      <TextField
+                        id="persona2"
                         type="text"
-                        ref={this.textInput}
-                        aria-invalid={this.state.invalidNombre}
-                        onBlur={e => this.validateNombre(e)}
+                        value={this.state.inputValuePersona2}
+                        onChange={this.updateInputValuePersona2}
+                        className="input-width"
+                        aria-live="polite"
+                        aria-label={this.state.inputValuePersona2 + " entradas"}
+                        //aria-describedby={'label_' +this.props.id}
                       />
-                      {this.state.invalidNombre && <p>Ingrese un nombre</p>}
-                    </div>
-                    <div className="inputs" aria-live="polite">
-                      <label for="mail">
-                        E-mail <i role="presentation">*</i>
-                      </label>
-                      <input
-                        required
-                        type="mail"
-                        placeholder="juanperez@gmail.com"
-                        id="mail"
-                        aria-invalid={this.state.invalidMail}
-                        onBlur={e => this.validateMail(e)}
-                      />
-                      {this.state.invalidMail && <p>Ingrese un mail valido</p>}
-                    </div>
-                    <div className="inputs" aria-live="polite">
-                      <label for="telefono">
-                        Teléfono <i role="presentation">*</i>
-                      </label>
-                      <input
-                        required
-                        type="text"
-                        placeholder="1158604322"
-                        id="telefono"
-                        aria-invalid={this.state.invalidTelefono}
-                        onBlur={e => this.validateTelefono(e)}
-                      />
-                      {this.state.invalidTelefono && (
-                        <p>Ingrese un teléfono valido</p>
-                      )}
+                      <Fab
+                        variant="round"
+                        className="buton-peque"
+                        aria-label="Sumar una entrada"
+                        onClick={e => this.handleClickSumarPersona2(e)}
+                      >
+                        +
+                      </Fab>
                     </div>
                   </div>
-                  <div className="fondo-violeta">
-
-                    <button
-                      id="guardar-perfil"
-                      className="editar-perfil guardar-perfil"
-                      onClick={(e) => this.handleSubmit()}
-                    >
-                      Guardar perfil
-                    </button>
-                  </div>
-                </form>
+                </div>
+                <div className="">
+                  <Button className="editar-perfil">Editar Perfil</Button>
+                </div>
               </div>
             </div>
             <div className="displayflex-contacto displayflex-contacto-add">
@@ -349,7 +352,7 @@ class Checkout extends React.Component {
                     variant="outlined"
                     className="button-outlined-black"
                     onClick={() => {
-                      history.push("/pago");
+                      history.push("/checkout");
                     }}
                   >
                     Anterior
@@ -399,9 +402,11 @@ class Checkout extends React.Component {
                     <Button className="button-contained button-contained-modal-1">
                       Reservar entradas
                     </Button>
-                    <Button className="button-contained button-contained-modal-2">
-                      Pagar ahora
-                    </Button>
+                    <Link to="/checkout2">
+                      <Button className="button-contained button-contained-modal-2">
+                        Pagar ahora
+                      </Button>
+                    </Link>
                   </ButtonGroup>
                 </DialogActions>
               </Dialog>
@@ -414,4 +419,4 @@ class Checkout extends React.Component {
   }
 }
 
-export default withRouter(Checkout);
+export default CheckoutContacto;
