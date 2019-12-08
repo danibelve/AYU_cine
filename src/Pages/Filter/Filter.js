@@ -332,6 +332,7 @@ class Filter extends React.Component {
                   -
                 </Fab>
                 <TextField
+                  required
                   id="Adultos"
                   type="text"
                   value={this.state.inputValueAdulto}

@@ -201,7 +201,7 @@ class Filter2 extends React.Component {
                         <FormControlLabel
                           value={movie.title}
                           control={
-                            <Radio onMouseUp={e => this.handleClick(e)} />
+                            <Radio onClick={e => this.handleClick(e)} />
                           }
                           label={movie.title}
                           labelPlacement="start"
@@ -231,7 +231,7 @@ class Filter2 extends React.Component {
                         <FormControlLabel
                           value={movie.title}
                           control={
-                            <Radio onMouseUp={e => this.handleClick(e)} />
+                            <Radio onClick={e => this.handleClick(e)} />
                           }
                           label={movie.title}
                           labelPlacement="start"
