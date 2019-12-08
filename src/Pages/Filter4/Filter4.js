@@ -85,13 +85,13 @@ class Filter4 extends React.Component {
     let opcionSeleccionada = "Sin definir";
   
       if (butacaValue === "0") {
-        opcionSeleccionada = "Opción 01. E4, E5, E6, E7";
+        opcionSeleccionada = "E4, E5, E6, E7";
       }
       if (butacaValue === "1") {
-        opcionSeleccionada = "Opción 02. F7, F8, F9, F10";
+        opcionSeleccionada = "F7, F8, F9, F10";
       }
       if (butacaValue === "2") {
-        opcionSeleccionada = "Opción 03. H6, H7, H8, H9";
+        opcionSeleccionada = "H6, H7, H8, H9";
       }
       if (butacaValue=== "3") {
         opcionSeleccionada = "Personalizado";
