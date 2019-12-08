@@ -286,7 +286,7 @@ class Checkout extends React.Component {
                 onClick={e => this.hideItem(e)}
               >
                 <p className="add-contacto">
-                  +{" "}
+                  <i role="presentation">+{" "}</i>
                   <strong className="add-contacto-strong">
                     Agregar contacto
                   </strong>
