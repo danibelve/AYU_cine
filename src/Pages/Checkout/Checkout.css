@@ -170,3 +170,9 @@ margin-top: 10px;
     margin-bottom: -32px!important;
     line-height: 2.5!important;
 }
+
+
+.inputs{
+    display: flex;
+    flex-direction: column;
+}

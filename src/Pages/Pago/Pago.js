@@ -189,7 +189,7 @@ class Pago extends React.Component {
                 </div>
                 <div className="flex-arround" aria-live="polite">
                   <p className="p-aside">Butacas </p>
-                  <p className="violeta"> Opcion 1: H1, H2, H3, H4</p>
+                  <p className="violeta">H1, H2, H3, H4</p>
                 </div>
                 <div className="subtotal-resumen">
                   <div className="flex-arround">

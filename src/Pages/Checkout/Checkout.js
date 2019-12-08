@@ -13,7 +13,7 @@ import FormLabel from "@material-ui/core/FormLabel";
 import Avatar from "@material-ui/core/Avatar";
 import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
-import { Route, Link } from "react-router-dom";
+import { Route, withRouter } from "react-router-dom";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
@@ -56,7 +56,9 @@ class Checkout extends React.Component {
       open: false,
       inputValuePersona1: 0,
       hideAdd: false,
-      hidePerfil: false
+      invalidNombre: false,
+      invalidTelefono: false,
+      invalidMail: false,
     };
   }
 
@@ -109,6 +111,39 @@ class Checkout extends React.Component {
     this.setState({
       hideAdd: true
     });
+  }
+
+  validateNombre(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 3) {
+      this.setState({ invalidNombre: true });
+    } else {
+      this.setState({ invalidNombre: false });
+    }
+  }
+
+  validateTelefono(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 3) {
+      this.setState({ invalidTelefono: true });
+    } else {
+      this.setState({ invalidTelefono: false });
+    }
+  }
+
+  validateMail(e) {
+    const inputValue = e.target.value;
+    if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(inputValue)) {
+      this.setState({ invalidMail: false });
+    } else {
+      this.setState({ invalidMail: true });
+    }
+  }
+
+  handleSubmit() {
+    if (!this.state.invalidNombre && !this.state.invalidMail && !this.state.invalidTelefono){
+      this.props.history.push('/checkout2');
+    }
   }
 
   render() {
@@ -175,37 +210,74 @@ class Checkout extends React.Component {
                 </div>
               </div>
             </div>
-            <div className={this.state.hideAdd ? "displayflex-contacto form-contacto-visible" : "displayflex-contacto form-contacto"}
-              >
+            <div
+              className={
+                this.state.hideAdd
+                  ? "displayflex-contacto form-contacto-visible"
+                  : "displayflex-contacto form-contacto"
+              }
+            >
               <div className="wrapper-contacto">
-                <div className="persona2-form">
-                  <form>
-                    <TextField
-                      autoFocus= {this.state.hideAdd ? "autoFocus" : ""}
-                      required
-                      id="nombre"
-                      label="Nombre"
-                      variant="outlined"
-                      ref={this.textInput}
-                    />
-                    <TextField
-                      required
-                      id="outlined-basic"
-                      label="Mail"
-                      variant="outlined"
-                      type="email"
-                    />
-                    <TextField
-                      required
-                      id="outlined-basic"
-                      label="Teléfono"
-                      variant="outlined"
-                    />
-                  </form>
-                </div>
-                <div className="fondo-violeta">
-                  <Button className="editar-perfil guardar-perfil" onClick={ e => this.hidePerfil(e)}>Guardar perfil</Button>
-                </div>
+                <form>
+                  <div className="persona2-form">
+                    <div className="inputs" aria-live="polite">
+                      <label for="nombre">
+                        Nombre <i role="presentation">*</i>
+                      </label>
+                      <input
+                        autoFocus={this.state.hideAdd ? "autoFocus" : ""}
+                        required
+                        placeholder="Juan Perez"
+                        id="nombre"
+                        type="text"
+                        ref={this.textInput}
+                        aria-invalid={this.state.invalidNombre}
+                        onBlur={e => this.validateNombre(e)}
+                      />
+                      {this.state.invalidNombre && <p>Ingrese un nombre</p>}
+                    </div>
+                    <div className="inputs" aria-live="polite">
+                      <label for="mail">
+                        E-mail <i role="presentation">*</i>
+                      </label>
+                      <input
+                        required
+                        type="mail"
+                        placeholder="juanperez@gmail.com"
+                        id="mail"
+                        aria-invalid={this.state.invalidMail}
+                        onBlur={e => this.validateMail(e)}
+                      />
+                      {this.state.invalidMail && <p>Ingrese un mail valido</p>}
+                    </div>
+                    <div className="inputs" aria-live="polite">
+                      <label for="telefono">
+                        Teléfono <i role="presentation">*</i>
+                      </label>
+                      <input
+                        required
+                        type="text"
+                        placeholder="1158604322"
+                        id="telefono"
+                        aria-invalid={this.state.invalidTelefono}
+                        onBlur={e => this.validateTelefono(e)}
+                      />
+                      {this.state.invalidTelefono && (
+                        <p>Ingrese un teléfono valido</p>
+                      )}
+                    </div>
+                  </div>
+                  <div className="fondo-violeta">
+
+                    <button
+                      id="guardar-perfil"
+                      className="editar-perfil guardar-perfil"
+                      onClick={(e) => this.handleSubmit()}
+                    >
+                      Guardar perfil
+                    </button>
+                  </div>
+                </form>
               </div>
             </div>
             <div className="displayflex-contacto displayflex-contacto-add">
@@ -221,7 +293,7 @@ class Checkout extends React.Component {
                 </p>
               </button>
             </div>
-            
+
             <div>
               <p className="aclaracion-contactos">
                 A cada contacto se le enviará un link de pago para efectuar la
@@ -342,4 +414,4 @@ class Checkout extends React.Component {
   }
 }
 
-export default Checkout;
+export default withRouter(Checkout);
