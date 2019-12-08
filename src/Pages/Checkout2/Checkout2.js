@@ -423,7 +423,7 @@ class Checkout2 extends React.Component {
                       onBlur={e => this.validateVencimiento(e)}
                     />
                     {this.state.invalidVencimiento && (
-                      <p>Ingrese vencimiento de la tarjeta</p>
+                      <p>Ingrese vencimiento</p>
                     )}
                     </div>
                     <div className="cvv-tc otros">
@@ -436,10 +436,10 @@ class Checkout2 extends React.Component {
                       id="cvv"
                       type="text"
                       aria-invalid={this.state.invalidCVV}
-                      onBlur={e => this.validatecvv(e)}
+                      onBlur={e => this.validateCVV(e)}
                     />
-                    {this.state.invalidcvv && (
-                      <p>Ingrese vencimiento de la tarjeta</p>
+                    {this.state.invalidCVV && (
+                      <p>Ingrese Cvv</p>
                     )}
                     </div>
                   </div>
