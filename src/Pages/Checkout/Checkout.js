@@ -357,54 +357,13 @@ class Checkout extends React.Component {
                 )}
               />
               <Button
+                disabled
                 variant="outlined"
                 className="button-contained"
                 type="submit"
-                onClick={this.handleClickOpen}
               >
                 Siguiente
               </Button>
-              <Dialog
-                open={this.state.open}
-                onClose={e => this.handleClose(e)}
-                aria-labelledby="form-dialog-title"
-                maxWidth="xs"
-              >
-                <DialogTitle id="form-dialog-title" className="heading-modal">
-                  <div className="flex-reverse">
-                    <button
-                      aria-label="Cerrar modal de registro"
-                      className="close-button"
-                      onClick={e => this.handleClose(e)}
-                    >
-                      <span aria-hidden="true">X</span>
-                    </button>
-                    ¡Ya enviaste todos los links de pagos a tus contactos!
-                  </div>
-                </DialogTitle>
-                <DialogContent>
-                  <p className="texto-dialogo">
-                    Podes hacer tu compra ahora o dejar las entradas reservadas
-                    a tu nombre. Recordá que tenes hasta 40 minutos antes de la
-                    función para comprarlas.
-                  </p>
-                </DialogContent>
-                <DialogActions className="button-columns">
-                  <ButtonGroup
-                    variant="text"
-                    color="secondary"
-                    size="large"
-                    aria-label="large contained secondary button group"
-                  >
-                    <Button className="button-contained button-contained-modal-1">
-                      Reservar entradas
-                    </Button>
-                    <Button className="button-contained button-contained-modal-2">
-                      Pagar ahora
-                    </Button>
-                  </ButtonGroup>
-                </DialogActions>
-              </Dialog>
             </div>
           </aside>
         </div>
