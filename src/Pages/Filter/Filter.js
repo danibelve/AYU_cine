@@ -332,15 +332,14 @@ class Filter extends React.Component {
                   -
                 </Fab>
                 <TextField
+                  readOnly
                   required
                   id="Adultos"
                   type="text"
                   value={this.state.inputValueAdulto}
                   onChange={this.updateInputValue}
                   aria-live="polite"
-                  aria-label={this.state.inputValueAdulto + " Adultos"}
-                  //aria-describedby={'label_' +this.props.id}
-                />
+                  aria-label={this.state.inputValueAdulto + " Adultos"}/>
                 <Fab
                   variant="round"
                   className="buton-peque"
@@ -366,6 +365,8 @@ class Filter extends React.Component {
                   -
                 </Fab>
                 <TextField
+                required
+                  readOnly
                   id="Niños"
                   type="text"
                   value={this.state.inputValueNiño}
@@ -399,6 +400,8 @@ class Filter extends React.Component {
                   -
                 </Fab>
                 <TextField
+                required
+                readOnly
                   id="Jubilados"
                   type="text"
                   value={this.state.inputValueJubilado}

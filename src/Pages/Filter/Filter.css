@@ -47,11 +47,6 @@
     width: 195px!important;
     color:#a5b0b5!important;
 }
-
-.MuiInputBase-inputAdornedEnd{
-    display: none!important;
-}
-
 .MuiGrid-justify-xs-space-around{
     display: inline;
 }
