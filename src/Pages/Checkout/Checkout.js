@@ -217,7 +217,7 @@ class Checkout extends React.Component {
                   : "displayflex-contacto form-contacto"
               }
             >
-              <div className="wrapper-contacto">
+              <div className="wrapper-contacto wrapper-contacto-form">
                 <form>
                   <div className="persona2-form">
                     <div className="inputs" aria-live="polite">
