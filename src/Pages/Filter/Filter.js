@@ -288,6 +288,7 @@ class Filter extends React.Component {
                   aria-label="cuando"
                   name="cuando"
                   className="myRadioGroup"
+                  required
                   value={this.state.diaValue}
                 >
                   {this.cuando.map((option, key) => {
@@ -418,6 +419,7 @@ class Filter extends React.Component {
               <FormControl
                 component="fieldset"
                 className={this.classes.formControl}
+                required
               >
                 <FormLabel component="legend" className="dia">
                   <i className="sr-only">"Elegi una opción de horario"</i>
