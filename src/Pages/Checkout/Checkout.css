@@ -116,6 +116,7 @@ margin-top: 10px;
     color:#5e50b5!important;
 }
 
+
 .button-contained-modal-1:hover{
     background: transparent!important;
     border: transparent!important;
@@ -125,4 +126,20 @@ margin-top: 10px;
 
 .persona-card .MuiTouchRipple-root{
     border: 1px solid rgba(0, 0, 0, 0.54);
+}
+.wrapper-hide-add{
+    display: none;
+}
+
+.persona2-form .MuiTextField-root{
+    display: block !important;
+}
+
+.form-contacto{
+    display: none !important;
+}
+
+.form-contacto-visible{
+    display: inline-flex !important;
+
 }

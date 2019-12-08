@@ -20,8 +20,8 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import TextField from "@material-ui/core/TextField";
 import Fab from "@material-ui/core/Fab";
-import Progressbar from "../../Assets/Estados/Pago.svg"
-import ButtonGroup from '@material-ui/core/ButtonGroup';
+import Progressbar from "../../Assets/Estados/Pago.svg";
+import ButtonGroup from "@material-ui/core/ButtonGroup";
 
 class Checkout extends React.Component {
   constructor(props) {
@@ -54,10 +54,10 @@ class Checkout extends React.Component {
 
     this.state = {
       open: false,
-      inputValuePersona1: 0
+      inputValuePersona1: 0,
+      hideAdd: false,
+      hidePerfil: false
     };
-
-    this.handleCheck = this.handleClick.bind(this);
   }
 
   handleClickRestarPersona1(e) {
@@ -105,6 +105,12 @@ class Checkout extends React.Component {
     });
   };
 
+  hideItem(e) {
+    this.setState({
+      hideAdd: true
+    });
+  }
+
   render() {
     return (
       <React.Fragment>
@@ -127,7 +133,10 @@ class Checkout extends React.Component {
                 <p className="margin0auto tu-contacto">Exequiel</p>
                 <p className="margin0auto tu-contacto-tel">+54 1156439494</p>
                 <div className="persona1">
-                <label className="margin0auto checkout-cant-entradas" for="persona1">
+                  <label
+                    className="margin0auto checkout-cant-entradas"
+                    for="persona1"
+                  >
                     CANTIDAD DE ENTRADAS:
                   </label>
                   <div className="counter-center">
@@ -163,64 +172,70 @@ class Checkout extends React.Component {
                 </div>
                 <div className="fondo-violeta">
                   <Button className="editar-perfil">Editar Perfil</Button>
+                </div>
+              </div>
+            </div>
+            <div className={this.state.hideAdd ? "displayflex-contacto form-contacto-visible" : "displayflex-contacto form-contacto"}
+              >
+              <div className="wrapper-contacto">
+                <div className="persona2-form">
+                  <form>
+                    <TextField
+                      autoFocus= {this.state.hideAdd ? "autoFocus" : ""}
+                      required
+                      id="nombre"
+                      label="Nombre"
+                      variant="outlined"
+                      ref={this.textInput}
+                    />
+                    <TextField
+                      required
+                      id="outlined-basic"
+                      label="Mail"
+                      variant="outlined"
+                      type="email"
+                    />
+                    <TextField
+                      required
+                      id="outlined-basic"
+                      label="Teléfono"
+                      variant="outlined"
+                    />
+                  </form>
+                </div>
+                <div className="fondo-violeta">
+                  <Button className="editar-perfil" onClick={ e => this.hidePerfil(e)}>Guardar perfil</Button>
                 </div>
               </div>
             </div>
             <div className="displayflex-contacto displayflex-contacto-add">
-              <div className="wrapper-contacto wrapper-contacto-add">
-                <p className="add-contacto">+ <strong className="add-contacto-strong">Agregar contacto</strong></p>
-              </div>
+              <button
+                className="wrapper-contacto wrapper-contacto-add"
+                onClick={e => this.hideItem(e)}
+              >
+                <p className="add-contacto">
+                  +{" "}
+                  <strong className="add-contacto-strong">
+                    Agregar contacto
+                  </strong>
+                </p>
+              </button>
             </div>
-            <div className="displayflex-contacto">
-              <div className="wrapper-contacto">
-                <Avatar>OP</Avatar>
-                <p className="margin0auto tu-contacto">Exequiel</p>
-                <p className="margin0auto tu-contacto-tel">+54 1156439494</p>
-                <div className="persona1">
-                <label className="margin0auto checkout-cant-entradas" for="persona1">
-                    CANTIDAD DE ENTRADAS:
-                  </label>
-                  <div className="counter-center">
-                    <div className="persona-card">
-                      <Fab
-                        variant="round"
-                        className="buton-peque"
-                        aria-label="Restar una entrada"
-                        onClick={e => this.handleClickRestarPersona1(e)}
-                      >
-                        -
-                      </Fab>
-                      <TextField
-                        id="persona1"
-                        type="text"
-                        value={this.state.inputValuePersona1}
-                        onChange={this.updateInputValuePersona1}
-                        className="input-width"
-                        aria-live="polite"
-                        aria-label={this.state.inputValuePersona1 + " entradas"}
-                        //aria-describedby={'label_' +this.props.id}
-                      />
-                      <Fab
-                        variant="round"
-                        className="buton-peque"
-                        aria-label="Sumar una entrada"
-                        onClick={e => this.handleClickSumarPersona1(e)}
-                      >
-                        +
-                      </Fab>
-                    </div>
-                  </div>
-                </div>
-                <div className="fondo-violeta">
-                  <Button className="editar-perfil">Editar Perfil</Button>
-                </div>
-              </div>
+            
+            <div>
+              <p className="aclaracion-contactos">
+                A cada contacto se le enviará un link de pago para efectuar la
+                compra.
+              </p>
             </div>
-            <div><p className="aclaracion-contactos">A cada contacto se le enviará un link de pago para efectuar la compra.</p></div>
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
-            <img src={Progressbar} className="progress-bar" alt="Paso actual, selección de método de pago"/>
+              <img
+                src={Progressbar}
+                className="progress-bar"
+                alt="Paso actual, selección de método de pago"
+              />
               <h3 className="heading-aside">
                 <span className="heading3-padding">
                   Tu selección para <i lang="en">The Joker</i>
@@ -254,7 +269,7 @@ class Checkout extends React.Component {
                   </div>
                 </div>
               </div>
-              </div>
+            </div>
             <div className="button-container">
               <Route
                 render={({ history }) => (
@@ -303,18 +318,21 @@ class Checkout extends React.Component {
                   </p>
                 </DialogContent>
                 <DialogActions className="button-columns">
-                <ButtonGroup
-              variant="text"
-              color="secondary"
-              size="large"
-              aria-label="large contained secondary button group"
-            >
-              <Button className="button-contained button-contained-modal-1">Reservar entradas</Button>
-              <Button className="button-contained button-contained-modal-2">Pagar ahora</Button>
-            </ButtonGroup>
+                  <ButtonGroup
+                    variant="text"
+                    color="secondary"
+                    size="large"
+                    aria-label="large contained secondary button group"
+                  >
+                    <Button className="button-contained button-contained-modal-1">
+                      Reservar entradas
+                    </Button>
+                    <Button className="button-contained button-contained-modal-2">
+                      Pagar ahora
+                    </Button>
+                  </ButtonGroup>
                 </DialogActions>
               </Dialog>
-
             </div>
           </aside>
         </div>
