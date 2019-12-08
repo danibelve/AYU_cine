@@ -1,5 +1,5 @@
 import React from "react";
-import "./Congrats.css";
+import "./DeclaracionAcc.css";
 import "../../Styles/Commons.css";
 import "../../Components/Aside/Aside.css";
 import HeaderUser from "../../Components/Header/HeaderUser";
@@ -8,7 +8,7 @@ import Button from "@material-ui/core/Button";
 import { Route, Link } from "react-router-dom";
 import Progressbar from "../../Assets/Estados/Entradas.svg";
 
-class Checkout2 extends React.Component {
+class DeclaracionAcc extends React.Component {
 
   componentDidMount() {
     document.title = "Entradas reservadas en Sale Ciness";
@@ -21,94 +21,28 @@ class Checkout2 extends React.Component {
         <div className="box-shadow"></div>
         <div className="divide">
           <main id="mainContent" className="filter">
-            <h1 className="h1-filter">¡Qué disfrutes de Joker!</h1>
-            <p className="bajada">Te dejamos el detalle con la compra. ¡También podes fijarte quien falta pagar en tu perfil!</p>
-  
+            <h1 className="h1-filter">Declaración de accesibilidad</h1>
+            <h2 className="li-declaracion">Fecha: 9/12/2019</h2>
+            <p className="bajada li-declaracion">En Sale Cine queremos que todos tengan el mismo derecho al disfrute.
+            Es por eso que nuestro objetivo es hacer que todas las personas puedan acceder a nuestra plataforma web 
+            sin encontrar barreras de ningun tipo. Por esa razón, trabajamos arduamente
+            para conseguir cumplir el nivel AA de las Directrices de Accesibilidad 
+            para el Contenido Web 2.0. del <i lang="en"> World Wide Web Consortium.</i>
+            Tomaremos como referencia para evaluar la conformidad la Ley N° 26.653 Argentina de “Accesibilidad Web”.
+            </p>
+            <h3>Las pautas que cumplimos en nuestro sitio son:</h3>
+            <ul className="ul-declaracion">
+              <li className="li-declaracion"><strong>Estructura y maquetado</strong>: Utilizamos un lenguaje HTML5 válido y bien etiquetado, con una estructura 
+              de encabezados que permite una navegación fácil por el contenido siguiendo los estándares del W3C.</li>
+              <li className="li-declaracion"><strong>Imágenes</strong>: En nuestro sitio, la utilización de imágenes no es un impedimento para 
+              poder sacar entradas para ir al cine. Para lograrlo, proporcionamos un texto alternativo en caso de que sea necesario.</li>
+              <li className="li-declaracion"><strong>Colores</strong>: Tenemos en consideración que la paleta de colores no afecte a la comprensión del 
+              flujo en nuestro sitio. Para ello, nos cercioramos que haya un contraste de mas de 4.5 entre los componentes.</li>
+              <li className="li-declaracion"><strong>Navegación por teclado</strong>: Nuestro sitio puede ser perfectamente navegado mediante el teclado, pudiendo
+              completar la compra sin trampas ni complicaciones mayores</li>
+            </ul>
+            <p className="li-declaracion"><strong>Contacto:</strong> <a href="mailto:accesibilidad@salecine.com">accesibilidad@salecine.com</a></p>
           </main>
-          <aside className="aside">
-            <div className="aside-wrapper">
-              <img
-                src={Progressbar}
-                className="progress-bar"
-                alt="¡Felicitaciones! Ya tenés tus entradas"
-              />
-              <h3 className="heading-aside">
-                <span className="heading3-padding">
-                  Tu selección para <span lang="en">The Joker</span>
-                </span>
-              </h3>
-              <div className="datos-aside">
-                <div className="flex-arround">
-                  <p className="p-aside">Fecha</p>
-                  <p className="violeta">Viernes 29</p>
-                </div>
-                <div className="flex-arround">
-                  <p className="p-aside">
-                    <abbr title="cantidad">Cant.</abbr> de personas
-                  </p>
-                  <p className="violeta">Adultos 4.</p>
-                </div>
-                <div className="flex-arround">
-                  <p className="p-aside">Cine </p>
-                  <p className="violeta">Hoyts Caballito</p>
-                </div>
-                <div className="flex-arround">
-                  <p className="p-aside">Horario </p>
-                  <p className="violeta">23:00h, Subt. 2D</p>
-                </div>
-                <div className="flex-arround" aria-live="polite">
-                  <p className="p-aside">Butacas </p>
-                  <p className="violeta">H1, H2, H3, H4</p>
-                </div>
-                <div className="subtotal-resumen">
-                  <div className="flex-arround">
-                    <p className="p-aside">Subtotal </p>
-                    <p className="violeta">$600</p>
-                  </div>
-                </div>
-                <div className="subtotal-resumen descuento-resumen">
-                  <div className="flex-arround">
-                    <p className="p-aside descuento">Descuento</p>
-                    <p className="violeta descuento-pesos">-$300</p>
-                  </div>
-                </div>
-                <div className="subtotal-resumen total-resumen">
-                  <div className="flex-arround">
-                    <p className="p-aside total">Total</p>
-                    <p className="violeta total-pesos">$300</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="button-container">
-              <Route
-                render={({ history }) => (
-                  <Button
-                    variant="outlined"
-                    className="button-outlined-black"
-                    onClick={() => {
-                      history.push("/checkout");
-                    }}
-                  >
-                    Anterior
-                  </Button>
-                )}
-              />
-              <Link
-                to={{
-                  pathname: "/"
-                }}
-              >
-                <Button
-                  variant="outlined"
-                  className="button-contained"
-                  type="submit"
-                >
-                  Siguiente
-                </Button>
-              </Link>
-            </div>
-          </aside>
         </div>
         <Footer></Footer>
       </React.Fragment>
@@ -116,4 +50,4 @@ class Checkout2 extends React.Component {
   }
 }
 
-export default Checkout2;
+export default DeclaracionAcc;

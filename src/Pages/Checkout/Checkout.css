@@ -6,6 +6,7 @@
 .editar-perfil{
     color: #5e50b5 !important;
     font-weight: 600!important;
+    margin-bottom: -5px!important;
 }
 
 .wrapper-contacto{
@@ -18,6 +19,8 @@
     align-content: center;
     padding:15px 50px;
     margin: 25px;
+    width: 200px;
+    height: 336px;
 }
 
 .MuiAvatar-colorDefault{
@@ -79,8 +82,8 @@ margin-top: 10px;
 }
 
 .wrapper-contacto-add{
-    width: 169px;
-    height: 306px;
+    width: 270px;
+    height: 366px;
     border:1px dashed #9B99AA;
     box-shadow: none!important;
 }
@@ -89,7 +92,7 @@ margin-top: 10px;
     font-size: 3em;
     color:#2BB2AC;
     text-align:center;
-    padding-top: 80px;
+    padding-top: 60%;
 }
 
 .add-contacto-strong{
@@ -135,11 +138,35 @@ margin-top: 10px;
     display: block !important;
 }
 
+.persona2-form form{
+    margin-top: 45px;
+    width: 240px;
+    margin:auto!important;
+}
+
+.persona2-form .MuiFormControl-root{
+    margin-top:15px;
+}
+
 .form-contacto{
     display: none !important;
 }
 
+.fondo-violeta{
+    text-align: center;
+    margin-top: 68px;   
+    width: 300px!important;
+}
+
 .form-contacto-visible{
     display: inline-flex !important;
+    vertical-align: top!important;
+}
 
+.guardar-perfil{
+    background: #5E50B5!important;
+    color: white!important;
+    width: 100%!important;
+    margin-bottom: -32px!important;
+    line-height: 2.5!important;
 }

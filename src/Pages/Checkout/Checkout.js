@@ -170,7 +170,7 @@ class Checkout extends React.Component {
                     </div>
                   </div>
                 </div>
-                <div className="fondo-violeta">
+                <div className="">
                   <Button className="editar-perfil">Editar Perfil</Button>
                 </div>
               </div>
@@ -204,7 +204,7 @@ class Checkout extends React.Component {
                   </form>
                 </div>
                 <div className="fondo-violeta">
-                  <Button className="editar-perfil" onClick={ e => this.hidePerfil(e)}>Guardar perfil</Button>
+                  <Button className="editar-perfil guardar-perfil" onClick={ e => this.hidePerfil(e)}>Guardar perfil</Button>
                 </div>
               </div>
             </div>
