@@ -307,7 +307,7 @@ class Pago extends React.Component {
                 </DialogTitle>
                 <DialogContent>
                 <form>
-                  <div className="persona2-form">
+                  <div className="registro-form">
                     <div className="inputs" aria-live="polite">
                       <label for="nombre">
                         Nombre <i role="presentation">*</i>
@@ -387,17 +387,19 @@ class Pago extends React.Component {
                       )}
                     </div>
                   </div>
-                  <Button className="ya-tengo-cuenta" onClick={e => this.handleClose(e)} color="primary">
-                    Ya tengo cuenta
-                  </Button>
-                  <button
-                      id="crear-perfil"
-                      className="button-contained guardar-perfil"
-                      type="submit"
-                      onClick={(e) => this.handleSubmit()}
-                    >
-                      Guardar perfil
-                    </button>
+                  <div className="botones-registro">
+                    <Button className="ya-tengo-cuenta" onClick={e => this.handleClose(e)} color="primary">
+                      Ya tengo cuenta
+                    </Button>
+                    <button
+                        id="crear-perfil"
+                        className="button-contained guardar-perfil"
+                        type="submit"
+                        onClick={(e) => this.handleSubmit()}
+                      >
+                        GUARDAR PERFIL
+                      </button>
+                    </div>
                 </form>
                 </DialogContent>
               </Dialog>

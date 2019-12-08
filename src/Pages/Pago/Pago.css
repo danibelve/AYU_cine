@@ -124,3 +124,40 @@
 .MuiDialog-paperScrollPaper{
   scrollbar-width: none !important;
 }
+
+.registro-form{
+  position: relative;
+  margin-top: 5%;
+}
+
+.registro-form #nombre, .registro-form #mail, .registro-form #telefono, .registro-form #pass, .registro-form #pass2{
+  width: 426px;
+  height: 25px;
+  border-radius:5px;
+  border:1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px;
+}
+
+.registro-form label{
+  font-size: 0.9em;
+}
+
+.registro-form p{
+  font-size:0.7em;
+  color:#D7003A;
+}
+
+.registro-form .inputs{
+  height: 79px!important;
+  margin-bottom:10px;
+}
+
+.botones-registro{
+  text-align: center;
+}
+
+#crear-perfil{
+  width: 560px!important;
+  margin-left: -54px;
+  line-height: 4!important;
+}

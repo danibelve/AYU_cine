@@ -81,6 +81,12 @@ margin-top: 10px;
     height: 366px;
     border:1px dashed #9B99AA;
     box-shadow: none!important;
+    padding:15px 30px 0 30px;
+}
+
+.wrapper-contacto-form{
+    padding:15px 30px 0 30px;
+    height: 351px!important;
 }
 
 .add-contacto{
