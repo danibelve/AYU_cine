@@ -448,7 +448,10 @@ class Filter extends React.Component {
                 </RadioGroup>
               </FormControl>
             </div>
-            <h2>¿Qué zona de butacas prefieres? <a>Ver referencia</a></h2>
+            <div className="zona-butacas">
+              <h2 className="h2-zonas">¿Qué zona de butacas prefieres?</h2>
+              <p className="p-referencia"><a href="">Ver referencia</a></p>
+            </div>
             <div className={this.classes.root}>
               <FormControl
                 component="fieldset"

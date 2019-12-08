@@ -109,7 +109,7 @@ i {
 }
 
 .MuiButton-contained:hover {
-  border: 1px solid #8f50b5 !important;
+  border: 2px solid #8f50b5 !important;
 }
 
 a:link {
@@ -379,4 +379,13 @@ abbr {
 
 .MuiRadio-colorSecondary.Mui-checked {
   color: #5e50b5!important;
+}
+
+.MuiTouchRipple-root{
+  background-color: transparent !important;
+}
+
+.MuiCardActionArea-root:hover .MuiTouchRipple-root {
+  opacity: 0.08;
+  color:green!important;
 }

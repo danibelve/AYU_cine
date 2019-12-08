@@ -49,6 +49,7 @@
   border:1px solid #DDE3E8;
   border-radius: 8px;
   margin-bottom:30px;
+  background:white!important;
 }
 
 .h3-tc{
@@ -62,6 +63,7 @@
 .white-card p{
   font-size: 1em;
   max-width: 634px;
+  background:white;
 }
 
 .otros{
@@ -98,4 +100,8 @@
 
 .white-card-mp{
   height: 100px;
+}
+
+.MuiTextField-root{
+  background:white!important;
 }

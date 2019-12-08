@@ -252,7 +252,7 @@ class Checkout extends React.Component {
                 </div>
                 <div className="flex-arround">
                   <p className="p-aside">Cine </p>
-                  <p className="violeta">Cinépolis Caballito</p>
+                  <p className="violeta">Hoyts Caballito</p>
                 </div>
                 <div className="flex-arround">
                   <p className="p-aside">Horario </p>
