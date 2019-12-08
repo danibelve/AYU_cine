@@ -8,7 +8,7 @@ import Button from "@material-ui/core/Button";
 import FormGroup from "@material-ui/core/FormGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Checkbox from "@material-ui/core/Checkbox";
-import { Route, Link } from "react-router-dom";
+import { Link  } from "react-router-dom";
 import Progressbar from "../../Assets/Estados/Entradas.svg";
 import Ezeticket from "../../Assets/eze-ticket.svg";
 import Juanticket from "../../Assets/juanperez-ticket.svg";
@@ -132,6 +132,8 @@ class Checkout2 extends React.Component {
             <Button>Descargar resumen de compra</Button>
             <div className="button-container">
               <Link
+              tabIndex="-1"
+            
                 to={{
                   pathname: "/"
                 }}

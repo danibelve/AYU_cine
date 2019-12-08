@@ -402,7 +402,7 @@ class CheckoutContacto extends React.Component {
                     <Button className="button-contained button-contained-modal-1">
                       Reservar entradas
                     </Button>
-                    <Link to="/checkout2">
+                    <Link tabIndex="-1" to="/checkout2">
                       <Button className="button-contained button-contained-modal-2">
                         Pagar ahora
                       </Button>

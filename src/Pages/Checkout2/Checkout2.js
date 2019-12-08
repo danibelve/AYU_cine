@@ -568,6 +568,7 @@ class Checkout2 extends React.Component {
                 )}
               />
               <Link
+              tabIndex="-1"
                 to={{
                   pathname: "/congrats"
                 }}

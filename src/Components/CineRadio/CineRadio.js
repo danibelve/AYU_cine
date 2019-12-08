@@ -27,7 +27,9 @@ class MovieDetails extends React.Component {
         const { classes } = this.props;
         return (
             <Card className={classes.card} >
-                <Link to={{
+                <Link 
+                tabIndex="-1"
+                to={{
                 pathname: '/filter'
               }}>
                 <CardActionArea>

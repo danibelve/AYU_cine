@@ -542,7 +542,7 @@ class Filter extends React.Component {
                 </div>
             </div>
             <div className="button-container">
-              <Route
+              <Route tabInder="-1"
                 render={({ history }) => (
                   <Button
                     variant="outlined"

@@ -1092,6 +1092,7 @@ class Filter4 extends React.Component {
                 )}
               />
               <Link
+              tabIndex="-1"
                 to={{
                   pathname: "/pago"
                 }}

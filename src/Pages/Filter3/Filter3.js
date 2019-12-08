@@ -346,7 +346,9 @@ class Filter2 extends React.Component {
                   </Button>
                 )}
               />
-              <Link to={{
+              <Link
+              tabIndex="-1"
+              to={{
                 pathname: '/filter4'
               }}>
               <Button
