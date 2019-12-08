@@ -13,7 +13,7 @@ import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
-import { Route, Link } from "react-router-dom";
+import { Route, Link, withRouter } from "react-router-dom";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
@@ -412,4 +412,4 @@ class Pago extends React.Component {
   }
 }
 
-export default Pago;
+export default withRouter(Pago);

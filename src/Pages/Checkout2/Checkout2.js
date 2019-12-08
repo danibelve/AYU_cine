@@ -9,7 +9,7 @@ import "../../Components/Counter/Counter.css";
 import Logos from "../../Assets/tarjetas.svg";
 import LogosMP from "../../Assets/logoMP.jpg";
 import Button from "@material-ui/core/Button";
-import { Route, Link } from "react-router-dom";
+import { Route, Link, withRouter } from "react-router-dom";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogContent from "@material-ui/core/DialogContent";
@@ -72,7 +72,10 @@ class Checkout2 extends React.Component {
       invalidApellido: false,
       invalidTelefono: false,
       invalidMail: false,
-      invalidDireccion:false,
+      invalidDireccion: false,
+      invalidCiudad: false,
+      invalidCP: false,
+      invalidPais: false
     };
   }
 
@@ -88,6 +91,24 @@ class Checkout2 extends React.Component {
       this.setState({ invalidNombre: true });
     } else {
       this.setState({ invalidNombre: false });
+    }
+  }
+
+  validateCP(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 3) {
+      this.setState({ invalidCP: true });
+    } else {
+      this.setState({ invalidCP: false });
+    }
+  }
+
+  validatePais(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 3) {
+      this.setState({ invalidPais: true });
+    } else {
+      this.setState({ invalidPais: false });
     }
   }
 
@@ -126,15 +147,22 @@ class Checkout2 extends React.Component {
     }
   }
 
+  validateCiudad(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 3) {
+      this.setState({ invalidCiudad: true });
+    } else {
+      this.setState({ invalidCiudad: false });
+    }
+  }
+
   handleSubmit() {
     if (
       !this.state.invalidNombre &&
       !this.state.invalidMail &&
-      !this.state.invalidTelefono &&
-      !this.state.invalidPass &&
-      !this.state.invalidPass2
+      !this.state.invalidTelefono
     ) {
-      this.props.history.push("/checkout");
+      this.props.history.push("/congrats");
     }
   }
 
@@ -203,54 +231,70 @@ class Checkout2 extends React.Component {
                 </div>
               </div>
               <div className="form-direccion">
-              <label for="direccion">
-                    Dirección <i role="presentation">*</i>
+                <label for="direccion">
+                  Dirección <i role="presentation">*</i>
+                </label>
+                <input
+                  required
+                  placeholder="Av. Rivadavia 2343"
+                  id="direccion"
+                  type="text"
+                  ref={this.textInput}
+                  aria-invalid={this.state.invalidDireccion}
+                  onBlur={e => this.validateDireccion(e)}
+                />
+                {this.state.invalidDireccion && <p>Ingrese una dirección</p>}
+              </div>
+              <div className="form-pais-ciudad">
+                <label for="favcity">
+                  País <i role="presentation">*</i>
+                </label>
+                <select
+                  required
+                  id="pais"
+                  name="select"
+                  value={this.state.select}
+                  aria-invalid={this.state.invalidPais}
+                  onChange={e => this.handleClickSelect(e)}
+                >
+                  <option value="1">Argentina</option>
+                  <option value="2">Brasil</option>
+                  <option value="3">Chile</option>
+                </select>
+                {this.state.invalidPais && <p>Ingrese una país.</p>}
+                <div>
+                  <label for="ciudad">
+                    Ciudad <i role="presentation">*</i>
                   </label>
                   <input
                     required
-                    placeholder="Av. Rivadavia 2343"
-                    id="direccion"
+                    placeholder="Buenos Aires"
+                    id="ciudad"
                     type="text"
                     ref={this.textInput}
-                    aria-invalid={this.state.invalidDireccion}
-                    onBlur={e => this.validateDireccion(e)}
+                    aria-invalid={this.state.invalidCiudad}
+                    onBlur={e => this.validateCiudad(e)}
                   />
-                  {this.state.invalidDireccion && <p>Ingrese una dirección</p>}
-              </div>
-              <div className="form-pais-ciudad">
-                <FormControl
-                  variant="outlined"
-                  className={this.classes.formControl}
-                >
-                  <InputLabel ref="pais" id="demo-simple-select-outlined-label">
-                    País
-                  </InputLabel>
-                  <Select
-                    labelId="demo-simple-select-outlined-label"
-                    id="demo-simple-select-outlined"
-                    value={this.state.select}
-                    onChange={e => this.handleClickSelect(e)}
-                  >
-                    <MenuItem value="">
-                      <em>None</em>
-                    </MenuItem>
-                    <MenuItem value={10}>Argentina</MenuItem>
-                    <MenuItem value={20}>Brasil</MenuItem>
-                    <MenuItem value={30}>Chile</MenuItem>
-                  </Select>
-                </FormControl>
-                <TextField
-                  id="standard-basic"
-                  variant="outlined"
-                  label="Ciudad"
-                />
+                  {this.state.invalidCiudad && <p>Ingrese una ciudad.</p>}
+                </div>
               </div>
               <div className="form-cp-tel">
-                <TextField
-                  id="standard-basic"
-                  variant="outlined"
-                  label="Código Postal"
+                <label for="cp">
+                  Código postal <i role="presentation">*</i>
+                </label>
+                <input
+                  required
+                  placeholder="1407"
+                  id="cp"
+                  type="text"
+                  ref={this.textInput}
+                  aria-invalid={this.state.invalidCP}
+                  onBlur={e => this.validateCP(e)}
                 />
+                {this.state.invalidCP && (
+                  <p>Ingrese un código postal.</p>
+                )}
+
                 <div className="inputs" aria-live="polite">
                   <label for="telefono">
                     Teléfono <i role="presentation">*</i>
@@ -460,4 +504,4 @@ class Checkout2 extends React.Component {
   }
 }
 
-export default Checkout2;
+export default withRouter(Checkout2);
