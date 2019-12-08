@@ -394,3 +394,10 @@ abbr {
 .close-button{
   cursor:pointer;
 }
+
+.MuiButtonBase-root.Mui-disabled {
+  cursor: default;
+  pointer-events: none;
+  background-color: rgba(94,80,181,0.4) !important;
+  border: 1px solid rgba(94,80,181,0.4) !important;
+}

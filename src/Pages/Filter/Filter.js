@@ -260,6 +260,12 @@ class Filter extends React.Component {
   handleClickMain(){
     this.mainContent.focus()
   }
+  handleSubmit(e) {
+    if (this.state.hora !=="" && this.state.cuando !=="" && 
+    (this.state.inputValueAdulto !==0 || this.state.inputValueJubilado !==0 || this.state.inputValueNiño !==0)){
+      this.props.history.push('/filter2');
+    }
+  }
   render() {
     return (
       <React.Fragment>
@@ -545,19 +551,15 @@ class Filter extends React.Component {
                   </Button>
                 )}
               />
-              <Link
-                to={{
-                  pathname: "/filter2"
-                }}
-              >
                 <Button
                   variant="outlined"
                   className="button-contained"
                   type="submit"
+                  onClick={(e) => this.handleSubmit(e)}
+                  disabled= {(this.state.hora !=="" && this.state.cuando !=="" && (this.state.inputValueAdulto !==0 || this.state.inputValueJubilado !== 0 || this.state.inputValueNiño !== 0)) ? false : true}
                 >
                   Siguiente
                 </Button>
-              </Link>
             </div>
           </aside>
         </div>
