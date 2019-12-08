@@ -53,12 +53,12 @@ class Checkout2 extends React.Component {
       },
       {
         label: "Promo 365",
-        bajada: "2X1",
+        bajada: "Con la tarjeta 365 de Clarín obtene un 2x1 en peliculas 2D todos los días.",
         value: "1"
       },
       {
-        label: "Promo Claro",
-        bajada: "Disponibilidad total",
+        label: "CLub Claro",
+        bajada: "Quienes tengan Claro Club pueden acceder a un 25% en entradas",
         value: "2"
       },
     ];
