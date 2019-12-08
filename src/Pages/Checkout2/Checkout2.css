@@ -30,8 +30,12 @@
   margin-right: 30px;
 }
 
-.form-nom-ape, .form-direccion, .form-pais-ciudad,.form-cp-tel{
+.form-nom-ape{
   margin-top:20px!important;
+}
+
+.form-direccion, .form-pais-ciudad,.form-cp-tel{
+  margin-top:10px!important;
 }
 
 .info-de-pago {
@@ -111,24 +115,25 @@
   padding: 20px 20px!important;
 }
 
-.form-nom-ape #nombre, .form-nom-ape #apellido{
+.form-nom-ape #nombre, .form-nom-ape #apellido, .form-pais-ciudad #pais, .form-pais-ciudad #ciudad{
   min-height: 25px!important;
   border-radius:5px!important;
   border:1px solid rgba(0, 0, 0, 0.2)!important;
   padding: 10px!important;
+  background:white!important;
 }
 
-.form-nom-ape label{
+.form-nom-ape label, .form-direccion label, .form-pais-ciudad label{
   font-size: 0.9em;
 }
 
-.form-nom-ape p{
+.form-nom-ape p, .form-direccion p, .form-pais-ciudad p{
   font-size:0.7em;
   color:#D7003A;
 }
 
 
-.form-nom-ape .inputs{
+.form-nom-ape .inputs, .form-pais-ciudad .inputs{
   height: 79px!important;
   margin-bottom:10px;
   vertical-align: top!important;
@@ -139,6 +144,7 @@
 
 .form-direccion{
   width: 100%;
+  height: 95px!important;
   }
 
 .form-direccion #direccion{
@@ -159,13 +165,12 @@
   color:#D7003A;
 }
 
-.form-direccion .inputs{
-  height: 79px!important;
-  margin-bottom:10px;
-  vertical-align: top!important;
-  display: inline-flex!important;
-}
 
 .h2-checkout2{
   margin-bottom: 25px!important;
+}
+
+#pais{
+  font-family: "Montserrat", sans-serif !important;
+  height: 46px!important;
 }

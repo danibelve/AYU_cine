@@ -194,7 +194,11 @@ class Checkout2 extends React.Component {
         <div className="box-shadow"></div>
         <div className="divide">
           <main id="mainContent" className="filter">
-            <h1 className="h1-filter">¿Quiénes pagan esta salida?</h1>
+            <h1 className="h1-filter">Termina la compra</h1>
+            <p className="bajada">
+              Completa la información para poder comprar tus entradas. 
+              Todos los campos son obligatorios
+            </p>
             <h2 className="h2-filter1 h2-checkout2">Tu información personal</h2>
             <form className={this.classes.root} noValidate autoComplete="off" clasName="form-checkout">
               <div className="form-nom-ape">
@@ -246,23 +250,25 @@ class Checkout2 extends React.Component {
                 {this.state.invalidDireccion && <p>Ingrese una dirección</p>}
               </div>
               <div className="form-pais-ciudad">
-                <label for="favcity">
-                  País <i role="presentation">*</i>
-                </label>
-                <select
-                  required
-                  id="pais"
-                  name="select"
-                  value={this.state.select}
-                  aria-invalid={this.state.invalidPais}
-                  onChange={e => this.handleClickSelect(e)}
-                >
-                  <option value="1">Argentina</option>
-                  <option value="2">Brasil</option>
-                  <option value="3">Chile</option>
-                </select>
-                {this.state.invalidPais && <p>Ingrese una país.</p>}
-                <div>
+                <div className="inputs">
+                  <label for="pais">
+                    País <i role="presentation">*</i>
+                  </label>
+                  <select
+                    required
+                    id="pais"
+                    name="select"
+                    value={this.state.select}
+                    aria-invalid={this.state.invalidPais}
+                    onChange={e => this.handleClickSelect(e)}
+                  >
+                    <option value="1">Argentina</option>
+                    <option value="2">Brasil</option>
+                    <option value="3">Chile</option>
+                  </select>
+                  {this.state.invalidPais && <p>Ingrese una país.</p>}
+                </div>
+                <div className="inputs">
                   <label for="ciudad">
                     Ciudad <i role="presentation">*</i>
                   </label>
