@@ -16,11 +16,15 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import TextField from "@material-ui/core/TextField";
 import { makeStyles } from "@material-ui/core/styles";
-import FormControl from "@material-ui/core/FormControl";
 import InputLabel from "@material-ui/core/InputLabel";
 import MenuItem from "@material-ui/core/MenuItem";
 import Select from "@material-ui/core/Select";
 import Progressbar from "../../Assets/Estados/Pago.svg";
+import Radio from "@material-ui/core/Radio";
+import RadioGroup from "@material-ui/core/RadioGroup";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import FormControl from "@material-ui/core/FormControl";
+import FormLabel from "@material-ui/core/FormLabel";
 
 class Checkout2 extends React.Component {
   constructor(props) {
@@ -40,6 +44,24 @@ class Checkout2 extends React.Component {
         marginTop: theme.spacing(2)
       }
     }));
+
+    this.promo = [
+      {
+        label: "Promo 2x1",
+        bajada: "Cinépolis ofrece un 2x1 a todas las personas por motivo de apertura. ¡No te lo pierdas!",
+        value: "0"
+      },
+      {
+        label: "Promo 365",
+        bajada: "2X1",
+        value: "1"
+      },
+      {
+        label: "Promo Claro",
+        bajada: "Disponibilidad total",
+        value: "2"
+      },
+    ];
 
     this.state = {
       open: false,
@@ -203,6 +225,44 @@ class Checkout2 extends React.Component {
                     completar la compra de las entradas de manera segura.
                   </p>
                 </div>
+        
+                  <h3 className="h3-tc">Promociones</h3>
+                  <div className={this.classes.root}>
+              <FormControl
+                component="fieldset"
+                className={this.classes.formControl}
+              >
+                <div className="dias-1">
+                <FormLabel component="legend">
+                  <i className="sr-only">Elegi una opción de día</i>
+                </FormLabel>
+                <RadioGroup
+                  aria-label="promociones"
+                  name="promo"
+                  className="myRadioGroup"
+                  value={this.state.promo}
+                >
+                  {this.promo.map((option, key) => {
+                    return (
+                      <div className="butones-1 butones-promos" key={key}>
+                        <FormControlLabel
+                          value={option.label}
+                          control={<Radio onClick={e => this.handleClick(e)} />}
+                          label={option.label}
+                          labelPlacement="start"
+                          className="promo"
+                          id={option.label}
+                          />
+                        <span className="bajadas">{option.bajada}</span>
+                      </div>
+
+                    );
+                  })}
+                </RadioGroup>
+                </div>
+              </FormControl>
+            </div>
+
               </div>
             </form>
           </main>
