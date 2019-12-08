@@ -79,7 +79,13 @@ class Pago extends React.Component {
 
     this.state = {
       pago: "",
-      open: false
+      open: false,
+      invalidNombre: false,
+      invalidTelefono: false,
+      invalidMail: false,
+      invalidPass: false,
+      invalidPass2: false,
+      pass: "",
     };
 
     this.handleCheck = this.handleClick.bind(this);
@@ -105,6 +111,63 @@ class Pago extends React.Component {
       open: false
     });
   };
+  validateNombre(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 3) {
+      this.setState({ invalidNombre: true });
+    } else {
+      this.setState({ invalidNombre: false });
+    }
+  }
+
+  validateTelefono(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 3) {
+      this.setState({ invalidTelefono: true });
+    } else {
+      this.setState({ invalidTelefono: false });
+    }
+  }
+
+  validateMail(e) {
+    const inputValue = e.target.value;
+    if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(inputValue)) {
+      this.setState({ invalidMail: false });
+    } else {
+      this.setState({ invalidMail: true });
+    }
+  }
+
+  handleSubmit() {
+    if (!this.state.invalidNombre && 
+      !this.state.invalidMail &&
+       !this.state.invalidTelefono
+         && !this.state.invalidPass
+         && !this.state.invalidPass2){
+      this.props.history.push('/checkout');
+    }
+  }
+
+  validatePass(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 3 || inputValue === "") {
+      this.setState({ invalidPass: true });
+    } else {
+      this.setState({ invalidPass: false, pass: inputValue  });
+    }
+  }
+
+  validatePass2(e) {
+    const inputValue = e.target.value;
+    if (inputValue !== this.state.pass) {
+      this.setState({ invalidPass2: true });
+    } else {
+      this.setState({ invalidPass2: false });
+    }
+    console.log("valor", inputValue);
+    console.log("valor pass", this.state.pass);
+    console.log(this.state.invalidPass2);
+  }
 
   render() {
     return (
@@ -243,66 +306,100 @@ class Pago extends React.Component {
                   </div>
                 </DialogTitle>
                 <DialogContent>
-                <TextField
-                    autoFocus
-                    margin="dense"
-                    id="name"
-                    label="Nombre"
-                    type="text"
-                    variant="outlined"
-                    fullWidth
-                  />
-                  <TextField
-                    margin="dense"
-                    id="email"
-                    label="Email"
-                    type="mail"
-                    variant="outlined"
-                    fullWidth
-                  />
-                  <TextField
-                    margin="dense"
-                    id="telefono"
-                    label="Teléfono"
-                    type="text"
-                    variant="outlined"
-                    fullWidth
-                  />
-                  <TextField
-                    margin="dense"
-                    id="password"
-                    label="Contraseña"
-                    type="password"
-                    variant="outlined"
-                    fullWidth
-                  />
-                  <TextField
-                    margin="dense"
-                    id="password2"
-                    label="Repetir Contraseña"
-                    type="password"
-                    variant="outlined"
-                    fullWidth
-                  />
-                </DialogContent>
-                <DialogActions className="button-columns">
+                <form>
+                  <div className="persona2-form">
+                    <div className="inputs" aria-live="polite">
+                      <label for="nombre">
+                        Nombre <i role="presentation">*</i>
+                      </label>
+                      <input
+                        autoFocus
+                        required
+                        placeholder="Juan Perez"
+                        id="nombre"
+                        type="text"
+                        ref={this.textInput}
+                        aria-invalid={this.state.invalidNombre}
+                        onBlur={e => this.validateNombre(e)}
+                      />
+                      {this.state.invalidNombre && <p>Ingrese un nombre</p>}
+                    </div>
+                    <div className="inputs" aria-live="polite">
+                      <label for="mail">
+                        E-mail <i role="presentation">*</i>
+                      </label>
+                      <input
+                        required
+                        type="mail"
+                        placeholder="juanperez@gmail.com"
+                        id="mail"
+                        aria-invalid={this.state.invalidMail}
+                        onBlur={e => this.validateMail(e)}
+                      />
+                      {this.state.invalidMail && <p>Ingrese un mail valido</p>}
+                    </div>
+                    <div className="inputs" aria-live="polite">
+                      <label for="telefono">
+                        Teléfono <i role="presentation">*</i>
+                      </label>
+                      <input
+                        required
+                        type="text"
+                        placeholder="1158604322"
+                        id="telefono"
+                        aria-invalid={this.state.invalidTelefono}
+                        onBlur={e => this.validateTelefono(e)}
+                      />
+                      {this.state.invalidTelefono && (
+                        <p>Ingrese un teléfono valido</p>
+                      )}
+                    </div>
+                    <div className="inputs" aria-live="polite">
+                      <label for="pass">
+                        Contraseña <i role="presentation">*</i>
+                      </label>
+                      <input
+                        required
+                        type="password"
+                        placeholder="*******"
+                        id="pass"
+                        aria-invalid={this.state.invalidPass}
+                        onBlur={e => this.validatePass(e)}
+                      />
+                      {this.state.invalidPass && (
+                        <p>Ingrese una contraseña</p>
+                      )}
+                    </div>
+                    <div className="inputs" aria-live="polite">
+                      <label for="pass2">
+                        Repetir contraseña <i role="presentation">*</i>
+                      </label>
+                      <input
+                        required
+                        type="password"
+                        placeholder="*******"
+                        id="pass2"
+                        aria-invalid={this.state.invalidPass2}
+                        onBlur={e => this.validatePass2(e)}
+                      />
+                      {this.state.invalidPass2 && (
+                        <p>Las contraseñas tienen que coincidir</p>
+                      )}
+                    </div>
+                  </div>
                   <Button className="ya-tengo-cuenta" onClick={e => this.handleClose(e)} color="primary">
                     Ya tengo cuenta
                   </Button>
-                  <Link
-                    to={{
-                      pathname: "/checkout",
-                    }}
-                  >
-                    <Button
-                      variant="outlined"
-                      className="button-contained"
+                  <button
+                      id="crear-perfil"
+                      className="button-contained guardar-perfil"
                       type="submit"
+                      onClick={(e) => this.handleSubmit()}
                     >
-                      Registrarse
-                    </Button>
-                  </Link>
-                </DialogActions>
+                      Guardar perfil
+                    </button>
+                </form>
+                </DialogContent>
               </Dialog>
             </div>
           </aside>
