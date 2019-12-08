@@ -274,7 +274,7 @@ class Checkout extends React.Component {
                       className="editar-perfil guardar-perfil"
                       onClick={(e) => this.handleSubmit()}
                     >
-                      Guardar perfil
+                      GUARDAR PERFIL
                     </button>
                   </div>
                 </form>

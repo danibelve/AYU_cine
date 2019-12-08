@@ -1,8 +1,3 @@
-.fondo-violeta{
-    /*background-color: #5E50B5;*/
-    margin-top: 30px;
-}
-
 .editar-perfil{
     color: #5e50b5 !important;
     font-weight: 600!important;
@@ -17,9 +12,9 @@
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
-    padding:15px 50px;
-    margin: 25px;
-    width: 200px;
+    padding:15px 30px;
+    margin: 26px;
+    width: 180px;
     height: 336px;
 }
 
@@ -154,7 +149,7 @@ margin-top: 10px;
 
 .fondo-violeta{
     text-align: center;
-    margin-top: 68px;   
+    margin-top: 27px;
     width: 300px!important;
 }
 
@@ -166,13 +161,45 @@ margin-top: 10px;
 .guardar-perfil{
     background: #5E50B5!important;
     color: white!important;
-    width: 100%!important;
+    width: 80%!important;
     margin-bottom: -32px!important;
-    line-height: 2.5!important;
+    line-height: 3.5!important;
+    border-radius: 0 0 8px 8px;
+    border: none;
+    font-family: "Montserrat", sans-serif !important;
+    font-size: 0.75em;
 }
 
 
 .inputs{
     display: flex;
     flex-direction: column;
+}
+
+.persona2-form{
+    position: relative;
+    margin-left: 16%!important;
+    margin-top: 5%;
+}
+
+.persona2-form #nombre, .persona2-form #mail, .persona2-form #telefono{
+    width: 180px;
+    height: 25px;
+    border-radius:5px;
+    border:1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.persona2-form label{
+    font-size: 0.9em;
+}
+
+.persona2-form p{
+    font-size:0.7em;
+    color:#D7003A;
+}
+
+.persona2-form .inputs{
+    height: 79px!important;
+    margin-bottom:10px;
 }
