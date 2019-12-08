@@ -253,7 +253,6 @@ class Pago extends React.Component {
                     fullWidth
                   />
                   <TextField
-                    autoFocus
                     margin="dense"
                     id="email"
                     label="Email"
