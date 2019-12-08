@@ -5,10 +5,33 @@ import "../../Components/Aside/Aside.css";
 import HeaderUser from "../../Components/Header/HeaderUser";
 import Footer from "../../Components/Footer/Footer";
 import Button from "@material-ui/core/Button";
+import FormGroup from "@material-ui/core/FormGroup";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Checkbox from "@material-ui/core/Checkbox";
 import { Route, Link } from "react-router-dom";
 import Progressbar from "../../Assets/Estados/Entradas.svg";
+import Ezeticket from "../../Assets/eze-ticket.svg";
+import Juanticket from "../../Assets/juanperez-ticket.svg";
 
 class Checkout2 extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      reminder: false
+    };
+  }
+
+  handleChange(e) {
+    if (this.state.reminder === true) {
+      this.setState({
+        reminder: false
+      });
+    } else {
+      this.setState({
+        reminder: true
+      });
+    }
+  }
 
   componentDidMount() {
     document.title = "Entradas reservadas en Sale Ciness";
@@ -22,8 +45,34 @@ class Checkout2 extends React.Component {
         <div className="divide">
           <main id="mainContent" className="filter">
             <h1 className="h1-filter">¡Qué disfrutes de Joker!</h1>
-            <p className="bajada">Te dejamos el detalle con la compra. ¡También podes fijarte quien falta pagar en tu perfil!</p>
-  
+            <p className="bajada">
+              Te dejamos el detalle con la compra. ¡También podes fijarte quien
+              falta pagar en tu perfil!
+            </p>
+            <h2>Acá vas a poder ver quiénes faltan pagar</h2>
+            <div className="ticket-container">
+              <div>
+                <img className="img-ticket" src={Ezeticket} alt="" />
+                <p className="text-center">PAGO REALIZADO</p>
+                <Button>Descargar QR</Button>
+              </div>
+              <div>
+                <img className="img-ticket" src={Juanticket} alt="" />
+                <p className="text-center">Pago Pendiente</p>
+                <FormGroup>
+                  <FormControlLabel
+                    control={
+                      <Checkbox
+                        checked={this.state.reminder}
+                        onChange={e => this.handleChange(e)}
+                        value="reminder"
+                      />
+                    }
+                    label="Enviar alerta 1 hr antes de la función"
+                  />
+                </FormGroup>
+              </div>
+            </div>
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
@@ -80,20 +129,8 @@ class Checkout2 extends React.Component {
                 </div>
               </div>
             </div>
+            <Button>Descargar resumen de compra</Button>
             <div className="button-container">
-              <Route
-                render={({ history }) => (
-                  <Button
-                    variant="outlined"
-                    className="button-outlined-black"
-                    onClick={() => {
-                      history.push("/checkout");
-                    }}
-                  >
-                    Anterior
-                  </Button>
-                )}
-              />
               <Link
                 to={{
                   pathname: "/"
@@ -104,7 +141,7 @@ class Checkout2 extends React.Component {
                   className="button-contained"
                   type="submit"
                 >
-                  Siguiente
+                  Ver estado de compra en Mi perfil
                 </Button>
               </Link>
             </div>
