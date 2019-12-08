@@ -75,7 +75,11 @@ class Checkout2 extends React.Component {
       invalidDireccion: false,
       invalidCiudad: false,
       invalidCP: false,
-      invalidPais: false
+      invalidPais: false,
+      invalidTC: false,
+      invalidnombreTC: false,
+      invalidVencimiento: false,
+      invalidCVV:false
     };
   }
 
@@ -91,6 +95,24 @@ class Checkout2 extends React.Component {
       this.setState({ invalidNombre: true });
     } else {
       this.setState({ invalidNombre: false });
+    }
+  }
+
+  validateNombreTC(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 3) {
+      this.setState({ invalidnombreTC: true });
+    } else {
+      this.setState({ invalidnombreTC: false });
+    }
+  }
+
+  validateTC(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length < 16) {
+      this.setState({ invalidTC: true });
+    } else {
+      this.setState({ invalidTC: false });
     }
   }
 
@@ -156,6 +178,24 @@ class Checkout2 extends React.Component {
     }
   }
 
+  validateVencimiento(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length === 4) {
+      this.setState({ invalidVencimiento: false });
+    } else {
+      this.setState({ invalidVencimiento: true });
+    }
+  }
+
+  validateCVV(e) {
+    const inputValue = e.target.value;
+    if (inputValue.length >= 3 && inputValue.length <= 4) {
+      this.setState({ invalidCVV: false });
+    } else {
+      this.setState({ invalidCVV: true });
+    }
+  }
+
   handleSubmit() {
     if (
       !this.state.invalidNombre &&
@@ -200,7 +240,12 @@ class Checkout2 extends React.Component {
               Todos los campos son obligatorios
             </p>
             <h2 className="h2-filter1 h2-checkout2">Tu información personal</h2>
-            <form className={this.classes.root} noValidate autoComplete="off" clasName="form-checkout">
+            <form
+              className={this.classes.root}
+              noValidate
+              autoComplete="off"
+              clasName="form-checkout"
+            >
               <div className="form-nom-ape">
                 <div className="inputs" aria-live="polite">
                   <label for="nombre">
@@ -297,9 +342,7 @@ class Checkout2 extends React.Component {
                   aria-invalid={this.state.invalidCP}
                   onBlur={e => this.validateCP(e)}
                 />
-                {this.state.invalidCP && (
-                  <p>Ingrese un código postal.</p>
-                )}
+                {this.state.invalidCP && <p>Ingrese un código postal.</p>}
 
                 <div className="inputs" aria-live="polite">
                   <label for="telefono">
@@ -333,35 +376,67 @@ class Checkout2 extends React.Component {
                     convenientes.
                   </p>
                   <div className="numero-tc">
-                    <TextField
-                      id="standard-basic"
-                      variant="outlined"
-                      label="Número de tarjeta"
+                    <label for="numerotc">
+                      Número de tarjeta <i role="presentation">*</i>
+                    </label>
+                    <input
+                      required
+                      placeholder="4111 1111 1111 1111"
+                      id="numerotc"
+                      type="text"
+                      aria-invalid={this.state.invalidTC}
+                      onBlur={e => this.validateTC(e)}
                     />
+                    {this.state.invalidTC && (
+                      <p>Ingresa un número de tarjeta</p>
+                    )}
                   </div>
                   <div className="otros-campos-tc">
-                    <div className="nombre-tc otros">
-                      <TextField
-                        id="standard-basic"
-                        variant="outlined"
-                        label="Nombre en la tarjeta"
-                      />
-                    </div>
+                    <label for="nombretc">
+                      Nombre en la tarjeta <i role="presentation">*</i>
+                    </label>
+                    <input
+                      required
+                      placeholder="Exequiel Mendoza"
+                      id="nombretc"
+                      type="text"
+                      aria-invalid={this.state.invalidnombreTC}
+                      onBlur={e => this.validateNombreTC(e)}
+                    />
+                    {this.state.invalidnombreTC && (
+                      <p>Ingresa el nombre tal cual la tarjeta</p>
+                    )}
                     <div className="venc-tc otros">
-                      <TextField
-                        id="standard-basic"
-                        variant="outlined"
-                        label="Venc."
-                        placeholder="MM/YY"
-                      />
+                    <label for="vencimiento">
+                      <abbr title="vencimiento">Venc.</abbr><i role="presentation">*</i>
+                    </label>
+                    <input
+                      required
+                      placeholder="MM/YY"
+                      id="vencimiento"
+                      type="text"
+                      aria-invalid={this.state.invalidVencimiento}
+                      onBlur={e => this.validateVencimiento(e)}
+                    />
+                    {this.state.invalidVencimiento && (
+                      <p>Ingrese vencimiento de la tarjeta</p>
+                    )}
                     </div>
                     <div className="cvv-tc otros">
-                      <TextField
-                        id="standard-basic"
-                        variant="outlined"
-                        label="CVV"
-                        placeholder="Código de seguridad"
-                      />
+                    <label for="CVV">
+                      <abbr title="código de seguridad">CVV</abbr><i role="presentation">*</i>
+                    </label>
+                    <input
+                      required
+                      placeholder="123"
+                      id="CVV"
+                      type="text"
+                      aria-invalid={this.state.invalidCVV}
+                      onBlur={e => this.validateCVV(e)}
+                    />
+                    {this.state.invalidCVV && (
+                      <p>Ingrese vencimiento de la tarjeta</p>
+                    )}
                     </div>
                   </div>
                 </div>
