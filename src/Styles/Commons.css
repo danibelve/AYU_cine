@@ -390,3 +390,7 @@ abbr {
   opacity: 0.08;
   color:green!important;
 }
+
+.close-button{
+  cursor:pointer;
+}
