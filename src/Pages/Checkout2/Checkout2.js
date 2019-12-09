@@ -263,7 +263,6 @@ class Checkout2 extends React.Component {
                     Nombre <i role="presentation">*</i>
                   </label>
                   <input
-                    autoFocus
                     required
                     placeholder="Exequiel"
                     id="nombre"
@@ -496,6 +495,7 @@ class Checkout2 extends React.Component {
                                 labelPlacement="start"
                                 className="promo"
                                 id={option.label}
+                                lang="es-AR"
                               />
                               <span className="bajadas">{option.bajada}</span>
                             </div>
