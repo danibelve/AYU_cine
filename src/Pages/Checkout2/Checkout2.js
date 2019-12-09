@@ -251,7 +251,7 @@ class Checkout2 extends React.Component {
         <div className="box-shadow"></div>
         <div className="divide">
           <main id="mainContent" className="filter">
-            <h1 className="h1-filter">Termina la compra</h1>
+            <h1 className="h1-filter">Terminá la compra</h1>
             <p className="bajada">
               Completa la información para poder comprar tus entradas. 
               Todos los campos son obligatorios
