@@ -406,6 +406,6 @@ a:visited{
   color:#5e50b5!important;
 }
 
-input:focus{
-  border:1px solid #5e50b5!important;
+input:focus, select:focus{
+  outline:1px solid #5e50b5!important;
 }
