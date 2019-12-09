@@ -369,7 +369,7 @@ abbr {
 
 
 .texto-dialogo{
-	text-align: center;
+	  text-align: center;
     font-size: 0.9em!important;
     padding: 15px 0!important;
 }
@@ -408,4 +408,6 @@ a:visited{
 
 input:focus, select:focus{
   outline:1px solid #5e50b5!important;
+  border-radius:5px!important;
 }
+
