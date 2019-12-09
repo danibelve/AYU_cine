@@ -301,7 +301,7 @@ class CheckoutContacto extends React.Component {
                 onClick={e => this.hideItem(e)}
               >
                 <p className="add-contacto">
-                  <i role="presentation">+{" "}</i>
+                  <i aria-hidden="true">+{" "}</i>
                   <strong className="add-contacto-strong">
                     Agregar contacto
                   </strong>

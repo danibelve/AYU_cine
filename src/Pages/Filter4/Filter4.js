@@ -194,7 +194,7 @@ class Filter4 extends React.Component {
                   className="pantalla"
                   src={Pantalla}
                   alt=""
-                  role="presentation"
+                  aria-hidden="true"
                 />
                 <fieldset className="fieldset" disabled= {this.state.butaca !== "3"}>
                   <legend className="legend">Primeras filas</legend>

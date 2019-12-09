@@ -266,7 +266,7 @@ class Checkout2 extends React.Component {
               <div className="form-nom-ape">
                 <div className="inputs" aria-live="polite">
                   <label for="nombre">
-                    Nombre <i role="presentation">*</i>
+                    Nombre <i aria-hidden="true">*</i>
                   </label>
                   <input
                     required
@@ -281,7 +281,7 @@ class Checkout2 extends React.Component {
                 </div>
                 <div className="inputs" aria-live="polite">
                   <label for="apellido">
-                    Apellido <i role="presentation">*</i>
+                    Apellido <i aria-hidden="true">*</i>
                   </label>
                   <input
                     required
@@ -297,7 +297,7 @@ class Checkout2 extends React.Component {
               </div>
               <div className="form-direccion">
                 <label for="direccion">
-                  Dirección <i role="presentation">*</i>
+                  Dirección <i aria-hidden="true">*</i>
                 </label>
                 <input
                   required
@@ -313,7 +313,7 @@ class Checkout2 extends React.Component {
               <div className="form-pais-ciudad">
                 <div className="inputs">
                   <label for="pais">
-                    País <i role="presentation">*</i>
+                    País <i aria-hidden="true">*</i>
                   </label>
                   <select
                     required
@@ -331,7 +331,7 @@ class Checkout2 extends React.Component {
                 </div>
                 <div className="inputs">
                   <label for="ciudad">
-                    Ciudad <i role="presentation">*</i>
+                    Ciudad <i aria-hidden="true">*</i>
                   </label>
                   <input
                     required
@@ -348,7 +348,7 @@ class Checkout2 extends React.Component {
               <div className="form-cp-tel">
                 <div className="inputs" aria-live="polite">
                   <label for="cp">
-                    Código postal <i role="presentation">*</i>
+                    Código postal <i aria-hidden="true">*</i>
                   </label>
                   <input
                     required
@@ -364,7 +364,7 @@ class Checkout2 extends React.Component {
 
                 <div className="inputs" aria-live="polite">
                   <label for="telefono">
-                    Teléfono <i role="presentation">*</i>
+                    Teléfono <i aria-hidden="true">*</i>
                   </label>
                   <input
                     required
@@ -395,7 +395,7 @@ class Checkout2 extends React.Component {
                   </p>
                   <div className="numero-tc">
                     <label for="numerotc">
-                      Número de tarjeta <i role="presentation">*</i>
+                      Número de tarjeta <i aria-hidden="true">*</i>
                     </label>
                     <input
                       required
@@ -412,7 +412,7 @@ class Checkout2 extends React.Component {
                   <div className="otros-campos-tc">
                     <div className="venc-tc">
                       <label for="nombretc">
-                        Nombre en la tarjeta <i role="presentation">*</i>
+                        Nombre en la tarjeta <i aria-hidden="true">*</i>
                       </label>
                       <input
                         required
@@ -429,7 +429,7 @@ class Checkout2 extends React.Component {
                     <div className="venc-tc otros">
                       <label for="vencimiento">
                         <abbr title="vencimiento">Venc.</abbr>
-                        <i role="presentation">*</i>
+                        <i aria-hidden="true">*</i>
                       </label>
                       <input
                         required
@@ -446,7 +446,7 @@ class Checkout2 extends React.Component {
                     <div className="cvv-tc otros">
                       <label for="cvv">
                         <abbr title="código de seguridad">CVV</abbr>
-                        <i role="presentation">*</i>
+                        <i aria-hidden="true">*</i>
                       </label>
                       <input
                         required

@@ -315,7 +315,7 @@ class Pago extends React.Component {
                   <div className="registro-form">
                     <div className="inputs" aria-live="polite">
                       <label for="nombre">
-                        Nombre <i role="presentation">*</i>
+                        Nombre <i aria-hidden="true">*</i>
                       </label>
                       <input
                         autoFocus
@@ -331,7 +331,7 @@ class Pago extends React.Component {
                     </div>
                     <div className="inputs" aria-live="polite">
                       <label for="mail">
-                        E-mail <i role="presentation">*</i>
+                        E-mail <i aria-hidden="true">*</i>
                       </label>
                       <input
                         required
@@ -345,7 +345,7 @@ class Pago extends React.Component {
                     </div>
                     <div className="inputs" aria-live="polite">
                       <label for="telefono">
-                        Teléfono <i role="presentation">*</i>
+                        Teléfono <i aria-hidden="true">*</i>
                       </label>
                       <input
                         required
@@ -361,7 +361,7 @@ class Pago extends React.Component {
                     </div>
                     <div className="inputs" aria-live="polite">
                       <label for="pass">
-                        Contraseña <i role="presentation">*</i>
+                        Contraseña <i aria-hidden="true">*</i>
                       </label>
                       <input
                         required
@@ -377,7 +377,7 @@ class Pago extends React.Component {
                     </div>
                     <div className="inputs" aria-live="polite">
                       <label for="pass2">
-                        Repetir contraseña <i role="presentation">*</i>
+                        Repetir contraseña <i aria-hidden="true">*</i>
                       </label>
                       <input
                         required

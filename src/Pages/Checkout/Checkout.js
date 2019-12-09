@@ -191,7 +191,7 @@ class Checkout extends React.Component {
                   <div className="persona2-form">
                     <div className="inputs" aria-live="polite">
                       <label for="nombre">
-                        Nombre <i role="presentation">*</i>
+                        Nombre <i aria-hidden="true">*</i>
                       </label>
                       <input
                         required
@@ -206,7 +206,7 @@ class Checkout extends React.Component {
                     </div>
                     <div className="inputs" aria-live="polite">
                       <label for="mail">
-                        E-mail <i role="presentation">*</i>
+                        E-mail <i aria-hidden="true">*</i>
                       </label>
                       <input
                         required
@@ -220,7 +220,7 @@ class Checkout extends React.Component {
                     </div>
                     <div className="inputs" aria-live="polite">
                       <label for="telefono">
-                        Teléfono <i role="presentation">*</i>
+                        Teléfono <i aria-hidden="true">*</i>
                       </label>
                       <input
                         required
@@ -258,7 +258,7 @@ class Checkout extends React.Component {
                 }}
               >
                 <p className="add-contacto">
-                  <i role="presentation">+{" "}</i>
+                  <i aria-hidden="true">+{" "}</i>
                   <strong className="add-contacto-strong">
                     Agregar contacto
                   </strong>
