@@ -298,6 +298,7 @@ class Pago extends React.Component {
                       aria-label="Cerrar modal de registro"
                       className="close-button"
                       onClick={e => this.handleClose(e)}
+                      title="Cerrar"
                     >
                       <span aria-hidden="true">X</span>
                     </button>
