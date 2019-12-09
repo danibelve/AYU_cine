@@ -149,6 +149,12 @@ class Filter2 extends React.Component {
     document.title = "Mira las opciones que te encontramos en Sale Cine";
   }
 
+  handleSubmit(e) {
+    if (this.state.hora !== ""){
+      this.props.history.push('/filter4');
+    }
+  }
+
   handleClick(event) {
     const newValue = event.target.value;
     const name = event.target.name;
@@ -346,19 +352,15 @@ class Filter2 extends React.Component {
                   </Button>
                 )}
               />
-              <Link
-              tabIndex="-1"
-              to={{
-                pathname: '/filter4'
-              }}>
               <Button
                     variant="outlined"
                     className="button-contained"
                     type= "submit"
+                    onClick={(e) => this.handleSubmit(e)}
+                    disabled= {(this.state.hora === "") ? true : false}
                   >
                     Siguiente
                   </Button>
-              </Link>
             </div>
           </aside>
         </div>

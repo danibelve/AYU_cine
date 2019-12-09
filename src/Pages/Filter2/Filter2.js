@@ -94,6 +94,12 @@ class Filter2 extends React.Component {
     document.title = "Elijan cuál cine, sale cine";
   }
 
+  handleSubmit(e) {
+    if (this.state.cine !== "Sin definir"){
+      this.props.history.push('/filter');
+    }
+  }
+
   handleClick(event) {
     const newValue = event.target.value;
     const name = event.target.name;
@@ -305,22 +311,17 @@ class Filter2 extends React.Component {
                   </Button>
                 )}
               />
-              <Link
-              tabIndex="-1"
-                to={{
-                  pathname: "/filter3"
-                }}
-              >
                 <Button
                   variant="outlined"
                   className="button-contained"
                   type="submit"
+                  onClick={(e) => this.handleSubmit(e)}
+                  disabled= {(this.state.cine === "Sin definir") ? true : false}
                 >
                   Siguiente
                 </Button>
-              </Link>
             </div>
-          </aside>
+         </aside>
         </div>
         <Footer></Footer>
       </React.Fragment>
