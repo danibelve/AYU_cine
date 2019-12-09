@@ -99,6 +99,12 @@ class Filter4 extends React.Component {
     return opcionSeleccionada;
   }
 
+  handleSubmit(e) {
+    if (this.state.butaca !== ""){
+      this.props.history.push('/pago');
+    }
+  }
+
   handleClick(event) {
     const name = event.target.value;
     let butacaValue = "";
@@ -1091,20 +1097,15 @@ class Filter4 extends React.Component {
                   </Button>
                 )}
               />
-              <Link
-              tabIndex="-1"
-                to={{
-                  pathname: "/pago"
-                }}
-              >
                 <Button
                   variant="outlined"
                   className="button-contained"
                   type="submit"
+                  onClick={(e) => this.handleSubmit(e)}
+                  disabled= {(this.state.butaca === "") ? true : false}
                 >
                   Siguiente
                 </Button>
-              </Link>
             </div>
           </aside>
         </div>

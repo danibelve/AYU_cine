@@ -446,7 +446,7 @@ class Filter extends React.Component {
                         <FormControlLabel
                           value={option.label}
                           control={
-                            <Radio onMouseUp={e => this.handleClick(e)} />
+                            <Radio onClick={e => this.handleClick(e)} />
                           }
                           label={option.label}
                           labelPlacement="start"
