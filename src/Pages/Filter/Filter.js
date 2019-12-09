@@ -596,7 +596,8 @@ class Filter extends React.Component {
                     <abbr title="cantidad">Cant.</abbr> de personas{" "}
                   </p>
                   <p
-                    aria-live="assertive"
+                    aria-live="polite"
+                    aria-atomic="true" 
                     className={
                       this.armarCantidadDePersonas() === "Sin definir"
                         ? "gris"
