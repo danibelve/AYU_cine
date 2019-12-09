@@ -2,6 +2,7 @@ import React from "react";
 import "./Checkout2.css";
 import "../../Styles/Commons.css";
 import "../../Components/Aside/Aside.css";
+import {Helmet} from "react-helmet";
 import HeaderUser from "../../Components/Header/HeaderUser";
 import Avatar from "@material-ui/core/Avatar";
 import Footer from "../../Components/Footer/Footer";
@@ -241,6 +242,9 @@ class Checkout2 extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <html lang="es-AR" />
+        </Helmet>
         <HeaderUser></HeaderUser>
         <div className="box-shadow"></div>
         <div className="divide">
@@ -508,7 +512,6 @@ class Checkout2 extends React.Component {
               </div>
             </form>
           </main>
-
           <aside className="aside">
             <div className="aside-wrapper">
               <img

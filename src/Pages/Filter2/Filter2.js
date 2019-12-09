@@ -1,6 +1,7 @@
 import React from "react";
 import "./Filter2.css";
 import "../../Styles/Commons.css";
+import {Helmet} from "react-helmet";
 import FormControl from "@material-ui/core/FormControl";
 import NativeSelect from "@material-ui/core/NativeSelect";
 import { makeStyles } from "@material-ui/core/styles";
@@ -140,6 +141,9 @@ class Filter2 extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <html lang="es-AR" />
+        </Helmet>
         <Header></Header>
         <div className="box-shadow"></div>
         <div className="divide">

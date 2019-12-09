@@ -2,6 +2,7 @@ import React from "react";
 import "./Checkout.css";
 import "../../Styles/Commons.css";
 import "../../Components/Aside/Aside.css";
+import {Helmet} from "react-helmet";
 import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import { makeStyles } from "@material-ui/core/styles";
@@ -149,6 +150,9 @@ class Checkout extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <html lang="es-AR" />
+        </Helmet>
         <Header></Header>
         <div className="box-shadow"></div>
         <div className="divide">

@@ -2,6 +2,7 @@ import React from "react";
 import "./Congrats.css";
 import "../../Styles/Commons.css";
 import "../../Components/Aside/Aside.css";
+import {Helmet} from "react-helmet";
 import HeaderUser from "../../Components/Header/HeaderUser";
 import Footer from "../../Components/Footer/Footer";
 import Button from "@material-ui/core/Button";
@@ -40,6 +41,9 @@ class Checkout2 extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <html lang="es-AR" />
+        </Helmet>
         <HeaderUser></HeaderUser>
         <div className="box-shadow"></div>
         <div className="divide">
