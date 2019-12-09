@@ -259,7 +259,7 @@ class Pago extends React.Component {
                 <div className="subtotal-resumen">
                   <div className="flex-arround">
                     <p className="p-aside">Subtotal </p>
-                    <p className="violeta">$1200</p>
+                    <p className="violeta"><i aria-hidden="true">$</i>600<i class="sr-only">pesos</i></p>
                   </div>
                 </div>
               </div>

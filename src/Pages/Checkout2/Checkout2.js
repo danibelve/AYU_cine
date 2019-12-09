@@ -552,19 +552,19 @@ class Checkout2 extends React.Component {
                 <div className="subtotal-resumen">
                   <div className="flex-arround">
                     <p className="p-aside">Subtotal </p>
-                    <p className="violeta">$600</p>
+                    <p className="violeta"><i aria-hidden="true">$</i>600<i class="sr-only">pesos</i></p>
                   </div>
                 </div>
                 <div className="subtotal-resumen descuento-resumen">
                   <div className="flex-arround">
                     <p className="p-aside descuento">Descuento</p>
-                    <p className="violeta descuento-pesos">-$300</p>
+                    <p className="violeta descuento-pesos">-<i aria-hidden="true">$</i>300<i class="sr-only">pesos</i></p>
                   </div>
                 </div>
                 <div className="subtotal-resumen total-resumen">
                   <div className="flex-arround">
                     <p className="p-aside total">Total</p>
-                    <p className="violeta total-pesos">$300</p>
+                    <p className="violeta"><i aria-hidden="true">$</i>300<i class="sr-only">pesos</i></p>
                   </div>
                 </div>
               </div>
