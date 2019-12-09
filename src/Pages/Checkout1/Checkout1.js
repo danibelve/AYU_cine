@@ -1,5 +1,4 @@
 import React from "react";
-import "./Checkout.css";
 import "../../Styles/Commons.css";
 import "../../Components/Aside/Aside.css";
 import {Helmet} from "react-helmet";
@@ -14,7 +13,7 @@ import Fab from "@material-ui/core/Fab";
 import Progressbar from "../../Assets/Estados/Pago.svg";
 import $ from 'jquery';
 
-class Checkout extends React.Component {
+class Checkout1 extends React.Component {
   constructor(props) {
     super(props);
 
@@ -54,6 +53,7 @@ class Checkout extends React.Component {
 
   componentDidMount() {
     document.title = "¿Quienés pagan esta salida? En Sale Cine";
+    $("#nombre").focus();
   }
 
   handleClick(event) {
@@ -77,7 +77,6 @@ class Checkout extends React.Component {
     this.setState({
       hideAdd: true
     });
-    $("#nombre").focus();
   }
 
   validateNombre(e) {
@@ -180,11 +179,7 @@ class Checkout extends React.Component {
               </div>
             </div>
             <div
-              className={
-                this.state.hideAdd
-                  ? "displayflex-contacto form-contacto-visible"
-                  : "displayflex-contacto form-contacto"
-              }
+              className="displayflex-contacto form-contacto-visible"
             >
               <div className="wrapper-contacto wrapper-contacto-form">
                 <form>
@@ -249,13 +244,9 @@ class Checkout extends React.Component {
               </div>
             </div>
             <div className="displayflex-contacto displayflex-contacto-add">
-            <Route
-                render={({ history }) => (
-                  <button
+              <button
                 className="wrapper-contacto wrapper-contacto-add"
-                onClick={() => {
-                  history.push("/checkout1");
-                }}
+                onClick={e => this.hideItem(e)}
               >
                 <p className="add-contacto">
                   <i role="presentation">+{" "}</i>
@@ -264,8 +255,6 @@ class Checkout extends React.Component {
                   </strong>
                 </p>
               </button>
-                )}
-              />
             </div>
 
             <div>
@@ -347,4 +336,4 @@ class Checkout extends React.Component {
   }
 }
 
-export default withRouter(Checkout);
+export default withRouter(Checkout1);
