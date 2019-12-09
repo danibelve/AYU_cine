@@ -1,0 +1,8 @@
+#guardar-perfil:focus{
+  background-color:  #8f50b5 !important;
+}
+
+.wrapper-contacto-add:focus {
+    border: 3px dashed #5e50b5;
+    outline: none;
+}

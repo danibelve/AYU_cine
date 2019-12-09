@@ -1,5 +1,6 @@
 import React from "react";
 import "../../Styles/Commons.css";
+import "./Checkout1.css";
 import "../../Components/Aside/Aside.css";
 import {Helmet} from "react-helmet";
 import Header from "../../Components/Header/Header";
@@ -106,9 +107,11 @@ class Checkout1 extends React.Component {
     }
   }
 
-  handleSubmit() {
+  handleSubmit(e) {
     if (!this.state.invalidNombre && !this.state.invalidMail && !this.state.invalidTelefono){
       this.props.history.push('/checkout-contacto');
+    }else{
+      e.preventDefault()
     }
   }
 
@@ -235,7 +238,7 @@ class Checkout1 extends React.Component {
                     <button
                       id="guardar-perfil"
                       className="editar-perfil guardar-perfil"
-                      onClick={(e) => this.handleSubmit()}
+                      onClick={(e) => this.handleSubmit(e)}
                     >
                       GUARDAR PERFIL
                     </button>
