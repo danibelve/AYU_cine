@@ -66,13 +66,13 @@ class Pago extends React.Component {
       },
       {
         label: "¡Pago yo!",
-        bajada: "Con esta opción vas a pagar vos el total de las entradas.",
+        bajada: "Con esta opción vas a pagar vos el total de las entradas",
         recomendado: false,
         bajada2: "MÉTODO CLÁSICO",
-        beneficio1: "Pagas todo vos solo",
-        beneficio2: "No tener que esperar a nadie.",
+        beneficio1: "Te asegurás todas las entradas",
+        beneficio2: "La compra es más rápida",
         beneficio3:
-          "No es una reserva, por lo cual la compra se efectúa en el momento.",
+          "No es una reserva, la compra se efectúa en el momento.",
         value: "1"
       }
     ];

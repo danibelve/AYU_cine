@@ -155,12 +155,11 @@ class Checkout extends React.Component {
           <main id="mainContent" className="filter">
             <h1 className="h1-filter">¿Quiénes pagan esta salida?</h1>
             <p className="bajada">
-              Agregar a tus amigos que vayan a pagar. ¡Podes ver los grupos en
-              tu perfil!
+            Agregá a las personas que van a pagar esta vez. En tu perfil 
+            vas a poder ver los grupos de pago de cada salida. 
             </p>
             <h2 className="h2-quienes-pagan">
-              Este es el grupo de The Joker, elegí cuantas entradas paga cada
-              integrantes
+            Este es tu grupo para ver “The Joker”, seleccioná cuántas entradas paga cada uno.
             </h2>
             <div className="displayflex-contacto">
               <div className="wrapper-contacto">
