@@ -200,45 +200,45 @@ class Filter4 extends React.Component {
                       <div className="padding-bottom">
                         <div className="anchom">A</div>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="A1" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="A1" value="A1" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="A2" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="A2" value="A2" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="A3" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="A3" value="A3" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
                       <div className="padding-bottom">
                       <div className="anchom">B</div>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="B1" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="B1" value="B1" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="B2" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="B2" value="B2" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="B3" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="B3" value="B3" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
                       <div className="padding-bottom">
                       <div className="anchom">C</div>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="C1" disabled= {this.state.butaca !== "3"} />
+                          <input type="checkbox" name="butaca" aria-label="C1" value="C1" disabled= {this.state.butaca !== "3"} />
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="C2" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="C2" value="C2" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="C3" disabled= {this.state.butaca !== "3"} />
+                          <input type="checkbox" name="butaca" aria-label="C3" value="C3" disabled= {this.state.butaca !== "3"} />
                           <span className="checkmark"></span>
                         </span>
                       </div>
@@ -255,11 +255,11 @@ class Filter4 extends React.Component {
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="D2" disabled= {this.state.butaca !== "3"} />
+                          <input type="checkbox" name="butaca" aria-label="D2" value="D2" disabled= {this.state.butaca !== "3"} />
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="D3" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="D3" value="D3" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
@@ -267,41 +267,41 @@ class Filter4 extends React.Component {
                     <div className="centro">
                       <div className="padding-bottom">
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="A4" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="A4" value="A4" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="A5" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="A5" value="A5" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="A6" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="A6" value="A6" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="A7" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="A7" value="A7" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="A8" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="A8" value="A8" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="A8" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="A9" value="A9" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="A10" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="A10" value="A10" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="A10" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="A11" value="A11" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
                       <div  className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="B4" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="B4" value="B4" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-escondido">
@@ -315,57 +315,57 @@ class Filter4 extends React.Component {
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="B6" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="B6" value="B6" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="B7" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="B7" value="B7" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="B8" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="B8" value="B8" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="B9" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="B9" value="B9" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="B10" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="B10" value="B10" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="B11" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="B11" value="B11" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
                       <div  className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="C4" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="C4" value="C4" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="C5" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="C5" value="C5" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="C6" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="C6" value="C6" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="C7" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="C7" value="C7" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="C8" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="C8" value="C8" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="C9" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="C9" value="C9" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="C10" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="C10" value="C10" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-escondido">
@@ -381,35 +381,35 @@ class Filter4 extends React.Component {
                       </div>
                       <div  className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="D4" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="D4" value="D4" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="D5" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="D5" value="D5" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="D6" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="D6" value="D6" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="D7" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="D7" value="D7" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="D8" disabled= {this.state.butaca !== "3"} />
+                          <input type="checkbox" name="butaca" aria-label="D8" value="D8" disabled= {this.state.butaca !== "3"} />
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="D9" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="D9" value="D9" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="D10" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="D10" value="D10" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="D11" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="D11" value="D11" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
@@ -417,7 +417,7 @@ class Filter4 extends React.Component {
                     <div className="derecha">
                       <div className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="A12" />
+                          <input type="checkbox" name="butaca" aria-label="A12" value="A12" />
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-escondido">
@@ -431,14 +431,14 @@ class Filter4 extends React.Component {
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="A14" disabled= {this.state.butaca !== "3"} />
+                          <input type="checkbox" name="butaca" aria-label="A14" value="A14" disabled= {this.state.butaca !== "3"} />
                           <span className="checkmark"></span>
                         </span>
                         <div className="anchom">A</div>
                       </div>
                       <div  className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="B12" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="B12" value="B12" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-escondido">
@@ -452,37 +452,37 @@ class Filter4 extends React.Component {
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="B15" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="B15" value="B15" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <div className="anchom">B</div>
                       </div>
                       <div className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="C12" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="C12" value="C12" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="C13" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="C13" value="C13" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="C14" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="C14" value="C14" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <div className="anchom">C</div>
                       </div>
                       <div>
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="D12" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="D12" value="D12" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="D13" disabled= {this.state.butaca !== "3"} />
+                          <input type="checkbox" name="butaca" aria-label="D13" value="D13" disabled= {this.state.butaca !== "3"} />
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="D14" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="D14" value="D14" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <div className="anchom">D</div>
@@ -497,60 +497,60 @@ class Filter4 extends React.Component {
                       <div className="padding-bottom">
                       <div className="anchom">E</div>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="E1" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="E1" value="E1" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="E2" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="E2" value="E2" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="E3" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="E3" value="E3" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
                       <div className="padding-bottom">
                       <div className="anchom">F</div>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="F1" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="F1" value="F1" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="F2" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="F2" value="F2" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="F3" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="F3" value="F3" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
                       <div className="padding-bottom">
                       <div className="anchom">G</div>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="G1" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="G1" value="G1" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="G2" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="G2" value="G2" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="G3" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="G3" value="G3" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
                       <div className="padding-bottom">
                       <div className="anchom">H</div>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="H1" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="H1" value="H1" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="H2" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="H2" value="H2" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="H3" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="H3" value="H3" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
@@ -608,33 +608,33 @@ class Filter4 extends React.Component {
                           </span>
                         </button>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="E8" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="E8" value="E8" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="E9" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="E9" value="E9" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="E10" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="E10" value="E10" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="E11" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="E11" value="E11" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
                       <div  className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="F4" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="F4" value="F4" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="F5" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="F5" value="F5" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="F6" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="F6" value="F6" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <button
@@ -687,7 +687,7 @@ class Filter4 extends React.Component {
                           </span>
                         </button>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="F11" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="F11" value="F11" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
@@ -723,11 +723,11 @@ class Filter4 extends React.Component {
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="G7" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="G7" value="G7" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="G8" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="G8" value="G8" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-escondido">
@@ -751,17 +751,17 @@ class Filter4 extends React.Component {
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="G11" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="G11" value="G11" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
                       <div  className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="H4" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="H4" value="H4" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="H5" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="H5" value="H5" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <button
@@ -814,11 +814,11 @@ class Filter4 extends React.Component {
                           </span>
                         </button>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="H10" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="H10" value="H10" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="H11" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="H11" value="H11" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
@@ -826,52 +826,52 @@ class Filter4 extends React.Component {
                     <div className="derecha">
                       <div  className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="E12" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="H12" value="E12" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="E13" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="H13" value="E13" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="E14" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="H14" value="E14" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <div className="anchom">E</div>
                       </div>
                       <div  className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="F12" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="F12" value="F12" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="F13" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="F13" value="F13" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="F14" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="F14" value="F14" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <div className="anchom">F</div>
                       </div>
                       <div  className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="G12" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="G12" value="G12" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="G13" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="G13" value="G13" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="G14" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="G14" value="G14" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <div className="anchom">G</div>
                       </div>
                       <div  className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="H12" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="H12" value="H12" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
@@ -879,7 +879,7 @@ class Filter4 extends React.Component {
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="H14" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="H14" value="H14" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <div className="anchom">H</div>
@@ -894,30 +894,30 @@ class Filter4 extends React.Component {
                       <div  className="padding-bottom">
                       <div className="anchom">I</div>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I1" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="I1" value="I1" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I2" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="I2" value="I2" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I3" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="I3" value="I3" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
                       <div>
                       <div className="anchom">J</div>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J1" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="J1" value="J1" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J2" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="J2" value="J2" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J3" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="J3" value="J3" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
@@ -925,69 +925,69 @@ class Filter4 extends React.Component {
                     <div className="centro">
                       <div  className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I4" disabled= {this.state.butaca !== "3"} />
+                          <input type="checkbox" name="butaca" aria-label="I4" value="I4" disabled= {this.state.butaca !== "3"} />
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I5" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="I5" value="I5" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I6" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="I6" value="I6" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I7" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="I7" value="I7" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I8" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="I8" value="I8" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I9" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="I9" value="I9" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I10" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="I10" value="I10" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I11" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="I11" value="I11" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
                       <div className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J4" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="J4" value="J4" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J5" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="J5" value="J5" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J6" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="J6" value="J6" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J7" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="J7" value="J7" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J8" disabled= {this.state.butaca !== "3"} />
+                          <input type="checkbox" name="butaca" aria-label="J8" value="J8" disabled= {this.state.butaca !== "3"} />
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J9" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="J9" value="J9" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J10" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="J10" value="J10" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J11" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="J11" value="J11" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                       </div>
@@ -995,30 +995,30 @@ class Filter4 extends React.Component {
                     <div className="derecha">
                       <div className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I12" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="I12" value="I12" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I13" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="I13" value="I13" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="I14" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="I14" value="I14" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <div className="anchom">I</div>
                       </div>
                       <div className="padding-bottom">
                       <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J12" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="J12" value="J12" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J13" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="J13" value="J13" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="J14" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="J14" value="J14" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <div className="anchom">J</div>
