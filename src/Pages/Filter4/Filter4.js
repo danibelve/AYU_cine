@@ -136,9 +136,9 @@ class Filter4 extends React.Component {
         <div className="box-shadow"></div>
         <div className="divide">
           <main id="mainContent" className="filter">
-            <h1 className="h1-filter">Estas son las opciones finales</h1>
+            <h1 className="h1-filter">Momento de elegir tus lugares</h1>
             <p className="bajada">
-              ¡Mirá todas las opciones que encontramos para vos y tus amigos!
+            Te damos las mejores opciones de butaca para que puedan disfrutar de la película.
             </p>
             <div className="wrapper-butacas">
               <div>

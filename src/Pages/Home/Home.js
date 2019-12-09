@@ -29,7 +29,7 @@ class Home extends React.Component {
               </p>
               <p>
                 <strong className="strong">
-                  Armar tu perfil, tus grupos y más registrandote:
+                  Armá tu perfil, tus grupos y más registrándote
                 </strong>
               </p>
             </div>
@@ -44,7 +44,7 @@ class Home extends React.Component {
           </div>
           <div className="peliculas">
             <h2>¿Qué quieren ver?</h2>
-            <p className="p-peli">Selecciona la peli que eligieron con tus amigos</p>
+            <p className="p-peli">¡Tenemos muchos estrenos! Elegí la película que quieren ver.</p>
             <MovieCard></MovieCard>
           </div>
         </main>
