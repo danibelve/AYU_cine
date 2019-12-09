@@ -373,8 +373,7 @@ class Filter extends React.Component {
                   type="text"
                   value={this.state.inputValueAdulto}
                   onChange={this.updateInputValue}
-                  aria-live="polite"
-                  aria-label={this.state.inputValueAdulto + " Adultos"}
+                  aria-label="Cantidad de adultos"
                 />
                 <Fab
                   variant="round"
@@ -409,9 +408,7 @@ class Filter extends React.Component {
                   type="text"
                   value={this.state.inputValueNiño}
                   onChange={this.updateInputValue}
-                  aria-live="polite"
-                  aria-label={this.state.inputValueNiño + " Niños"}
-                  //aria-describedby={'label_' +this.props.id}
+                  aria-label="Cantidad de niños"
                 />
                 <Fab
                   variant="round"
@@ -447,8 +444,7 @@ class Filter extends React.Component {
                   type="text"
                   value={this.state.inputValueJubilado}
                   onChange={this.updateInputValue}
-                  aria-live="polite"
-                  aria-label={this.state.inputValueJubilado + " Jubilados"}
+                  aria-label="Cantidad de jubilados"
                   //aria-describedby={'label_' +this.props.id}
                 />
                 <Fab
@@ -518,7 +514,7 @@ class Filter extends React.Component {
               >
                 <DialogTitle id="form-dialog-title" className="heading-modal">
                   <button
-                    aria-label="Cerrar modal de registro"
+                    aria-label="Cerrar modal de referencia de butacas"
                     className="close-button"
                     onClick={e => this.handleClose(e)}
                     title="Cerrar"

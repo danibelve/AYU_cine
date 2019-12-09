@@ -390,7 +390,7 @@ class CheckoutContacto extends React.Component {
                 <DialogTitle id="form-dialog-title" className="heading-modal">
                   <div className="flex-reverse">
                     <button
-                      aria-label="Cerrar modal de registro"
+                      aria-label="Cerrar modal"
                       className="close-button"
                       onClick={e => this.handleClose(e)}
                       title="Cerrar"
