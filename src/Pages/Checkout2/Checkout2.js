@@ -277,7 +277,7 @@ class Checkout2 extends React.Component {
                     aria-invalid={this.state.invalidNombre}
                     onBlur={e => this.validateNombre(e)}
                   />
-                  {this.state.invalidNombre && <p>Ingrese un nombre</p>}
+                  {this.state.invalidNombre && <p>Ingresá un nombre</p>}
                 </div>
                 <div className="inputs" aria-live="polite">
                   <label for="apellido">
@@ -292,7 +292,7 @@ class Checkout2 extends React.Component {
                     aria-invalid={this.state.invalidApellido}
                     onBlur={e => this.validateApellido(e)}
                   />
-                  {this.state.invalidApellido && <p>Ingrese un apellido</p>}
+                  {this.state.invalidApellido && <p>Ingresá un apellido</p>}
                 </div>
               </div>
               <div className="form-direccion">
@@ -308,7 +308,7 @@ class Checkout2 extends React.Component {
                   aria-invalid={this.state.invalidDireccion}
                   onBlur={e => this.validateDireccion(e)}
                 />
-                {this.state.invalidDireccion && <p>Ingrese una dirección</p>}
+                {this.state.invalidDireccion && <p>Ingresá una dirección</p>}
               </div>
               <div className="form-pais-ciudad">
                 <div className="inputs">
@@ -327,7 +327,7 @@ class Checkout2 extends React.Component {
                     <option value="2">Brasil</option>
                     <option value="3">Chile</option>
                   </select>
-                  {this.state.invalidPais && <p>Ingrese una país.</p>}
+                  {this.state.invalidPais && <p>Ingresá una país.</p>}
                 </div>
                 <div className="inputs">
                   <label for="ciudad">
@@ -342,7 +342,7 @@ class Checkout2 extends React.Component {
                     aria-invalid={this.state.invalidCiudad}
                     onBlur={e => this.validateCiudad(e)}
                   />
-                  {this.state.invalidCiudad && <p>Ingrese una ciudad.</p>}
+                  {this.state.invalidCiudad && <p>Ingresá una ciudad.</p>}
                 </div>
               </div>
               <div className="form-cp-tel">
@@ -359,7 +359,7 @@ class Checkout2 extends React.Component {
                     aria-invalid={this.state.invalidCP}
                     onBlur={e => this.validateCP(e)}
                   />
-                  {this.state.invalidCP && <p>Ingrese un código postal.</p>}
+                  {this.state.invalidCP && <p>Ingresá un código postal.</p>}
                 </div>
 
                 <div className="inputs" aria-live="polite">
@@ -375,7 +375,7 @@ class Checkout2 extends React.Component {
                     onBlur={e => this.validateTelefono(e)}
                   />
                   {this.state.invalidTelefono && (
-                    <p>Ingrese un teléfono valido</p>
+                    <p>Ingresá un teléfono válido</p>
                   )}
                 </div>
               </div>
@@ -439,7 +439,7 @@ class Checkout2 extends React.Component {
                       onBlur={e => this.validateVencimiento(e)}
                     />
                     {this.state.invalidVencimiento && (
-                      <p>Ingrese vencimiento</p>
+                      <p>Ingresá vencimiento</p>
                     )}
                     </div>
                     <div className="cvv-tc otros">
@@ -455,7 +455,7 @@ class Checkout2 extends React.Component {
                       onBlur={e => this.validateCVV(e)}
                     />
                     {this.state.invalidCVV && (
-                      <p>Ingrese Cvv</p>
+                      <p>Ingresá <abbr title="código de seguridad">CVV</abbr></p>
                     )}
                     </div>
                   </div>

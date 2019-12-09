@@ -327,7 +327,7 @@ class Pago extends React.Component {
                         aria-invalid={this.state.invalidNombre}
                         onBlur={e => this.validateNombre(e)}
                       />
-                      {this.state.invalidNombre && <p>Ingrese un nombre</p>}
+                      {this.state.invalidNombre && <p>Ingresá un nombre</p>}
                     </div>
                     <div className="inputs" aria-live="polite">
                       <label for="mail">
@@ -341,7 +341,7 @@ class Pago extends React.Component {
                         aria-invalid={this.state.invalidMail}
                         onBlur={e => this.validateMail(e)}
                       />
-                      {this.state.invalidMail && <p>Ingrese un mail valido</p>}
+                      {this.state.invalidMail && <p>Ingresá un mail válido</p>}
                     </div>
                     <div className="inputs" aria-live="polite">
                       <label for="telefono">
@@ -356,7 +356,7 @@ class Pago extends React.Component {
                         onBlur={e => this.validateTelefono(e)}
                       />
                       {this.state.invalidTelefono && (
-                        <p>Ingrese un teléfono valido</p>
+                        <p>Ingresá un teléfono válido</p>
                       )}
                     </div>
                     <div className="inputs" aria-live="polite">
@@ -372,7 +372,7 @@ class Pago extends React.Component {
                         onBlur={e => this.validatePass(e)}
                       />
                       {this.state.invalidPass && (
-                        <p>Ingrese una contraseña</p>
+                        <p>Ingresá una contraseña</p>
                       )}
                     </div>
                     <div className="inputs" aria-live="polite">
@@ -401,7 +401,7 @@ class Pago extends React.Component {
                         className="button-contained guardar-perfil guardar-perfil-modal"
                         onClick={(e) => this.handleSubmit(e)}
                       >
-                        GUARDAR PERFIL
+                        REGISTRATE
                       </button>
                     </div>
                 </form>

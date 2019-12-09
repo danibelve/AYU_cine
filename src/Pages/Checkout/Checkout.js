@@ -202,7 +202,7 @@ class Checkout extends React.Component {
                         aria-invalid={this.state.invalidNombre}
                         onBlur={e => this.validateNombre(e)}
                       />
-                      {this.state.invalidNombre && <p>Ingrese un nombre</p>}
+                      {this.state.invalidNombre && <p>Ingresá un nombre</p>}
                     </div>
                     <div className="inputs" aria-live="polite">
                       <label for="mail">
@@ -216,7 +216,7 @@ class Checkout extends React.Component {
                         aria-invalid={this.state.invalidMail}
                         onBlur={e => this.validateMail(e)}
                       />
-                      {this.state.invalidMail && <p>Ingrese un mail valido</p>}
+                      {this.state.invalidMail && <p>Ingresá un mail válido</p>}
                     </div>
                     <div className="inputs" aria-live="polite">
                       <label for="telefono">
@@ -231,7 +231,7 @@ class Checkout extends React.Component {
                         onBlur={e => this.validateTelefono(e)}
                       />
                       {this.state.invalidTelefono && (
-                        <p>Ingrese un teléfono valido</p>
+                        <p>Ingresá un teléfono válido</p>
                       )}
                     </div>
                   </div>
