@@ -51,26 +51,27 @@ class Checkout2 extends React.Component {
             </p>
             <h2>Acá vas a poder ver quiénes faltan pagar</h2>
             <div className="ticket-container">
-              <div>
+              <div className="ticket-exe">
                 <img className="img-ticket" src={Ezeticket} alt="" />
-                <p className="text-center">PAGO REALIZADO</p>
-                <Button>Descargar QR</Button>
+                <p className="text-center text-center-exe">PAGO REALIZADO</p>
+                <Button className="descargar-qr">Descargar QR</Button>
               </div>
-              <div>
+              <div className="ticket-juan">
                 <img className="img-ticket img-ticket-juan" src={Juanticket} alt="" />
-                <p className="text-center">Pago Pendiente</p>
-                <FormGroup>
+                <p className="text-center text-center-juan">PAGO PENDIENTE</p>
+                {/*<FormGroup>
                   <FormControlLabel
                     control={
                       <Checkbox
                         checked={this.state.reminder}
                         onChange={e => this.handleChange(e)}
                         value="reminder"
+                        className="enviar-alerta"
                       />
                     }
                     label="Enviar alerta 1 hr antes de la función"
                   />
-                </FormGroup>
+                </FormGroup>*/}
               </div>
             </div>
           </main>
@@ -129,7 +130,7 @@ class Checkout2 extends React.Component {
                 </div>
               </div>
             </div>
-            <Button>Descargar resumen de compra</Button>
+            <Button className="desc-resumen">Descargar resumen de compra</Button>
             <div className="button-container">
               <Link
               tabIndex="-1"

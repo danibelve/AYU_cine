@@ -23,3 +23,32 @@
 .MuiCheckbox-colorSecondary.Mui-checked{
     color: #5e50b5!important;
 }
+
+.text-center-exe{
+    color:#5E50B5;
+    font-size: 0.9em;
+    font-weight: 700;
+    margin-right: 50px;
+}
+
+.text-center-juan{
+    color:#5f6d74 ;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin-right: 215px;
+}
+
+.descargar-qr{
+    margin-left: 55px!important;
+    border: 2px solid #5E50B5!important;
+    margin-top: 20px!important;
+    font-size: 0.7em!important;
+}
+
+.desc-resumen{
+    margin-left:40px!important;
+}
+
+.ticket-juan{
+    margin-left:50px;
+}
