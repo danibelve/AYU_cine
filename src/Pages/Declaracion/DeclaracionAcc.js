@@ -5,6 +5,7 @@ import "../../Components/Aside/Aside.css";
 import HeaderUser from "../../Components/Header/HeaderUser";
 import Footer from "../../Components/Footer/Footer";
 import Button from "@material-ui/core/Button";
+import {Helmet} from "react-helmet";
 import { Route, Link } from "react-router-dom";
 import Progressbar from "../../Assets/Estados/Entradas.svg";
 
@@ -17,6 +18,9 @@ class DeclaracionAcc extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <html lang="es-AR" />
+        </Helmet>
         <HeaderUser></HeaderUser>
         <div className="box-shadow"></div>
         <div className="divide">

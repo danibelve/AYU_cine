@@ -2,6 +2,7 @@ import React from "react";
 import "./Checkout2.css";
 import "../../Styles/Commons.css";
 import "../../Components/Aside/Aside.css";
+import {Helmet} from "react-helmet";
 import HeaderUser from "../../Components/Header/HeaderUser";
 import Avatar from "@material-ui/core/Avatar";
 import Footer from "../../Components/Footer/Footer";
@@ -59,7 +60,7 @@ class Checkout2 extends React.Component {
         value: "1"
       },
       {
-        label: "CLub Claro",
+        label: "Club Claro",
         bajada: "Quienes tengan Claro Club pueden acceder a un 25% en entradas",
         value: "2"
       }
@@ -79,7 +80,8 @@ class Checkout2 extends React.Component {
       invalidTC: false,
       invalidnombreTC: false,
       invalidVencimiento: false,
-      invalidCVV:false
+      invalidCVV:false,
+      pago: ""
     };
   }
 
@@ -198,9 +200,19 @@ class Checkout2 extends React.Component {
 
   handleSubmit() {
     if (
-      !this.state.invalidNombre &&
-      !this.state.invalidMail &&
-      !this.state.invalidTelefono
+        this.state.invalidNombre === false &&
+        this.state.invalidApellido ===  false &&
+        this.state.invalidTelefono ===  false &&
+        this.state.invalidMail ===  false &&
+        this.state.invalidDireccion === false &&
+        this.state.invalidCiudad ===  false &&
+        this.state.invalidCP === false &&
+        this.state.invalidPais ===  false &&
+        this.state.invalidTC ===  false &&
+        this.state.invalidnombreTC === false &&
+        this.state.invalidVencimiento ===  false &&
+        this.state.invalidCVV ===  false  &&
+        this.state.pago !== ""
     ) {
       this.props.history.push("/congrats");
     }
@@ -230,6 +242,9 @@ class Checkout2 extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <html lang="es-AR" />
+        </Helmet>
         <HeaderUser></HeaderUser>
         <div className="box-shadow"></div>
         <div className="divide">
@@ -252,7 +267,6 @@ class Checkout2 extends React.Component {
                     Nombre <i role="presentation">*</i>
                   </label>
                   <input
-                    autoFocus
                     required
                     placeholder="Exequiel"
                     id="nombre"
@@ -485,6 +499,7 @@ class Checkout2 extends React.Component {
                                 labelPlacement="start"
                                 className="promo"
                                 id={option.label}
+                                lang="es-AR"
                               />
                               <span className="bajadas">{option.bajada}</span>
                             </div>
@@ -497,7 +512,6 @@ class Checkout2 extends React.Component {
               </div>
             </form>
           </main>
-
           <aside className="aside">
             <div className="aside-wrapper">
               <img
@@ -567,20 +581,29 @@ class Checkout2 extends React.Component {
                   </Button>
                 )}
               />
-              <Link
-              tabIndex="-1"
-                to={{
-                  pathname: "/congrats"
-                }}
-              >
                 <Button
                   variant="outlined"
                   className="button-contained"
                   type="submit"
+                  onClick={(e) => this.handleSubmit(e)}
+                  disabled= {(
+                    this.state.invalidNombre === false &&
+                    this.state.invalidApellido ===  false &&
+                    this.state.invalidTelefono ===  false &&
+                    this.state.invalidMail ===  false &&
+                    this.state.invalidDireccion === false &&
+                    this.state.invalidCiudad ===  false &&
+                    this.state.invalidCP === false &&
+                    this.state.invalidPais ===  false &&
+                    this.state.invalidTC ===  false &&
+                    this.state.invalidnombreTC === false &&
+                    this.state.invalidVencimiento ===  false &&
+                    this.state.invalidCVV ===  false  &&
+                    this.state.pago === ""
+                    ) ? true : false}
                 >
                   Siguiente
                 </Button>
-              </Link>
             </div>
           </aside>
         </div>

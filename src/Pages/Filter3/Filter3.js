@@ -1,6 +1,7 @@
 import React from "react";
 import "./Filter3.css";
 import "../../Styles/Commons.css";
+import {Helmet} from "react-helmet";
 import "../../Components/Radiobuttons/radio.css";
 import "../../Components/Aside/Aside.css";
 import Header from "../../Components/Header/Header";
@@ -108,7 +109,6 @@ class Filter2 extends React.Component {
   armarHora(){
     let hora = "";
     const horaValue = this.state.hora;
-    console.log(horaValue)
     if (this.state.hora === ''){
         hora = "Sin definir";
     }else{
@@ -179,6 +179,9 @@ class Filter2 extends React.Component {
   render() {
     return (
       <React.Fragment>
+        <Helmet>
+          <html lang="es-AR" />
+        </Helmet>
         <Header></Header>
         <div className="box-shadow"></div>
         <div className="divide">

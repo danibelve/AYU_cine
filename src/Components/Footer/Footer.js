@@ -31,7 +31,7 @@ class Footer extends React.Component {
               </Link>
             </li>
             <li>
-              <Link
+              <Link class="acce-link"
                 to={{
                   pathname: "/declaracionacc"
                 }}
