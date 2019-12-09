@@ -272,7 +272,7 @@ class Pago extends React.Component {
                     variant="outlined"
                     className="button-outlined-black"
                     onClick={() => {
-                      history.push("/filter");
+                      history.push("/filter4");
                     }}
                   >
                     Anterior

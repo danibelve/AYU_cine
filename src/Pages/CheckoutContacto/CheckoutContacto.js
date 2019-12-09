@@ -180,11 +180,12 @@ class CheckoutContacto extends React.Component {
           <main id="mainContent" className="filter">
             <h1 className="h1-filter">¿Quiénes pagan esta salida?</h1>
             <p className="bajada">
-            Agregá a las personas que van a pagar esta vez. En tu perfil 
-            vas a poder ver los grupos de pago de cada salida. 
+              Agregar a tus amigos que vayan a pagar. ¡Podes ver los grupos en
+              tu perfil!
             </p>
             <h2 className="h2-quienes-pagan">
-            Este es tu grupo para ver “The Joker”, seleccioná cuántas entradas paga cada uno.
+              Este es el grupo de The Joker, elegí cuantas entradas paga cada
+              integrantes
             </h2>
             <div className="displayflex-contacto">
               <div className="wrapper-contacto">
@@ -363,6 +364,7 @@ class CheckoutContacto extends React.Component {
                 className="button-contained"
                 type="submit"
                 onClick={this.handleClickOpen}
+                disabled={(this.state.inputValuePersona1=== 0 || this.state.inputValuePersona2=== 0) ? true : false }
               >
                 Siguiente
               </Button>
@@ -371,7 +373,6 @@ class CheckoutContacto extends React.Component {
                 onClose={e => this.handleClose(e)}
                 aria-labelledby="form-dialog-title"
                 maxWidth="xs"
-                className="modal-contacto"
               >
                 <DialogTitle id="form-dialog-title" className="heading-modal">
                   <div className="flex-reverse">
@@ -388,9 +389,9 @@ class CheckoutContacto extends React.Component {
                 </DialogTitle>
                 <DialogContent>
                   <p className="texto-dialogo">
-                  Podés hacer tu compra ahora o dejar las entradas reservadas a 
-                  tu nombre. Recordá que tienen hasta 40 minutos antes de la función 
-                  para pagar las entradas y no perderlas.
+                    Podes hacer tu compra ahora o dejar las entradas reservadas
+                    a tu nombre. Recordá que tenes hasta 40 minutos antes de la
+                    función para comprarlas.
                   </p>
                 </DialogContent>
                 <DialogActions className="button-columns">
