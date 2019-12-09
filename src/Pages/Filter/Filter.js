@@ -305,7 +305,7 @@ class Filter extends React.Component {
           <main id="mainContent" className="filter">
             <h1 className="h1-filter">¿Cómo es tu plan? </h1>
             <p className="bajada">
-              Te pedimos más información para encontrar lo que buscás.
+              Te pedimos más información para encontrar lo que buscás. Todos los campos son obligatorios.
             </p>
             <h2>¿Cuándo quieren ir?</h2>
             <div className={this.classes.root}>
