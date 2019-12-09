@@ -276,9 +276,9 @@ class Filter extends React.Component {
         <div className="box-shadow"></div>
         <div className="divide">
           <main id="mainContent" className="filter">
-            <h1 className="h1-filter">Nos ponemos más específicos:</h1>
+            <h1 className="h1-filter">¿Cómo es tu plan? </h1>
             <p className="bajada">
-              Te pedimos más información para filtrar por lo que buscas.
+              Te pedimos más información para encontrar lo que buscás.
             </p>
             <h2>¿Cuándo quieren ir?</h2>
             <div className={this.classes.root}>

@@ -177,9 +177,9 @@ class Filter2 extends React.Component {
         <div className="box-shadow"></div>
         <div className="divide">
           <main id="mainContent" className="filter">
-            <h1 className="h1-filter">Estas son las opciones finales</h1>
+            <h1 className="h1-filter">Las mejores funciones para tu salida</h1>
             <p className="bajada">
-             ¡Mirá todas las opciones que encontramos para vos y tus amigos!
+             Encontrá la función que mejor se adapte a tu salida
             </p>
             <h2>Subtituladas 2D <i className="italic">- Precio: $300</i></h2>
             <div className={this.classes.root}>
