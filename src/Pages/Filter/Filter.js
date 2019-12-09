@@ -13,13 +13,17 @@ import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
 import TextField from "@material-ui/core/TextField";
 import Fab from "@material-ui/core/Fab";
+import Dialog from "@material-ui/core/Dialog";
+import DialogContent from "@material-ui/core/DialogContent";
+import DialogTitle from "@material-ui/core/DialogTitle";
 import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
-import { Route, Link, withRouter } from "react-router-dom";
+import { Route, withRouter } from "react-router-dom";
 import {Helmet} from "react-helmet";
 import IconButton from '@material-ui/core/IconButton';
 import Progressbar from "../../Assets/Estados/Funcion.svg";
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+import Referencia from "../../Assets/referencia-asientos.svg";
 
 
 class Filter extends React.Component {
@@ -53,6 +57,7 @@ class Filter extends React.Component {
     }));
 
     this.state = {
+      open: false,
       cuando: "",
       hora: "",
       donde: "",
@@ -122,6 +127,23 @@ class Filter extends React.Component {
     document.title = "Elijan sus preferencias y Sale Cine";
     document.getElementById("Jueves 28").focus();
   }
+
+  handleClick(event) {
+    const option = event.target.value;
+    this.setState({ pago: option });
+  }
+
+  handleClickOpen = e => {
+    this.setState({
+      open: true
+    });
+  };
+
+  handleClose = e => {
+    this.setState({
+      open: false
+    });
+  };
 
   armarCantidadDePersonas() {
     let cantidadDePersonas = "";
@@ -430,7 +452,6 @@ class Filter extends React.Component {
               <FormControl
                 component="fieldset"
                 className={this.classes.formControl}
-                required
               >
                 <FormLabel component="legend" className="dia">
                   <i className="sr-only">"Elegi una opción de horario"</i>
@@ -463,7 +484,30 @@ class Filter extends React.Component {
             </div>
             <div className="zona-butacas">
               <h2 className="h2-zonas">¿Qué zona de butacas prefieres?</h2>
-              <p className="p-referencia"><a href="">Ver referencia</a></p>
+              <p className="p-referencia"><button className="ver-ref" onClick={this.handleClickOpen}>Ver referencia</button></p>
+              <Dialog
+                open={this.state.open}
+                onClose={e => this.handleClose(e)}
+                aria-labelledby="form-dialog-title"
+                maxWidth="xs"
+              >
+                <DialogTitle id="form-dialog-title" className="heading-modal">
+                    <button
+                      aria-label="Cerrar modal de registro"
+                      className="close-button"
+                      onClick={e => this.handleClose(e)}
+                      title="Cerrar"
+                    >
+                      <span aria-hidden="true">X</span>
+                    </button>
+                </DialogTitle>
+                <DialogContent>
+                  <img src={Referencia} alt=""/>
+                  <p className="texto-dialogo">
+                  Imagen de referencia. La distribución de las butacas está sujeta a la selección del cine.
+                  </p>
+                </DialogContent>
+              </Dialog>
             </div>
             <div className={this.classes.root}>
               <FormControl

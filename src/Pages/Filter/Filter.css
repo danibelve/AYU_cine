@@ -64,8 +64,12 @@
     margin-right:20px!important;
 }
 
-.p-referencia{
+.ver-ref{
+    background-color: transparent;
+    border: none;
+    color: #5e50b5;
     font-size: 0.9em!important;
     font-weight: 500!important;
-    line-height: 1.7!important;
+    line-height: 1.9!important;
+    font-family: "Montserrat", sans-serif !important;
 }
