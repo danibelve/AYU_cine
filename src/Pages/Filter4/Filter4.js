@@ -1034,6 +1034,7 @@ class Filter4 extends React.Component {
                       name="referencia"
                       value="ocupied"
                       disabled
+                      tabIndex="-1"
                       checked
                     />
                     Ocupado
@@ -1044,13 +1045,14 @@ class Filter4 extends React.Component {
                       type="checkbox"
                       name="butacaref"
                       value="R1"
+                      tabIndex="-1"
                       checked
                     />
                     Nuestras sugerencias
                     <span className="checkmark"></span>
                   </span>
                   <span className="container-disponible">
-                    <input type="checkbox" name="butacarefe" value="ref" />
+                    <input type="checkbox" name="butacarefe" value="ref" tabIndex="-1" />
                     <span className="checkmark"></span>
                     Disponible
                   </span>
