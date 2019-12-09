@@ -33,3 +33,7 @@ footer{
 /*.MuiTypography-root{
     margin: 15px 0!important;
 }*/
+
+footer a:visited{
+        color:#5e50b5!important;
+}
