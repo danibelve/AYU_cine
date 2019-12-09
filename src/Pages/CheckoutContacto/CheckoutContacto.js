@@ -216,6 +216,7 @@ class CheckoutContacto extends React.Component {
                       <TextField
                         id="persona1"
                         type="text"
+                        readOnly
                         value={this.state.inputValuePersona1}
                         onChange={this.updateInputValuePersona1}
                         className="input-width"
@@ -262,6 +263,7 @@ class CheckoutContacto extends React.Component {
                         -
                       </Fab>
                       <TextField
+                        readOnly
                         id="persona2"
                         type="text"
                         value={this.state.inputValuePersona2}
