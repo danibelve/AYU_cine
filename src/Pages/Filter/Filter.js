@@ -262,7 +262,8 @@ class Filter extends React.Component {
   }
   handleSubmit(e) {
     if (this.state.hora !=="" && this.state.cuando !=="" && 
-    (this.state.inputValueAdulto !==0 || this.state.inputValueJubilado !==0 || this.state.inputValueNiño !==0)){
+    (this.state.inputValueAdulto !==0 || this.state.inputValueJubilado !==0 || this.state.inputValueNiño !==0)
+    && this.state.donde !==""){
       this.props.history.push('/filter2');
     }
   }
@@ -560,7 +561,7 @@ class Filter extends React.Component {
                   className="button-contained"
                   type="submit"
                   onClick={(e) => this.handleSubmit(e)}
-                  disabled= {(this.state.hora !=="" && this.state.cuando !=="" && (this.state.inputValueAdulto !==0 || this.state.inputValueJubilado !== 0 || this.state.inputValueNiño !== 0)) ? false : true}
+                  disabled= {(this.state.hora !=="" && this.state.cuando !=="" && (this.state.inputValueAdulto !==0 || this.state.inputValueJubilado !== 0 || this.state.inputValueNiño !== 0) && this.state.donde !=="") ? false : true}
                 >
                   Siguiente
                 </Button>
