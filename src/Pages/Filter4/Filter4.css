@@ -49,8 +49,11 @@ input[type="checkbox"]:hover {
 .legend {
   text-align: center;
   padding: 0px 20px 5px 20px;
-  background: white;
+  background: #fafcfc!important;
   border-radius: 8px;
+  margin:0 auto!important;
+  text-transform: uppercase!important;
+  font-size: 0.8em!important;
 }
 
 .fieldset {
