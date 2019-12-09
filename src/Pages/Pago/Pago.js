@@ -55,13 +55,13 @@ class Pago extends React.Component {
       {
         label: "Pago compartido",
         bajada:
-          "Con esta opción van a poder dividir con tus amigos el total de las entradas.",
+          "Con esta opción vas a poder dividir el total de entradas entre los integrantes de la salida",
         recomendado: true,
         bajada2: "RECOMENDADO",
-        beneficio1: "Dividí gastos con tus amigos",
-        beneficio2: "Todos pagan lo mismo",
+        beneficio1: "Dividís la cantidad de entradas a pagar",
+        beneficio2: "Cada integrante puede pagar como quiere",
         beneficio3:
-          "Tienen hasta 40 minutos antes de la película para efectuar la compra",
+          "Tienen hasta 40 minutos antes de la película para efectuar la compra.",
         value: "0"
       },
       {
@@ -176,9 +176,9 @@ class Pago extends React.Component {
         <div className="box-shadow"></div>
         <div className="divide">
           <main id="mainContent" className="filter">
-            <h1 className="h1-filter">Estas son las opciones finales</h1>
+            <h1 className="h1-filter">¿Cómo querés pagar?</h1>
             <p className="bajada">
-              ¡Mirá todas las opciones que encontramos para vos y tus amigos!
+            En Sale Cine te damos la posibilidad de pagar entre muchos. ¡Que nadie pague de más!
             </p>
             <h2>¡Elegí cómo queres pagarlo y con quién!</h2>
             <div className={this.classes.root}>
