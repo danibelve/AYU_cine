@@ -216,9 +216,10 @@ class CheckoutContacto extends React.Component {
                         -
                       </Fab>
                       <TextField
+                        tabIndex="-1"
                         id="persona1"
                         type="text"
-                        readOnly
+                        disabled
                         value={this.state.inputValuePersona1}
                         onChange={this.updateInputValuePersona1}
                         className="input-width"
@@ -268,6 +269,8 @@ class CheckoutContacto extends React.Component {
                         readOnly
                         id="persona2"
                         type="text"
+                        tabIndex="-1"
+                        disabled
                         value={this.state.inputValuePersona2}
                         onChange={this.updateInputValuePersona2}
                         className="input-width"

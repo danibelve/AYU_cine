@@ -19,13 +19,12 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
 import { Route, withRouter } from "react-router-dom";
-import {Helmet} from "react-helmet";
-import IconButton from '@material-ui/core/IconButton';
+import { Helmet } from "react-helmet";
+import IconButton from "@material-ui/core/IconButton";
 import Progressbar from "../../Assets/Estados/Funcion.svg";
-import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
+import CalendarTodayIcon from "@material-ui/icons/CalendarToday";
 import Referencia from "../../Assets/referencia-asientos.svg";
-import $ from 'jquery';
-
+import $ from "jquery";
 
 class Filter extends React.Component {
   constructor(props) {
@@ -66,7 +65,7 @@ class Filter extends React.Component {
       inputValueAdulto: 0,
       inputValueNiño: 0,
       inputValueJubilado: 0,
-      peli: "",
+      peli: ""
     };
     this.cuando = [
       {
@@ -120,7 +119,6 @@ class Filter extends React.Component {
         value: "2"
       }
     ];
-
 
     this.handleCheck = this.handleClick.bind(this);
   }
@@ -280,14 +278,19 @@ class Filter extends React.Component {
     return cuando;
   }
 
-  handleClickMain(){
-    this.mainContent.focus()
+  handleClickMain() {
+    this.mainContent.focus();
   }
   handleSubmit(e) {
-    if (this.state.hora !=="" && this.state.cuando !=="" && 
-    (this.state.inputValueAdulto !==0 || this.state.inputValueJubilado !==0 || this.state.inputValueNiño !==0)
-    && this.state.donde !==""){
-      this.props.history.push('/filter2');
+    if (
+      this.state.hora !== "" &&
+      this.state.cuando !== "" &&
+      (this.state.inputValueAdulto !== 0 ||
+        this.state.inputValueJubilado !== 0 ||
+        this.state.inputValueNiño !== 0) &&
+      this.state.donde !== ""
+    ) {
+      this.props.history.push("/filter2");
     }
   }
   render() {
@@ -295,7 +298,7 @@ class Filter extends React.Component {
       <React.Fragment>
         <Helmet>
           <html lang="es-AR" />
-        </Helmet>    
+        </Helmet>
         <Header></Header>
         <div className="box-shadow"></div>
         <div className="divide">
@@ -311,36 +314,43 @@ class Filter extends React.Component {
                 className={this.classes.formControl}
               >
                 <div className="dias-1">
-                <FormLabel component="legend">
-                  <i className="sr-only">Elegi una opción de día</i>
-                </FormLabel>
-                <RadioGroup
-                  aria-label="cuando"
-                  name="cuando"
-                  className="myRadioGroup"
-                  required
-                  value={this.state.diaValue}
-                >
-                  {this.cuando.map((option, key) => {
-                    return (
-                      <div className="butones-1" key={key}>
-                        <FormControlLabel
-                          value={option.label}
-                          control={<Radio onClick={e => this.handleClick(e)} />}
-                          label={option.label}
-                          labelPlacement="start"
-                          className="dias"
-                          id={option.label}
-                          ref={(thisMainContent) => {this.mainContent = thisMainContent}}/>
-                        <span className="bajadas">{option.bajada}</span>
-                      </div>
-
-                    );
-                  })}
-                </RadioGroup>
-                <IconButton className="botonfecha" aria-label="Elegir una fecha">
-                  <CalendarTodayIcon />
-                </IconButton>
+                  <FormLabel component="legend">
+                    <i className="sr-only">Elegi una opción de día</i>
+                  </FormLabel>
+                  <RadioGroup
+                    aria-label="cuando"
+                    name="cuando"
+                    className="myRadioGroup"
+                    required
+                    value={this.state.diaValue}
+                  >
+                    {this.cuando.map((option, key) => {
+                      return (
+                        <div className="butones-1" key={key}>
+                          <FormControlLabel
+                            value={option.label}
+                            control={
+                              <Radio onClick={e => this.handleClick(e)} />
+                            }
+                            label={option.label}
+                            labelPlacement="start"
+                            className="dias"
+                            id={option.label}
+                            ref={thisMainContent => {
+                              this.mainContent = thisMainContent;
+                            }}
+                          />
+                          <span className="bajadas">{option.bajada}</span>
+                        </div>
+                      );
+                    })}
+                  </RadioGroup>
+                  <IconButton
+                    className="botonfecha"
+                    aria-label="Elegir una fecha"
+                  >
+                    <CalendarTodayIcon />
+                  </IconButton>
                 </div>
               </FormControl>
             </div>
@@ -357,13 +367,15 @@ class Filter extends React.Component {
                 </Fab>
                 <TextField
                   readOnly
-                  required
+                  tabIndex="-1"
+                  disabled
                   id="Adultos"
                   type="text"
                   value={this.state.inputValueAdulto}
                   onChange={this.updateInputValue}
                   aria-live="polite"
-                  aria-label={this.state.inputValueAdulto + " Adultos"}/>
+                  aria-label={this.state.inputValueAdulto + " Adultos"}
+                />
                 <Fab
                   variant="round"
                   className="buton-peque"
@@ -389,7 +401,9 @@ class Filter extends React.Component {
                   -
                 </Fab>
                 <TextField
-                required
+                  required
+                  disabled
+                  tabIndex="-1"
                   readOnly
                   id="Niños"
                   type="text"
@@ -411,7 +425,9 @@ class Filter extends React.Component {
               <span className="label-contador" id={"label_Niños"}>
                 Niños
               </span>
-              <p className="counterBajada bajadas bajada-ninos">De 2 a 10 años</p>
+              <p className="counterBajada bajadas bajada-ninos">
+                De 2 a 10 años
+              </p>
             </div>
             <div className="counter-container">
               <div className="butones-2">
@@ -424,8 +440,9 @@ class Filter extends React.Component {
                   -
                 </Fab>
                 <TextField
-                required
-                readOnly
+                  required
+                  disabled
+                  tabIndex="-1"
                   id="Jubilados"
                   type="text"
                   value={this.state.inputValueJubilado}
@@ -443,10 +460,15 @@ class Filter extends React.Component {
                   +
                 </Fab>
               </div>
-              <span className="label-contador label-contador-jubilados" id={"label_Jubilados"}>
+              <span
+                className="label-contador label-contador-jubilados"
+                id={"label_Jubilados"}
+              >
                 Jubilados
               </span>
-              <p className="counterBajada bajadas bajada-jubilados">Mayores de 60 años</p>
+              <p className="counterBajada bajadas bajada-jubilados">
+                Mayores de 60 años
+              </p>
             </div>
             <h2 className="h2-filter1">¿A qué hora quieren ir?</h2>
             <div className={this.classes.root}>
@@ -468,9 +490,7 @@ class Filter extends React.Component {
                       <div className="butones-1" key={key}>
                         <FormControlLabel
                           value={option.label}
-                          control={
-                            <Radio onClick={e => this.handleClick(e)} />
-                          }
+                          control={<Radio onClick={e => this.handleClick(e)} />}
                           label={option.label}
                           labelPlacement="start"
                           className="strong"
@@ -485,7 +505,11 @@ class Filter extends React.Component {
             </div>
             <div className="zona-butacas">
               <h2 className="h2-zonas">¿Qué zona de butacas prefieres?</h2>
-              <p className="p-referencia"><button className="ver-ref" onClick={this.handleClickOpen}>Ver referencia</button></p>
+              <p className="p-referencia">
+                <button className="ver-ref" onClick={this.handleClickOpen}>
+                  Ver referencia
+                </button>
+              </p>
               <Dialog
                 open={this.state.open}
                 onClose={e => this.handleClose(e)}
@@ -493,19 +517,20 @@ class Filter extends React.Component {
                 maxWidth="xs"
               >
                 <DialogTitle id="form-dialog-title" className="heading-modal">
-                    <button
-                      aria-label="Cerrar modal de registro"
-                      className="close-button"
-                      onClick={e => this.handleClose(e)}
-                      title="Cerrar"
-                    >
-                      <span aria-hidden="true">X</span>
-                    </button>
+                  <button
+                    aria-label="Cerrar modal de registro"
+                    className="close-button"
+                    onClick={e => this.handleClose(e)}
+                    title="Cerrar"
+                  >
+                    <span aria-hidden="true">X</span>
+                  </button>
                 </DialogTitle>
                 <DialogContent>
-                  <img src={Referencia} alt=""/>
+                  <img src={Referencia} alt="" />
                   <p className="texto-dialogo">
-                  Imagen de referencia. La distribución de las butacas está sujeta a la selección del cine.
+                    Imagen de referencia. La distribución de las butacas está
+                    sujeta a la selección del cine.
                   </p>
                 </DialogContent>
               </Dialog>
@@ -516,40 +541,44 @@ class Filter extends React.Component {
                 className={this.classes.formControl}
               >
                 <div className="dias-1">
-                <FormLabel component="legend">
-                  <i className="sr-only">Elegi una opción de día</i>
-                </FormLabel>
-                <RadioGroup
-                  aria-label="donde"
-                  name="donde"
-                  className="myRadioGroup"
-                  value={this.state.donde}
-                >
-                  {this.donde.map((option, key) => {
-                    return (
-                      <div className="butones-1" key={key}>
-                        <FormControlLabel
-                          value={option.label}
-                          control={<Radio onClick={e => this.handleClick(e)} />}
-                          label={option.label}
-                          labelPlacement="start"
-                          className="zona"
-                          id={option.label}
+                  <FormLabel component="legend">
+                    <i className="sr-only">Elegi una opción de día</i>
+                  </FormLabel>
+                  <RadioGroup
+                    aria-label="donde"
+                    name="donde"
+                    className="myRadioGroup"
+                    value={this.state.donde}
+                  >
+                    {this.donde.map((option, key) => {
+                      return (
+                        <div className="butones-1" key={key}>
+                          <FormControlLabel
+                            value={option.label}
+                            control={
+                              <Radio onClick={e => this.handleClick(e)} />
+                            }
+                            label={option.label}
+                            labelPlacement="start"
+                            className="zona"
+                            id={option.label}
                           />
-                        <span className="bajadas">{option.bajada}</span>
-                      </div>
-
-                    );
-                  })}
-                </RadioGroup>
+                          <span className="bajadas">{option.bajada}</span>
+                        </div>
+                      );
+                    })}
+                  </RadioGroup>
                 </div>
               </FormControl>
             </div>
-          
           </main>
           <aside className="aside">
             <div className="aside-wrapper">
-            <img src={Progressbar} className="progress-bar" alt="Paso actual, selección de función"/>
+              <img
+                src={Progressbar}
+                className="progress-bar"
+                alt="Paso actual, selección de función"
+              />
               <h3 className="heading-aside">
                 <span className="heading3-padding">
                   Tu selección para <i lang="en">The Joker</i>
@@ -558,11 +587,28 @@ class Filter extends React.Component {
               <div className="datos-aside">
                 <div className="flex-arround">
                   <p className="p-aside">Fecha</p>
-                  <p className={this.armarFecha() === "Sin definir" ? "gris" : "violeta"}>{this.armarFecha()}</p>
+                  <p
+                    className={
+                      this.armarFecha() === "Sin definir" ? "gris" : "violeta"
+                    }
+                  >
+                    {this.armarFecha()}
+                  </p>
                 </div>
                 <div className="flex-arround">
-                  <p className="p-aside"><abbr title="cantidad">Cant.</abbr> de personas </p>
-                  <p className={this.armarCantidadDePersonas() === "Sin definir" ? "gris" : "violeta"}> {this.armarCantidadDePersonas()}</p>
+                  <p className="p-aside">
+                    <abbr title="cantidad">Cant.</abbr> de personas{" "}
+                  </p>
+                  <p
+                    className={
+                      this.armarCantidadDePersonas() === "Sin definir"
+                        ? "gris"
+                        : "violeta"
+                    }
+                  >
+                    {" "}
+                    {this.armarCantidadDePersonas()}
+                  </p>
                 </div>
                 <div className="flex-arround">
                   <p className="p-aside">Cine </p>
@@ -578,17 +624,21 @@ class Filter extends React.Component {
                 </div>
                 <div className="subtotal-resumen">
                   <div className="flex-arround">
-                      <p className="p-aside aside-subtotal-off">Subtotal </p>
-                      <p className="gris aside-subtotal-off-1">El precio se actualizará al elegir la funcion</p>
+                    <p className="p-aside aside-subtotal-off">Subtotal </p>
+                    <p className="gris aside-subtotal-off-1">
+                      El precio se actualizará al elegir la funcion
+                    </p>
                   </div>
                 </div>
               </div>
-                <div className="div-vinculo-ingresa">
-                  <a href="" className="vinculo-ingresa">Ingresá a tu cuenta para guardar los datos de tu compra</a>
-                </div>
+              <div className="div-vinculo-ingresa">
+                <a href="" className="vinculo-ingresa">
+                  Ingresá a tu cuenta para guardar los datos de tu compra
+                </a>
+              </div>
             </div>
             <div className="button-container">
-              <Route  
+              <Route
                 render={({ history }) => (
                   <Button
                     variant="outlined"
@@ -601,15 +651,24 @@ class Filter extends React.Component {
                   </Button>
                 )}
               />
-                <Button
-                  variant="outlined"
-                  className="button-contained"
-                  type="submit"
-                  onClick={(e) => this.handleSubmit(e)}
-                  disabled= {(this.state.hora !=="" && this.state.cuando !=="" && (this.state.inputValueAdulto !==0 || this.state.inputValueJubilado !== 0 || this.state.inputValueNiño !== 0) && this.state.donde !=="") ? false : true}
-                >
-                  Siguiente
-                </Button>
+              <Button
+                variant="outlined"
+                className="button-contained"
+                type="submit"
+                onClick={e => this.handleSubmit(e)}
+                disabled={
+                  this.state.hora !== "" &&
+                  this.state.cuando !== "" &&
+                  (this.state.inputValueAdulto !== 0 ||
+                    this.state.inputValueJubilado !== 0 ||
+                    this.state.inputValueNiño !== 0) &&
+                  this.state.donde !== ""
+                    ? false
+                    : true
+                }
+              >
+                Siguiente
+              </Button>
             </div>
           </aside>
         </div>

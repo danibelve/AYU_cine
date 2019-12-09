@@ -22,7 +22,7 @@ class DeclaracionAcc extends React.Component {
         </Helmet>
         <HeaderUser></HeaderUser>
         <div className="box-shadow"></div>
-        <div className="divide">
+        <div className="divide-acc">
           <main id="mainContent" className="filter">
             <h1 className="h1-filter">Declaración de accesibilidad</h1>
             <h2 className="li-declaracion">Fecha: 9/12/2019</h2>

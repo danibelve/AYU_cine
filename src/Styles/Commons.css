@@ -310,13 +310,27 @@ a:active {
 }
 
 .aside-subtotal-off {
+  font-weight: 600;
   color: #767676 !important;
 }
 
+.aside-subtotal-off-violeta{
+  font-weight: 600;
+  color:  #5e50b5 !important;
+}
+
 .aside-subtotal-off-1 {
+  font-weight: 600;
   text-align: right !important;
   width: 195px !important;
   color: #767676 !important;
+}
+
+.aside-subtotal-off-1-violeta {
+  font-weight: 600;
+  text-align: right !important;
+  width: 195px !important;
+  color:  #5e50b5 !important;
 }
 
 .subtotal-resumen {

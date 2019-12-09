@@ -50,6 +50,7 @@ class Filter2 extends React.Component {
 
     this.state = {
       hora: "",
+      changeColor:false
     };
 
     this.subDosD = [
@@ -171,11 +172,39 @@ class Filter2 extends React.Component {
     } else {
       window.setTimeout(
         function() {
-          this.setState({ [name]: newValue });
+          this.setState({ [name]: newValue, changeColor: true });
         }.bind(this),
         0
       );
     }
+  }
+
+  construirSubtotal(){
+    let subtotal = "";
+    const horaValue = this.state.hora;
+    let prefix =""
+    if (this.state.hora === ''){
+      subtotal = "El precio se actualizará al elegir el cine";
+      prefix = ""
+    }else{
+      if( horaValue === "19:00" || horaValue === "20:30" || horaValue === "23:00"){
+        subtotal = '1200'
+        prefix ="$"
+      }
+      if( horaValue === "18:30" || horaValue === "21:30" || horaValue === "00:00" ){
+        subtotal = '1600'
+        prefix ="$"
+      }
+      if( horaValue === "18:35" || horaValue === "21:40" || horaValue === "23:15"){
+        subtotal = '1600'
+        prefix ="$"
+      }
+    }
+    return(
+      <React.Fragment>
+  <i aria-hidden="true">{prefix}</i> {subtotal}<i class="sr-only">pesos</i>
+      </React.Fragment>
+    )
   }
 
   render() {
@@ -334,8 +363,8 @@ class Filter2 extends React.Component {
                 </div>
                 <div className="subtotal-resumen">
                   <div className="flex-arround">
-                      <p className="p-aside aside-subtotal-off">Subtotal </p>
-                      <p className="gris aside-subtotal-off-1">El precio se actualizará al elegir la funcion</p>
+                      <p  className={this.state.changeColor ? "aside-subtotal-off-violeta" : "aside-subtotal-off"}>Subtotal </p>
+                      <p className={this.state.changeColor  ? "aside-subtotal-off-1-violeta" : "aside-subtotal-off-1"}>{this.construirSubtotal()}</p>
                   </div>
                 </div>
               </div>
