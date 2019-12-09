@@ -198,7 +198,7 @@ class Filter2 extends React.Component {
                 <option value="Barrio de Rosario">Barrio de Rosario</option>
               </NativeSelect>
             </FormControl>
-  <span className="sr-only" aria-live="polite">{this.state.filterOptionLength}</span>
+  <span className="sr-only" aria-atomic="true" aria-live="polite" >{this.state.filterOptionLength}</span>
             {this.state.somethingChange ? (
               <div className="moviedetails-card">
                 <RadioGroup
