@@ -25,7 +25,7 @@
     max-width: 280px;
     padding: 5px 0;
     margin-left: 15px;
-    font-size: 16px;
+    font-size: 0.8em;
     font-weight: 400;
 }
 
@@ -67,14 +67,14 @@
 }
 
 .bajada-op-pago{
-  font-size: 16px;
+  font-size: 0.8em;
   margin: 15px auto;
 }
 
 .clase1 {
   background: #5e50b5;
   color: white;
-  font-size: 12px;
+  font-size: 0.6em;
   padding: 7px;
   max-width: 105px;
   border-radius: 3px;
@@ -86,7 +86,7 @@
 .clase2 {
   border:2px solid #5e50b5;
   color: #5f6d74;
-  font-size: 12px;
+  font-size: 0.6em;
   padding: 7px;
   max-width: 115px;
   border-radius: 3px;
@@ -97,7 +97,7 @@
 
 .beneficios-pago {
   font-weight: 600;
-  font-size: 18px;
+  font-size: 1em;
 }
 
 .MuiDialogActions-spacing .button-contained {

@@ -13,7 +13,7 @@
 
 .heading-aside{
     background: #F8F8F8;
-    font-size: 20px;
+    font-size: 1em!important;
     display: flex;
     text-align: center;
     padding: 10px 25px;
@@ -31,7 +31,7 @@
     display: flex;
     justify-content: space-between;
     padding: 24px 0;
-    font-size:16px;
+    font-size:0.8em;
 }
 
 .violeta{

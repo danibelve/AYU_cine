@@ -77,7 +77,7 @@ i {
 .italic {
   font-weight: 200;
   font-style: italic;
-  font-size: 20px !important;
+  font-size: 0.9em !important;
 }
 
 .button-verde {
