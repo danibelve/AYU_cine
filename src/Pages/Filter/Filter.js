@@ -314,7 +314,7 @@ class Filter extends React.Component {
                     );
                   })}
                 </RadioGroup>
-                <IconButton className="botonfecha" aria-label="delete">
+                <IconButton className="botonfecha" aria-label="Elegir una fecha">
                   <CalendarTodayIcon />
                 </IconButton>
                 </div>

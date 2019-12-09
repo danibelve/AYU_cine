@@ -304,7 +304,7 @@ class Filter2 extends React.Component {
                     variant="outlined"
                     className="button-outlined-black"
                     onClick={() => {
-                      history.push("/filter2");
+                      history.push("/filter");
                     }}
                   >
                     Anterior
