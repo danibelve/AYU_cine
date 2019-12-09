@@ -23,6 +23,7 @@ import TextField from "@material-ui/core/TextField";
 import Fab from "@material-ui/core/Fab";
 import Progressbar from "../../Assets/Estados/Pago.svg";
 import ButtonGroup from "@material-ui/core/ButtonGroup";
+import $ from 'jquery';
 
 class CheckoutContacto extends React.Component {
   constructor(props) {
@@ -110,6 +111,7 @@ class CheckoutContacto extends React.Component {
 
   componentDidMount() {
     document.title = "¿Quienés pagan esta salida? En Sale Cine";
+    $("#sumar-contacto").focus();
   }
 
   handleClick(event) {
@@ -274,6 +276,7 @@ class CheckoutContacto extends React.Component {
                         //aria-describedby={'label_' +this.props.id}
                       />
                       <Fab
+                        id="sumar-contacto"
                         variant="round"
                         className="buton-peque"
                         aria-label="Sumar una entrada"

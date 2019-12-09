@@ -13,6 +13,7 @@ import { Link  } from "react-router-dom";
 import Progressbar from "../../Assets/Estados/Entradas.svg";
 import Ezeticket from "../../Assets/eze-ticket.svg";
 import Juanticket from "../../Assets/juanperez-ticket.svg";
+import $ from 'jquery';
 
 class Checkout2 extends React.Component {
   constructor(props) {
@@ -36,6 +37,7 @@ class Checkout2 extends React.Component {
 
   componentDidMount() {
     document.title = "Entradas reservadas en Sale Ciness";
+    $("#root").focus();
   }
 
   render() {

@@ -396,7 +396,7 @@ class Pago extends React.Component {
                     </Button>
                     <button
                         id="crear-perfil"
-                        className="button-contained guardar-perfil"
+                        className="button-contained guardar-perfil guardar-perfil-modal"
                         type="submit"
                         onClick={(e) => this.handleSubmit()}
                       >

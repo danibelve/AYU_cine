@@ -4,15 +4,14 @@ import "../../Styles/Commons.css";
 import "../../Components/Aside/Aside.css";
 import HeaderUser from "../../Components/Header/HeaderUser";
 import Footer from "../../Components/Footer/Footer";
-import Button from "@material-ui/core/Button";
 import {Helmet} from "react-helmet";
-import { Route, Link } from "react-router-dom";
-import Progressbar from "../../Assets/Estados/Entradas.svg";
+import $ from 'jquery';
 
 class DeclaracionAcc extends React.Component {
 
   componentDidMount() {
     document.title = "Entradas reservadas en Sale Ciness";
+    $("#root").focus();
   }
 
   render() {
