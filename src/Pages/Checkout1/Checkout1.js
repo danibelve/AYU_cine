@@ -91,10 +91,10 @@ class Checkout1 extends React.Component {
 
   validateTelefono(e) {
     const inputValue = e.target.value;
-    if (inputValue.length < 3) {
-      this.setState({ invalidTelefono: true });
-    } else {
+    if ((/^[0-9]{0,11}$/).test(inputValue)) {
       this.setState({ invalidTelefono: false });
+    } else {
+      this.setState({ invalidTelefono: true });
     }
   }
 
@@ -224,6 +224,7 @@ class Checkout1 extends React.Component {
                       <input
                         required
                         type="text"
+                        minLength="8"
                         placeholder="1158604322"
                         id="telefono"
                         aria-invalid={this.state.invalidTelefono}

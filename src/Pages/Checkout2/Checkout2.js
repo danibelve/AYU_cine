@@ -82,7 +82,7 @@ class Checkout2 extends React.Component {
       invalidnombreTC: false,
       invalidVencimiento: false,
       invalidCVV: false,
-      pago: ""
+      pago: "",
     };
   }
 
@@ -112,16 +112,16 @@ class Checkout2 extends React.Component {
 
   validateTC(e) {
     const inputValue = e.target.value;
-    if (inputValue.length < 16) {
-      this.setState({ invalidTC: true });
-    } else {
+    if (/^[0-9]{0,11}$/.test(inputValue)) {
       this.setState({ invalidTC: false });
+    } else {
+        this.setState({ invalidTC: true });
     }
   }
 
   validateCP(e) {
     const inputValue = e.target.value;
-    if (inputValue.length < 3) {
+    if (inputValue.length < 5) {
       this.setState({ invalidCP: true });
     } else {
       this.setState({ invalidCP: false });
@@ -147,10 +147,10 @@ class Checkout2 extends React.Component {
   }
   validateTelefono(e) {
     const inputValue = e.target.value;
-    if (inputValue.length < 3) {
-      this.setState({ invalidTelefono: true });
-    } else {
+    if ((/^[0-9]{0,11}$/).test(inputValue)) {
       this.setState({ invalidTelefono: false });
+    } else {
+      this.setState({ invalidTelefono: true });
     }
   }
 
@@ -183,7 +183,7 @@ class Checkout2 extends React.Component {
 
   validateVencimiento(e) {
     const inputValue = e.target.value;
-    if (inputValue.length === 4) {
+    if (inputValue.length === 5) {
       this.setState({ invalidVencimiento: false });
     } else {
       this.setState({ invalidVencimiento: true });
@@ -435,7 +435,7 @@ class Checkout2 extends React.Component {
                         required
                         placeholder="MM/YY"
                         id="vencimiento"
-                        type="text"
+                        type="text" 
                         aria-invalid={this.state.invalidVencimiento}
                         onBlur={e => this.validateVencimiento(e)}
                       />

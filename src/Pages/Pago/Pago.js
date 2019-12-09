@@ -124,10 +124,10 @@ class Pago extends React.Component {
 
   validateTelefono(e) {
     const inputValue = e.target.value;
-    if (inputValue.length < 3) {
-      this.setState({ invalidTelefono: true });
-    } else {
+    if ((/^[0-9]{0,11}$/).test(inputValue)) {
       this.setState({ invalidTelefono: false });
+    } else {
+      this.setState({ invalidTelefono: true });
     }
   }
 

@@ -79,34 +79,7 @@ class Checkout extends React.Component {
     });
     $("#nombre").focus();
   }
-
-  validateNombre(e) {
-    const inputValue = e.target.value;
-    if (inputValue.length < 3) {
-      this.setState({ invalidNombre: true });
-    } else {
-      this.setState({ invalidNombre: false });
-    }
-  }
-
-  validateTelefono(e) {
-    const inputValue = e.target.value;
-    if (inputValue.length < 3) {
-      this.setState({ invalidTelefono: true });
-    } else {
-      this.setState({ invalidTelefono: false });
-    }
-  }
-
-  validateMail(e) {
-    const inputValue = e.target.value;
-    if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(inputValue)) {
-      this.setState({ invalidMail: false });
-    } else {
-      this.setState({ invalidMail: true });
-    }
-  }
-
+  
   handleSubmit() {
     if (!this.state.invalidNombre && !this.state.invalidMail && !this.state.invalidTelefono){
       this.props.history.push('/checkout-contacto');
