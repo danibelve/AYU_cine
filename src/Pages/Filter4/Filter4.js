@@ -252,6 +252,7 @@ class Filter4 extends React.Component {
                             type="checkbox"
                             name="butacaD1"
                             value="D1"
+                            aria-label="D1"
                             checked
                             disabled
                           />
@@ -312,6 +313,7 @@ class Filter4 extends React.Component {
                             type="checkbox"
                             name="butacaB5"
                             value="B5"
+                            aria-label="B5"
                             checked
                             disabled
                           />
@@ -375,6 +377,7 @@ class Filter4 extends React.Component {
                           <input
                             type="checkbox"
                             name="butacaC11"
+                            aria-label="C11"
                             value="C11"
                             checked
                             disabled
@@ -427,6 +430,7 @@ class Filter4 extends React.Component {
                           <input
                             type="checkbox"
                             name="butacaA13"
+                            aria-label="A13"
                             value="A13"
                             checked
                             disabled
@@ -448,6 +452,7 @@ class Filter4 extends React.Component {
                           <input
                             type="checkbox"
                             name="butacaB13"
+                            aria-label="B13"
                             value="B13"
                             checked
                             disabled
@@ -572,6 +577,7 @@ class Filter4 extends React.Component {
                             <input
                               type="checkbox"
                               name="butaca"
+                              aria-label="E4"
                               value="E4"
                               tabIndex="-1"
                               checked
@@ -584,6 +590,7 @@ class Filter4 extends React.Component {
                               tabIndex="-1"
                               type="checkbox"
                               name="butaca"
+                              aria-label="E5"
                               value="E5"
                               checked
                             />
@@ -593,6 +600,7 @@ class Filter4 extends React.Component {
                             <input
                               type="checkbox"
                               name="butaca"
+                              aria-label="E6"
                               value="E6"
                               checked
                               tabIndex="-1"
@@ -603,6 +611,7 @@ class Filter4 extends React.Component {
                             <input
                               type="checkbox"
                               name="butaca"
+                              aria-label="E7"
                               value="E7"
                               tabIndex="-1"
                               checked
@@ -652,6 +661,7 @@ class Filter4 extends React.Component {
                             <input
                               type="checkbox"
                               name="butaca"
+                              aria-label="F7"
                               value="F7"
                               tabIndex="-1"
                               checked
@@ -662,6 +672,7 @@ class Filter4 extends React.Component {
                             <input
                               type="checkbox"
                               name="butaca"
+                              aria-label="F8"
                               value="F8"
                               tabIndex="-1"
                               checked
@@ -672,6 +683,7 @@ class Filter4 extends React.Component {
                             <input
                               type="checkbox"
                               name="butaca"
+                              aria-label="F9"
                               value="F9"
                               tabIndex="-1"
                               checked
@@ -682,6 +694,7 @@ class Filter4 extends React.Component {
                             <input
                               type="checkbox"
                               name="butaca"
+                              aria-label="F10"
                               value="F10"
                               tabIndex="-1"
                               checked
@@ -699,6 +712,7 @@ class Filter4 extends React.Component {
                           <input
                             type="checkbox"
                             name="butacaD1"
+                            aria-label="G4"
                             value="G4"
                             checked
                             disabled
@@ -709,6 +723,7 @@ class Filter4 extends React.Component {
                           <input
                             type="checkbox"
                             name="butacaD1"
+                            aria-label="G5"
                             value="G5"
                             checked
                             disabled
@@ -719,6 +734,7 @@ class Filter4 extends React.Component {
                           <input
                             type="checkbox"
                             name="butacaD1"
+                            aria-label="G6"
                             value="G6"
                             checked
                             disabled
@@ -737,6 +753,7 @@ class Filter4 extends React.Component {
                           <input
                             type="checkbox"
                             name="butacaD1"
+                            aria-label="G9"
                             value="G9"
                             checked
                             disabled
@@ -747,6 +764,7 @@ class Filter4 extends React.Component {
                           <input
                             type="checkbox"
                             name="butacaD1"
+                            aria-label="G10"
                             value="G10"
                             checked
                             disabled
@@ -779,6 +797,7 @@ class Filter4 extends React.Component {
                             <input
                               type="checkbox"
                               name="butaca"
+                              aria-label="H6"
                               value="H6"
                               tabIndex="-1"
                               checked
@@ -789,6 +808,7 @@ class Filter4 extends React.Component {
                             <input
                               type="checkbox"
                               name="butaca"
+                              aria-label="H7"
                               value="H7"
                               tabIndex="-1"
                               checked
@@ -799,6 +819,7 @@ class Filter4 extends React.Component {
                             <input
                               type="checkbox"
                               name="butaca"
+                              aria-label="H8"
                               value="H8"
                               tabIndex="-1"
                               checked
@@ -810,6 +831,7 @@ class Filter4 extends React.Component {
                               type="checkbox"
                               name="butaca"
                               tabIndex="-1"
+                              aria-label="H9"
                               value="H9"
                               checked
                             />
@@ -878,7 +900,7 @@ class Filter4 extends React.Component {
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
-                          <input type="checkbox" name="butaca" value="H13" disabled= {this.state.butaca !== "3"}/>
+                          <input type="checkbox" name="butaca" aria-label="13" value="H13" disabled= {this.state.butaca !== "3"}/>
                           <span className="checkmark"></span>
                         </span>
                         <span className="container-disponible">
@@ -1038,6 +1060,7 @@ class Filter4 extends React.Component {
                       value="ocupied"
                       disabled
                       tabIndex="-1"
+                      aria-label="Ocupado referencia"
                       checked
                     />
                     Ocupado
@@ -1049,13 +1072,14 @@ class Filter4 extends React.Component {
                       name="butacaref"
                       value="R1"
                       tabIndex="-1"
+                      aria-label="Nuestras sugerencias, referencia"
                       checked
                     />
                     Nuestras sugerencias
                     <span className="checkmark"></span>
                   </span>
                   <span className="container-disponible">
-                    <input type="checkbox" name="butacarefe" value="ref" tabIndex="-1" />
+                    <input type="checkbox" aria-label="disponibles, referencia" name="butacarefe" value="ref" tabIndex="-1" />
                     <span className="checkmark"></span>
                     Disponible
                   </span>
@@ -1100,7 +1124,7 @@ class Filter4 extends React.Component {
                 </div>
               </div>
                 <div className="div-vinculo-ingresa">
-                  <a href="" className="vinculo-ingresa">Ingresá a tu cuenta para guardar los datos de tu compra</a>
+                  <a href="#" className="vinculo-ingresa">Ingresá a tu cuenta para guardar los datos de tu compra</a>
                 </div>
               </div>
             <div className="button-container">
