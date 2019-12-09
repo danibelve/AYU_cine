@@ -156,13 +156,14 @@ class Checkout1 extends React.Component {
                         -
                       </Fab>
                       <TextField
+                        disabled
                         id="persona1"
                         type="text"
                         value={this.state.inputValuePersona1}
                         onChange={this.updateInputValuePersona1}
                         className="input-width"
                         aria-live="polite"
-                        aria-label={this.state.inputValuePersona1 + " entradas"}
+                        aria-label={"pagás " + this.state.inputValuePersona1 + " entradas"}
                         //aria-describedby={'label_' +this.props.id}
                       />
                       <Fab
