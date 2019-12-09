@@ -140,13 +140,15 @@ class Pago extends React.Component {
     }
   }
 
-  handleSubmit() {
+  handleSubmit(e) {
     if (!this.state.invalidNombre && 
       !this.state.invalidMail &&
        !this.state.invalidTelefono
          && !this.state.invalidPass
          && !this.state.invalidPass2){
       this.props.history.push('/checkout');
+    }else{
+      e.preventDefault()
     }
   }
 
@@ -397,8 +399,7 @@ class Pago extends React.Component {
                     <button
                         id="crear-perfil"
                         className="button-contained guardar-perfil guardar-perfil-modal"
-                        type="submit"
-                        onClick={(e) => this.handleSubmit()}
+                        onClick={(e) => this.handleSubmit(e)}
                       >
                         GUARDAR PERFIL
                       </button>
