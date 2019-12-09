@@ -345,7 +345,7 @@ a:active {
 }
 
 .descuento-pesos {
-  color: #5cb85c !important;
+  color: #008000 !important;
   font-style: italic !important;
   font-weight: 600 !important;
 }
@@ -400,4 +400,8 @@ abbr {
   pointer-events: none;
   background-color: rgba(94,80,181,0.4) !important;
   border: 1px solid rgba(94,80,181,0.4) !important;
+}
+
+a:visited{
+  color:#5e50b5!important;
 }

@@ -91,14 +91,14 @@ margin-top: 10px;
 
 .add-contacto{
     font-size: 3em;
-    color:#2BB2AC;
+    color:#008000;
     text-align:center;
     padding-top: 60%;
 }
 
 .add-contacto-strong{
     font-size: 0.9rem!important;
-    color:grey!important;
+    color:#5f6d74!important;
     display:block;
 }
 
@@ -155,7 +155,7 @@ margin-top: 10px;
 
 .fondo-violeta{
     text-align: center;
-    margin-top: 27px;
+    margin-top: 37px;
     width: 300px!important;
 }
 
