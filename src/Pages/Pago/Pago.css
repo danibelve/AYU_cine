@@ -131,7 +131,6 @@
 }
 
 .registro-form #nombre, .registro-form #mail, .registro-form #telefono, .registro-form #pass, .registro-form #pass2{
-  width: 426px;
   height: 25px;
   border-radius:5px;
   border:1px solid rgba(0, 0, 0, 0.2);
@@ -157,7 +156,7 @@
 }
 
 #crear-perfil{
-  width: 560px!important;
+  width: 484px!important;
   margin-left: -54px;
   line-height: 4!important;
 }

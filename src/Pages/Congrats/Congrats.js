@@ -57,7 +57,7 @@ class Checkout2 extends React.Component {
                 <Button>Descargar QR</Button>
               </div>
               <div>
-                <img className="img-ticket" src={Juanticket} alt="" />
+                <img className="img-ticket img-ticket-juan" src={Juanticket} alt="" />
                 <p className="text-center">Pago Pendiente</p>
                 <FormGroup>
                   <FormControlLabel
