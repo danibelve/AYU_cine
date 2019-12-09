@@ -13,8 +13,9 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Button from "@material-ui/core/Button";
 import Radio from "@material-ui/core/Radio";
-import { Route, Link } from "react-router-dom";
-import Progressbar from "../../Assets/Estados/Funcion.svg"
+import { Route} from "react-router-dom";
+import Progressbar from "../../Assets/Estados/Funcion.svg";
+import $ from 'jquery';
 
 class Filter2 extends React.Component {
   constructor(props) {
@@ -93,6 +94,7 @@ class Filter2 extends React.Component {
 
   componentDidMount() {
     document.title = "Elijan cuál cine, sale cine";
+    $("#root").focus();
   }
 
   handleSubmit(e) {

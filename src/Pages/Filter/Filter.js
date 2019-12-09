@@ -24,6 +24,7 @@ import IconButton from '@material-ui/core/IconButton';
 import Progressbar from "../../Assets/Estados/Funcion.svg";
 import CalendarTodayIcon from '@material-ui/icons/CalendarToday';
 import Referencia from "../../Assets/referencia-asientos.svg";
+import $ from 'jquery';
 
 
 class Filter extends React.Component {
@@ -125,7 +126,7 @@ class Filter extends React.Component {
   }
   componentDidMount() {
     document.title = "Elijan sus preferencias y Sale Cine";
-    document.getElementById("Jueves 28").focus();
+    $("#root").focus();
   }
 
   handleClick(event) {

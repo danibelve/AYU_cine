@@ -20,6 +20,7 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import TextField from "@material-ui/core/TextField";
 import Progressbar from "../../Assets/Estados/Pago.svg"
+import $ from 'jquery';
 
 class Pago extends React.Component {
   constructor(props) {
@@ -93,6 +94,7 @@ class Pago extends React.Component {
 
   componentDidMount() {
     document.title = "Elegí cómo van a pagar en SaleCine";
+    $("#root").focus();
   }
 
   handleClick(event) {

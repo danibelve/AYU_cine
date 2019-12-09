@@ -15,7 +15,8 @@ import FormLabel from "@material-ui/core/FormLabel";
 import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
 import { Route, Link } from "react-router-dom";
-import Progressbar from "../../Assets/Estados/Funcion.svg"
+import Progressbar from "../../Assets/Estados/Funcion.svg";
+import $ from 'jquery';
 
 class Filter2 extends React.Component {
   constructor(props) {
@@ -147,6 +148,7 @@ class Filter2 extends React.Component {
 
   componentDidMount() {
     document.title = "Mira las opciones que te encontramos en Sale Cine";
+    $("#root").focus();
   }
 
   handleSubmit(e) {

@@ -16,7 +16,8 @@ import "../../Components/Counter/Counter.css";
 import Button from "@material-ui/core/Button";
 import Pantalla from "../../Assets/pantalla.svg";
 import { Route, Link } from "react-router-dom";
-import Progressbar from "../../Assets/Estados/Butacas.svg"
+import Progressbar from "../../Assets/Estados/Butacas.svg";
+import $ from 'jquery';
 
 class Filter4 extends React.Component {
   constructor(props) {
@@ -80,6 +81,8 @@ class Filter4 extends React.Component {
 
   componentDidMount() {
     document.title = "Mira las opciones que te encontramos en Sale Cine";
+    $("#root").focus();
+    
   }
   armarButacas(){
     const butacaValue = this.state.butaca;
