@@ -96,7 +96,7 @@ class Filter2 extends React.Component {
 
   handleSubmit(e) {
     if (this.state.cine !== "Sin definir"){
-      this.props.history.push('/filter');
+      this.props.history.push('/filter3');
     }
   }
 
