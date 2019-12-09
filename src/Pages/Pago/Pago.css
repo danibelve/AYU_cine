@@ -161,6 +161,6 @@
   line-height: 4!important;
 }
 
-#crear-perfil{
+#crear-perfil:focus{
     background-color:  #8f50b5 !important;
 }
