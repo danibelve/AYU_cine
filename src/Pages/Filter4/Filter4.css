@@ -107,6 +107,10 @@ fieldset:disabled{
     justify-content: space-evenly;
 } 
 
+.container-disponible input:disabled ~ .checkmark{
+  background-color: rgba(0,0,0,0.1);
+}
+
 .anchom{
     display: inline-block;
     width: 14px;
