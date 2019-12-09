@@ -2,7 +2,7 @@ import React from "react";
 import "./Checkout2.css";
 import "../../Styles/Commons.css";
 import "../../Components/Aside/Aside.css";
-import {Helmet} from "react-helmet";
+import { Helmet } from "react-helmet";
 import HeaderUser from "../../Components/Header/HeaderUser";
 import Avatar from "@material-ui/core/Avatar";
 import Footer from "../../Components/Footer/Footer";
@@ -26,7 +26,7 @@ import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormControl from "@material-ui/core/FormControl";
 import FormLabel from "@material-ui/core/FormLabel";
-import $ from 'jquery';
+import $ from "jquery";
 
 class Checkout2 extends React.Component {
   constructor(props) {
@@ -81,7 +81,7 @@ class Checkout2 extends React.Component {
       invalidTC: false,
       invalidnombreTC: false,
       invalidVencimiento: false,
-      invalidCVV:false,
+      invalidCVV: false,
       pago: ""
     };
   }
@@ -201,19 +201,19 @@ class Checkout2 extends React.Component {
 
   handleSubmit() {
     if (
-        this.state.invalidNombre === false &&
-        this.state.invalidApellido ===  false &&
-        this.state.invalidTelefono ===  false &&
-        this.state.invalidMail ===  false &&
-        this.state.invalidDireccion === false &&
-        this.state.invalidCiudad ===  false &&
-        this.state.invalidCP === false &&
-        this.state.invalidPais ===  false &&
-        this.state.invalidTC ===  false &&
-        this.state.invalidnombreTC === false &&
-        this.state.invalidVencimiento ===  false &&
-        this.state.invalidCVV ===  false  &&
-        this.state.pago !== ""
+      this.state.invalidNombre === false &&
+      this.state.invalidApellido === false &&
+      this.state.invalidTelefono === false &&
+      this.state.invalidMail === false &&
+      this.state.invalidDireccion === false &&
+      this.state.invalidCiudad === false &&
+      this.state.invalidCP === false &&
+      this.state.invalidPais === false &&
+      this.state.invalidTC === false &&
+      this.state.invalidnombreTC === false &&
+      this.state.invalidVencimiento === false &&
+      this.state.invalidCVV === false &&
+      this.state.pago !== ""
     ) {
       this.props.history.push("/congrats");
     }
@@ -253,8 +253,8 @@ class Checkout2 extends React.Component {
           <main id="mainContent" className="filter">
             <h1 className="h1-filter">Terminá la compra</h1>
             <p className="bajada">
-              Completa la información para poder comprar tus entradas. 
-              Todos los campos son obligatorios
+              Completa la información para poder comprar tus entradas. Todos los
+              campos son obligatorios
             </p>
             <h2 className="h2-filter1 h2-checkout2">Tu información personal</h2>
             <form
@@ -427,36 +427,40 @@ class Checkout2 extends React.Component {
                       )}
                     </div>
                     <div className="venc-tc otros">
-                    <label for="vencimiento">
-                      <abbr title="vencimiento">Venc.</abbr><i role="presentation">*</i>
-                    </label>
-                    <input
-                      required
-                      placeholder="MM/YY"
-                      id="vencimiento"
-                      type="text"
-                      aria-invalid={this.state.invalidVencimiento}
-                      onBlur={e => this.validateVencimiento(e)}
-                    />
-                    {this.state.invalidVencimiento && (
-                      <p>Ingresá vencimiento</p>
-                    )}
+                      <label for="vencimiento">
+                        <abbr title="vencimiento">Venc.</abbr>
+                        <i role="presentation">*</i>
+                      </label>
+                      <input
+                        required
+                        placeholder="MM/YY"
+                        id="vencimiento"
+                        type="text"
+                        aria-invalid={this.state.invalidVencimiento}
+                        onBlur={e => this.validateVencimiento(e)}
+                      />
+                      {this.state.invalidVencimiento && (
+                        <p>Ingresá vencimiento</p>
+                      )}
                     </div>
                     <div className="cvv-tc otros">
-                    <label for="cvv">
-                      <abbr title="código de seguridad">CVV</abbr><i role="presentation">*</i>
-                    </label>
-                    <input
-                      required
-                      placeholder="123"
-                      id="cvv"
-                      type="text"
-                      aria-invalid={this.state.invalidCVV}
-                      onBlur={e => this.validateCVV(e)}
-                    />
-                    {this.state.invalidCVV && (
-                      <p>Ingresá <abbr title="código de seguridad">CVV</abbr></p>
-                    )}
+                      <label for="cvv">
+                        <abbr title="código de seguridad">CVV</abbr>
+                        <i role="presentation">*</i>
+                      </label>
+                      <input
+                        required
+                        placeholder="123"
+                        id="cvv"
+                        type="text"
+                        aria-invalid={this.state.invalidCVV}
+                        onBlur={e => this.validateCVV(e)}
+                      />
+                      {this.state.invalidCVV && (
+                        <p>
+                          Ingresá <abbr title="código de seguridad">CVV</abbr>
+                        </p>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -552,19 +556,26 @@ class Checkout2 extends React.Component {
                 <div className="subtotal-resumen">
                   <div className="flex-arround">
                     <p className="p-aside">Subtotal </p>
-                    <p className="violeta"><i aria-hidden="true">$</i>600<i class="sr-only">pesos</i></p>
+                    <p className="violeta">
+                      <i aria-hidden="true">$</i>600<i class="sr-only">pesos</i>
+                    </p>
                   </div>
                 </div>
                 <div className="subtotal-resumen descuento-resumen">
                   <div className="flex-arround">
                     <p className="p-aside descuento">Descuento</p>
-                    <p className="violeta descuento-pesos">-<i aria-hidden="true">$</i>300<i class="sr-only">pesos</i></p>
+                    <p className="violeta descuento-pesos">
+                      -<i aria-hidden="true">$</i>300
+                      <i class="sr-only">pesos</i>
+                    </p>
                   </div>
                 </div>
                 <div className="subtotal-resumen total-resumen">
                   <div className="flex-arround">
                     <p className="p-aside total">Total</p>
-                    <p className="violeta"><i aria-hidden="true">$</i>300<i class="sr-only">pesos</i></p>
+                    <p className="violeta">
+                      <i aria-hidden="true">$</i>300<i class="sr-only">pesos</i>
+                    </p>
                   </div>
                 </div>
               </div>
@@ -583,29 +594,31 @@ class Checkout2 extends React.Component {
                   </Button>
                 )}
               />
-                <Button
-                  variant="outlined"
-                  className="button-contained"
-                  type="submit"
-                  onClick={(e) => this.handleSubmit(e)}
-                  disabled= {(
-                    this.state.invalidNombre === false &&
-                    this.state.invalidApellido ===  false &&
-                    this.state.invalidTelefono ===  false &&
-                    this.state.invalidMail ===  false &&
-                    this.state.invalidDireccion === false &&
-                    this.state.invalidCiudad ===  false &&
-                    this.state.invalidCP === false &&
-                    this.state.invalidPais ===  false &&
-                    this.state.invalidTC ===  false &&
-                    this.state.invalidnombreTC === false &&
-                    this.state.invalidVencimiento ===  false &&
-                    this.state.invalidCVV ===  false  &&
-                    this.state.pago === ""
-                    ) ? true : false}
-                >
-                  Siguiente
-                </Button>
+              <Button
+                variant="outlined"
+                className="button-contained"
+                type="submit"
+                onClick={e => this.handleSubmit(e)}
+                disabled={
+                  this.state.invalidNombre === true ||
+                  this.state.invalidApellido === true ||
+                  this.state.invalidTelefono === true  ||
+                  this.state.invalidMail === true  ||
+                  this.state.invalidDireccion === true  ||
+                  this.state.invalidCiudad === true  ||
+                  this.state.invalidCP === true  ||
+                  this.state.invalidPais === true ||
+                  this.state.invalidTC === true  ||
+                  this.state.invalidnombreTC === true  ||
+                  this.state.invalidVencimiento === true  ||
+                  this.state.invalidCVV === true  ||
+                  this.state.pago === ""
+                    ? true
+                    : false
+                }
+              >
+                Siguiente
+              </Button>
             </div>
           </aside>
         </div>
