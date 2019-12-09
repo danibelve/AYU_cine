@@ -112,7 +112,7 @@ class Checkout2 extends React.Component {
 
   validateTC(e) {
     const inputValue = e.target.value;
-    if (/^[0-9]{0,11}$/.test(inputValue)) {
+    if (/^[0-9]{16,18}$/.test(inputValue)) {
       this.setState({ invalidTC: false });
     } else {
         this.setState({ invalidTC: true });
