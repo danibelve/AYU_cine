@@ -318,7 +318,7 @@ class Checkout extends React.Component {
                   <p className="violeta">Viernes 29</p>
                 </div>
                 <div className="flex-arround">
-                  <p className="p-aside">Cantidad de personas </p>
+                  <p className="p-aside">Cant. de personas </p>
                   <p className="violeta">Adultos 4.</p>
                 </div>
                 <div className="flex-arround">

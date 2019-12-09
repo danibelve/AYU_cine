@@ -371,6 +371,7 @@ class CheckoutContacto extends React.Component {
                 onClose={e => this.handleClose(e)}
                 aria-labelledby="form-dialog-title"
                 maxWidth="xs"
+                className="modal-contacto"
               >
                 <DialogTitle id="form-dialog-title" className="heading-modal">
                   <div className="flex-reverse">
