@@ -20,7 +20,7 @@ class Checkout1 extends React.Component {
 
     this.state = {
       open: false,
-      inputValuePersona1: 0,
+      inputValuePersona1: 2,
       hideAdd: false,
       invalidNombre: false,
       invalidTelefono: false,
